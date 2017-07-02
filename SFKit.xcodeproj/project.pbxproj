@@ -1,0 +1,1109 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63686E3B1F0988D20064A0CA /* SFActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D981F0988D20064A0CA /* SFActionSheet.swift */; };
+		63686E3C1F0988D20064A0CA /* SFActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D991F0988D20064A0CA /* SFActivity.swift */; };
+		63686E3D1F0988D20064A0CA /* SFActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */; };
+		63686E3E1F0988D20064A0CA /* SFActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9B1F0988D20064A0CA /* SFActivityItemProvider.swift */; };
+		63686E3F1F0988D20064A0CA /* SFActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9C1F0988D20064A0CA /* SFActivityViewController.swift */; };
+		63686E401F0988D20064A0CA /* SFAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9D1F0988D20064A0CA /* SFAlertController.swift */; };
+		63686E411F0988D20064A0CA /* SFAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9E1F0988D20064A0CA /* SFAlertView.swift */; };
+		63686E421F0988D20064A0CA /* SFApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686D9F1F0988D20064A0CA /* SFApplication.swift */; };
+		63686E431F0988D20064A0CA /* SFApplicationShortcutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA01F0988D20064A0CA /* SFApplicationShortcutItem.swift */; };
+		63686E441F0988D20064A0CA /* SFAttachmentBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA11F0988D20064A0CA /* SFAttachmentBehavior.swift */; };
+		63686E451F0988D20064A0CA /* SFAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA21F0988D20064A0CA /* SFAttributedString.swift */; };
+		63686E461F0988D20064A0CA /* SFBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA31F0988D20064A0CA /* SFBarButtonItem.swift */; };
+		63686E471F0988D20064A0CA /* SFBarButtonItemGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA41F0988D20064A0CA /* SFBarButtonItemGroup.swift */; };
+		63686E481F0988D20064A0CA /* SFBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA51F0988D20064A0CA /* SFBarItem.swift */; };
+		63686E491F0988D20064A0CA /* SFBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA61F0988D20064A0CA /* SFBezierPath.swift */; };
+		63686E4A1F0988D20064A0CA /* SFBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA71F0988D20064A0CA /* SFBlurEffect.swift */; };
+		63686E4B1F0988D20064A0CA /* SFCloudSharingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */; };
+		63686E4C1F0988D20064A0CA /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
+		63686E4D1F0988D20064A0CA /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
+		63686E4E1F0988D20064A0CA /* SFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */; };
+		63686E4F1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */; };
+		63686E501F0988D20064A0CA /* SFCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */; };
+		63686E511F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */; };
+		63686E521F0988D20064A0CA /* SFCollisionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAF1F0988D20064A0CA /* SFCollisionBehavior.swift */; };
+		63686E531F0988D20064A0CA /* SFContextualAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB01F0988D20064A0CA /* SFContextualAction.swift */; };
+		63686E541F0988D20064A0CA /* SFControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB11F0988D20064A0CA /* SFControl.swift */; };
+		63686E551F0988D20064A0CA /* SFDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB21F0988D20064A0CA /* SFDataAsset.swift */; };
+		63686E561F0988D20064A0CA /* SFDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB31F0988D20064A0CA /* SFDatePicker.swift */; };
+		63686E571F0988D20064A0CA /* SFDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB41F0988D20064A0CA /* SFDevice.swift */; };
+		63686E581F0988D20064A0CA /* SFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB51F0988D20064A0CA /* SFDocument.swift */; };
+		63686E591F0988D20064A0CA /* SFDocumentInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB61F0988D20064A0CA /* SFDocumentInteractionController.swift */; };
+		63686E5A1F0988D20064A0CA /* SFDocumentMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB71F0988D20064A0CA /* SFDocumentMenuViewController.swift */; };
+		63686E5B1F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB81F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift */; };
+		63686E5C1F0988D20064A0CA /* SFDocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DB91F0988D20064A0CA /* SFDocumentPickerViewController.swift */; };
+		63686E5D1F0988D20064A0CA /* SFDragInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBA1F0988D20064A0CA /* SFDragInteraction.swift */; };
+		63686E5E1F0988D20064A0CA /* SFDragItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBB1F0988D20064A0CA /* SFDragItem.swift */; };
+		63686E5F1F0988D20064A0CA /* SFDragPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBC1F0988D20064A0CA /* SFDragPreview.swift */; };
+		63686E601F0988D20064A0CA /* SFDragPreviewParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBD1F0988D20064A0CA /* SFDragPreviewParameters.swift */; };
+		63686E611F0988D20064A0CA /* SFDropInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBE1F0988D20064A0CA /* SFDropInteraction.swift */; };
+		63686E621F0988D20064A0CA /* SFDynamicAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DBF1F0988D20064A0CA /* SFDynamicAnimator.swift */; };
+		63686E631F0988D20064A0CA /* SFDynamicBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC01F0988D20064A0CA /* SFDynamicBehavior.swift */; };
+		63686E641F0988D20064A0CA /* SFDynamicItemBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC11F0988D20064A0CA /* SFDynamicItemBehavior.swift */; };
+		63686E651F0988D20064A0CA /* SFEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC21F0988D20064A0CA /* SFEvent.swift */; };
+		63686E661F0988D20064A0CA /* SFFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC31F0988D20064A0CA /* SFFeedbackGenerator.swift */; };
+		63686E671F0988D20064A0CA /* SFFieldBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC41F0988D20064A0CA /* SFFieldBehavior.swift */; };
+		63686E681F0988D20064A0CA /* SFFileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC51F0988D20064A0CA /* SFFileProviderExtension.swift */; };
+		63686E691F0988D20064A0CA /* SFFocusAnimationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC61F0988D20064A0CA /* SFFocusAnimationCoordinator.swift */; };
+		63686E6A1F0988D20064A0CA /* SFFocusDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC71F0988D20064A0CA /* SFFocusDebugger.swift */; };
+		63686E6B1F0988D20064A0CA /* SFFocusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC81F0988D20064A0CA /* SFFocusGuide.swift */; };
+		63686E6C1F0988D20064A0CA /* SFFocusSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DC91F0988D20064A0CA /* SFFocusSystem.swift */; };
+		63686E6D1F0988D20064A0CA /* SFFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCA1F0988D20064A0CA /* SFFont.swift */; };
+		63686E6E1F0988D20064A0CA /* SFFontDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCB1F0988D20064A0CA /* SFFontDescriptor.swift */; };
+		63686E6F1F0988D20064A0CA /* SFFontMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCC1F0988D20064A0CA /* SFFontMetrics.swift */; };
+		63686E701F0988D20064A0CA /* SFGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCD1F0988D20064A0CA /* SFGestureRecognizer.swift */; };
+		63686E711F0988D20064A0CA /* SFGraphicsImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCE1F0988D20064A0CA /* SFGraphicsImageRenderer.swift */; };
+		63686E721F0988D20064A0CA /* SFGraphicsPDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DCF1F0988D20064A0CA /* SFGraphicsPDFRenderer.swift */; };
+		63686E731F0988D20064A0CA /* SFGraphicsRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD01F0988D20064A0CA /* SFGraphicsRenderer.swift */; };
+		63686E741F0988D20064A0CA /* SFGravityBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD11F0988D20064A0CA /* SFGravityBehavior.swift */; };
+		63686E751F0988D20064A0CA /* SFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD21F0988D20064A0CA /* SFImage.swift */; };
+		63686E761F0988D20064A0CA /* SFImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD31F0988D20064A0CA /* SFImageAsset.swift */; };
+		63686E771F0988D20064A0CA /* SFImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD41F0988D20064A0CA /* SFImagePickerController.swift */; };
+		63686E781F0988D20064A0CA /* SFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD51F0988D20064A0CA /* SFImageView.swift */; };
+		63686E791F0988D20064A0CA /* SFImpactFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */; };
+		63686E7A1F0988D20064A0CA /* SFInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD71F0988D20064A0CA /* SFInputView.swift */; };
+		63686E7B1F0988D20064A0CA /* SFInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD81F0988D20064A0CA /* SFInputViewController.swift */; };
+		63686E7C1F0988D20064A0CA /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD91F0988D20064A0CA /* SFLabel.swift */; };
+		63686E7D1F0988D20064A0CA /* SFLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */; };
+		63686E7E1F0988D20064A0CA /* SFLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */; };
+		63686E7F1F0988D20064A0CA /* SFLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */; };
+		63686E801F0988D20064A0CA /* SFLexicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDD1F0988D20064A0CA /* SFLexicon.swift */; };
+		63686E811F0988D20064A0CA /* SFLocalizedIndexedCollation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDE1F0988D20064A0CA /* SFLocalizedIndexedCollation.swift */; };
+		63686E821F0988D20064A0CA /* SFLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DDF1F0988D20064A0CA /* SFLocalNotification.swift */; };
+		63686E831F0988D20064A0CA /* SFLongPressGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE01F0988D20064A0CA /* SFLongPressGestureRecognizer.swift */; };
+		63686E841F0988D20064A0CA /* SFManagedDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE11F0988D20064A0CA /* SFManagedDocument.swift */; };
+		63686E851F0988D20064A0CA /* SFMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE21F0988D20064A0CA /* SFMenuController.swift */; };
+		63686E861F0988D20064A0CA /* SFMotionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE31F0988D20064A0CA /* SFMotionEffect.swift */; };
+		63686E871F0988D20064A0CA /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
+		63686E881F0988D20064A0CA /* SFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE51F0988D20064A0CA /* SFNavigationController.swift */; };
+		63686E891F0988D20064A0CA /* SFNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE61F0988D20064A0CA /* SFNavigationItem.swift */; };
+		63686E8A1F0988D20064A0CA /* SFNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE71F0988D20064A0CA /* SFNib.swift */; };
+		63686E8B1F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */; };
+		63686E8C1F0988D20064A0CA /* SFPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE91F0988D20064A0CA /* SFPageControl.swift */; };
+		63686E8D1F0988D20064A0CA /* SFPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DEA1F0988D20064A0CA /* SFPageViewController.swift */; };
+		63686E8E1F0988D20064A0CA /* SFPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DEB1F0988D20064A0CA /* SFPanGestureRecognizer.swift */; };
+		63686E8F1F0988D20064A0CA /* SFParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DEC1F0988D20064A0CA /* SFParagraphStyle.swift */; };
+		63686E901F0988D20064A0CA /* SFPasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DED1F0988D20064A0CA /* SFPasteboard.swift */; };
+		63686E911F0988D20064A0CA /* SFPasteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DEE1F0988D20064A0CA /* SFPasteConfiguration.swift */; };
+		63686E921F0988D20064A0CA /* SFPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DEF1F0988D20064A0CA /* SFPickerView.swift */; };
+		63686E931F0988D20064A0CA /* SFPinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF01F0988D20064A0CA /* SFPinchGestureRecognizer.swift */; };
+		63686E941F0988D20064A0CA /* SFPopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF11F0988D20064A0CA /* SFPopoverBackgroundView.swift */; };
+		63686E951F0988D20064A0CA /* SFPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF21F0988D20064A0CA /* SFPopoverController.swift */; };
+		63686E961F0988D20064A0CA /* SFPopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF31F0988D20064A0CA /* SFPopoverPresentationController.swift */; };
+		63686E971F0988D20064A0CA /* SFPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF41F0988D20064A0CA /* SFPresentationController.swift */; };
+		63686E981F0988D20064A0CA /* SFPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF51F0988D20064A0CA /* SFPress.swift */; };
+		63686E991F0988D20064A0CA /* SFPressesEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF61F0988D20064A0CA /* SFPressesEvent.swift */; };
+		63686E9A1F0988D20064A0CA /* SFPreviewInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF71F0988D20064A0CA /* SFPreviewInteraction.swift */; };
+		63686E9B1F0988D20064A0CA /* SFPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF81F0988D20064A0CA /* SFPrinter.swift */; };
+		63686E9C1F0988D20064A0CA /* SFPrinterPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DF91F0988D20064A0CA /* SFPrinterPickerController.swift */; };
+		63686E9D1F0988D20064A0CA /* SFPrintFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFA1F0988D20064A0CA /* SFPrintFormatter.swift */; };
+		63686E9E1F0988D20064A0CA /* SFPrintInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFB1F0988D20064A0CA /* SFPrintInfo.swift */; };
+		63686E9F1F0988D20064A0CA /* SFPrintInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFC1F0988D20064A0CA /* SFPrintInteractionController.swift */; };
+		63686EA01F0988D20064A0CA /* SFPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFD1F0988D20064A0CA /* SFPrintPageRenderer.swift */; };
+		63686EA11F0988D20064A0CA /* SFPrintPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFE1F0988D20064A0CA /* SFPrintPaper.swift */; };
+		63686EA21F0988D20064A0CA /* SFProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DFF1F0988D20064A0CA /* SFProgressView.swift */; };
+		63686EA31F0988D20064A0CA /* SFPushBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E001F0988D20064A0CA /* SFPushBehavior.swift */; };
+		63686EA41F0988D20064A0CA /* SFReferenceLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E011F0988D20064A0CA /* SFReferenceLibraryViewController.swift */; };
+		63686EA51F0988D20064A0CA /* SFRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E021F0988D20064A0CA /* SFRefreshControl.swift */; };
+		63686EA61F0988D20064A0CA /* SFRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E031F0988D20064A0CA /* SFRegion.swift */; };
+		63686EA71F0988D20064A0CA /* SFResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E041F0988D20064A0CA /* SFResponder.swift */; };
+		63686EA81F0988D20064A0CA /* SFRotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E051F0988D20064A0CA /* SFRotationGestureRecognizer.swift */; };
+		63686EA91F0988D20064A0CA /* SFScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E061F0988D20064A0CA /* SFScreen.swift */; };
+		63686EAA1F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E071F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift */; };
+		63686EAB1F0988D20064A0CA /* SFScreenMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E081F0988D20064A0CA /* SFScreenMode.swift */; };
+		63686EAC1F0988D20064A0CA /* SFScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E091F0988D20064A0CA /* SFScrollView.swift */; };
+		63686EAD1F0988D20064A0CA /* SFSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0A1F0988D20064A0CA /* SFSearchBar.swift */; };
+		63686EAE1F0988D20064A0CA /* SFSearchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0B1F0988D20064A0CA /* SFSearchContainerViewController.swift */; };
+		63686EAF1F0988D20064A0CA /* SFSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0C1F0988D20064A0CA /* SFSearchController.swift */; };
+		63686EB01F0988D20064A0CA /* SFSearchDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0D1F0988D20064A0CA /* SFSearchDisplayController.swift */; };
+		63686EB11F0988D20064A0CA /* SFSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0E1F0988D20064A0CA /* SFSegmentedControl.swift */; };
+		63686EB21F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E0F1F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift */; };
+		63686EB31F0988D20064A0CA /* SFShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E101F0988D20064A0CA /* SFShadow.swift */; };
+		63686EB41F0988D20064A0CA /* SFSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E111F0988D20064A0CA /* SFSlider.swift */; };
+		63686EB51F0988D20064A0CA /* SFSnapBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E121F0988D20064A0CA /* SFSnapBehavior.swift */; };
+		63686EB61F0988D20064A0CA /* SFSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E131F0988D20064A0CA /* SFSplitViewController.swift */; };
+		63686EB71F0988D20064A0CA /* SFSpringLoadedInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E141F0988D20064A0CA /* SFSpringLoadedInteraction.swift */; };
+		63686EB81F0988D20064A0CA /* SFStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E151F0988D20064A0CA /* SFStackView.swift */; };
+		63686EB91F0988D20064A0CA /* SFStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E161F0988D20064A0CA /* SFStepper.swift */; };
+		63686EBA1F0988D20064A0CA /* SFStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E171F0988D20064A0CA /* SFStoryboard.swift */; };
+		63686EBB1F0988D20064A0CA /* SFStoryboardPopoverSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E181F0988D20064A0CA /* SFStoryboardPopoverSegue.swift */; };
+		63686EBC1F0988D20064A0CA /* SFStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E191F0988D20064A0CA /* SFStoryboardSegue.swift */; };
+		63686EBD1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1A1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift */; };
+		63686EBE1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1B1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift */; };
+		63686EBF1F0988D20064A0CA /* SFSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1C1F0988D20064A0CA /* SFSwitch.swift */; };
+		63686EC01F0988D20064A0CA /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
+		63686EC11F0988D20064A0CA /* SFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1E1F0988D20064A0CA /* SFTabBarController.swift */; };
+		63686EC21F0988D20064A0CA /* SFTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */; };
+		63686EC31F0988D20064A0CA /* SFTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E201F0988D20064A0CA /* SFTableView.swift */; };
+		63686EC41F0988D20064A0CA /* SFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E211F0988D20064A0CA /* SFTableViewCell.swift */; };
+		63686EC51F0988D20064A0CA /* SFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E221F0988D20064A0CA /* SFTableViewController.swift */; };
+		63686EC61F0988D20064A0CA /* SFTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */; };
+		63686EC71F0988D20064A0CA /* SFTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */; };
+		63686EC81F0988D20064A0CA /* SFTargetedDragPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */; };
+		63686EC91F0988D20064A0CA /* SFTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E261F0988D20064A0CA /* SFTextAttachment.swift */; };
+		63686ECA1F0988D20064A0CA /* SFTextChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E271F0988D20064A0CA /* SFTextChecker.swift */; };
+		63686ECB1F0988D20064A0CA /* SFTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E281F0988D20064A0CA /* SFTextContainer.swift */; };
+		63686ECC1F0988D20064A0CA /* SFTextDragPreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */; };
+		63686ECD1F0988D20064A0CA /* SFTextDropProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */; };
+		63686ECE1F0988D20064A0CA /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2B1F0988D20064A0CA /* SFTextField.swift */; };
+		63686ECF1F0988D20064A0CA /* SFTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2C1F0988D20064A0CA /* SFTextStorage.swift */; };
+		63686ED01F0988D20064A0CA /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2D1F0988D20064A0CA /* SFTextView.swift */; };
+		63686ED11F0988D20064A0CA /* SFToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2E1F0988D20064A0CA /* SFToolbar.swift */; };
+		63686ED21F0988D20064A0CA /* SFTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2F1F0988D20064A0CA /* SFTouch.swift */; };
+		63686ED31F0988D20064A0CA /* SFTraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E301F0988D20064A0CA /* SFTraitCollection.swift */; };
+		63686ED41F0988D20064A0CA /* SFUserNotificationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E311F0988D20064A0CA /* SFUserNotificationSettings.swift */; };
+		63686ED51F0988D20064A0CA /* SFVibrancyEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E321F0988D20064A0CA /* SFVibrancyEffect.swift */; };
+		63686ED61F0988D20064A0CA /* SFVideoEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E331F0988D20064A0CA /* SFVideoEditorController.swift */; };
+		63686ED71F0988D20064A0CA /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
+		63686ED81F0988D20064A0CA /* SFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E351F0988D20064A0CA /* SFViewController.swift */; };
+		63686ED91F0988D20064A0CA /* SFViewPropertyAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E361F0988D20064A0CA /* SFViewPropertyAnimator.swift */; };
+		63686EDA1F0988D20064A0CA /* SFVisualEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E371F0988D20064A0CA /* SFVisualEffect.swift */; };
+		63686EDB1F0988D20064A0CA /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
+		63686EDC1F0988D20064A0CA /* SFWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E391F0988D20064A0CA /* SFWebView.swift */; };
+		63686EDD1F0988D20064A0CA /* SFWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E3A1F0988D20064A0CA /* SFWindow.swift */; };
+		63848D351F098B0D005028C5 /* SFAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63848D341F098B0D005028C5 /* SFAppearance.swift */; };
+		6385A22D1F06EB36002B9244 /* SFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6385A2231F06EB36002B9244 /* SFKit.framework */; };
+		6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2311F06EB36002B9244 /* SFKitTests.swift */; };
+		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
+		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6385A22E1F06EB36002B9244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6385A21A1F06EB36002B9244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6385A2221F06EB36002B9244;
+			remoteInfo = SFKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63686D981F0988D20064A0CA /* SFActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActionSheet.swift; sourceTree = "<group>"; };
+		63686D991F0988D20064A0CA /* SFActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivity.swift; sourceTree = "<group>"; };
+		63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityIndicatorView.swift; sourceTree = "<group>"; };
+		63686D9B1F0988D20064A0CA /* SFActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityItemProvider.swift; sourceTree = "<group>"; };
+		63686D9C1F0988D20064A0CA /* SFActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityViewController.swift; sourceTree = "<group>"; };
+		63686D9D1F0988D20064A0CA /* SFAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlertController.swift; sourceTree = "<group>"; };
+		63686D9E1F0988D20064A0CA /* SFAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlertView.swift; sourceTree = "<group>"; };
+		63686D9F1F0988D20064A0CA /* SFApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFApplication.swift; sourceTree = "<group>"; };
+		63686DA01F0988D20064A0CA /* SFApplicationShortcutItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFApplicationShortcutItem.swift; sourceTree = "<group>"; };
+		63686DA11F0988D20064A0CA /* SFAttachmentBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAttachmentBehavior.swift; sourceTree = "<group>"; };
+		63686DA21F0988D20064A0CA /* SFAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAttributedString.swift; sourceTree = "<group>"; };
+		63686DA31F0988D20064A0CA /* SFBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarButtonItem.swift; sourceTree = "<group>"; };
+		63686DA41F0988D20064A0CA /* SFBarButtonItemGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarButtonItemGroup.swift; sourceTree = "<group>"; };
+		63686DA51F0988D20064A0CA /* SFBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarItem.swift; sourceTree = "<group>"; };
+		63686DA61F0988D20064A0CA /* SFBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBezierPath.swift; sourceTree = "<group>"; };
+		63686DA71F0988D20064A0CA /* SFBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBlurEffect.swift; sourceTree = "<group>"; };
+		63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCloudSharingController.swift; sourceTree = "<group>"; };
+		63686DA91F0988D20064A0CA /* SFCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionView.swift; sourceTree = "<group>"; };
+		63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewCell.swift; sourceTree = "<group>"; };
+		63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewController.swift; sourceTree = "<group>"; };
+		63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewLayout.swift; sourceTree = "<group>"; };
+		63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewTransitionLayout.swift; sourceTree = "<group>"; };
+		63686DAF1F0988D20064A0CA /* SFCollisionBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollisionBehavior.swift; sourceTree = "<group>"; };
+		63686DB01F0988D20064A0CA /* SFContextualAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFContextualAction.swift; sourceTree = "<group>"; };
+		63686DB11F0988D20064A0CA /* SFControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFControl.swift; sourceTree = "<group>"; };
+		63686DB21F0988D20064A0CA /* SFDataAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDataAsset.swift; sourceTree = "<group>"; };
+		63686DB31F0988D20064A0CA /* SFDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDatePicker.swift; sourceTree = "<group>"; };
+		63686DB41F0988D20064A0CA /* SFDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDevice.swift; sourceTree = "<group>"; };
+		63686DB51F0988D20064A0CA /* SFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocument.swift; sourceTree = "<group>"; };
+		63686DB61F0988D20064A0CA /* SFDocumentInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentInteractionController.swift; sourceTree = "<group>"; };
+		63686DB71F0988D20064A0CA /* SFDocumentMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentMenuViewController.swift; sourceTree = "<group>"; };
+		63686DB81F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentPickerExtensionViewController.swift; sourceTree = "<group>"; };
+		63686DB91F0988D20064A0CA /* SFDocumentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentPickerViewController.swift; sourceTree = "<group>"; };
+		63686DBA1F0988D20064A0CA /* SFDragInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragInteraction.swift; sourceTree = "<group>"; };
+		63686DBB1F0988D20064A0CA /* SFDragItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragItem.swift; sourceTree = "<group>"; };
+		63686DBC1F0988D20064A0CA /* SFDragPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragPreview.swift; sourceTree = "<group>"; };
+		63686DBD1F0988D20064A0CA /* SFDragPreviewParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragPreviewParameters.swift; sourceTree = "<group>"; };
+		63686DBE1F0988D20064A0CA /* SFDropInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDropInteraction.swift; sourceTree = "<group>"; };
+		63686DBF1F0988D20064A0CA /* SFDynamicAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicAnimator.swift; sourceTree = "<group>"; };
+		63686DC01F0988D20064A0CA /* SFDynamicBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicBehavior.swift; sourceTree = "<group>"; };
+		63686DC11F0988D20064A0CA /* SFDynamicItemBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicItemBehavior.swift; sourceTree = "<group>"; };
+		63686DC21F0988D20064A0CA /* SFEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFEvent.swift; sourceTree = "<group>"; };
+		63686DC31F0988D20064A0CA /* SFFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFeedbackGenerator.swift; sourceTree = "<group>"; };
+		63686DC41F0988D20064A0CA /* SFFieldBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFieldBehavior.swift; sourceTree = "<group>"; };
+		63686DC51F0988D20064A0CA /* SFFileProviderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFileProviderExtension.swift; sourceTree = "<group>"; };
+		63686DC61F0988D20064A0CA /* SFFocusAnimationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusAnimationCoordinator.swift; sourceTree = "<group>"; };
+		63686DC71F0988D20064A0CA /* SFFocusDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusDebugger.swift; sourceTree = "<group>"; };
+		63686DC81F0988D20064A0CA /* SFFocusGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusGuide.swift; sourceTree = "<group>"; };
+		63686DC91F0988D20064A0CA /* SFFocusSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusSystem.swift; sourceTree = "<group>"; };
+		63686DCA1F0988D20064A0CA /* SFFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFont.swift; sourceTree = "<group>"; };
+		63686DCB1F0988D20064A0CA /* SFFontDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFontDescriptor.swift; sourceTree = "<group>"; };
+		63686DCC1F0988D20064A0CA /* SFFontMetrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFontMetrics.swift; sourceTree = "<group>"; };
+		63686DCD1F0988D20064A0CA /* SFGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686DCE1F0988D20064A0CA /* SFGraphicsImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsImageRenderer.swift; sourceTree = "<group>"; };
+		63686DCF1F0988D20064A0CA /* SFGraphicsPDFRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsPDFRenderer.swift; sourceTree = "<group>"; };
+		63686DD01F0988D20064A0CA /* SFGraphicsRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsRenderer.swift; sourceTree = "<group>"; };
+		63686DD11F0988D20064A0CA /* SFGravityBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGravityBehavior.swift; sourceTree = "<group>"; };
+		63686DD21F0988D20064A0CA /* SFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImage.swift; sourceTree = "<group>"; };
+		63686DD31F0988D20064A0CA /* SFImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImageAsset.swift; sourceTree = "<group>"; };
+		63686DD41F0988D20064A0CA /* SFImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImagePickerController.swift; sourceTree = "<group>"; };
+		63686DD51F0988D20064A0CA /* SFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImageView.swift; sourceTree = "<group>"; };
+		63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImpactFeedbackGenerator.swift; sourceTree = "<group>"; };
+		63686DD71F0988D20064A0CA /* SFInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInputView.swift; sourceTree = "<group>"; };
+		63686DD81F0988D20064A0CA /* SFInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInputViewController.swift; sourceTree = "<group>"; };
+		63686DD91F0988D20064A0CA /* SFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLabel.swift; sourceTree = "<group>"; };
+		63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutConstraint.swift; sourceTree = "<group>"; };
+		63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutGuide.swift; sourceTree = "<group>"; };
+		63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutManager.swift; sourceTree = "<group>"; };
+		63686DDD1F0988D20064A0CA /* SFLexicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLexicon.swift; sourceTree = "<group>"; };
+		63686DDE1F0988D20064A0CA /* SFLocalizedIndexedCollation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLocalizedIndexedCollation.swift; sourceTree = "<group>"; };
+		63686DDF1F0988D20064A0CA /* SFLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLocalNotification.swift; sourceTree = "<group>"; };
+		63686DE01F0988D20064A0CA /* SFLongPressGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLongPressGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686DE11F0988D20064A0CA /* SFManagedDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFManagedDocument.swift; sourceTree = "<group>"; };
+		63686DE21F0988D20064A0CA /* SFMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMenuController.swift; sourceTree = "<group>"; };
+		63686DE31F0988D20064A0CA /* SFMotionEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMotionEffect.swift; sourceTree = "<group>"; };
+		63686DE41F0988D20064A0CA /* SFNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationBar.swift; sourceTree = "<group>"; };
+		63686DE51F0988D20064A0CA /* SFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationController.swift; sourceTree = "<group>"; };
+		63686DE61F0988D20064A0CA /* SFNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationItem.swift; sourceTree = "<group>"; };
+		63686DE71F0988D20064A0CA /* SFNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNib.swift; sourceTree = "<group>"; };
+		63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNotificationFeedbackGenerator.swift; sourceTree = "<group>"; };
+		63686DE91F0988D20064A0CA /* SFPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPageControl.swift; sourceTree = "<group>"; };
+		63686DEA1F0988D20064A0CA /* SFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPageViewController.swift; sourceTree = "<group>"; };
+		63686DEB1F0988D20064A0CA /* SFPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686DEC1F0988D20064A0CA /* SFParagraphStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFParagraphStyle.swift; sourceTree = "<group>"; };
+		63686DED1F0988D20064A0CA /* SFPasteboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPasteboard.swift; sourceTree = "<group>"; };
+		63686DEE1F0988D20064A0CA /* SFPasteConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPasteConfiguration.swift; sourceTree = "<group>"; };
+		63686DEF1F0988D20064A0CA /* SFPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPickerView.swift; sourceTree = "<group>"; };
+		63686DF01F0988D20064A0CA /* SFPinchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPinchGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686DF11F0988D20064A0CA /* SFPopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverBackgroundView.swift; sourceTree = "<group>"; };
+		63686DF21F0988D20064A0CA /* SFPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverController.swift; sourceTree = "<group>"; };
+		63686DF31F0988D20064A0CA /* SFPopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverPresentationController.swift; sourceTree = "<group>"; };
+		63686DF41F0988D20064A0CA /* SFPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPresentationController.swift; sourceTree = "<group>"; };
+		63686DF51F0988D20064A0CA /* SFPress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPress.swift; sourceTree = "<group>"; };
+		63686DF61F0988D20064A0CA /* SFPressesEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPressesEvent.swift; sourceTree = "<group>"; };
+		63686DF71F0988D20064A0CA /* SFPreviewInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPreviewInteraction.swift; sourceTree = "<group>"; };
+		63686DF81F0988D20064A0CA /* SFPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrinter.swift; sourceTree = "<group>"; };
+		63686DF91F0988D20064A0CA /* SFPrinterPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrinterPickerController.swift; sourceTree = "<group>"; };
+		63686DFA1F0988D20064A0CA /* SFPrintFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintFormatter.swift; sourceTree = "<group>"; };
+		63686DFB1F0988D20064A0CA /* SFPrintInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintInfo.swift; sourceTree = "<group>"; };
+		63686DFC1F0988D20064A0CA /* SFPrintInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintInteractionController.swift; sourceTree = "<group>"; };
+		63686DFD1F0988D20064A0CA /* SFPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintPageRenderer.swift; sourceTree = "<group>"; };
+		63686DFE1F0988D20064A0CA /* SFPrintPaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintPaper.swift; sourceTree = "<group>"; };
+		63686DFF1F0988D20064A0CA /* SFProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFProgressView.swift; sourceTree = "<group>"; };
+		63686E001F0988D20064A0CA /* SFPushBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPushBehavior.swift; sourceTree = "<group>"; };
+		63686E011F0988D20064A0CA /* SFReferenceLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFReferenceLibraryViewController.swift; sourceTree = "<group>"; };
+		63686E021F0988D20064A0CA /* SFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRefreshControl.swift; sourceTree = "<group>"; };
+		63686E031F0988D20064A0CA /* SFRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRegion.swift; sourceTree = "<group>"; };
+		63686E041F0988D20064A0CA /* SFResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFResponder.swift; sourceTree = "<group>"; };
+		63686E051F0988D20064A0CA /* SFRotationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRotationGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686E061F0988D20064A0CA /* SFScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreen.swift; sourceTree = "<group>"; };
+		63686E071F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreenEdgePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686E081F0988D20064A0CA /* SFScreenMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreenMode.swift; sourceTree = "<group>"; };
+		63686E091F0988D20064A0CA /* SFScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScrollView.swift; sourceTree = "<group>"; };
+		63686E0A1F0988D20064A0CA /* SFSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchBar.swift; sourceTree = "<group>"; };
+		63686E0B1F0988D20064A0CA /* SFSearchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchContainerViewController.swift; sourceTree = "<group>"; };
+		63686E0C1F0988D20064A0CA /* SFSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchController.swift; sourceTree = "<group>"; };
+		63686E0D1F0988D20064A0CA /* SFSearchDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchDisplayController.swift; sourceTree = "<group>"; };
+		63686E0E1F0988D20064A0CA /* SFSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSegmentedControl.swift; sourceTree = "<group>"; };
+		63686E0F1F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSelectionFeedbackGenerator.swift; sourceTree = "<group>"; };
+		63686E101F0988D20064A0CA /* SFShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFShadow.swift; sourceTree = "<group>"; };
+		63686E111F0988D20064A0CA /* SFSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSlider.swift; sourceTree = "<group>"; };
+		63686E121F0988D20064A0CA /* SFSnapBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSnapBehavior.swift; sourceTree = "<group>"; };
+		63686E131F0988D20064A0CA /* SFSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSplitViewController.swift; sourceTree = "<group>"; };
+		63686E141F0988D20064A0CA /* SFSpringLoadedInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSpringLoadedInteraction.swift; sourceTree = "<group>"; };
+		63686E151F0988D20064A0CA /* SFStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStackView.swift; sourceTree = "<group>"; };
+		63686E161F0988D20064A0CA /* SFStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStepper.swift; sourceTree = "<group>"; };
+		63686E171F0988D20064A0CA /* SFStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboard.swift; sourceTree = "<group>"; };
+		63686E181F0988D20064A0CA /* SFStoryboardPopoverSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboardPopoverSegue.swift; sourceTree = "<group>"; };
+		63686E191F0988D20064A0CA /* SFStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboardSegue.swift; sourceTree = "<group>"; };
+		63686E1A1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwipeActionsConfiguration.swift; sourceTree = "<group>"; };
+		63686E1B1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686E1C1F0988D20064A0CA /* SFSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwitch.swift; sourceTree = "<group>"; };
+		63686E1D1F0988D20064A0CA /* SFTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBar.swift; sourceTree = "<group>"; };
+		63686E1E1F0988D20064A0CA /* SFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBarController.swift; sourceTree = "<group>"; };
+		63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBarItem.swift; sourceTree = "<group>"; };
+		63686E201F0988D20064A0CA /* SFTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableView.swift; sourceTree = "<group>"; };
+		63686E211F0988D20064A0CA /* SFTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewCell.swift; sourceTree = "<group>"; };
+		63686E221F0988D20064A0CA /* SFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewController.swift; sourceTree = "<group>"; };
+		63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTargetedDragPreview.swift; sourceTree = "<group>"; };
+		63686E261F0988D20064A0CA /* SFTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextAttachment.swift; sourceTree = "<group>"; };
+		63686E271F0988D20064A0CA /* SFTextChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextChecker.swift; sourceTree = "<group>"; };
+		63686E281F0988D20064A0CA /* SFTextContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextContainer.swift; sourceTree = "<group>"; };
+		63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextDragPreviewRenderer.swift; sourceTree = "<group>"; };
+		63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextDropProposal.swift; sourceTree = "<group>"; };
+		63686E2B1F0988D20064A0CA /* SFTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextField.swift; sourceTree = "<group>"; };
+		63686E2C1F0988D20064A0CA /* SFTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextStorage.swift; sourceTree = "<group>"; };
+		63686E2D1F0988D20064A0CA /* SFTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
+		63686E2E1F0988D20064A0CA /* SFToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFToolbar.swift; sourceTree = "<group>"; };
+		63686E2F1F0988D20064A0CA /* SFTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTouch.swift; sourceTree = "<group>"; };
+		63686E301F0988D20064A0CA /* SFTraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTraitCollection.swift; sourceTree = "<group>"; };
+		63686E311F0988D20064A0CA /* SFUserNotificationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUserNotificationSettings.swift; sourceTree = "<group>"; };
+		63686E321F0988D20064A0CA /* SFVibrancyEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVibrancyEffect.swift; sourceTree = "<group>"; };
+		63686E331F0988D20064A0CA /* SFVideoEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVideoEditorController.swift; sourceTree = "<group>"; };
+		63686E341F0988D20064A0CA /* SFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFView.swift; sourceTree = "<group>"; };
+		63686E351F0988D20064A0CA /* SFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFViewController.swift; sourceTree = "<group>"; };
+		63686E361F0988D20064A0CA /* SFViewPropertyAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFViewPropertyAnimator.swift; sourceTree = "<group>"; };
+		63686E371F0988D20064A0CA /* SFVisualEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVisualEffect.swift; sourceTree = "<group>"; };
+		63686E381F0988D20064A0CA /* SFVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVisualEffectView.swift; sourceTree = "<group>"; };
+		63686E391F0988D20064A0CA /* SFWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebView.swift; sourceTree = "<group>"; };
+		63686E3A1F0988D20064A0CA /* SFWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWindow.swift; sourceTree = "<group>"; };
+		63848D341F098B0D005028C5 /* SFAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppearance.swift; sourceTree = "<group>"; };
+		6385A2231F06EB36002B9244 /* SFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6385A2261F06EB36002B9244 /* SFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
+		6385A2271F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6385A22C1F06EB36002B9244 /* SFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6385A2311F06EB36002B9244 /* SFKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFKitTests.swift; sourceTree = "<group>"; };
+		6385A2331F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
+		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6385A21F1F06EB36002B9244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385A2291F06EB36002B9244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385A22D1F06EB36002B9244 /* SFKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6385A2191F06EB36002B9244 = {
+			isa = PBXGroup;
+			children = (
+				6385A2251F06EB36002B9244 /* SFKit */,
+				6385A2301F06EB36002B9244 /* SFKitTests */,
+				6385A2241F06EB36002B9244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6385A2241F06EB36002B9244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6385A2231F06EB36002B9244 /* SFKit.framework */,
+				6385A22C1F06EB36002B9244 /* SFKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6385A2251F06EB36002B9244 /* SFKit */ = {
+			isa = PBXGroup;
+			children = (
+				6385A2261F06EB36002B9244 /* SFKit.h */,
+				639989AC1F094ECF007F1590 /* Source */,
+				6385A2271F06EB36002B9244 /* Info.plist */,
+			);
+			path = SFKit;
+			sourceTree = "<group>";
+		};
+		6385A2301F06EB36002B9244 /* SFKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6385A2311F06EB36002B9244 /* SFKitTests.swift */,
+				6385A2331F06EB36002B9244 /* Info.plist */,
+			);
+			path = SFKitTests;
+			sourceTree = "<group>";
+		};
+		639989AC1F094ECF007F1590 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				639E37971F09882900C08D8E /* Include */,
+				63848D341F098B0D005028C5 /* SFAppearance.swift */,
+				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
+				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		639E37971F09882900C08D8E /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				63686D981F0988D20064A0CA /* SFActionSheet.swift */,
+				63686D991F0988D20064A0CA /* SFActivity.swift */,
+				63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */,
+				63686D9B1F0988D20064A0CA /* SFActivityItemProvider.swift */,
+				63686D9C1F0988D20064A0CA /* SFActivityViewController.swift */,
+				63686D9D1F0988D20064A0CA /* SFAlertController.swift */,
+				63686D9E1F0988D20064A0CA /* SFAlertView.swift */,
+				63686D9F1F0988D20064A0CA /* SFApplication.swift */,
+				63686DA01F0988D20064A0CA /* SFApplicationShortcutItem.swift */,
+				63686DA11F0988D20064A0CA /* SFAttachmentBehavior.swift */,
+				63686DA21F0988D20064A0CA /* SFAttributedString.swift */,
+				63686DA31F0988D20064A0CA /* SFBarButtonItem.swift */,
+				63686DA41F0988D20064A0CA /* SFBarButtonItemGroup.swift */,
+				63686DA51F0988D20064A0CA /* SFBarItem.swift */,
+				63686DA61F0988D20064A0CA /* SFBezierPath.swift */,
+				63686DA71F0988D20064A0CA /* SFBlurEffect.swift */,
+				63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */,
+				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
+				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
+				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
+				63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */,
+				63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */,
+				63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */,
+				63686DAF1F0988D20064A0CA /* SFCollisionBehavior.swift */,
+				63686DB01F0988D20064A0CA /* SFContextualAction.swift */,
+				63686DB11F0988D20064A0CA /* SFControl.swift */,
+				63686DB21F0988D20064A0CA /* SFDataAsset.swift */,
+				63686DB31F0988D20064A0CA /* SFDatePicker.swift */,
+				63686DB41F0988D20064A0CA /* SFDevice.swift */,
+				63686DB51F0988D20064A0CA /* SFDocument.swift */,
+				63686DB61F0988D20064A0CA /* SFDocumentInteractionController.swift */,
+				63686DB71F0988D20064A0CA /* SFDocumentMenuViewController.swift */,
+				63686DB81F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift */,
+				63686DB91F0988D20064A0CA /* SFDocumentPickerViewController.swift */,
+				63686DBA1F0988D20064A0CA /* SFDragInteraction.swift */,
+				63686DBB1F0988D20064A0CA /* SFDragItem.swift */,
+				63686DBC1F0988D20064A0CA /* SFDragPreview.swift */,
+				63686DBD1F0988D20064A0CA /* SFDragPreviewParameters.swift */,
+				63686DBE1F0988D20064A0CA /* SFDropInteraction.swift */,
+				63686DBF1F0988D20064A0CA /* SFDynamicAnimator.swift */,
+				63686DC01F0988D20064A0CA /* SFDynamicBehavior.swift */,
+				63686DC11F0988D20064A0CA /* SFDynamicItemBehavior.swift */,
+				63686DC21F0988D20064A0CA /* SFEvent.swift */,
+				63686DC31F0988D20064A0CA /* SFFeedbackGenerator.swift */,
+				63686DC41F0988D20064A0CA /* SFFieldBehavior.swift */,
+				63686DC51F0988D20064A0CA /* SFFileProviderExtension.swift */,
+				63686DC61F0988D20064A0CA /* SFFocusAnimationCoordinator.swift */,
+				63686DC71F0988D20064A0CA /* SFFocusDebugger.swift */,
+				63686DC81F0988D20064A0CA /* SFFocusGuide.swift */,
+				63686DC91F0988D20064A0CA /* SFFocusSystem.swift */,
+				63686DCA1F0988D20064A0CA /* SFFont.swift */,
+				63686DCB1F0988D20064A0CA /* SFFontDescriptor.swift */,
+				63686DCC1F0988D20064A0CA /* SFFontMetrics.swift */,
+				63686DCD1F0988D20064A0CA /* SFGestureRecognizer.swift */,
+				63686DCE1F0988D20064A0CA /* SFGraphicsImageRenderer.swift */,
+				63686DCF1F0988D20064A0CA /* SFGraphicsPDFRenderer.swift */,
+				63686DD01F0988D20064A0CA /* SFGraphicsRenderer.swift */,
+				63686DD11F0988D20064A0CA /* SFGravityBehavior.swift */,
+				63686DD21F0988D20064A0CA /* SFImage.swift */,
+				63686DD31F0988D20064A0CA /* SFImageAsset.swift */,
+				63686DD41F0988D20064A0CA /* SFImagePickerController.swift */,
+				63686DD51F0988D20064A0CA /* SFImageView.swift */,
+				63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */,
+				63686DD71F0988D20064A0CA /* SFInputView.swift */,
+				63686DD81F0988D20064A0CA /* SFInputViewController.swift */,
+				63686DD91F0988D20064A0CA /* SFLabel.swift */,
+				63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */,
+				63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */,
+				63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */,
+				63686DDD1F0988D20064A0CA /* SFLexicon.swift */,
+				63686DDE1F0988D20064A0CA /* SFLocalizedIndexedCollation.swift */,
+				63686DDF1F0988D20064A0CA /* SFLocalNotification.swift */,
+				63686DE01F0988D20064A0CA /* SFLongPressGestureRecognizer.swift */,
+				63686DE11F0988D20064A0CA /* SFManagedDocument.swift */,
+				63686DE21F0988D20064A0CA /* SFMenuController.swift */,
+				63686DE31F0988D20064A0CA /* SFMotionEffect.swift */,
+				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
+				63686DE51F0988D20064A0CA /* SFNavigationController.swift */,
+				63686DE61F0988D20064A0CA /* SFNavigationItem.swift */,
+				63686DE71F0988D20064A0CA /* SFNib.swift */,
+				63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */,
+				63686DE91F0988D20064A0CA /* SFPageControl.swift */,
+				63686DEA1F0988D20064A0CA /* SFPageViewController.swift */,
+				63686DEB1F0988D20064A0CA /* SFPanGestureRecognizer.swift */,
+				63686DEC1F0988D20064A0CA /* SFParagraphStyle.swift */,
+				63686DED1F0988D20064A0CA /* SFPasteboard.swift */,
+				63686DEE1F0988D20064A0CA /* SFPasteConfiguration.swift */,
+				63686DEF1F0988D20064A0CA /* SFPickerView.swift */,
+				63686DF01F0988D20064A0CA /* SFPinchGestureRecognizer.swift */,
+				63686DF11F0988D20064A0CA /* SFPopoverBackgroundView.swift */,
+				63686DF21F0988D20064A0CA /* SFPopoverController.swift */,
+				63686DF31F0988D20064A0CA /* SFPopoverPresentationController.swift */,
+				63686DF41F0988D20064A0CA /* SFPresentationController.swift */,
+				63686DF51F0988D20064A0CA /* SFPress.swift */,
+				63686DF61F0988D20064A0CA /* SFPressesEvent.swift */,
+				63686DF71F0988D20064A0CA /* SFPreviewInteraction.swift */,
+				63686DF81F0988D20064A0CA /* SFPrinter.swift */,
+				63686DF91F0988D20064A0CA /* SFPrinterPickerController.swift */,
+				63686DFA1F0988D20064A0CA /* SFPrintFormatter.swift */,
+				63686DFB1F0988D20064A0CA /* SFPrintInfo.swift */,
+				63686DFC1F0988D20064A0CA /* SFPrintInteractionController.swift */,
+				63686DFD1F0988D20064A0CA /* SFPrintPageRenderer.swift */,
+				63686DFE1F0988D20064A0CA /* SFPrintPaper.swift */,
+				63686DFF1F0988D20064A0CA /* SFProgressView.swift */,
+				63686E001F0988D20064A0CA /* SFPushBehavior.swift */,
+				63686E011F0988D20064A0CA /* SFReferenceLibraryViewController.swift */,
+				63686E021F0988D20064A0CA /* SFRefreshControl.swift */,
+				63686E031F0988D20064A0CA /* SFRegion.swift */,
+				63686E041F0988D20064A0CA /* SFResponder.swift */,
+				63686E051F0988D20064A0CA /* SFRotationGestureRecognizer.swift */,
+				63686E061F0988D20064A0CA /* SFScreen.swift */,
+				63686E071F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift */,
+				63686E081F0988D20064A0CA /* SFScreenMode.swift */,
+				63686E091F0988D20064A0CA /* SFScrollView.swift */,
+				63686E0A1F0988D20064A0CA /* SFSearchBar.swift */,
+				63686E0B1F0988D20064A0CA /* SFSearchContainerViewController.swift */,
+				63686E0C1F0988D20064A0CA /* SFSearchController.swift */,
+				63686E0D1F0988D20064A0CA /* SFSearchDisplayController.swift */,
+				63686E0E1F0988D20064A0CA /* SFSegmentedControl.swift */,
+				63686E0F1F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift */,
+				63686E101F0988D20064A0CA /* SFShadow.swift */,
+				63686E111F0988D20064A0CA /* SFSlider.swift */,
+				63686E121F0988D20064A0CA /* SFSnapBehavior.swift */,
+				63686E131F0988D20064A0CA /* SFSplitViewController.swift */,
+				63686E141F0988D20064A0CA /* SFSpringLoadedInteraction.swift */,
+				63686E151F0988D20064A0CA /* SFStackView.swift */,
+				63686E161F0988D20064A0CA /* SFStepper.swift */,
+				63686E171F0988D20064A0CA /* SFStoryboard.swift */,
+				63686E181F0988D20064A0CA /* SFStoryboardPopoverSegue.swift */,
+				63686E191F0988D20064A0CA /* SFStoryboardSegue.swift */,
+				63686E1A1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift */,
+				63686E1B1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift */,
+				63686E1C1F0988D20064A0CA /* SFSwitch.swift */,
+				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
+				63686E1E1F0988D20064A0CA /* SFTabBarController.swift */,
+				63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */,
+				63686E201F0988D20064A0CA /* SFTableView.swift */,
+				63686E211F0988D20064A0CA /* SFTableViewCell.swift */,
+				63686E221F0988D20064A0CA /* SFTableViewController.swift */,
+				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
+				63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */,
+				63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */,
+				63686E261F0988D20064A0CA /* SFTextAttachment.swift */,
+				63686E271F0988D20064A0CA /* SFTextChecker.swift */,
+				63686E281F0988D20064A0CA /* SFTextContainer.swift */,
+				63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */,
+				63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */,
+				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
+				63686E2C1F0988D20064A0CA /* SFTextStorage.swift */,
+				63686E2D1F0988D20064A0CA /* SFTextView.swift */,
+				63686E2E1F0988D20064A0CA /* SFToolbar.swift */,
+				63686E2F1F0988D20064A0CA /* SFTouch.swift */,
+				63686E301F0988D20064A0CA /* SFTraitCollection.swift */,
+				63686E311F0988D20064A0CA /* SFUserNotificationSettings.swift */,
+				63686E321F0988D20064A0CA /* SFVibrancyEffect.swift */,
+				63686E331F0988D20064A0CA /* SFVideoEditorController.swift */,
+				63686E341F0988D20064A0CA /* SFView.swift */,
+				63686E351F0988D20064A0CA /* SFViewController.swift */,
+				63686E361F0988D20064A0CA /* SFViewPropertyAnimator.swift */,
+				63686E371F0988D20064A0CA /* SFVisualEffect.swift */,
+				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
+				63686E391F0988D20064A0CA /* SFWebView.swift */,
+				63686E3A1F0988D20064A0CA /* SFWindow.swift */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6385A2201F06EB36002B9244 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385A2341F06EB36002B9244 /* SFKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6385A2221F06EB36002B9244 /* SFKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6385A2371F06EB36002B9244 /* Build configuration list for PBXNativeTarget "SFKit" */;
+			buildPhases = (
+				6385A21E1F06EB36002B9244 /* Sources */,
+				6385A21F1F06EB36002B9244 /* Frameworks */,
+				6385A2201F06EB36002B9244 /* Headers */,
+				6385A2211F06EB36002B9244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFKit;
+			productName = SFKit;
+			productReference = 6385A2231F06EB36002B9244 /* SFKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6385A22B1F06EB36002B9244 /* SFKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6385A23A1F06EB36002B9244 /* Build configuration list for PBXNativeTarget "SFKitTests" */;
+			buildPhases = (
+				6385A2281F06EB36002B9244 /* Sources */,
+				6385A2291F06EB36002B9244 /* Frameworks */,
+				6385A22A1F06EB36002B9244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6385A22F1F06EB36002B9244 /* PBXTargetDependency */,
+			);
+			name = SFKitTests;
+			productName = SFKitTests;
+			productReference = 6385A22C1F06EB36002B9244 /* SFKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6385A21A1F06EB36002B9244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Moore Development";
+				TargetAttributes = {
+					6385A2221F06EB36002B9244 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					6385A22B1F06EB36002B9244 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 6385A21D1F06EB36002B9244 /* Build configuration list for PBXProject "SFKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6385A2191F06EB36002B9244;
+			productRefGroup = 6385A2241F06EB36002B9244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6385A2221F06EB36002B9244 /* SFKit */,
+				6385A22B1F06EB36002B9244 /* SFKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6385A2211F06EB36002B9244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385A22A1F06EB36002B9244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6385A21E1F06EB36002B9244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63686E5C1F0988D20064A0CA /* SFDocumentPickerViewController.swift in Sources */,
+				63686E761F0988D20064A0CA /* SFImageAsset.swift in Sources */,
+				63686E671F0988D20064A0CA /* SFFieldBehavior.swift in Sources */,
+				63686EAE1F0988D20064A0CA /* SFSearchContainerViewController.swift in Sources */,
+				63686E901F0988D20064A0CA /* SFPasteboard.swift in Sources */,
+				63686E781F0988D20064A0CA /* SFImageView.swift in Sources */,
+				63686ED91F0988D20064A0CA /* SFViewPropertyAnimator.swift in Sources */,
+				63686E7F1F0988D20064A0CA /* SFLayoutManager.swift in Sources */,
+				63686EC31F0988D20064A0CA /* SFTableView.swift in Sources */,
+				63686E831F0988D20064A0CA /* SFLongPressGestureRecognizer.swift in Sources */,
+				63686E471F0988D20064A0CA /* SFBarButtonItemGroup.swift in Sources */,
+				63686EA51F0988D20064A0CA /* SFRefreshControl.swift in Sources */,
+				63686E4D1F0988D20064A0CA /* SFCollectionViewCell.swift in Sources */,
+				63686E701F0988D20064A0CA /* SFGestureRecognizer.swift in Sources */,
+				63686EDD1F0988D20064A0CA /* SFWindow.swift in Sources */,
+				63686EB31F0988D20064A0CA /* SFShadow.swift in Sources */,
+				63686E951F0988D20064A0CA /* SFPopoverController.swift in Sources */,
+				63686E791F0988D20064A0CA /* SFImpactFeedbackGenerator.swift in Sources */,
+				63686E5F1F0988D20064A0CA /* SFDragPreview.swift in Sources */,
+				63686EBB1F0988D20064A0CA /* SFStoryboardPopoverSegue.swift in Sources */,
+				63686EC21F0988D20064A0CA /* SFTabBarItem.swift in Sources */,
+				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
+				63686E981F0988D20064A0CA /* SFPress.swift in Sources */,
+				63686E611F0988D20064A0CA /* SFDropInteraction.swift in Sources */,
+				63686E601F0988D20064A0CA /* SFDragPreviewParameters.swift in Sources */,
+				63686E801F0988D20064A0CA /* SFLexicon.swift in Sources */,
+				63686E9B1F0988D20064A0CA /* SFPrinter.swift in Sources */,
+				63686EB81F0988D20064A0CA /* SFStackView.swift in Sources */,
+				63686E581F0988D20064A0CA /* SFDocument.swift in Sources */,
+				63686EAA1F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift in Sources */,
+				63686EB61F0988D20064A0CA /* SFSplitViewController.swift in Sources */,
+				63686ED11F0988D20064A0CA /* SFToolbar.swift in Sources */,
+				63686EA21F0988D20064A0CA /* SFProgressView.swift in Sources */,
+				63686E5D1F0988D20064A0CA /* SFDragInteraction.swift in Sources */,
+				63686EBC1F0988D20064A0CA /* SFStoryboardSegue.swift in Sources */,
+				63686E691F0988D20064A0CA /* SFFocusAnimationCoordinator.swift in Sources */,
+				63686E9D1F0988D20064A0CA /* SFPrintFormatter.swift in Sources */,
+				63686EB71F0988D20064A0CA /* SFSpringLoadedInteraction.swift in Sources */,
+				63686E751F0988D20064A0CA /* SFImage.swift in Sources */,
+				63686E431F0988D20064A0CA /* SFApplicationShortcutItem.swift in Sources */,
+				63686E8E1F0988D20064A0CA /* SFPanGestureRecognizer.swift in Sources */,
+				63686EC91F0988D20064A0CA /* SFTextAttachment.swift in Sources */,
+				63686E931F0988D20064A0CA /* SFPinchGestureRecognizer.swift in Sources */,
+				63686EB91F0988D20064A0CA /* SFStepper.swift in Sources */,
+				63686ECF1F0988D20064A0CA /* SFTextStorage.swift in Sources */,
+				63686EC71F0988D20064A0CA /* SFTapGestureRecognizer.swift in Sources */,
+				63686E5B1F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift in Sources */,
+				63686E771F0988D20064A0CA /* SFImagePickerController.swift in Sources */,
+				63848D351F098B0D005028C5 /* SFAppearance.swift in Sources */,
+				63686ED31F0988D20064A0CA /* SFTraitCollection.swift in Sources */,
+				63686EC51F0988D20064A0CA /* SFTableViewController.swift in Sources */,
+				63686E821F0988D20064A0CA /* SFLocalNotification.swift in Sources */,
+				63686E9A1F0988D20064A0CA /* SFPreviewInteraction.swift in Sources */,
+				63686E861F0988D20064A0CA /* SFMotionEffect.swift in Sources */,
+				63686EA91F0988D20064A0CA /* SFScreen.swift in Sources */,
+				63686E8F1F0988D20064A0CA /* SFParagraphStyle.swift in Sources */,
+				63686EA31F0988D20064A0CA /* SFPushBehavior.swift in Sources */,
+				63686E911F0988D20064A0CA /* SFPasteConfiguration.swift in Sources */,
+				63686EDC1F0988D20064A0CA /* SFWebView.swift in Sources */,
+				63686E541F0988D20064A0CA /* SFControl.swift in Sources */,
+				63686E711F0988D20064A0CA /* SFGraphicsImageRenderer.swift in Sources */,
+				63686E811F0988D20064A0CA /* SFLocalizedIndexedCollation.swift in Sources */,
+				63686E891F0988D20064A0CA /* SFNavigationItem.swift in Sources */,
+				63686EB41F0988D20064A0CA /* SFSlider.swift in Sources */,
+				63686E961F0988D20064A0CA /* SFPopoverPresentationController.swift in Sources */,
+				63686E3D1F0988D20064A0CA /* SFActivityIndicatorView.swift in Sources */,
+				63686EA71F0988D20064A0CA /* SFResponder.swift in Sources */,
+				63686E4F1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift in Sources */,
+				63686E571F0988D20064A0CA /* SFDevice.swift in Sources */,
+				63686E411F0988D20064A0CA /* SFAlertView.swift in Sources */,
+				63686E551F0988D20064A0CA /* SFDataAsset.swift in Sources */,
+				63686EB01F0988D20064A0CA /* SFSearchDisplayController.swift in Sources */,
+				63686E4C1F0988D20064A0CA /* SFCollectionView.swift in Sources */,
+				63686EB51F0988D20064A0CA /* SFSnapBehavior.swift in Sources */,
+				63686E421F0988D20064A0CA /* SFApplication.swift in Sources */,
+				63686EAF1F0988D20064A0CA /* SFSearchController.swift in Sources */,
+				63686ECB1F0988D20064A0CA /* SFTextContainer.swift in Sources */,
+				63686ED81F0988D20064A0CA /* SFViewController.swift in Sources */,
+				63686EC11F0988D20064A0CA /* SFTabBarController.swift in Sources */,
+				63686EA01F0988D20064A0CA /* SFPrintPageRenderer.swift in Sources */,
+				63686E871F0988D20064A0CA /* SFNavigationBar.swift in Sources */,
+				63686E5A1F0988D20064A0CA /* SFDocumentMenuViewController.swift in Sources */,
+				63686E7D1F0988D20064A0CA /* SFLayoutConstraint.swift in Sources */,
+				63686ECC1F0988D20064A0CA /* SFTextDragPreviewRenderer.swift in Sources */,
+				63686EBF1F0988D20064A0CA /* SFSwitch.swift in Sources */,
+				63686E991F0988D20064A0CA /* SFPressesEvent.swift in Sources */,
+				63686EC01F0988D20064A0CA /* SFTabBar.swift in Sources */,
+				63686EAB1F0988D20064A0CA /* SFScreenMode.swift in Sources */,
+				63686ECE1F0988D20064A0CA /* SFTextField.swift in Sources */,
+				63686E4E1F0988D20064A0CA /* SFCollectionViewController.swift in Sources */,
+				63686EDA1F0988D20064A0CA /* SFVisualEffect.swift in Sources */,
+				63686ECA1F0988D20064A0CA /* SFTextChecker.swift in Sources */,
+				63686ED71F0988D20064A0CA /* SFView.swift in Sources */,
+				63686EAD1F0988D20064A0CA /* SFSearchBar.swift in Sources */,
+				63686EC81F0988D20064A0CA /* SFTargetedDragPreview.swift in Sources */,
+				63686E851F0988D20064A0CA /* SFMenuController.swift in Sources */,
+				63686E3F1F0988D20064A0CA /* SFActivityViewController.swift in Sources */,
+				63686ED41F0988D20064A0CA /* SFUserNotificationSettings.swift in Sources */,
+				63686ED51F0988D20064A0CA /* SFVibrancyEffect.swift in Sources */,
+				63686E9F1F0988D20064A0CA /* SFPrintInteractionController.swift in Sources */,
+				63686E511F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift in Sources */,
+				63686E591F0988D20064A0CA /* SFDocumentInteractionController.swift in Sources */,
+				63686ED21F0988D20064A0CA /* SFTouch.swift in Sources */,
+				63686ECD1F0988D20064A0CA /* SFTextDropProposal.swift in Sources */,
+				63686E651F0988D20064A0CA /* SFEvent.swift in Sources */,
+				63686E481F0988D20064A0CA /* SFBarItem.swift in Sources */,
+				63686E3C1F0988D20064A0CA /* SFActivity.swift in Sources */,
+				63686E5E1F0988D20064A0CA /* SFDragItem.swift in Sources */,
+				63686E731F0988D20064A0CA /* SFGraphicsRenderer.swift in Sources */,
+				63686E451F0988D20064A0CA /* SFAttributedString.swift in Sources */,
+				63686E8C1F0988D20064A0CA /* SFPageControl.swift in Sources */,
+				63686E9C1F0988D20064A0CA /* SFPrinterPickerController.swift in Sources */,
+				63686ED01F0988D20064A0CA /* SFTextView.swift in Sources */,
+				63686E4A1F0988D20064A0CA /* SFBlurEffect.swift in Sources */,
+				63686E441F0988D20064A0CA /* SFAttachmentBehavior.swift in Sources */,
+				63686EBA1F0988D20064A0CA /* SFStoryboard.swift in Sources */,
+				63686EA61F0988D20064A0CA /* SFRegion.swift in Sources */,
+				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
+				63686E3B1F0988D20064A0CA /* SFActionSheet.swift in Sources */,
+				63686EC41F0988D20064A0CA /* SFTableViewCell.swift in Sources */,
+				63686EB11F0988D20064A0CA /* SFSegmentedControl.swift in Sources */,
+				63686E941F0988D20064A0CA /* SFPopoverBackgroundView.swift in Sources */,
+				63686E4B1F0988D20064A0CA /* SFCloudSharingController.swift in Sources */,
+				63686EA41F0988D20064A0CA /* SFReferenceLibraryViewController.swift in Sources */,
+				63686E921F0988D20064A0CA /* SFPickerView.swift in Sources */,
+				63686E9E1F0988D20064A0CA /* SFPrintInfo.swift in Sources */,
+				63686E6E1F0988D20064A0CA /* SFFontDescriptor.swift in Sources */,
+				63686E491F0988D20064A0CA /* SFBezierPath.swift in Sources */,
+				63686EAC1F0988D20064A0CA /* SFScrollView.swift in Sources */,
+				63686EDB1F0988D20064A0CA /* SFVisualEffectView.swift in Sources */,
+				63686E8D1F0988D20064A0CA /* SFPageViewController.swift in Sources */,
+				63686E7E1F0988D20064A0CA /* SFLayoutGuide.swift in Sources */,
+				63686E521F0988D20064A0CA /* SFCollisionBehavior.swift in Sources */,
+				63686E6A1F0988D20064A0CA /* SFFocusDebugger.swift in Sources */,
+				63686E841F0988D20064A0CA /* SFManagedDocument.swift in Sources */,
+				63686E561F0988D20064A0CA /* SFDatePicker.swift in Sources */,
+				63686E6C1F0988D20064A0CA /* SFFocusSystem.swift in Sources */,
+				63686E661F0988D20064A0CA /* SFFeedbackGenerator.swift in Sources */,
+				63686E631F0988D20064A0CA /* SFDynamicBehavior.swift in Sources */,
+				63686E7A1F0988D20064A0CA /* SFInputView.swift in Sources */,
+				63686E461F0988D20064A0CA /* SFBarButtonItem.swift in Sources */,
+				63686E8A1F0988D20064A0CA /* SFNib.swift in Sources */,
+				63686E681F0988D20064A0CA /* SFFileProviderExtension.swift in Sources */,
+				63686E971F0988D20064A0CA /* SFPresentationController.swift in Sources */,
+				63686E6B1F0988D20064A0CA /* SFFocusGuide.swift in Sources */,
+				63686E621F0988D20064A0CA /* SFDynamicAnimator.swift in Sources */,
+				63686E881F0988D20064A0CA /* SFNavigationController.swift in Sources */,
+				63686E7C1F0988D20064A0CA /* SFLabel.swift in Sources */,
+				63686E7B1F0988D20064A0CA /* SFInputViewController.swift in Sources */,
+				63686ED61F0988D20064A0CA /* SFVideoEditorController.swift in Sources */,
+				63686EA81F0988D20064A0CA /* SFRotationGestureRecognizer.swift in Sources */,
+				63686E501F0988D20064A0CA /* SFCollectionViewLayout.swift in Sources */,
+				63686E721F0988D20064A0CA /* SFGraphicsPDFRenderer.swift in Sources */,
+				63686E741F0988D20064A0CA /* SFGravityBehavior.swift in Sources */,
+				63686E8B1F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift in Sources */,
+				63686E3E1F0988D20064A0CA /* SFActivityItemProvider.swift in Sources */,
+				63686EBD1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift in Sources */,
+				63686E6F1F0988D20064A0CA /* SFFontMetrics.swift in Sources */,
+				63686E6D1F0988D20064A0CA /* SFFont.swift in Sources */,
+				63686EA11F0988D20064A0CA /* SFPrintPaper.swift in Sources */,
+				63686EB21F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift in Sources */,
+				63686E401F0988D20064A0CA /* SFAlertController.swift in Sources */,
+				63686EBE1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift in Sources */,
+				63686E531F0988D20064A0CA /* SFContextualAction.swift in Sources */,
+				63686E641F0988D20064A0CA /* SFDynamicItemBehavior.swift in Sources */,
+				63686EC61F0988D20064A0CA /* SFTableViewHeaderFooterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6385A2281F06EB36002B9244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6385A22F1F06EB36002B9244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6385A2221F06EB36002B9244 /* SFKit */;
+			targetProxy = 6385A22E1F06EB36002B9244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6385A2351F06EB36002B9244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6385A2361F06EB36002B9244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6385A2381F06EB36002B9244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6385A2391F06EB36002B9244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SFKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6385A23B1F06EB36002B9244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
+				INFOPLIST_FILE = SFKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6385A23C1F06EB36002B9244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
+				INFOPLIST_FILE = SFKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6385A21D1F06EB36002B9244 /* Build configuration list for PBXProject "SFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385A2351F06EB36002B9244 /* Debug */,
+				6385A2361F06EB36002B9244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6385A2371F06EB36002B9244 /* Build configuration list for PBXNativeTarget "SFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385A2381F06EB36002B9244 /* Debug */,
+				6385A2391F06EB36002B9244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6385A23A1F06EB36002B9244 /* Build configuration list for PBXNativeTarget "SFKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6385A23B1F06EB36002B9244 /* Debug */,
+				6385A23C1F06EB36002B9244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6385A21A1F06EB36002B9244 /* Project object */;
+}
