@@ -352,6 +352,7 @@
 		63686E381F0988D20064A0CA /* SFVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVisualEffectView.swift; sourceTree = "<group>"; };
 		63686E391F0988D20064A0CA /* SFWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebView.swift; sourceTree = "<group>"; };
 		63686E3A1F0988D20064A0CA /* SFWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWindow.swift; sourceTree = "<group>"; };
+		636CF9C01F098C2E00C724C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		63848D341F098B0D005028C5 /* SFAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppearance.swift; sourceTree = "<group>"; };
 		6385A2231F06EB36002B9244 /* SFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6385A2261F06EB36002B9244 /* SFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
@@ -385,6 +386,7 @@
 		6385A2191F06EB36002B9244 = {
 			isa = PBXGroup;
 			children = (
+				636CF9C01F098C2E00C724C4 /* README.md */,
 				6385A2251F06EB36002B9244 /* SFKit */,
 				6385A2301F06EB36002B9244 /* SFKitTests */,
 				6385A2241F06EB36002B9244 /* Products */,
