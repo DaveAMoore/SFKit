@@ -10,7 +10,7 @@ import UIKit
 
 /// San Fransisco is built upon a given set of guiding design principles. Such concepts are bound to change from time-to-time, thereby constituting the `SFAppearance` object.
 /// The design of San Fransisco objects have been designed to all incorporate a unified look and feel. `SFAppearance` is the only supported method of customization on a global scale.
-final public class SFAppearance: NSObject {
+public struct SFAppearance {
     
     // MARK: - SFAppearance.Style Declaration
     
@@ -29,6 +29,9 @@ final public class SFAppearance: NSObject {
     /// Style of appearance in this object.
     public var appearanceStyle: Style
     
+    /// Boolean value dictating the enforcability of the appearance.
+    public var shouldEnforce: Bool = true
+    
     // MARK: - Initialization
     
     /// Creates a new `SFAppearance` object with a given style of appearance.
@@ -37,9 +40,6 @@ final public class SFAppearance: NSObject {
     public init(_ appearanceStyle: Style) {
         // Setup the appearance style.
         self.appearanceStyle = appearanceStyle
-        
-        // Call super.
-        super.init()
     }
     
 }

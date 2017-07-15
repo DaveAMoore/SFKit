@@ -362,6 +362,8 @@
 		6385A2331F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
+		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
+		63A13DC51F1A7D7000FE5760 /* SFAppearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAppearing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,9 +427,10 @@
 			isa = PBXGroup;
 			children = (
 				639E37971F09882900C08D8E /* Include */,
-				63848D341F098B0D005028C5 /* SFAppearance.swift */,
+				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
+				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -600,6 +603,15 @@
 				63686E3A1F0988D20064A0CA /* SFWindow.swift */,
 			);
 			path = Include;
+			sourceTree = "<group>";
+		};
+		63A13DC61F1A7D7400FE5760 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				63A13DC51F1A7D7000FE5760 /* SFAppearing.swift */,
+				63848D341F098B0D005028C5 /* SFAppearance.swift */,
+			);
+			path = Appearance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
