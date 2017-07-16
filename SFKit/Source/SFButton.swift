@@ -18,6 +18,11 @@ import UIKit
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
     
+    // MARK: - Inspectable Properties
+    
+    /// Boolean value determining whether or not the appearance will be forcefully applied.
+    @IBInspectable public var shouldEnforceAppearance: Bool = true
+    
     /// Boolean value indicating if the corner radius of the button is equal to the halving of the minimal dimension (width or height).
     @IBInspectable public var isElliptical: Bool {
         get {
@@ -31,14 +36,14 @@ import UIKit
         }
     }
     
+    // MARK: - Managed Properties
+    
     /// Frame must be overriden to ensure the elliptical boolean remains equivalent.
     public override var frame: CGRect {
         didSet {
             isElliptical = layer.cornerRadius == ellipticalCornerRadius(for: oldValue)
         }
     }
-    
-    // MARK: - State Management
     
     override public var isEnabled: Bool {
         didSet {
@@ -51,7 +56,7 @@ import UIKit
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
             } else {
-                backgroundColor = SFColor.gray.withAlphaComponent(0.5) // cachedBackgroundColor?.withAlphaComponent(0.5)
+                backgroundColor = SFColor.gray.withAlphaComponent(0.5)
             }
         }
     }
@@ -103,36 +108,29 @@ import UIKit
         super.init(frame: frame)
         
         // Set the default values.
-        updateAppearance()
+        updateDesign(for: appearance)
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         // Assign default values to whichever aspects usually need manipulation.
-        updateAppearance()
+        updateDesign(for: appearance)
     }
     
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
         // Make sure the default values are setup.
-        updateAppearance()
+        updateDesign(for: appearance)
     }
     
     // MARK: - Appearance
     
-    public static func setDefaults(for appearance: SFAppearance<SFButton>) {
-        appearance.setAttribute(SFColor.blue, forKeyPath: \SFButton.backgroundColor)
-        appearance.setAttribute(true, forKeyPath: \SFButton.isElliptical)
-        // appearance.setAttribute(SFColor.white, forKeyPath: \SFButton.title)
-        // appearance.setAttribute(UIFont.preferredFont(forTextStyle: .headline), forKeyPath: \SFButton.titleLabel!.font)
-        appearance.setAttribute(UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12), forKeyPath: \SFButton.contentEdgeInsets)
-    }
-    
-    // MARK: - Helper Methods
-    
-    func updateAppearance() {
+    public func updateDesign(for appearance: SFAppearance) {
+        // Prevent asserting the defaults if the default design shall not be enforced.
+        guard shouldEnforceAppearance else { return }
+        
         // Set a San Fransisco blue color as the background color.
         backgroundColor = SFColor.blue
         
@@ -148,6 +146,8 @@ import UIKit
         // Set the default content edge insets value.
         contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
     }
+    
+    // MARK: - Helper Methods
     
     /// Generates an elliptical corner radius value.
     ///

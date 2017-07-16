@@ -9,10 +9,10 @@
 import UIKit
 
 /// Add floating point brightness value to the color.
-infix operator +
+infix operator +: AdditionPrecedence
 
 /// Subtract a floating point brightness value from the color.
-infix operator -
+infix operator -: AdditionPrecedence
 
 /// Subclasses `UIColor` to provide a more fine-tuned selection of static color variables. `SFColor` also provides an array of more specific color brightness adjustments.
 /// Static colors are available as computed properties which are subject to change between different releases of *SFKit*. Any change made to the statically available color scheme is guranteed to be visually compatible, meaning the design will still work as intended.

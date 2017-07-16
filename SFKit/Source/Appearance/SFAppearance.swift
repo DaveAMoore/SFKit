@@ -29,9 +29,6 @@ public struct SFAppearance {
     /// Style of appearance in this object.
     public var appearanceStyle: Style
     
-    /// Boolean value dictating the enforcability of the appearance.
-    public var shouldEnforce: Bool = true
-    
     // MARK: - Initialization
     
     /// Creates a new `SFAppearance` object with a given style of appearance.

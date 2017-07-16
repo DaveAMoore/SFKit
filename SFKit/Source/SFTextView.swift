@@ -13,55 +13,53 @@ import UIKit
     // MARK: - Properties
     
     /// The appearance of the text view.
-    public private(set) var appearance: SFAppearance<SFTextView> = .global()
+    public var appearance: SFAppearance = .global
+    
+    // MARK: - Inspectable Properties
+    /// Boolean value determining whether or not the appearance will be forcefully applied.
+    @IBInspectable public var shouldEnforceAppearance: Bool = true
     
     /// Corner radius of the text view.
     @IBInspectable public var cornerRadius: CGFloat {
         get {
-            return appearance.attribute(forKeyPath: \SFTextView.cornerRadius) ?? 16.0
-            // return layer.cornerRadius
+            return layer.cornerRadius
         } set {
-            appearance.setAttribute(newValue, forKeyPath: \SFTextView.cornerRadius)
-            // layer.cornerRadius = newValue
+            layer.cornerRadius = newValue
         }
     }
     
+    /// Edge inset for the top of the embedded text container.
     @IBInspectable public var topTextContainerInset: CGFloat {
         get {
-            return appearance.attribute(forKeyPath: \SFTextView.topTextContainerInset) ?? 0.0
-            // return textContainerInset.top
+            return textContainerInset.top
         } set {
-            appearance.setAttribute(newValue, forKeyPath: \SFTextView.topTextContainerInset)
             textContainerInset.top = newValue
         }
     }
     
+    /// Edge inset for the bottom of the embedded text container.
     @IBInspectable public var bottomTextContainerInset: CGFloat {
         get {
-            return appearance.attribute(forKeyPath: \SFTextView.bottomTextContainerInset) ?? 0.0
-            // return textContainerInset.bottom
+            return textContainerInset.bottom
         } set {
-            appearance.setAttribute(newValue, forKeyPath: \SFTextView.bottomTextContainerInset)
             textContainerInset.bottom = newValue
         }
     }
     
+    /// Edge inset for the left of the embedded text container.
     @IBInspectable public var leftTextContainerInset: CGFloat {
         get {
-            return appearance.attribute(forKeyPath: \SFTextView.leftTextContainerInset) ?? 0.0
-            // return textContainerInset.left
+            return textContainerInset.left
         } set {
-            appearance.setAttribute(newValue, forKeyPath: \SFTextView.leftTextContainerInset)
             textContainerInset.left = newValue
         }
     }
     
+    /// Edge inset for the right of the embedded text container.
     @IBInspectable public var rightTextContainerInset: CGFloat {
         get {
-            return appearance.attribute(forKeyPath: \SFTextView.rightTextContainerInset) ?? 0.0
-            // return textContainerInset.right
+            return textContainerInset.right
         } set {
-            appearance.setAttribute(newValue, forKeyPath: \SFTextView.rightTextContainerInset)
             textContainerInset.right = newValue
         }
     }
@@ -71,33 +69,30 @@ import UIKit
     public override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         
-        updateAppearance()
+        // Make sure the default values are setup.
+        updateDesign(for: appearance)
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        updateAppearance()
+        // Make sure the default values are setup.
+        updateDesign(for: appearance)
     }
     
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
         // Make sure the default values are setup.
-        updateAppearance()
+        updateDesign(for: appearance)
     }
     
-    // MARK: - Methods
+    // MARK: - Appearance Updating
     
-    public static func setDefaults(for appearance: SFAppearance<SFTextView>) {
-        appearance.setAttribute(UIColor.black, forKeyPath: \SFTextView.backgroundColor)
-    }
-    
-    public func setAppearance(to newAppearance: SFAppearance<SFTextView>) {
-        self.appearance = newAppearance
-    }
-    
-    func updateAppearance() {
+    public func updateDesign(for appearance: SFAppearance) {
+        // Prevent asserting the defaults if the default design shall not be enforced.
+        guard shouldEnforceAppearance else { return }
+        
         // Set the default values.
         cornerRadius = 16.0
         

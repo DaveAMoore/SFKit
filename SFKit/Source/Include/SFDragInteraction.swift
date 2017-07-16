@@ -8,4 +8,5 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 public class SFDragInteraction: UIDragInteraction { /* Not implemented. */ }

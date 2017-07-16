@@ -8,4 +8,5 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 public class SFTextDropProposal: UITextDropProposal { /* Not implemented. */ }
