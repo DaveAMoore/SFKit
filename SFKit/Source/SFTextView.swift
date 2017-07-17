@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public final class SFTextView: UITextView, SFAppearing {
+@IBDesignable public final class SFTextView: UITextView, SFAppearanceProtocol {
     
     // MARK: - Properties
     

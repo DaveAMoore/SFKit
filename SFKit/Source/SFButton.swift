@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public final class SFButton: UIButton, SFAppearing {
+@IBDesignable public final class SFButton: UIButton, SFAppearanceProtocol {
     
     // MARK: - Properties
     
