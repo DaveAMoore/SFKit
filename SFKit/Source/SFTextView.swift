@@ -13,7 +13,10 @@ import UIKit
     // MARK: - Properties
     
     /// The appearance of the text view.
-    public var appearance: SFAppearance = .global
+    public let appearance: SFAppearance = .global
+    
+    /// Unique `SFAppearance` style observation token.
+    public var appearanceStyleObserver: NSObjectProtocol?
     
     // MARK: - Inspectable Properties
     /// Boolean value determining whether or not the appearance will be forcefully applied.
@@ -69,22 +72,22 @@ import UIKit
     public override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         
-        // Make sure the default values are setup.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        // Make sure the default values are setup.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
-        // Make sure the default values are setup.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
     // MARK: - Appearance Updating
@@ -97,7 +100,7 @@ import UIKit
         cornerRadius = 16.0
         
         // Set the default background and text colors.
-        backgroundColor = SFColor.white
-        textColor = SFColor.black
+        backgroundColor = SFColor.primary
+        textColor = SFColor.contrastive
     }
 }

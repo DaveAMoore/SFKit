@@ -13,7 +13,10 @@ import UIKit
     // MARK: - Properties
     
     /// Appearance of the designable object.
-    public var appearance: SFAppearance = .global
+    public let appearance: SFAppearance = .global
+    
+    /// Unique `SFAppearance` style observation token.
+    public var appearanceStyleObserver: NSObjectProtocol?
     
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
@@ -56,7 +59,7 @@ import UIKit
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
             } else {
-                backgroundColor = SFColor.gray.withAlphaComponent(0.5)
+                backgroundColor = SFColor.tertiary.withAlphaComponent(0.5)
             }
         }
     }
@@ -107,22 +110,28 @@ import UIKit
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // Set the default values.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        // Assign default values to whichever aspects usually need manipulation.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
-        // Make sure the default values are setup.
-        updateDesign(for: appearance)
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
+    }
+    
+    // MARK: - Deinitialization
+    
+    deinit {
+        unregisterForAppearanceUpdates()
     }
     
     // MARK: - Appearance
@@ -132,13 +141,13 @@ import UIKit
         guard shouldEnforceAppearance else { return }
         
         // Set a San Fransisco blue color as the background color.
-        backgroundColor = SFColor.blue
+        backgroundColor = SFColor.interactive
         
         // The button defaults to be elliptical in presentation.
         isElliptical = true
         
         // Set the title color to our San Fransisco white.
-        setTitleColor(SFColor.white, for: .normal)
+        setTitleColor(SFColor.primary, for: .normal)
         
         // Add the preferred font as headline.
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
