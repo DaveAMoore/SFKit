@@ -15,9 +15,6 @@ import UIKit
     /// Appearance of the designable object.
     public let appearance: SFAppearance = .global
     
-    /// Unique `SFAppearance` style observation token.
-    public var appearanceStyleObserver: NSObjectProtocol?
-    
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
     
@@ -105,38 +102,30 @@ import UIKit
         }
     }
     
-    // MARK: - Initialization
+    // MARK: - Setup
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
+    public override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        // Perform any additional setup here.
         
         // Register for any updates with regards to appearance.
         registerForAppearanceUpdates()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    public override func removeFromSuperview() {
+        super.removeFromSuperview()
+        // Perform any additional deconstruction here.
         
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    public override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    // MARK: - Deinitialization
-    
-    deinit {
+        // Unregister from updates regarding changes.
         unregisterForAppearanceUpdates()
     }
     
     // MARK: - Appearance
     
-    public func updateDesign(for appearance: SFAppearance) {
+    /// This method is called whenever the appearance an object is correlated to, changes.
+    ///
+    /// - Parameter notification: The notification that caused the method to be called.
+    public func appearanceStyleDidChange(_ notification: Notification) {
         // Prevent asserting the defaults if the default design shall not be enforced.
         guard shouldEnforceAppearance else { return }
         

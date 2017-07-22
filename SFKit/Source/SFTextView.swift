@@ -15,9 +15,6 @@ import UIKit
     /// The appearance of the text view.
     public let appearance: SFAppearance = .global
     
-    /// Unique `SFAppearance` style observation token.
-    public var appearanceStyleObserver: NSObjectProtocol?
-    
     // MARK: - Inspectable Properties
     /// Boolean value determining whether or not the appearance will be forcefully applied.
     @IBInspectable public var shouldEnforceAppearance: Bool = true
@@ -67,36 +64,34 @@ import UIKit
         }
     }
     
-    // MARK: - Initialization
+    // MARK: - Setup
     
-    public override init(frame: CGRect, textContainer: NSTextContainer?) {
-        super.init(frame: frame, textContainer: textContainer)
+    public override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        // Perform any additional setup here.
         
         // Register for any updates with regards to appearance.
         registerForAppearanceUpdates()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    public override func removeFromSuperview() {
+        super.removeFromSuperview()
+        // Perform any additional deconstruction here.
         
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    public override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
+        // Unregister from updates regarding changes.
+        unregisterForAppearanceUpdates()
     }
     
     // MARK: - Appearance Updating
     
-    public func updateDesign(for appearance: SFAppearance) {
+    /// This method is called whenever the appearance an object is correlated to, changes.
+    ///
+    /// - Parameter notification: The notification that caused the method to be called.
+    public func appearanceStyleDidChange(_ notification: Notification) {
         // Prevent asserting the defaults if the default design shall not be enforced.
         guard shouldEnforceAppearance else { return }
         
-        // Set the default values.
+        // Set the appropriate values for the new appearance.
         cornerRadius = 16.0
         
         // Set the default background and text colors.

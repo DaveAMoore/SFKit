@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol SFAppearanceProtocol: SFAppearing {
+public protocol SFAppearanceProtocol: SFAppearanceStyleObserver {
     
     // MARK: - Properties
     

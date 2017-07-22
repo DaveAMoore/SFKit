@@ -64,7 +64,7 @@ final public class SFAppearance: NSObject {
         guard oldValue != newValue else { return }
         
         // Create a notification for the appearance style changing.
-        let changeNotification = Notification(name: name)
+        let changeNotification = Notification(name: name, object: self, userInfo: nil)
         
         // Post the change notification.
         NotificationCenter.default.post(changeNotification)
