@@ -60,7 +60,7 @@ open class SFColor: UIColor {
     
     /// Primary color which is to be used for almost all general purposes. This is *white* for the `light` appearance style, and black (almost) for the `dark` appearance style.
     open class var primary: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 0.9235673547, green: 0.9301430583, blue: 0.9465145469, alpha: 1) : #colorLiteral(red: 0.03817283735, green: 0.03845255449, blue: 0.03919008374, alpha: 1)
+        return isLightAppearance() ? #colorLiteral(red: 0.9713531137, green: 0.9782685637, blue: 0.9954875112, alpha: 1) : #colorLiteral(red: 0.1691493392, green: 0.17036134, blue: 0.1733545065, alpha: 1)
     }
     
     /// Secondary to the primary color in hierarchy; designed to be used on top of a primary base or something of the sort.
