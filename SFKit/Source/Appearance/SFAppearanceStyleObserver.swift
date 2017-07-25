@@ -25,7 +25,7 @@ extension SFAppearanceStyleObserver {
     ///
     /// - Parameter notification: The notification which was provided by `appearanceStyleDidChange(_:)`.
     /// - Returns: `SFAppearance` for which the notification was fired in response to changing.
-    public func appearance(for notification: Notification) -> SFAppearance {
+    public func retrieveAppearance(for notification: Notification) -> SFAppearance {
         return notification.object as! SFAppearance
     }
 }

@@ -16,6 +16,7 @@
 		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
 		63AAB6061F1CEC8000E25962 /* SFAppearanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AAB6051F1CEC8000E25962 /* SFAppearanceProtocol.swift */; };
+		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
 /* End PBXBuildFile section */
@@ -272,6 +273,7 @@
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
+				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
 				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
@@ -358,7 +360,6 @@
 				63686DE11F0988D20064A0CA /* SFManagedDocument.swift */,
 				63686DE21F0988D20064A0CA /* SFMenuController.swift */,
 				63686DE31F0988D20064A0CA /* SFMotionEffect.swift */,
-				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
 				63686DE51F0988D20064A0CA /* SFNavigationController.swift */,
 				63686DE61F0988D20064A0CA /* SFNavigationItem.swift */,
 				63686DE71F0988D20064A0CA /* SFNib.swift */,
@@ -567,6 +568,7 @@
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				63848D351F098B0D005028C5 /* SFAppearance.swift in Sources */,
+				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
 				6314A1B11F1A9BB800E6D8DD /* SFAppearanceStyleObserver.swift in Sources */,

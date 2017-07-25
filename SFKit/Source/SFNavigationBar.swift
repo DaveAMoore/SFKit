@@ -1,5 +1,5 @@
 //
-//  SFTabBar.swift
+//  SFNavigationBar.swift
 //  SFKit
 //
 //  Created by David Moore on 7/01/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SFTabBar: UITabBar, SFAppearanceStyleObserver {
+public class SFNavigationBar: UINavigationBar, SFAppearanceStyleObserver {
     
     // MARK: - Setup
     
@@ -28,16 +28,16 @@ public class SFTabBar: UITabBar, SFAppearanceStyleObserver {
         unregisterForAppearanceUpdates()
     }
     
-    // MARK: - Update Methods
+    // MARK: - Appearance
     
     /// This method is called whenever the appearance an object is correlated to, changes.
     ///
     /// - Parameter notification: The notification that caused the method to be called.
     public func appearanceStyleDidChange(_ notification: Notification) {
-        // Get the notification's appearance value.
+        // Get the new appearance from the notification.
         let newAppearance = retrieveAppearance(for: notification)
         
-        // Update the bar style for the appearance style.
+        // Change the bar style for the new appearance style.
         barStyle = newAppearance.appearanceStyle == .light ? .default : .black
     }
 }
