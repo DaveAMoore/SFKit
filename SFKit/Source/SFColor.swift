@@ -19,7 +19,7 @@ infix operator -: AdditionPrecedence
 /// The color values exposed by `SFColor` are guaranteed to be reflective of the current global appearance style. The color cannot be expected to update autonomously in the event of an appearance style change, therefore colors must be updated by setting the statically defined colors again. The caller is fully responsible for color changes to take place.
 open class SFColor: UIColor {
     
-    // MARK: - Static Colors (Unavailable)
+    // MARK: - Adaptive Colors
     
     /// A true white with a grayscale value of 1.0 and alpha of 1.0.
     open class var trueWhite: SFColor {
@@ -27,64 +27,78 @@ open class SFColor: UIColor {
     }
     
     /// An off-white color.
-    @available(iOS, unavailable, renamed: "primary")
     open override class var white: SFColor {
-        return #colorLiteral(red: 0.9235673547, green: 0.9301430583, blue: 0.9465145469, alpha: 1)
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.1992851496, green: 0.1992851496, blue: 0.1992851496, alpha: 1)
+    }
+    
+    open class var extraLightGray: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.9035493731, green: 0.9035493731, blue: 0.9035493731, alpha: 1) : #colorLiteral(red: 0.3179988265, green: 0.3179988265, blue: 0.3179988265, alpha: 1)
     }
     
     /// A light gray.
-    @available(iOS, unavailable, renamed: "secondary")
     open override class var lightGray: SFColor {
-        return #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1)
+        return isLightAppearance() ? #colorLiteral(red: 0.7952535152, green: 0.7952535152, blue: 0.7952535152, alpha: 1) : #colorLiteral(red: 0.45389539, green: 0.45389539, blue: 0.45389539, alpha: 1)
     }
     
     /// A medium colored gray.
-    @available(iOS, unavailable, renamed: "tertiary")
     open override class var gray: SFColor {
-        return #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1)
+        return /* isLightAppearance() ?*/ #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1) /*: .gray*/
     }
     
     /// A darker than medium gray.
-    @available(iOS, unavailable, renamed: "quaternary")
     open override class var darkGray: SFColor {
-        return #colorLiteral(red: 0.6398570538, green: 0.6572751999, blue: 0.6806338429, alpha: 1)
+        return isLightAppearance() ? #colorLiteral(red: 0.45389539, green: 0.45389539, blue: 0.45389539, alpha: 1) : #colorLiteral(red: 0.7952535152, green: 0.7952535152, blue: 0.7952535152, alpha: 1)
     }
     
-    /// A rich blue.
-    @available(iOS, unavailable, renamed: "interactive")
-    open override class var blue: SFColor {
-        return #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
+    open class var extraDarkGray: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.3179988265, green: 0.3179988265, blue: 0.3179988265, alpha: 1) : #colorLiteral(red: 0.9035493731, green: 0.9035493731, blue: 0.9035493731, alpha: 1)
     }
     
-    // MARK: - Static Colors
+    /// Depp black color which is adaptive.
+    open override class var black: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.04624130577, green: 0.04624130577, blue: 0.04624130577, alpha: 1) : .trueWhite
+    }
+    
+    /// Indicates interaction is applicable to the colored object.
+    open class var interactive: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
+    }
+    
+    // MARK: - Unavailable Colors
     
     /// Primary color which is to be used for almost all general purposes. This is *white* for the `light` appearance style, and black (almost) for the `dark` appearance style.
+    @available(iOS, unavailable, renamed: "white")
     open class var primary: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.1691493392, green: 0.17036134, blue: 0.1733545065, alpha: 1)
     }
     
     /// Secondary to the primary color in hierarchy; designed to be used on top of a primary base or something of the sort.
+    @available(iOS, unavailable, renamed: "lightGray")
     open class var secondary: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1) : #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1)
     }
     
     /// Third in line from the primary color; use in compliment of the primary color scheme.
+    @available(iOS, unavailable, renamed: "gray")
     open class var tertiary: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1) : #colorLiteral(red: 0.7422102094, green: 0.764362216, blue: 0.7821244597, alpha: 1)
     }
     
     /// Fourth in line for the primary color scheme; use with any of the primary scheme colors.
+    @available(iOS, unavailable, renamed: "darkGray")
     open class var quaternary: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.6398570538, green: 0.6572751999, blue: 0.6806338429, alpha: 1) : #colorLiteral(red: 0.6398570538, green: 0.6572751999, blue: 0.6806338429, alpha: 1)
     }
     
     /// Color which contrasts quite vibrantly with the `primary` color. This is generally *black* for the `light` appearance style, or *white* for the `dark` appearance style.
+    @available(iOS, unavailable, renamed: "black")
     open class var contrastive: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.03817283735, green: 0.03845255449, blue: 0.03919008374, alpha: 1) : #colorLiteral(red: 0.9235673547, green: 0.9301430583, blue: 0.9465145469, alpha: 1)
     }
     
-    /// Indicates interaction is applicable to the colored object.
-    open class var interactive: SFColor {
+    /// A rich blue.
+    @available(iOS, unavailable, renamed: "interactive")
+    open override class var blue: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
     }
     

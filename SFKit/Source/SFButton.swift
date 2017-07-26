@@ -56,7 +56,7 @@ import UIKit
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
             } else {
-                backgroundColor = SFColor.tertiary.withAlphaComponent(0.5)
+                backgroundColor = SFColor.gray.withAlphaComponent(0.5)
             }
         }
     }
@@ -136,7 +136,7 @@ import UIKit
         isElliptical = true
         
         // Set the title color to our San Fransisco white.
-        setTitleColor(SFColor.primary, for: .normal)
+        setTitleColor(SFColor.white, for: .normal)
         
         // Add the preferred font as headline.
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)

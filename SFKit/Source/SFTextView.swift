@@ -95,7 +95,7 @@ import UIKit
         cornerRadius = 16.0
         
         // Set the default background and text colors.
-        backgroundColor = SFColor.primary
-        textColor = SFColor.contrastive
+        backgroundColor = SFColor.white
+        textColor = SFColor.black
     }
 }
