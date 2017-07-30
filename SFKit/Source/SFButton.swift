@@ -104,6 +104,14 @@ import UIKit
     
     // MARK: - Setup
     
+    public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        // Perform any additional setup here.
+        
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
+    }
+    
     public override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         // Perform any additional setup here.
