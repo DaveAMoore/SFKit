@@ -12,9 +12,6 @@ import UIKit
     
     // MARK: - Properties
     
-    /// Appearance of the designable object.
-    public let appearance: SFAppearance = .global
-    
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
     

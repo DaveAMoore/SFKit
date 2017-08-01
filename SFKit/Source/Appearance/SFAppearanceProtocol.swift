@@ -8,12 +8,11 @@
 
 import UIKit
 
-public protocol SFAppearanceProtocol: SFAppearanceStyleObserver {
+@objc public protocol SFAppearanceProtocol: SFAppearanceStyleObserver {
     
     // MARK: - Properties
     
-    /// Appearance of the designable object.
-    var appearance: SFAppearance { get }
+    @objc optional var appearance: SFAppearance { get set }
     
     /// Boolean value dictating the enforcability of the appearance.
     var shouldEnforceAppearance: Bool { get set }

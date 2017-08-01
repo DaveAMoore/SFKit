@@ -12,9 +12,6 @@ import UIKit
     
     // MARK: - Properties
     
-    /// The appearance of the text view.
-    public let appearance: SFAppearance = .global
-    
     // MARK: - Inspectable Properties
     /// Boolean value determining whether or not the appearance will be forcefully applied.
     @IBInspectable public var shouldEnforceAppearance: Bool = true

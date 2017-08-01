@@ -8,14 +8,46 @@
 
 import UIKit
 
-public class SFView: UIView {
+@IBDesignable
+public class SFView: UIView, SFAppearanceProtocol {
+    
+    // MARK: - Properties
+    
+    @IBInspectable public var shouldEnforceAppearance: Bool = false
     
     /// Corner radius of the view.
-    public var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         } set {
             layer.cornerRadius = newValue
         }
+    }
+    
+    // MARK: - Setup
+    
+    public override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        // Perform any additional setup here.
+        
+        // Register for appearance updates.
+        registerForAppearanceUpdates()
+    }
+    
+    public override func removeFromSuperview() {
+        super.removeFromSuperview()
+        // Perform any additional deconstruction here.
+        
+        // Unregister from updates regarding changes.
+        unregisterForAppearanceUpdates()
+    }
+    
+    // MARK: - Update Methods
+    
+    /// This method is called whenever the appearance an object is correlated to, changes.
+    ///
+    /// - Parameter notification: The notification that caused the method to be called.
+    public func appearanceStyleDidChange(_ notification: Notification) {        
+        backgroundColor = SFColor.white
     }
 }

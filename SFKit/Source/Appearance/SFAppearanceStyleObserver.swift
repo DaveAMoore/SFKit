@@ -72,6 +72,8 @@ extension SFAppearanceProtocol {
     ///
     /// - Returns: A unique observer token which conforms to the `NSObjectProtocol`. The observer token must be kept in memory and removed via `unregisterForAppearanceUpdates(with:)` before deallocation.
     public func registerForAppearanceUpdates() {
-        registerForAppearanceUpdates(with: appearance)
+        if shouldEnforceAppearance {
+            registerForAppearanceUpdates(with: appearance ?? .global)
+        }
     }
 }
