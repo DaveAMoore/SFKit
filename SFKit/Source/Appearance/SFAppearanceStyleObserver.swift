@@ -66,7 +66,7 @@ extension SFAppearanceStyleObserver {
     }
 }
 
-extension SFAppearanceProtocol {
+extension SFAppearanceProtocol where Self: NSObject {
     
     /// Registers the object for appearance style change notifications.
     ///

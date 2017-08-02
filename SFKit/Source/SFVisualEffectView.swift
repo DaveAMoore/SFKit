@@ -14,7 +14,7 @@ public class SFVisualEffectView: UIVisualEffectView, SFAppearanceProtocol {
     // MARK: - Properties
     
     @IBInspectable
-    public var shouldEnforceAppearance: Bool = false
+    public var shouldEnforceAppearance: Bool = true
     
     // MARK: - Setup
     
@@ -40,8 +40,6 @@ public class SFVisualEffectView: UIVisualEffectView, SFAppearanceProtocol {
     ///
     /// - Parameter notification: The notification that caused the method to be called.
     public func appearanceStyleDidChange(_ notification: Notification) {
-        guard shouldEnforceAppearance else { return }
-        
         // Get the notification's appearance value.
         let newAppearance = retrieveAppearance(for: notification)
         
