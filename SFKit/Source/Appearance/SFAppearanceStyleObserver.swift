@@ -9,6 +9,7 @@
 import UIKit
 
 /// A San Fransisco designed object will comply with this protocol in order to properly implement design principles.
+@available(iOS, deprecated: 10.0, message: "use 'SFAppearanceEnvironment' instead")
 @objc public protocol SFAppearanceStyleObserver: NSObjectProtocol {
     
     // MARK: - Update Methods
@@ -19,6 +20,7 @@ import UIKit
     @objc func appearanceStyleDidChange(_ notification: Notification)
 }
 
+@available(iOS, deprecated: 10.0, message: "use 'SFAppearanceEnvironment' instead")
 extension SFAppearanceStyleObserver {
     
     /// Pulls the `SFAppearance` value from a given `Notification`.
@@ -30,6 +32,7 @@ extension SFAppearanceStyleObserver {
     }
 }
 
+@available(iOS, deprecated: 10.0, message: "use 'SFAppearanceEnvironment' instead")
 extension SFAppearanceStyleObserver {
     
     /// Registers the object for appearance style change notifications.
@@ -66,6 +69,7 @@ extension SFAppearanceStyleObserver {
     }
 }
 
+@available(iOS, deprecated: 10.0, message: "use 'SFAppearanceEnvironment' instead")
 extension SFAppearanceProtocol where Self: NSObject {
     
     /// Registers the object for appearance style change notifications.

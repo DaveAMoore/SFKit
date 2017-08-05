@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS, deprecated: 10.0, message: "use 'SFAppearanceEnvironment' instead")
 @objc public protocol SFAppearanceProtocol: SFAppearanceStyleObserver {
     
     // MARK: - Properties
