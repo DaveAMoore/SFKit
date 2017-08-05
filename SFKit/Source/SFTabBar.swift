@@ -39,5 +39,6 @@ public class SFTabBar: UITabBar, SFAppearanceStyleObserver {
         
         // Update the bar style for the appearance style.
         barStyle = newAppearance.appearanceStyle == .light ? .default : .black
+        tintColor = SFColor.blue
     }
 }

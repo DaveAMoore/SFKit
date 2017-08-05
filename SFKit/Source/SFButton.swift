@@ -66,10 +66,10 @@ import UIKit
             cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: isHighlighted, isSelected: oldValue)
             
             if isSelected {
-                backgroundColor = .white
+                backgroundColor = cachedBackgroundColor! - 0.1
                 layer.borderColor = cachedBackgroundColor?.cgColor
                 layer.borderWidth = 2.0
-                setTitleColor(cachedBackgroundColor, for: .selected)
+                setTitleColor(cachedBackgroundColor, for: .highlighted)
             } else {
                 backgroundColor = cachedBackgroundColor
                 layer.borderColor = UIColor.clear.cgColor
@@ -87,10 +87,10 @@ import UIKit
             
             // Adjust as needed.
             if isHighlighted {
-                backgroundColor = cachedBackgroundColor! - 0.1
+                backgroundColor = .white
                 layer.borderColor = cachedBackgroundColor?.cgColor
                 layer.borderWidth = 2.0
-                setTitleColor(cachedBackgroundColor, for: .highlighted)
+                setTitleColor(cachedBackgroundColor, for: .selected)
             } else {
                 backgroundColor = cachedBackgroundColor
                 layer.borderColor = UIColor.clear.cgColor
@@ -135,7 +135,7 @@ import UIKit
         guard shouldEnforceAppearance else { return }
         
         // Set a San Fransisco blue color as the background color.
-        backgroundColor = SFColor.interactive
+        backgroundColor = SFColor.blue
         
         // The button defaults to be elliptical in presentation.
         isElliptical = true

@@ -39,5 +39,6 @@ public class SFNavigationBar: UINavigationBar, SFAppearanceStyleObserver {
         
         // Change the bar style for the new appearance style.
         barStyle = newAppearance.appearanceStyle == .light ? .default : .black
+        tintColor = SFColor.blue
     }
 }

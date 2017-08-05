@@ -42,7 +42,7 @@ open class SFColor: UIColor {
     
     /// A medium colored gray.
     open override class var gray: SFColor {
-        return /* isLightAppearance() ?*/ #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1) /*: .gray*/
+        return #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)
     }
     
     /// A darker than medium gray.
@@ -59,9 +59,9 @@ open class SFColor: UIColor {
         return isLightAppearance() ? #colorLiteral(red: 0.04624130577, green: 0.04624130577, blue: 0.04624130577, alpha: 1) : .trueWhite
     }
     
-    /// Indicates interaction is applicable to the colored object.
-    open class var interactive: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
+    /// Rich blue which can be used to indicate interactivity.
+    open override class var blue: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.3528000116, green: 0.7813866735, blue: 0.9800000787, alpha: 1)
     }
     
     // MARK: - Unavailable Colors
@@ -96,9 +96,9 @@ open class SFColor: UIColor {
         return isLightAppearance() ? #colorLiteral(red: 0.03817283735, green: 0.03845255449, blue: 0.03919008374, alpha: 1) : #colorLiteral(red: 0.9235673547, green: 0.9301430583, blue: 0.9465145469, alpha: 1)
     }
     
-    /// A rich blue.
-    @available(iOS, unavailable, renamed: "interactive")
-    open override class var blue: SFColor {
+    /// Indicates interaction is applicable to the colored object.
+    @available(iOS, unavailable, renamed: "blue")
+    open class var interactive: SFColor {
         return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
     }
     
