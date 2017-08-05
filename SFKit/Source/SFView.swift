@@ -8,15 +8,14 @@
 
 import UIKit
 
-@IBDesignable
-public class SFView: UIView, SFAppearanceProtocol {
+@IBDesignable open class SFView: UIView {
     
     // MARK: - Properties
     
-    @IBInspectable public var shouldEnforceAppearance: Bool = false
+    @IBInspectable open var shouldEnforceAppearance: Bool = false
     
     /// Corner radius of the view.
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable open var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         } set {
@@ -24,30 +23,27 @@ public class SFView: UIView, SFAppearanceProtocol {
         }
     }
     
-    // MARK: - Setup
+    // MARK: - Lifecycle
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
+    open override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         // Perform any additional setup here.
         
-        // Register for appearance updates.
+        // Register for any updates with regards to appearance.
         registerForAppearanceUpdates()
     }
     
-    public override func removeFromSuperview() {
-        super.removeFromSuperview()
-        // Perform any additional deconstruction here.
+    open override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        // Perform any additional setup here.
         
-        // Unregister from updates regarding changes.
-        unregisterForAppearanceUpdates()
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
-    // MARK: - Update Methods
-    
-    /// This method is called whenever the appearance an object is correlated to, changes.
-    ///
-    /// - Parameter notification: The notification that caused the method to be called.
-    public func appearanceStyleDidChange(_ notification: Notification) {        
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(newAppearanceStyle)
+        
         backgroundColor = SFColor.white
     }
 }

@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6314A1B11F1A9BB800E6D8DD /* SFAppearanceStyleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC51F1A7D7000FE5760 /* SFAppearanceStyleObserver.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
-		63848D351F098B0D005028C5 /* SFAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63848D341F098B0D005028C5 /* SFAppearance.swift */; };
+		6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */; };
+		6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2CD1F3619B7005C73F3 /* SFAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CE1F3619B7005C73F3 /* SFAppearance.m */; };
+		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6385A22D1F06EB36002B9244 /* SFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6385A2231F06EB36002B9244 /* SFKit.framework */; };
 		6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2311F06EB36002B9244 /* SFKitTests.swift */; };
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
-		63A95FBB1F35783C0050388A /* SFAppearanceEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A95FBA1F35783C0050388A /* SFAppearanceEnvironment.swift */; };
-		63AAB6061F1CEC8000E25962 /* SFAppearanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AAB6051F1CEC8000E25962 /* SFAppearanceProtocol.swift */; };
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
+		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
+		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
+		6331B2CE1F3619B7005C73F3 /* SFAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppearance.m; sourceTree = "<group>"; };
+		6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceStyle.h; sourceTree = "<group>"; };
 		63686D981F0988D20064A0CA /* SFActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActionSheet.swift; sourceTree = "<group>"; };
 		63686D991F0988D20064A0CA /* SFActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivity.swift; sourceTree = "<group>"; };
 		63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -198,7 +205,7 @@
 		63686E391F0988D20064A0CA /* SFWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebView.swift; sourceTree = "<group>"; };
 		63686E3A1F0988D20064A0CA /* SFWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWindow.swift; sourceTree = "<group>"; };
 		636CF9C01F098C2E00C724C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63848D341F098B0D005028C5 /* SFAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppearance.swift; sourceTree = "<group>"; };
+		63761BF61F36097000115594 /* SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceEnvironment.h; sourceTree = "<group>"; };
 		6385A2231F06EB36002B9244 /* SFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6385A2261F06EB36002B9244 /* SFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
 		6385A2271F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,9 +215,6 @@
 		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
-		63A13DC51F1A7D7000FE5760 /* SFAppearanceStyleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAppearanceStyleObserver.swift; sourceTree = "<group>"; };
-		63A95FBA1F35783C0050388A /* SFAppearanceEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAppearanceEnvironment.swift; sourceTree = "<group>"; };
-		63AAB6051F1CEC8000E25962 /* SFAppearanceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAppearanceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,10 +458,12 @@
 		63A13DC61F1A7D7400FE5760 /* Appearance */ = {
 			isa = PBXGroup;
 			children = (
-				63848D341F098B0D005028C5 /* SFAppearance.swift */,
-				63A13DC51F1A7D7000FE5760 /* SFAppearanceStyleObserver.swift */,
-				63AAB6051F1CEC8000E25962 /* SFAppearanceProtocol.swift */,
-				63A95FBA1F35783C0050388A /* SFAppearanceEnvironment.swift */,
+				6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */,
+				6331B2CD1F3619B7005C73F3 /* SFAppearance.h */,
+				6331B2CE1F3619B7005C73F3 /* SFAppearance.m */,
+				63761BF61F36097000115594 /* SFAppearanceEnvironment.h */,
+				6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */,
+				6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -469,6 +475,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */,
+				6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */,
+				6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */,
+				6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */,
 				6385A2341F06EB36002B9244 /* SFKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +534,7 @@
 				TargetAttributes = {
 					6385A2221F06EB36002B9244 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					6385A22B1F06EB36002B9244 = {
 						CreatedOnToolsVersion = 9.0;
@@ -572,15 +583,13 @@
 			files = (
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
-				63A95FBB1F35783C0050388A /* SFAppearanceEnvironment.swift in Sources */,
-				63848D351F098B0D005028C5 /* SFAppearance.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
-				6314A1B11F1A9BB800E6D8DD /* SFAppearanceStyleObserver.swift in Sources */,
-				63AAB6061F1CEC8000E25962 /* SFAppearanceProtocol.swift in Sources */,
+				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
+				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
 				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,6 +725,7 @@
 		6385A2381F06EB36002B9244 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
@@ -730,6 +740,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -738,6 +750,7 @@
 		6385A2391F06EB36002B9244 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
@@ -752,6 +765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

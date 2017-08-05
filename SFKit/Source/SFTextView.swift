@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public final class SFTextView: UITextView, SFAppearanceProtocol {
+@IBDesignable open class SFTextView: UITextView {
     
     // MARK: - Properties
     
@@ -61,9 +61,9 @@ import UIKit
         }
     }
     
-    // MARK: - Setup
+    // MARK: - Lifecycle
     
-    public override func prepareForInterfaceBuilder() {
+    open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         // Perform any additional setup here.
         
@@ -71,7 +71,7 @@ import UIKit
         registerForAppearanceUpdates()
     }
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         // Perform any additional setup here.
         
@@ -79,20 +79,9 @@ import UIKit
         registerForAppearanceUpdates()
     }
     
-    public override func removeFromSuperview() {
-        super.removeFromSuperview()
-        // Perform any additional deconstruction here.
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(newAppearanceStyle)
         
-        // Unregister from updates regarding changes.
-        unregisterForAppearanceUpdates()
-    }
-    
-    // MARK: - Appearance Updating
-    
-    /// This method is called whenever the appearance an object is correlated to, changes.
-    ///
-    /// - Parameter notification: The notification that caused the method to be called.
-    public func appearanceStyleDidChange(_ notification: Notification) {
         // Prevent asserting the defaults if the default design shall not be enforced.
         guard shouldEnforceAppearance else { return }
         

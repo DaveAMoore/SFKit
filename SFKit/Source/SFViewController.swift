@@ -8,34 +8,26 @@
 
 import UIKit
 
-open class SFViewController: UIViewController, SFAppearanceStyleObserver {
+open class SFViewController: UIViewController {
     
-    // MARK: - Setup
+    // MARK: - Lifecycle
     
-    open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    open override func viewDidLoad() {
+        super.viewDidLoad()
         
         // Register for appearance updates.
         registerForAppearanceUpdates()
     }
     
-    open override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        // Perform additional deconstruction here.
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(newAppearanceStyle)
         
-        // Unregister from updates regarding changes.
-        unregisterForAppearanceUpdates()
-    }
-    
-    // MARK: - Update Methods
-    
-    open func appearanceStyleDidChange(_ notification: Notification) {
         // Make sure to update the status bar.
         setNeedsStatusBarAppearanceUpdate()
     }
     
     override open var preferredStatusBarStyle: UIStatusBarStyle {
-        let isLightAppearance = SFAppearance.global.appearanceStyle == .light
+        let isLightAppearance = appearance.appearanceStyle == .light
         return isLightAppearance ? .default : .lightContent
     }
 }

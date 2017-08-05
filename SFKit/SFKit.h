@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char SFKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SFKit/PublicHeader.h>
 
-
+#import <SFKit/SFAppearance.h>
+#import <SFKit/SFAppearanceStyle.h>
+#import <SFKit/SFAppearanceEnvironment.h>
+#import <SFKit/UIResponder+SFAppearanceEnvironment.h>

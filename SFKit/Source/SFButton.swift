@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public final class SFButton: UIButton, SFAppearanceProtocol {
+@IBDesignable open class SFButton: UIButton {
     
     // MARK: - Properties
     
@@ -18,10 +18,10 @@ import UIKit
     // MARK: - Inspectable Properties
     
     /// Boolean value determining whether or not the appearance will be forcefully applied.
-    @IBInspectable public var shouldEnforceAppearance: Bool = true
+    @IBInspectable open var shouldEnforceAppearance: Bool = true
     
     /// Boolean value indicating if the corner radius of the button is equal to the halving of the minimal dimension (width or height).
-    @IBInspectable public var isElliptical: Bool {
+    @IBInspectable open var isElliptical: Bool {
         get {
             return layer.cornerRadius == ellipticalCornerRadius(for: frame)
         } set {
@@ -36,13 +36,13 @@ import UIKit
     // MARK: - Managed Properties
     
     /// Frame must be overriden to ensure the elliptical boolean remains equivalent.
-    public override var frame: CGRect {
+    open override var frame: CGRect {
         didSet {
             isElliptical = layer.cornerRadius == ellipticalCornerRadius(for: oldValue)
         }
     }
     
-    override public var isEnabled: Bool {
+    open override var isEnabled: Bool {
         didSet {
             guard isEnabled != oldValue else { return }
             
@@ -58,7 +58,7 @@ import UIKit
         }
     }
     
-    public override var isSelected: Bool {
+    open override var isSelected: Bool {
         didSet {
             guard isSelected != oldValue else { return }
             
@@ -78,7 +78,7 @@ import UIKit
         }
     }
     
-    public override var isHighlighted: Bool {
+    open override var isHighlighted: Bool {
         didSet {
             guard isHighlighted != oldValue else { return }
             
@@ -99,9 +99,9 @@ import UIKit
         }
     }
     
-    // MARK: - Setup
+    // MARK: - Lifecycle
     
-    public override func prepareForInterfaceBuilder() {
+    open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         // Perform any additional setup here.
         
@@ -109,7 +109,7 @@ import UIKit
         registerForAppearanceUpdates()
     }
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         // Perform any additional setup here.
         
@@ -117,20 +117,9 @@ import UIKit
         registerForAppearanceUpdates()
     }
     
-    public override func removeFromSuperview() {
-        super.removeFromSuperview()
-        // Perform any additional deconstruction here.
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(newAppearanceStyle)
         
-        // Unregister from updates regarding changes.
-        unregisterForAppearanceUpdates()
-    }
-    
-    // MARK: - Appearance
-    
-    /// This method is called whenever the appearance an object is correlated to, changes.
-    ///
-    /// - Parameter notification: The notification that caused the method to be called.
-    public func appearanceStyleDidChange(_ notification: Notification) {
         // Prevent asserting the defaults if the default design shall not be enforced.
         guard shouldEnforceAppearance else { return }
         

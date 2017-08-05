@@ -8,37 +8,31 @@
 
 import UIKit
 
-public class SFTabBar: UITabBar, SFAppearanceStyleObserver {
+public class SFTabBar: UITabBar {
     
-    // MARK: - Setup
+    // MARK: - Lifecycle
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
+    open override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         // Perform any additional setup here.
         
-        // Register for appearance updates.
+        // Register for any updates with regards to appearance.
         registerForAppearanceUpdates()
     }
     
-    public override func removeFromSuperview() {
-        super.removeFromSuperview()
-        // Perform any additional deconstruction here.
+    open override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        // Perform any additional setup here.
         
-        // Unregister from updates regarding changes.
-        unregisterForAppearanceUpdates()
+        // Register for any updates with regards to appearance.
+        registerForAppearanceUpdates()
     }
     
-    // MARK: - Update Methods
-    
-    /// This method is called whenever the appearance an object is correlated to, changes.
-    ///
-    /// - Parameter notification: The notification that caused the method to be called.
-    public func appearanceStyleDidChange(_ notification: Notification) {
-        // Get the notification's appearance value.
-        let newAppearance = retrieveAppearance(for: notification)
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(newAppearanceStyle)
         
         // Update the bar style for the appearance style.
-        barStyle = newAppearance.appearanceStyle == .light ? .default : .black
+        barStyle = newAppearanceStyle == .light ? .default : .black
         tintColor = SFColor.blue
     }
 }
