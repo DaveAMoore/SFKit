@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
+		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
+		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
+		63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */; };
+		63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */; };
 		6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */; };
 		6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2CD1F3619B7005C73F3 /* SFAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
 		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
@@ -236,6 +241,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63167CC71F3670C800054924 /* Environment Conforming */ = {
+			isa = PBXGroup;
+			children = (
+				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
+				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
+				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
+				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
+			);
+			path = "Environment Conforming";
+			sourceTree = "<group>";
+		};
 		6385A2191F06EB36002B9244 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +293,7 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63167CC71F3670C800054924 /* Environment Conforming */,
 				639E37971F09882900C08D8E /* Include */,
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
@@ -311,9 +328,6 @@
 				63686DA61F0988D20064A0CA /* SFBezierPath.swift */,
 				63686DA71F0988D20064A0CA /* SFBlurEffect.swift */,
 				63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */,
-				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
-				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
-				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
 				63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */,
 				63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */,
 				63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */,
@@ -582,9 +596,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
+				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
+				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
+				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
+				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
