@@ -7,6 +7,7 @@
 //
 
 #import "UIResponder+SFAppearanceEnvironment.h"
+#import <SFKit/SFAppearanceEnvironment.h>
 #import <SFKit/SFKit-Swift.h>
 #import <objc/runtime.h>
 

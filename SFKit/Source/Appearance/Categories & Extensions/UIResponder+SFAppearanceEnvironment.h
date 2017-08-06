@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <SFKit/SFAppearanceEnvironment.h>
 
+@protocol SFAppearanceEnvironment;
+
 @interface UIResponder (SFAppearanceEnvironment) <SFAppearanceEnvironment>
 
 /**
