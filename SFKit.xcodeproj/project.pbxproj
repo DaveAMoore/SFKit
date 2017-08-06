@@ -18,6 +18,10 @@
 		6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CE1F3619B7005C73F3 /* SFAppearance.m */; };
 		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636D65B61F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */; };
+		636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */; };
+		636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */; };
 		6385A22D1F06EB36002B9244 /* SFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6385A2231F06EB36002B9244 /* SFKit.framework */; };
 		6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2311F06EB36002B9244 /* SFKitTests.swift */; };
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -124,7 +128,6 @@
 		63686DE21F0988D20064A0CA /* SFMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMenuController.swift; sourceTree = "<group>"; };
 		63686DE31F0988D20064A0CA /* SFMotionEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMotionEffect.swift; sourceTree = "<group>"; };
 		63686DE41F0988D20064A0CA /* SFNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationBar.swift; sourceTree = "<group>"; };
-		63686DE51F0988D20064A0CA /* SFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationController.swift; sourceTree = "<group>"; };
 		63686DE61F0988D20064A0CA /* SFNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationItem.swift; sourceTree = "<group>"; };
 		63686DE71F0988D20064A0CA /* SFNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNib.swift; sourceTree = "<group>"; };
 		63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNotificationFeedbackGenerator.swift; sourceTree = "<group>"; };
@@ -210,6 +213,10 @@
 		63686E391F0988D20064A0CA /* SFWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebView.swift; sourceTree = "<group>"; };
 		63686E3A1F0988D20064A0CA /* SFWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWindow.swift; sourceTree = "<group>"; };
 		636CF9C01F098C2E00C724C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
+		636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
+		636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFAppearance+Refinements.swift"; sourceTree = "<group>"; };
+		636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNavigationController.swift; sourceTree = "<group>"; };
 		63761BF61F36097000115594 /* SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceEnvironment.h; sourceTree = "<group>"; };
 		6385A2231F06EB36002B9244 /* SFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6385A2261F06EB36002B9244 /* SFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
@@ -248,8 +255,21 @@
 				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
 				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
 				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
+				63686E351F0988D20064A0CA /* SFViewController.swift */,
 			);
 			path = "Environment Conforming";
+			sourceTree = "<group>";
+		};
+		636D65BA1F376D7400F3BF35 /* Categories & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */,
+				6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */,
+				6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */,
+				636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */,
+				636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */,
+			);
+			path = "Categories & Extensions";
 			sourceTree = "<group>";
 		};
 		6385A2191F06EB36002B9244 = {
@@ -299,9 +319,9 @@
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
+				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
 				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
-				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
 			);
@@ -384,7 +404,6 @@
 				63686DE11F0988D20064A0CA /* SFManagedDocument.swift */,
 				63686DE21F0988D20064A0CA /* SFMenuController.swift */,
 				63686DE31F0988D20064A0CA /* SFMotionEffect.swift */,
-				63686DE51F0988D20064A0CA /* SFNavigationController.swift */,
 				63686DE61F0988D20064A0CA /* SFNavigationItem.swift */,
 				63686DE71F0988D20064A0CA /* SFNib.swift */,
 				63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */,
@@ -476,8 +495,7 @@
 				6331B2CD1F3619B7005C73F3 /* SFAppearance.h */,
 				6331B2CE1F3619B7005C73F3 /* SFAppearance.m */,
 				63761BF61F36097000115594 /* SFAppearanceEnvironment.h */,
-				6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */,
-				6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */,
+				636D65BA1F376D7400F3BF35 /* Categories & Extensions */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -493,6 +511,7 @@
 				6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */,
 				6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */,
 				6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */,
+				636D65B61F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h in Headers */,
 				6385A2341F06EB36002B9244 /* SFKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,14 +618,17 @@
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
+				636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
+				636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
+				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
 				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
 			);

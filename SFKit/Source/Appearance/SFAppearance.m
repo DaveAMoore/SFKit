@@ -15,7 +15,7 @@
 @end
 
 @implementation SFAppearance
-@synthesize appearanceStyle=_appearanceStyle, appearanceEnvironments;
+@synthesize appearanceStyle=_appearanceStyle, isLightAppearanceStyle, preferredStatusBarStyle, appearanceEnvironments;
 
 #pragma mark - Singletons
 
@@ -42,6 +42,18 @@
     // Tell every appearance environment about the change.
     for (id <SFAppearanceEnvironment> environment in [appearanceEnvironments allObjects]) {
         [environment appearanceStyleDidChange:[self appearanceStyle]];
+    }
+}
+
+- (BOOL)isLightAppearanceStyle {
+    return [self appearanceStyle] == SFAppearanceStyleLight;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if ([self isLightAppearanceStyle]) {
+        return UIStatusBarStyleDefault;
+    } else {
+        return UIStatusBarStyleLightContent;
     }
 }
 

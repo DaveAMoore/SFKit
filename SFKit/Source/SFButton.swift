@@ -53,7 +53,7 @@ import UIKit
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
             } else {
-                backgroundColor = SFColor.gray.withAlphaComponent(0.5)
+                backgroundColor = SFColor.lightGray
             }
         }
     }
@@ -72,8 +72,8 @@ import UIKit
                 setTitleColor(cachedBackgroundColor, for: .highlighted)
             } else {
                 backgroundColor = cachedBackgroundColor
-                layer.borderColor = UIColor.clear.cgColor
-                setTitleColor(.white, for: .normal)
+                layer.borderColor = SFColor.clear.cgColor
+                setTitleColor(SFColor.white, for: .normal)
             }
         }
     }
@@ -87,14 +87,14 @@ import UIKit
             
             // Adjust as needed.
             if isHighlighted {
-                backgroundColor = .white
+                backgroundColor = SFColor.clear
                 layer.borderColor = cachedBackgroundColor?.cgColor
-                layer.borderWidth = 2.0
-                setTitleColor(cachedBackgroundColor, for: .selected)
+                layer.borderWidth = 3.0
+                setTitleColor(cachedBackgroundColor, for: .normal)
             } else {
                 backgroundColor = cachedBackgroundColor
-                layer.borderColor = UIColor.clear.cgColor
-                setTitleColor(.white, for: .normal)
+                layer.borderColor = SFColor.clear.cgColor
+                setTitleColor(SFColor.white, for: .normal)
             }
         }
     }

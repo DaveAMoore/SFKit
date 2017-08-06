@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char SFKitVersionString[];
 #import <SFKit/SFAppearanceStyle.h>
 #import <SFKit/SFAppearanceEnvironment.h>
 #import <SFKit/UIResponder+SFAppearanceEnvironment.h>
+#import <SFKit/UIViewController+SFAppearanceEnvironment.h>

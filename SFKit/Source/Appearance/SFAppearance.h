@@ -26,9 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Static Properties
 
 /**
- Global San Fransisco appearance for this process.
+ Global San Fransisco appearance.
  */
-+ (SFAppearance *)globalAppearance NS_SWIFT_NAME(global());
++ (SFAppearance *)globalAppearance NS_REFINED_FOR_SWIFT;
 
 #pragma mark - Properties
 
@@ -36,6 +36,16 @@ NS_ASSUME_NONNULL_BEGIN
  Style of appearance in this object.
  */
 @property (nonatomic) SFAppearanceStyle appearanceStyle;
+
+/**
+ Boolean value detailing if the appearance style is light.
+ */
+@property (readonly,getter=isLightAppearanceStyle) BOOL isLightAppearanceStyle;
+
+/**
+  Determines the most probable status bar style for the current appearance style.
+ */
+@property (readonly,getter=preferredStatusBarStyle) UIStatusBarStyle preferredStatusBarStyle;
 
 #pragma mark - Initialization
 
@@ -46,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle;
 
-#pragma mark Appearance Environment Management
+#pragma mark - Appearance Environment Management
 
 /**
  Appends the appearance environment to the weakly referencing hash table.
