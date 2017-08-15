@@ -10,18 +10,47 @@ import UIKit
 
 @IBDesignable open class SFButton: UIButton {
     
+    // MARK: - Style Enum -
+    
+    @objc public enum Kind: Int {
+        case square
+        case rounded
+    }
+    
     // MARK: - Properties
     
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
     
+    /// The corner radius of the button.
+    private var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        } set {
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    /// The kind of button that will be displayed.
+    open var buttonKind: Kind = .square {
+        didSet {
+            appearanceStyleDidChange(appearance.appearanceStyle)
+        }
+    }
+    
     // MARK: - Inspectable Properties
     
-    /// Boolean value determining whether or not the appearance will be forcefully applied.
-    @IBInspectable open var shouldEnforceAppearance: Bool = true
+    @IBInspectable open var buttonKindRawValue: Int {
+        get {
+            return buttonKind.rawValue
+        } set {
+            buttonKind = Kind(rawValue: newValue) ?? .square
+        }
+    }
     
     /// Boolean value indicating if the corner radius of the button is equal to the halving of the minimal dimension (width or height).
-    @IBInspectable open var isElliptical: Bool {
+    @available(iOS, deprecated: 10.0, message: "use 'buttonKind' instead")
+    open var isElliptical: Bool {
         get {
             return layer.cornerRadius == ellipticalCornerRadius(for: frame)
         } set {
@@ -38,7 +67,8 @@ import UIKit
     /// Frame must be overriden to ensure the elliptical boolean remains equivalent.
     open override var frame: CGRect {
         didSet {
-            isElliptical = layer.cornerRadius == ellipticalCornerRadius(for: oldValue)
+            appearanceStyleDidChange(appearance.appearanceStyle)
+            // isElliptical = layer.cornerRadius == ellipticalCornerRadius(for: oldValue)
         }
     }
     
@@ -66,10 +96,12 @@ import UIKit
             cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: isHighlighted, isSelected: oldValue)
             
             if isSelected {
+                backgroundColor = cachedBackgroundColor?.withAlphaComponent(0.5)
+                /*
                 backgroundColor = cachedBackgroundColor! - 0.1
                 layer.borderColor = cachedBackgroundColor?.cgColor
                 layer.borderWidth = 2.0
-                setTitleColor(cachedBackgroundColor, for: .highlighted)
+                setTitleColor(cachedBackgroundColor, for: .highlighted)*/
             } else {
                 backgroundColor = cachedBackgroundColor
                 layer.borderColor = SFColor.clear.cgColor
@@ -99,6 +131,8 @@ import UIKit
         }
     }
     
+    // MARK: - Initialization
+    
     // MARK: - Lifecycle
     
     open override func prepareForInterfaceBuilder() {
@@ -120,23 +154,56 @@ import UIKit
     open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
         super.appearanceStyleDidChange(newAppearanceStyle)
         
-        // Prevent asserting the defaults if the default design shall not be enforced.
-        guard shouldEnforceAppearance else { return }
-        
         // Set a San Fransisco blue color as the background color.
         backgroundColor = SFColor.blue
         
         // The button defaults to be elliptical in presentation.
-        isElliptical = true
+        // isElliptical = true
         
         // Set the title color to our San Fransisco white.
         setTitleColor(SFColor.white, for: .normal)
         
-        // Add the preferred font as headline.
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+        // Enable automatic dynamic type adjustment.
+        titleLabel?.adjustsFontForContentSizeCategory = true
         
-        // Set the default content edge insets value.
-        contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
+        // Declare the font.
+        let font: UIFont
+        
+        // Switch on the kind of button we are making.
+        switch buttonKind {
+        case .rounded:
+            // Use UIFontMetrics for a more custom look, but that only works on iOS 11 and later.
+            if #available(iOS 11.0, *) {
+                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 16, weight: .semibold))
+            } else {
+                font = UIFont.preferredFont(forTextStyle: .headline)
+            }
+            
+            // Rounded corner radius.
+            cornerRadius = ellipticalCornerRadius(for: frame)
+            
+            // Smaller content edge insets.
+            contentEdgeInsets = UIEdgeInsets(top: 7.2, left: 13.4, bottom: 7.2, right: 13.4)
+        case .square:
+            // Use UIFontMetrics for a more custom look, but that only works on iOS 11 and later.
+            if #available(iOS 11.0, *) {
+                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .medium))
+            } else {
+                font = UIFont.preferredFont(forTextStyle: .headline)
+            }
+            
+            // Square corner radius.
+            cornerRadius = 8
+            
+            // Large edge insets for the square style.
+            //contentEdgeInsets = UIEdgeInsets(top: 17, left: 0, bottom: 17, right: 0)
+            
+            // heightAnchor.constraint(equalToConstant: 50).isActive = true
+            // widthAnchor.constraint(equalToConstant: 288).isActive = true
+        }
+        
+        // Set the font.
+        titleLabel?.font = font
     }
     
     // MARK: - Helper Methods
