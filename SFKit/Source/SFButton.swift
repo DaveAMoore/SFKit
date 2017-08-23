@@ -187,7 +187,7 @@ import UIKit
         case .square:
             // Use UIFontMetrics for a more custom look, but that only works on iOS 11 and later.
             if #available(iOS 11.0, *) {
-                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .bold))
+                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .medium))
             } else {
                 font = UIFont.preferredFont(forTextStyle: .headline)
             }
