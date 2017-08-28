@@ -117,31 +117,29 @@ import UIKit
             // Cache the background color, just in case.
             cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: oldValue, isSelected: isSelected)
             
-            let borderColorAnimation = CABasicAnimation(keyPath: "borderColor")
-            borderColorAnimation.duration = 0.3
-            borderColorAnimation.fromValue = layer.borderColor
-            
-            let titleColor: SFColor?
+            // Declare the background and title colors.
+            let backgroundColor: UIColor?
+            let titleColor: UIColor?
             
             // Adjust as needed.
             if isHighlighted {
                 backgroundColor = SFColor.clear
-                borderColorAnimation.toValue = cachedBackgroundColor?.cgColor
-                //layer.borderColor = cachedBackgroundColor?.cgColor
-                layer.borderWidth = 3.0
                 titleColor = cachedBackgroundColor
-                //setTitleColor(cachedBackgroundColor, for: .normal)
+                layer.borderColor = cachedBackgroundColor?.cgColor
+                layer.borderWidth = 3.0
             } else {
                 backgroundColor = cachedBackgroundColor
-                borderColorAnimation.toValue = SFColor.clear.cgColor
-                //layer.borderColor = SFColor.clear.cgColor
                 titleColor = SFColor.white
+                layer.borderColor = SFColor.clear.cgColor
+                layer.borderWidth = 0.0
             }
             
-            layer.add(borderColorAnimation, forKey: "borderColorAnimation")
+            // Cancel any previous transitions.
+            layer.removeAllAnimations()
             
-            // Set the title color animated.
-            UIView.animate(withDuration: 0.3, delay: 0.0, options: .transitionCrossDissolve, animations: {
+            // Start the transition.
+            UIView.transition(with: self, duration: 0.2, options: [.transitionCrossDissolve, .allowUserInteraction], animations: {
+                self.backgroundColor = backgroundColor
                 self.setTitleColor(titleColor, for: .normal)
             }, completion: nil)
         }
