@@ -220,7 +220,7 @@ extension SFColor {
             }
             
             // Set the resting border width.
-            restingBorderWidth = 1.5
+            restingBorderWidth = 1.0
             
             // Square corner radius.
             cornerRadius = 12
