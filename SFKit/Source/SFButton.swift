@@ -8,6 +8,13 @@
 
 import UIKit
 
+extension SFColor {
+    /// Rich outlining blue which can be used to clarify an interactive object. This should be used to outline objects with the `SFColor.blue` color.
+    fileprivate static var darkBlue: SFColor {
+        return .blue - 0.075
+    }
+}
+
 @IBDesignable open class SFButton: UIButton {
     
     // MARK: - Style Enum -
@@ -18,6 +25,9 @@ import UIKit
     }
     
     // MARK: - Properties
+    
+    /// Border width for the `SFButton` as it is resting.
+    private var restingBorderWidth: CGFloat = 0.0
     
     /// Cached background color that is used for selection and enabling.
     private var cachedBackgroundColor: SFColor?
@@ -68,7 +78,6 @@ import UIKit
     open override var frame: CGRect {
         didSet {
             appearanceStyleDidChange(appearance.appearanceStyle)
-            // isElliptical = layer.cornerRadius == ellipticalCornerRadius(for: oldValue)
         }
     }
     
@@ -82,8 +91,10 @@ import UIKit
             // Adjust the background color as needed.
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
+                layer.borderWidth = restingBorderWidth
             } else {
                 backgroundColor = SFColor.lightGray
+                layer.borderWidth = 0.0
             }
         }
     }
@@ -96,6 +107,7 @@ import UIKit
             cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: isHighlighted, isSelected: oldValue)
             
             if isSelected {
+                layer.borderWidth = 0.0
                 backgroundColor = cachedBackgroundColor?.withAlphaComponent(0.5)
                 /*
                 backgroundColor = cachedBackgroundColor! - 0.1
@@ -104,7 +116,8 @@ import UIKit
                 setTitleColor(cachedBackgroundColor, for: .highlighted)*/
             } else {
                 backgroundColor = cachedBackgroundColor
-                layer.borderColor = SFColor.clear.cgColor
+                layer.borderColor = SFColor.darkBlue.cgColor
+                layer.borderWidth = restingBorderWidth
                 setTitleColor(SFColor.white, for: .normal)
             }
         }
@@ -130,8 +143,8 @@ import UIKit
             } else {
                 backgroundColor = cachedBackgroundColor
                 titleColor = SFColor.white
-                layer.borderColor = SFColor.clear.cgColor
-                layer.borderWidth = 0.0
+                layer.borderColor = SFColor.darkBlue.cgColor
+                layer.borderWidth = restingBorderWidth
             }
             
             // Cancel any previous transitions.
@@ -171,9 +184,6 @@ import UIKit
         // Set a San Fransisco blue color as the background color.
         backgroundColor = SFColor.blue
         
-        // The button defaults to be elliptical in presentation.
-        // isElliptical = true
-        
         // Set the title color to our San Fransisco white.
         setTitleColor(SFColor.white, for: .normal)
         
@@ -193,6 +203,9 @@ import UIKit
                 font = UIFont.preferredFont(forTextStyle: .headline)
             }
             
+            // There is no border for the rounded button style.
+            restingBorderWidth = 0.0
+            
             // Rounded corner radius.
             cornerRadius = ellipticalCornerRadius(for: frame)
             
@@ -206,18 +219,22 @@ import UIKit
                 font = UIFont.preferredFont(forTextStyle: .headline)
             }
             
+            // Set the resting border width.
+            restingBorderWidth = 1.5
+            
             // Square corner radius.
-            cornerRadius = 8
+            cornerRadius = 12
             
             // Large edge insets for the square style.
-            //contentEdgeInsets = UIEdgeInsets(top: 17, left: 0, bottom: 17, right: 0)
-            
-            // heightAnchor.constraint(equalToConstant: 50).isActive = true
-            // widthAnchor.constraint(equalToConstant: 288).isActive = true
+            contentEdgeInsets = UIEdgeInsets(top: 14, left: 24, bottom: 14, right: 24)
         }
         
         // Set the font.
         titleLabel?.font = font
+        
+        // Set the border color and width.
+        layer.borderColor = SFColor.darkBlue.cgColor
+        layer.borderWidth = restingBorderWidth
     }
     
     // MARK: - Helper Methods

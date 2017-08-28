@@ -86,7 +86,7 @@ import UIKit
         guard shouldEnforceAppearance else { return }
         
         // Set the appropriate values for the new appearance.
-        cornerRadius = 16.0
+        // cornerRadius = 16.0
         
         // Set the default background and text colors.
         backgroundColor = SFColor.white
