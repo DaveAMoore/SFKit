@@ -117,17 +117,33 @@ import UIKit
             // Cache the background color, just in case.
             cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: oldValue, isSelected: isSelected)
             
+            let borderColorAnimation = CABasicAnimation(keyPath: "borderColor")
+            borderColorAnimation.duration = 0.3
+            borderColorAnimation.fromValue = layer.borderColor
+            
+            let titleColor: SFColor?
+            
             // Adjust as needed.
             if isHighlighted {
                 backgroundColor = SFColor.clear
-                layer.borderColor = cachedBackgroundColor?.cgColor
+                borderColorAnimation.toValue = cachedBackgroundColor?.cgColor
+                //layer.borderColor = cachedBackgroundColor?.cgColor
                 layer.borderWidth = 3.0
-                setTitleColor(cachedBackgroundColor, for: .normal)
+                titleColor = cachedBackgroundColor
+                //setTitleColor(cachedBackgroundColor, for: .normal)
             } else {
                 backgroundColor = cachedBackgroundColor
-                layer.borderColor = SFColor.clear.cgColor
-                setTitleColor(SFColor.white, for: .normal)
+                borderColorAnimation.toValue = SFColor.clear.cgColor
+                //layer.borderColor = SFColor.clear.cgColor
+                titleColor = SFColor.white
             }
+            
+            layer.add(borderColorAnimation, forKey: "borderColorAnimation")
+            
+            // Set the title color animated.
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: .transitionCrossDissolve, animations: {
+                self.setTitleColor(titleColor, for: .normal)
+            }, completion: nil)
         }
     }
     
