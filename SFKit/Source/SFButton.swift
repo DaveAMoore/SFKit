@@ -30,6 +30,7 @@ extension SFColor {
     private var restingBorderWidth: CGFloat = 0.0
     
     /// Cached background color that is used for selection and enabling.
+    @available(iOS, deprecated: 10.0, message: "use 'SFColor' static properties instead")
     private var cachedBackgroundColor: SFColor?
     
     /// The corner radius of the button.
@@ -92,68 +93,72 @@ extension SFColor {
             if isEnabled {
                 backgroundColor = cachedBackgroundColor
                 layer.borderWidth = restingBorderWidth
+                tintColor = SFColor.white
             } else {
                 backgroundColor = SFColor.lightGray
                 layer.borderWidth = 0.0
+                tintColor = SFColor.gray
             }
         }
     }
     
     open override var isSelected: Bool {
         didSet {
-            guard isSelected != oldValue else { return }
-            
-            // Cache the background color, just in case.
-            cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: isHighlighted, isSelected: oldValue)
-            
             if isSelected {
                 layer.borderWidth = 0.0
-                backgroundColor = cachedBackgroundColor?.withAlphaComponent(0.5)
-                /*
-                backgroundColor = cachedBackgroundColor! - 0.1
-                layer.borderColor = cachedBackgroundColor?.cgColor
-                layer.borderWidth = 2.0
-                setTitleColor(cachedBackgroundColor, for: .highlighted)*/
+                backgroundColor = SFColor.blue.withAlphaComponent(0.5)
+                tintColor = SFColor.white
             } else {
-                backgroundColor = cachedBackgroundColor
+                backgroundColor = SFColor.blue
                 layer.borderColor = SFColor.darkBlue.cgColor
                 layer.borderWidth = restingBorderWidth
                 setTitleColor(SFColor.white, for: .normal)
+                tintColor = SFColor.white
             }
         }
     }
     
     open override var isHighlighted: Bool {
         didSet {
-            guard isHighlighted != oldValue else { return }
-            
-            // Cache the background color, just in case.
-            cacheBackgroundColor(isEnabled: isEnabled, isHighlighted: oldValue, isSelected: isSelected)
-            
             // Declare the background and title colors.
             let backgroundColor: UIColor?
             let titleColor: UIColor?
+            let tintColor: UIColor
             
             // Adjust as needed.
             if isHighlighted {
                 backgroundColor = SFColor.clear
-                titleColor = cachedBackgroundColor
-                layer.borderColor = cachedBackgroundColor?.cgColor
+                titleColor = SFColor.blue
+                layer.borderColor = SFColor.blue.cgColor
                 layer.borderWidth = 3.0
+                tintColor = SFColor.blue
             } else {
-                backgroundColor = cachedBackgroundColor
+                backgroundColor = SFColor.blue
                 titleColor = SFColor.white
                 layer.borderColor = SFColor.darkBlue.cgColor
                 layer.borderWidth = restingBorderWidth
+                tintColor = SFColor.white
             }
             
             // Cancel any previous transitions.
             layer.removeAllAnimations()
             
             // Start the transition.
+            /*UIView.animate(withDuration: 0.2, delay: 0.75,
+                           options: [.transitionCrossDissolve, .allowUserInteraction],
+                           animations: {
+                            self.backgroundColor = backgroundColor
+                            self.setTitleColor(titleColor, for: .normal)
+                            self.tintColor = tintColor
+            }, completion: nil)*/
+            
+            // Timer.scheduledTimer(withTimeInterval: 0.15, repeats: <#T##Bool#>, block: <#T##(Timer) -> Void#>)
+            
+            // Start the transition.
             UIView.transition(with: self, duration: 0.2, options: [.transitionCrossDissolve, .allowUserInteraction], animations: {
                 self.backgroundColor = backgroundColor
                 self.setTitleColor(titleColor, for: .normal)
+                self.tintColor = tintColor
             }, completion: nil)
         }
     }
@@ -232,9 +237,17 @@ extension SFColor {
         // Set the font.
         titleLabel?.font = font
         
+        // Set a white tint color.
+        tintColor = SFColor.white
+        
         // Set the border color and width.
         layer.borderColor = SFColor.darkBlue.cgColor
         layer.borderWidth = restingBorderWidth
+        
+        // Re-set all of the supported states.
+        isSelected = Bool(isSelected)
+        isHighlighted = Bool(isHighlighted)
+        isEnabled = Bool(isEnabled)
     }
     
     // MARK: - Helper Methods
@@ -249,6 +262,7 @@ extension SFColor {
     /// Caches the background color if required.
     ///
     /// - Parameter oldValue: The last value of the property which is calling this caching method.
+    @available(iOS, deprecated: 10.0, message: "use 'SFColor' static properties instead")
     private func cacheBackgroundColor(isEnabled: Bool, isHighlighted: Bool, isSelected: Bool) {
         // Cache the background color only if the old value was true.
         if isEnabled, !isHighlighted, !isSelected {
