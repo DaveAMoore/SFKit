@@ -120,46 +120,45 @@ extension SFColor {
     
     open override var isHighlighted: Bool {
         didSet {
-            // Declare the background and title colors.
-            let backgroundColor: UIColor?
-            let titleColor: UIColor?
-            let tintColor: UIColor
+            let wasEnabled = isEnabled
+            let wasSelected = isSelected
             
-            // Adjust as needed.
-            if isHighlighted {
-                backgroundColor = SFColor.clear
-                titleColor = SFColor.blue
-                layer.borderColor = SFColor.blue.cgColor
-                layer.borderWidth = 3.0
-                tintColor = SFColor.blue
-            } else {
-                backgroundColor = SFColor.blue
-                titleColor = SFColor.white
-                layer.borderColor = SFColor.darkBlue.cgColor
-                layer.borderWidth = restingBorderWidth
-                tintColor = SFColor.white
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
+                // Only continue if the values didn't change since we waited.
+                guard wasEnabled == self.isEnabled, wasSelected == self.isSelected else { return }
+                
+                // Declare the background and title colors.
+                let backgroundColor: UIColor?
+                let titleColor: UIColor?
+                let tintColor: UIColor
+                
+                // Adjust as needed.
+                if self.isHighlighted {
+                    backgroundColor = SFColor.clear
+                    titleColor = SFColor.blue
+                    self.layer.borderColor = SFColor.blue.cgColor
+                    self.layer.borderWidth = 3.0
+                    tintColor = SFColor.blue
+                } else {
+                    backgroundColor = SFColor.blue
+                    titleColor = SFColor.white
+                    self.layer.borderColor = SFColor.darkBlue.cgColor
+                    self.layer.borderWidth = self.restingBorderWidth
+                    tintColor = SFColor.white
+                }
+                
+                // Cancel any previous transitions.
+                self.layer.removeAllAnimations()
+                
+                // Start the transition.
+                UIView.animate(withDuration: 0.2, delay: 0.75,
+                               options: [.transitionCrossDissolve, .allowUserInteraction],
+                               animations: {
+                                self.backgroundColor = backgroundColor
+                                self.setTitleColor(titleColor, for: .normal)
+                                self.tintColor = tintColor
+                }, completion: nil)
             }
-            
-            // Cancel any previous transitions.
-            layer.removeAllAnimations()
-            
-            // Start the transition.
-            /*UIView.animate(withDuration: 0.2, delay: 0.75,
-                           options: [.transitionCrossDissolve, .allowUserInteraction],
-                           animations: {
-                            self.backgroundColor = backgroundColor
-                            self.setTitleColor(titleColor, for: .normal)
-                            self.tintColor = tintColor
-            }, completion: nil)*/
-            
-            // Timer.scheduledTimer(withTimeInterval: 0.15, repeats: <#T##Bool#>, block: <#T##(Timer) -> Void#>)
-            
-            // Start the transition.
-            UIView.transition(with: self, duration: 0.2, options: [.transitionCrossDissolve, .allowUserInteraction], animations: {
-                self.backgroundColor = backgroundColor
-                self.setTitleColor(titleColor, for: .normal)
-                self.tintColor = tintColor
-            }, completion: nil)
         }
     }
     
