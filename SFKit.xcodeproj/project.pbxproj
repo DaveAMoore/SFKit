@@ -18,6 +18,7 @@
 		6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CE1F3619B7005C73F3 /* SFAppearance.m */; };
 		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2B1F0988D20064A0CA /* SFTextField.swift */; };
 		636D65B61F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */; };
 		636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */; };
@@ -27,6 +28,7 @@
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
+		63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD51F0988D20064A0CA /* SFImageView.swift */; };
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
@@ -256,6 +258,8 @@
 				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
 				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
+				63686DD51F0988D20064A0CA /* SFImageView.swift */,
+				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 			);
 			path = "Environment Conforming";
 			sourceTree = "<group>";
@@ -321,8 +325,8 @@
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
 				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
 				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
+				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
-				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
 			);
 			path = Source;
@@ -389,7 +393,6 @@
 				63686DD21F0988D20064A0CA /* SFImage.swift */,
 				63686DD31F0988D20064A0CA /* SFImageAsset.swift */,
 				63686DD41F0988D20064A0CA /* SFImagePickerController.swift */,
-				63686DD51F0988D20064A0CA /* SFImageView.swift */,
 				63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */,
 				63686DD71F0988D20064A0CA /* SFInputView.swift */,
 				63686DD81F0988D20064A0CA /* SFInputViewController.swift */,
@@ -472,7 +475,6 @@
 				63686E281F0988D20064A0CA /* SFTextContainer.swift */,
 				63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */,
 				63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */,
-				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E2C1F0988D20064A0CA /* SFTextStorage.swift */,
 				63686E2E1F0988D20064A0CA /* SFToolbar.swift */,
 				63686E2F1F0988D20064A0CA /* SFTouch.swift */,
@@ -616,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
+				63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */,
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
@@ -628,6 +631,7 @@
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
+				6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
 				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,

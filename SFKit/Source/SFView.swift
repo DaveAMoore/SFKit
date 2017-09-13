@@ -44,6 +44,8 @@ import UIKit
     open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
         super.appearanceStyleDidChange(newAppearanceStyle)
         
+        guard shouldEnforceAppearance else { return }
+        
         backgroundColor = SFColor.white
     }
 }

@@ -8,11 +8,7 @@
 
 import UIKit
 
-@IBDesignable open class SFVisualEffectView: UIVisualEffectView {
-    
-    // MARK: - Properties
-    
-    @IBInspectable open var shouldEnforceAppearance: Bool = true
+open class SFVisualEffectView: UIVisualEffectView {
     
     // MARK: - Lifecycle
     
@@ -36,8 +32,6 @@ import UIKit
     
     open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
         super.appearanceStyleDidChange(newAppearanceStyle)
-        
-        guard shouldEnforceAppearance else { return }
         
         // Get a boolean value for the isLight property.
         let isLightAppearance = newAppearanceStyle == .light

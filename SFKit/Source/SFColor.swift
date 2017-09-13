@@ -64,6 +64,10 @@ open class SFColor: UIColor {
         return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.3528000116, green: 0.7813866735, blue: 0.9800000787, alpha: 1)
     }
     
+    open override class var red: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1) : #colorLiteral(red: 0.9952381253, green: 0.3384355307, blue: 0.1943919361, alpha: 1)
+    }
+    
     // MARK: - Unavailable Colors
     
     /// Primary color which is to be used for almost all general purposes. This is *white* for the `light` appearance style, and black (almost) for the `dark` appearance style.
