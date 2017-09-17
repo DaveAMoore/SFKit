@@ -49,6 +49,13 @@ extension SFColor {
         }
     }
     
+    open override var tintColor: UIColor! {
+        didSet {
+            print("Color did set.")
+            
+        }
+    }
+    
     // MARK: - Inspectable Properties
     
     @IBInspectable open var buttonKindRawValue: Int {
@@ -84,81 +91,19 @@ extension SFColor {
     
     open override var isEnabled: Bool {
         didSet {
-            guard isEnabled != oldValue else { return }
-            
-            // Cache the background color.
-            cacheBackgroundColor(isEnabled: oldValue, isHighlighted: isHighlighted, isSelected: isSelected)
-            
-            // Adjust the background color as needed.
-            if isEnabled {
-                backgroundColor = cachedBackgroundColor
-                layer.borderWidth = restingBorderWidth
-                tintColor = SFColor.white
-            } else {
-                backgroundColor = SFColor.lightGray
-                layer.borderWidth = 0.0
-                tintColor = SFColor.gray
-            }
+            updateIsEnabled()
         }
     }
     
     open override var isSelected: Bool {
         didSet {
-            if isSelected {
-                layer.borderWidth = 0.0
-                backgroundColor = SFColor.blue.withAlphaComponent(0.5)
-                tintColor = SFColor.white
-            } else {
-                backgroundColor = SFColor.blue
-                layer.borderColor = SFColor.darkBlue.cgColor
-                layer.borderWidth = restingBorderWidth
-                setTitleColor(SFColor.white, for: .normal)
-                tintColor = SFColor.white
-            }
+            updateIsSelected()
         }
     }
     
     open override var isHighlighted: Bool {
         didSet {
-            let wasEnabled = isEnabled
-            let wasSelected = isSelected
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
-                // Only continue if the values didn't change since we waited.
-                guard wasEnabled == self.isEnabled, wasSelected == self.isSelected else { return }
-                
-                // Declare the background and title colors.
-                let backgroundColor: UIColor?
-                let titleColor: UIColor?
-                let tintColor: UIColor
-                
-                // Adjust as needed.
-                if self.isHighlighted {
-                    backgroundColor = SFColor.clear
-                    titleColor = SFColor.blue
-                    self.layer.borderColor = SFColor.blue.cgColor
-                    self.layer.borderWidth = 3.0
-                    tintColor = SFColor.blue
-                } else {
-                    backgroundColor = SFColor.blue
-                    titleColor = SFColor.white
-                    self.layer.borderColor = SFColor.darkBlue.cgColor
-                    self.layer.borderWidth = self.restingBorderWidth
-                    tintColor = SFColor.white
-                }
-                
-                // Cancel any previous transitions.
-                self.layer.removeAllAnimations()
-                
-                // Start the transition.
-                UIView.animate(withDuration: 0.2, delay: 0.75,
-                               options: [.transitionCrossDissolve, .allowUserInteraction],
-                               animations: {
-                                self.backgroundColor = backgroundColor
-                                self.setTitleColor(titleColor, for: .normal)
-                                self.tintColor = tintColor
-                }, completion: nil)
-            }
+            updateIsHighlighted()
         }
     }
     
@@ -185,15 +130,27 @@ extension SFColor {
     open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
         super.appearanceStyleDidChange(newAppearanceStyle)
         
-        // Set a San Fransisco blue color as the background color.
+        // Configure the appearance.
         backgroundColor = SFColor.blue
-        
-        // Set the title color to our San Fransisco white.
         setTitleColor(SFColor.white, for: .normal)
-        
-        // Enable automatic dynamic type adjustment.
         titleLabel?.adjustsFontForContentSizeCategory = true
+        tintColor = SFColor.white
         
+        // Set the border color and width.
+        layer.borderColor = SFColor.darkBlue.cgColor
+        layer.borderWidth = restingBorderWidth
+        
+        // Update the appearance.
+        updateButtonKind()
+        updateIsSelected()
+        updateIsHighlighted()
+        updateIsEnabled()
+    }
+    
+    // MARK: - Appearance
+    
+    /// Updates the appearance of the button for the `Kind`.
+    private func updateButtonKind() {
         // Declare the font.
         let font: UIFont
         
@@ -235,18 +192,95 @@ extension SFColor {
         
         // Set the font.
         titleLabel?.font = font
+    }
+    
+    /// Updates appearance for `isEnabled`.
+    private func updateIsEnabled() {
+        // Adjust the background color as needed.
+        if isEnabled {
+            backgroundColor = SFColor.blue
+            layer.borderWidth = restingBorderWidth
+            tintColor = SFColor.white
+        } else {
+            backgroundColor = SFColor.lightGray
+            layer.borderWidth = 0.0
+            tintColor = SFColor.gray
+        }
+    }
+    
+    /// Updates the appearance of the receiver for the `isSelected` property.
+    private func updateIsSelected() {
+        if isSelected {
+            layer.borderWidth = 0.0
+            backgroundColor = SFColor.blue.withAlphaComponent(0.5)
+            tintColor = SFColor.white
+        } else {
+            backgroundColor = SFColor.blue
+            layer.borderColor = SFColor.darkBlue.cgColor
+            layer.borderWidth = restingBorderWidth
+            setTitleColor(SFColor.white, for: .normal)
+            tintColor = SFColor.white
+        }
+    }
+    
+    /// Update the appearance for `isHighlighted`.
+    private func updateIsHighlighted() {
+        // Adjust as needed.
+        if self.isHighlighted {
+            backgroundColor = SFColor.clear
+            setTitleColor(SFColor.blue, for: .normal)
+            self.layer.borderColor = SFColor.blue.cgColor
+            self.layer.borderWidth = 3.0
+            tintColor = SFColor.blue
+        } else {
+            backgroundColor = SFColor.blue
+            setTitleColor(SFColor.white, for: .normal)
+            self.layer.borderColor = SFColor.darkBlue.cgColor
+            self.layer.borderWidth = self.restingBorderWidth
+            tintColor = SFColor.white
+        }
         
-        // Set a white tint color.
-        tintColor = SFColor.white
-        
-        // Set the border color and width.
-        layer.borderColor = SFColor.darkBlue.cgColor
-        layer.borderWidth = restingBorderWidth
-        
-        // Re-set all of the supported states.
-        isSelected = Bool(isSelected)
-        isHighlighted = Bool(isHighlighted)
-        isEnabled = Bool(isEnabled)
+        /*
+         let wasHighlighted = isHighlighted
+         // let wasEnabled = isEnabled
+         // let wasSelected = isSelected
+         
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
+            // Only continue if the values didn't change since we waited.
+            guard wasHighlighted == self.isHighlighted /* wasEnabled == self.isEnabled, wasSelected == self.isSelected */ else { return }
+            
+            // Declare the background and title colors.
+            let backgroundColor: UIColor?
+            let titleColor: UIColor?
+            let tintColor: UIColor
+            
+            // Adjust as needed.
+            if self.isHighlighted {
+                backgroundColor = SFColor.clear
+                titleColor = SFColor.blue
+                self.layer.borderColor = SFColor.blue.cgColor
+                self.layer.borderWidth = 3.0
+                tintColor = SFColor.blue
+            } else {
+                backgroundColor = SFColor.blue
+                titleColor = SFColor.white
+                self.layer.borderColor = SFColor.darkBlue.cgColor
+                self.layer.borderWidth = self.restingBorderWidth
+                tintColor = SFColor.white
+            }
+            
+            // Cancel any previous transitions.
+            self.layer.removeAllAnimations()
+            
+            // Start the transition.
+            UIView.animate(withDuration: 0.2, delay: 0.75,
+                           options: [.transitionCrossDissolve, .allowUserInteraction],
+                           animations: {
+                            self.backgroundColor = backgroundColor
+                            self.setTitleColor(titleColor, for: .normal)
+                            self.tintColor = tintColor
+            }, completion: nil)
+        } */
     }
     
     // MARK: - Helper Methods
