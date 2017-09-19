@@ -51,7 +51,7 @@ extension SFColor {
     
     open override var tintColor: UIColor! {
         didSet {
-            print("Color did set.")
+            // print("Color did set.")
             
         }
     }
