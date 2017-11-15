@@ -23,6 +23,8 @@
 		636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */; };
 		636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */; };
 		636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */; };
+		637D6B091FB7F0C500397317 /* SFRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D6B071FB7F0C500397317 /* SFRingProgressView.swift */; };
+		637D6B0A1FB7F0C500397317 /* SFGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637D6B081FB7F0C500397317 /* SFGradientGenerator.swift */; };
 		6385A22D1F06EB36002B9244 /* SFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6385A2231F06EB36002B9244 /* SFKit.framework */; };
 		6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A2311F06EB36002B9244 /* SFKitTests.swift */; };
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -220,6 +222,8 @@
 		636D65B81F376C2300F3BF35 /* SFAppearance+Refinements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFAppearance+Refinements.swift"; sourceTree = "<group>"; };
 		636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNavigationController.swift; sourceTree = "<group>"; };
 		63761BF61F36097000115594 /* SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceEnvironment.h; sourceTree = "<group>"; };
+		637D6B071FB7F0C500397317 /* SFRingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRingProgressView.swift; sourceTree = "<group>"; };
+		637D6B081FB7F0C500397317 /* SFGradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGradientGenerator.swift; sourceTree = "<group>"; };
 		6385A2231F06EB36002B9244 /* SFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6385A2261F06EB36002B9244 /* SFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFKit.h; sourceTree = "<group>"; };
 		6385A2271F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -276,6 +280,15 @@
 			path = "Categories & Extensions";
 			sourceTree = "<group>";
 		};
+		637D6B061FB7F0B100397317 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				637D6B081FB7F0C500397317 /* SFGradientGenerator.swift */,
+				637D6B071FB7F0C500397317 /* SFRingProgressView.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
 		6385A2191F06EB36002B9244 = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +333,7 @@
 				63167CC71F3670C800054924 /* Environment Conforming */,
 				639E37971F09882900C08D8E /* Include */,
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
+				637D6B061FB7F0B100397317 /* Custom Controls */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
@@ -620,10 +634,12 @@
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
 				63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */,
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
+				637D6B091FB7F0C500397317 /* SFRingProgressView.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
+				637D6B0A1FB7F0C500397317 /* SFGradientGenerator.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
