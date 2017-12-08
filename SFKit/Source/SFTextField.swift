@@ -37,12 +37,17 @@ open class SFTextField: UITextField, UITextFieldDelegate {
         contentInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         textColor = SFColor.black
         backgroundColor = SFColor.lightGray
-        font = UIFont.systemFont(ofSize: 18, weight: .medium)
         adjustsFontForContentSizeCategory = true
+        keyboardAppearance = newAppearanceStyle == .light ? .light : .dark
+        
+        // Get the appropriate system font.
+        let mediumFont = UIFont.systemFont(ofSize: 18, weight: .medium)
         
         // Use font metrics for iOS 11 and up.
         if #available(iOS 11.0, *) {
-            font = UIFontMetrics.default.scaledFont(for: font!)
+            font = UIFontMetrics.default.scaledFont(for: mediumFont)
+        } else {
+            font = mediumFont
         }
     }
     
