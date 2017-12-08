@@ -139,6 +139,7 @@ extension SFColor {
         // Set the border color and width.
         layer.borderColor = SFColor.darkBlue.cgColor
         layer.borderWidth = restingBorderWidth
+        layer.allowsEdgeAntialiasing = true
         
         // Update the appearance.
         updateButtonKind()
@@ -181,7 +182,7 @@ extension SFColor {
             }
             
             // Set the resting border width.
-            restingBorderWidth = 1.0
+            restingBorderWidth = 0.25
             
             // Square corner radius.
             cornerRadius = 12
