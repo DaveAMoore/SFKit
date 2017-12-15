@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SFModelCheck
 
 /// Add floating point brightness value to the color.
 infix operator +: AdditionPrecedence
@@ -21,14 +22,19 @@ open class SFColor: UIColor {
     
     // MARK: - Adaptive Colors
     
-    /// A true white with a grayscale value of 1.0 and alpha of 1.0.
+    /// A true white with a grayscale value of 1.0 and an alpha of 1.0.
     open class var trueWhite: SFColor {
         return SFColor(white: 1.0, alpha: 1.0)
     }
     
+    /// A true black with a grayscale value of 0.0 and an alpha of 1.0.
+    open class var trueBlack: SFColor {
+        return SFColor(white: 0.0, alpha: 1.0)
+    }
+    
     /// An off-white color.
     open override class var white: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.1992851496, green: 0.1992851496, blue: 0.1992851496, alpha: 1)
+        return isLightAppearance() ? .trueWhite : #colorLiteral(red: 0.1992851496, green: 0.1992851496, blue: 0.1992851496, alpha: 1)
     }
     
     open class var extraLightGray: SFColor {
@@ -56,7 +62,7 @@ open class SFColor: UIColor {
     
     /// Depp black color which is adaptive.
     open override class var black: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 0.04624130577, green: 0.04624130577, blue: 0.04624130577, alpha: 1) : .trueWhite
+        return isLightAppearance() ? .trueBlack : .trueWhite
     }
     
     /// Rich blue which can be used to indicate interactivity.
