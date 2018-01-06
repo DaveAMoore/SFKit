@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 6305B2A11FE408F20001CCDB /* SFModelCheck.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305B2A21FE408F20001CCDB /* SFModelCheck.m */; };
+		6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD91F0988D20064A0CA /* SFLabel.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
@@ -277,6 +278,7 @@
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686DD51F0988D20064A0CA /* SFImageView.swift */,
 				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
+				63686DD91F0988D20064A0CA /* SFLabel.swift */,
 			);
 			path = "Environment Conforming";
 			sourceTree = "<group>";
@@ -416,7 +418,6 @@
 				63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */,
 				63686DD71F0988D20064A0CA /* SFInputView.swift */,
 				63686DD81F0988D20064A0CA /* SFInputViewController.swift */,
-				63686DD91F0988D20064A0CA /* SFLabel.swift */,
 				63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */,
 				63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */,
 				63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */,
@@ -669,6 +670,7 @@
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
 				637D6B091FB7F0C500397317 /* SFRingProgressView.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
+				6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
