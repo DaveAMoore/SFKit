@@ -1,5 +1,5 @@
 //
-//  SFLabel.swift
+//  SFTableViewHeaderFooterView.swift
 //  SFKit
 //
 //  Created by David Moore on 7/01/17.
@@ -8,13 +8,7 @@
 
 import UIKit
 
-open class SFLabel: UILabel {
-    
-    open override var font: UIFont! {
-        didSet {
-            appearanceStyleDidChange(SFAppearance.global.appearanceStyle)
-        }
-    }
+open class SFTableViewHeaderFooterView: UITableViewHeaderFooterView {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
@@ -24,10 +18,5 @@ open class SFLabel: UILabel {
     open override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         registerForAppearanceUpdates()
-    }
-    
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
-        adjustsFontForContentSizeCategory = true
     }
 }

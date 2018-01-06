@@ -21,3 +21,9 @@ FOUNDATION_EXPORT const unsigned char SFKitVersionString[];
 #import <SFKit/SFAppearanceEnvironment.h>
 #import <SFKit/UIResponder+SFAppearanceEnvironment.h>
 #import <SFKit/UIViewController+SFAppearanceEnvironment.h>
+
+#import <SFKit/SFChartTypes.h>
+#import <SFKit/SFBarGraphChartView.h>
+#import <SFKit/SFDiscreteGraphChartView.h>
+#import <SFKit/SFLineGraphChartView.h>
+#import <SFKit/SFPieChartView.h>

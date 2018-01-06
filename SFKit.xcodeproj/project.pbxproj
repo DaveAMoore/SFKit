@@ -10,6 +10,53 @@
 		6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 6305B2A11FE408F20001CCDB /* SFModelCheck.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305B2A21FE408F20001CCDB /* SFModelCheck.m */; };
 		6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD91F0988D20064A0CA /* SFLabel.swift */; };
+		6313E2FB200086810065EE25 /* SFTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E201F0988D20064A0CA /* SFTableView.swift */; };
+		6313E2FC200086810065EE25 /* SFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E221F0988D20064A0CA /* SFTableViewController.swift */; };
+		6313E2FD200086810065EE25 /* SFTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */; };
+		6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E211F0988D20064A0CA /* SFTableViewCell.swift */; };
+		6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E301200087D00065EE25 /* SFXAxisView.m */; };
+		6313E31E200087D50065EE25 /* SFChartTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E302200087D00065EE25 /* SFChartTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E31F200087D50065EE25 /* SFPieChartPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E303200087D00065EE25 /* SFPieChartPieView.m */; };
+		6313E320200087D50065EE25 /* SFPieChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E304200087D00065EE25 /* SFPieChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E321200087D50065EE25 /* SFLineGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E305200087D00065EE25 /* SFLineGraphChartView.m */; };
+		6313E322200087D50065EE25 /* SFPieChartLegendView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E306200087D00065EE25 /* SFPieChartLegendView.h */; };
+		6313E323200087D50065EE25 /* SFPieChartLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E307200087D00065EE25 /* SFPieChartLegendView.m */; };
+		6313E324200087D50065EE25 /* SFPieChartLegendCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E308200087D00065EE25 /* SFPieChartLegendCell.h */; };
+		6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E309200087D10065EE25 /* SFPieChartTitleTextView.m */; };
+		6313E326200087D50065EE25 /* SFPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E30A200087D10065EE25 /* SFPieChartView.m */; };
+		6313E327200087D50065EE25 /* SFPieChartLegendCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E30B200087D10065EE25 /* SFPieChartLegendCollectionViewLayout.h */; };
+		6313E328200087D50065EE25 /* SFBarGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E30C200087D10065EE25 /* SFBarGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E329200087D50065EE25 /* SFPieChartPieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E30D200087D10065EE25 /* SFPieChartPieView.h */; };
+		6313E32A200087D50065EE25 /* SFPieChartTitleTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E30E200087D10065EE25 /* SFPieChartTitleTextView.h */; };
+		6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E30F200087D10065EE25 /* SFYAxisView.h */; };
+		6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E310200087D20065EE25 /* SFChartTypes.m */; };
+		6313E32D200087D50065EE25 /* SFGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E311200087D20065EE25 /* SFGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E32E200087D50065EE25 /* SFPieChartView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E312200087D20065EE25 /* SFPieChartView_Internal.h */; };
+		6313E32F200087D50065EE25 /* SFDiscreteGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E313200087D30065EE25 /* SFDiscreteGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E330200087D50065EE25 /* SFXAxisView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E314200087D30065EE25 /* SFXAxisView.h */; };
+		6313E331200087D50065EE25 /* SFPieChartLegendCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E315200087D30065EE25 /* SFPieChartLegendCollectionViewLayout.m */; };
+		6313E332200087D50065EE25 /* SFGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E316200087D30065EE25 /* SFGraphChartView.m */; };
+		6313E333200087D50065EE25 /* SFBarGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E317200087D40065EE25 /* SFBarGraphChartView.m */; };
+		6313E334200087D50065EE25 /* SFLineGraphChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E318200087D40065EE25 /* SFLineGraphChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E335200087D50065EE25 /* SFPieChartLegendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E319200087D40065EE25 /* SFPieChartLegendCell.m */; };
+		6313E336200087D50065EE25 /* SFDiscreteGraphChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E31A200087D50065EE25 /* SFDiscreteGraphChartView.m */; };
+		6313E337200087D50065EE25 /* SFGraphChartView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E31B200087D50065EE25 /* SFGraphChartView_Internal.h */; };
+		6313E338200087D50065EE25 /* SFYAxisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E31C200087D50065EE25 /* SFYAxisView.m */; };
+		6313E341200089840065EE25 /* SFSkin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E33F200089840065EE25 /* SFSkin.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E342200089840065EE25 /* SFSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E340200089840065EE25 /* SFSkin.m */; };
+		6313E3442000899E0065EE25 /* SFDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E3432000899E0065EE25 /* SFDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6313E348200089EF0065EE25 /* SFHelpers_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E345200089EF0065EE25 /* SFHelpers_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E349200089EF0065EE25 /* SFHelpers_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E346200089EF0065EE25 /* SFHelpers_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E34A200089EF0065EE25 /* SFHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E347200089EF0065EE25 /* SFHelpers.m */; };
+		6313E34D20008A100065EE25 /* SFTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E34B20008A0F0065EE25 /* SFTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E34E20008A100065EE25 /* SFTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E34C20008A100065EE25 /* SFTypes.m */; };
+		6313E35120008BF50065EE25 /* SFErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E34F20008BF40065EE25 /* SFErrors.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E35220008BF50065EE25 /* SFErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E35020008BF40065EE25 /* SFErrors.m */; };
+		6313E356200121430065EE25 /* SFAccessibilityFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E354200121430065EE25 /* SFAccessibilityFunctions.m */; };
+		6313E357200121430065EE25 /* SFAccessibilityFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E355200121430065EE25 /* SFAccessibilityFunctions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */; };
+		6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E35D200122600065EE25 /* SFAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E35C2001225F0065EE25 /* SFAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
@@ -55,6 +102,49 @@
 		6305B2A11FE408F20001CCDB /* SFModelCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFModelCheck.h; sourceTree = "<group>"; };
 		6305B2A21FE408F20001CCDB /* SFModelCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFModelCheck.m; sourceTree = "<group>"; };
 		6305B2A61FE40C8E0001CCDB /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6313E301200087D00065EE25 /* SFXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFXAxisView.m; sourceTree = "<group>"; };
+		6313E302200087D00065EE25 /* SFChartTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFChartTypes.h; sourceTree = "<group>"; };
+		6313E303200087D00065EE25 /* SFPieChartPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartPieView.m; sourceTree = "<group>"; };
+		6313E304200087D00065EE25 /* SFPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartView.h; sourceTree = "<group>"; };
+		6313E305200087D00065EE25 /* SFLineGraphChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphChartView.m; sourceTree = "<group>"; };
+		6313E306200087D00065EE25 /* SFPieChartLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartLegendView.h; sourceTree = "<group>"; };
+		6313E307200087D00065EE25 /* SFPieChartLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartLegendView.m; sourceTree = "<group>"; };
+		6313E308200087D00065EE25 /* SFPieChartLegendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartLegendCell.h; sourceTree = "<group>"; };
+		6313E309200087D10065EE25 /* SFPieChartTitleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartTitleTextView.m; sourceTree = "<group>"; };
+		6313E30A200087D10065EE25 /* SFPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartView.m; sourceTree = "<group>"; };
+		6313E30B200087D10065EE25 /* SFPieChartLegendCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartLegendCollectionViewLayout.h; sourceTree = "<group>"; };
+		6313E30C200087D10065EE25 /* SFBarGraphChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBarGraphChartView.h; sourceTree = "<group>"; };
+		6313E30D200087D10065EE25 /* SFPieChartPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartPieView.h; sourceTree = "<group>"; };
+		6313E30E200087D10065EE25 /* SFPieChartTitleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartTitleTextView.h; sourceTree = "<group>"; };
+		6313E30F200087D10065EE25 /* SFYAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFYAxisView.h; sourceTree = "<group>"; };
+		6313E310200087D20065EE25 /* SFChartTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFChartTypes.m; sourceTree = "<group>"; };
+		6313E311200087D20065EE25 /* SFGraphChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGraphChartView.h; sourceTree = "<group>"; };
+		6313E312200087D20065EE25 /* SFPieChartView_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPieChartView_Internal.h; sourceTree = "<group>"; };
+		6313E313200087D30065EE25 /* SFDiscreteGraphChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDiscreteGraphChartView.h; sourceTree = "<group>"; };
+		6313E314200087D30065EE25 /* SFXAxisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFXAxisView.h; sourceTree = "<group>"; };
+		6313E315200087D30065EE25 /* SFPieChartLegendCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartLegendCollectionViewLayout.m; sourceTree = "<group>"; };
+		6313E316200087D30065EE25 /* SFGraphChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGraphChartView.m; sourceTree = "<group>"; };
+		6313E317200087D40065EE25 /* SFBarGraphChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBarGraphChartView.m; sourceTree = "<group>"; };
+		6313E318200087D40065EE25 /* SFLineGraphChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphChartView.h; sourceTree = "<group>"; };
+		6313E319200087D40065EE25 /* SFPieChartLegendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPieChartLegendCell.m; sourceTree = "<group>"; };
+		6313E31A200087D50065EE25 /* SFDiscreteGraphChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDiscreteGraphChartView.m; sourceTree = "<group>"; };
+		6313E31B200087D50065EE25 /* SFGraphChartView_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGraphChartView_Internal.h; sourceTree = "<group>"; };
+		6313E31C200087D50065EE25 /* SFYAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFYAxisView.m; sourceTree = "<group>"; };
+		6313E33F200089840065EE25 /* SFSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSkin.h; sourceTree = "<group>"; };
+		6313E340200089840065EE25 /* SFSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSkin.m; sourceTree = "<group>"; };
+		6313E3432000899E0065EE25 /* SFDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefines.h; sourceTree = "<group>"; };
+		6313E345200089EF0065EE25 /* SFHelpers_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHelpers_Private.h; sourceTree = "<group>"; };
+		6313E346200089EF0065EE25 /* SFHelpers_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHelpers_Internal.h; sourceTree = "<group>"; };
+		6313E347200089EF0065EE25 /* SFHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHelpers.m; sourceTree = "<group>"; };
+		6313E34B20008A0F0065EE25 /* SFTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTypes.h; sourceTree = "<group>"; };
+		6313E34C20008A100065EE25 /* SFTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTypes.m; sourceTree = "<group>"; };
+		6313E34F20008BF40065EE25 /* SFErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFErrors.h; sourceTree = "<group>"; };
+		6313E35020008BF40065EE25 /* SFErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFErrors.m; sourceTree = "<group>"; };
+		6313E354200121430065EE25 /* SFAccessibilityFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAccessibilityFunctions.m; sourceTree = "<group>"; };
+		6313E355200121430065EE25 /* SFAccessibilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibilityFunctions.h; sourceTree = "<group>"; };
+		6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphAccessibilityElement.m; sourceTree = "<group>"; };
+		6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphAccessibilityElement.h; sourceTree = "<group>"; };
+		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
@@ -268,6 +358,113 @@
 			path = "Project Module";
 			sourceTree = "<group>";
 		};
+		6313E300200087660065EE25 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				6313E3392000881C0065EE25 /* Pie */,
+				6313E33B2000884B0065EE25 /* Graphs */,
+				6313E33E200089700065EE25 /* Miscellaneous */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		6313E3392000881C0065EE25 /* Pie */ = {
+			isa = PBXGroup;
+			children = (
+				6313E33A200088340065EE25 /* Components */,
+				6313E312200087D20065EE25 /* SFPieChartView_Internal.h */,
+				6313E304200087D00065EE25 /* SFPieChartView.h */,
+				6313E30A200087D10065EE25 /* SFPieChartView.m */,
+			);
+			path = Pie;
+			sourceTree = "<group>";
+		};
+		6313E33A200088340065EE25 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6313E308200087D00065EE25 /* SFPieChartLegendCell.h */,
+				6313E319200087D40065EE25 /* SFPieChartLegendCell.m */,
+				6313E30B200087D10065EE25 /* SFPieChartLegendCollectionViewLayout.h */,
+				6313E315200087D30065EE25 /* SFPieChartLegendCollectionViewLayout.m */,
+				6313E306200087D00065EE25 /* SFPieChartLegendView.h */,
+				6313E307200087D00065EE25 /* SFPieChartLegendView.m */,
+				6313E30D200087D10065EE25 /* SFPieChartPieView.h */,
+				6313E303200087D00065EE25 /* SFPieChartPieView.m */,
+				6313E30E200087D10065EE25 /* SFPieChartTitleTextView.h */,
+				6313E309200087D10065EE25 /* SFPieChartTitleTextView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6313E33B2000884B0065EE25 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				6313E33C2000885A0065EE25 /* Components */,
+				6313E30C200087D10065EE25 /* SFBarGraphChartView.h */,
+				6313E317200087D40065EE25 /* SFBarGraphChartView.m */,
+				6313E302200087D00065EE25 /* SFChartTypes.h */,
+				6313E310200087D20065EE25 /* SFChartTypes.m */,
+				6313E313200087D30065EE25 /* SFDiscreteGraphChartView.h */,
+				6313E31A200087D50065EE25 /* SFDiscreteGraphChartView.m */,
+				6313E31B200087D50065EE25 /* SFGraphChartView_Internal.h */,
+				6313E311200087D20065EE25 /* SFGraphChartView.h */,
+				6313E316200087D30065EE25 /* SFGraphChartView.m */,
+				6313E318200087D40065EE25 /* SFLineGraphChartView.h */,
+				6313E305200087D00065EE25 /* SFLineGraphChartView.m */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		6313E33C2000885A0065EE25 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6313E314200087D30065EE25 /* SFXAxisView.h */,
+				6313E301200087D00065EE25 /* SFXAxisView.m */,
+				6313E30F200087D10065EE25 /* SFYAxisView.h */,
+				6313E31C200087D50065EE25 /* SFYAxisView.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6313E33D200089620065EE25 /* Ring */ = {
+			isa = PBXGroup;
+			children = (
+				637D6B081FB7F0C500397317 /* SFGradientGenerator.swift */,
+				637D6B071FB7F0C500397317 /* SFRingProgressView.swift */,
+			);
+			path = Ring;
+			sourceTree = "<group>";
+		};
+		6313E33E200089700065EE25 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				6313E35320008BFA0065EE25 /* Definitions */,
+				6313E33F200089840065EE25 /* SFSkin.h */,
+				6313E340200089840065EE25 /* SFSkin.m */,
+				6313E346200089EF0065EE25 /* SFHelpers_Internal.h */,
+				6313E345200089EF0065EE25 /* SFHelpers_Private.h */,
+				6313E347200089EF0065EE25 /* SFHelpers.m */,
+				6313E35C2001225F0065EE25 /* SFAccessibility.h */,
+				6313E355200121430065EE25 /* SFAccessibilityFunctions.h */,
+				6313E354200121430065EE25 /* SFAccessibilityFunctions.m */,
+				6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */,
+				6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		6313E35320008BFA0065EE25 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				6313E34B20008A0F0065EE25 /* SFTypes.h */,
+				6313E34C20008A100065EE25 /* SFTypes.m */,
+				6313E3432000899E0065EE25 /* SFDefines.h */,
+				6313E34F20008BF40065EE25 /* SFErrors.h */,
+				6313E35020008BF40065EE25 /* SFErrors.m */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		63167CC71F3670C800054924 /* Environment Conforming */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +472,10 @@
 				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
 				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
 				63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */,
+				63686E201F0988D20064A0CA /* SFTableView.swift */,
+				63686E211F0988D20064A0CA /* SFTableViewCell.swift */,
+				63686E221F0988D20064A0CA /* SFTableViewController.swift */,
+				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686DD51F0988D20064A0CA /* SFImageView.swift */,
 				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
@@ -298,8 +499,8 @@
 		637D6B061FB7F0B100397317 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
-				637D6B081FB7F0C500397317 /* SFGradientGenerator.swift */,
-				637D6B071FB7F0C500397317 /* SFRingProgressView.swift */,
+				6313E300200087660065EE25 /* Charts */,
+				6313E33D200089620065EE25 /* Ring */,
 			);
 			path = "Custom Controls";
 			sourceTree = "<group>";
@@ -485,10 +686,6 @@
 				63686E1C1F0988D20064A0CA /* SFSwitch.swift */,
 				63686E1E1F0988D20064A0CA /* SFTabBarController.swift */,
 				63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */,
-				63686E201F0988D20064A0CA /* SFTableView.swift */,
-				63686E211F0988D20064A0CA /* SFTableViewCell.swift */,
-				63686E221F0988D20064A0CA /* SFTableViewController.swift */,
-				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
 				63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */,
 				63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */,
 				63686E261F0988D20064A0CA /* SFTextAttachment.swift */,
@@ -556,13 +753,37 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6313E330200087D50065EE25 /* SFXAxisView.h in Headers */,
+				6313E31E200087D50065EE25 /* SFChartTypes.h in Headers */,
+				6313E329200087D50065EE25 /* SFPieChartPieView.h in Headers */,
+				6313E334200087D50065EE25 /* SFLineGraphChartView.h in Headers */,
+				6313E3442000899E0065EE25 /* SFDefines.h in Headers */,
+				6313E34D20008A100065EE25 /* SFTypes.h in Headers */,
 				6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */,
+				6313E35D200122600065EE25 /* SFAccessibility.h in Headers */,
 				6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */,
 				6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */,
 				6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */,
+				6313E324200087D50065EE25 /* SFPieChartLegendCell.h in Headers */,
+				6313E322200087D50065EE25 /* SFPieChartLegendView.h in Headers */,
 				6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */,
+				6313E341200089840065EE25 /* SFSkin.h in Headers */,
+				6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */,
+				6313E349200089EF0065EE25 /* SFHelpers_Internal.h in Headers */,
+				6313E32A200087D50065EE25 /* SFPieChartTitleTextView.h in Headers */,
+				6313E32D200087D50065EE25 /* SFGraphChartView.h in Headers */,
 				636D65B61F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h in Headers */,
+				6313E327200087D50065EE25 /* SFPieChartLegendCollectionViewLayout.h in Headers */,
+				6313E328200087D50065EE25 /* SFBarGraphChartView.h in Headers */,
+				6313E32F200087D50065EE25 /* SFDiscreteGraphChartView.h in Headers */,
+				6313E32E200087D50065EE25 /* SFPieChartView_Internal.h in Headers */,
+				6313E337200087D50065EE25 /* SFGraphChartView_Internal.h in Headers */,
 				6385A2341F06EB36002B9244 /* SFKit.h in Headers */,
+				6313E348200089EF0065EE25 /* SFHelpers_Private.h in Headers */,
+				6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */,
+				6313E35120008BF50065EE25 /* SFErrors.h in Headers */,
+				6313E357200121430065EE25 /* SFAccessibilityFunctions.h in Headers */,
+				6313E320200087D50065EE25 /* SFPieChartView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,28 +887,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
+				6313E356200121430065EE25 /* SFAccessibilityFunctions.m in Sources */,
 				63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */,
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
+				6313E335200087D50065EE25 /* SFPieChartLegendCell.m in Sources */,
 				637D6B091FB7F0C500397317 /* SFRingProgressView.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
+				6313E336200087D50065EE25 /* SFDiscreteGraphChartView.m in Sources */,
+				6313E323200087D50065EE25 /* SFPieChartLegendView.m in Sources */,
+				6313E2FC200086810065EE25 /* SFTableViewController.swift in Sources */,
 				6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
+				6313E31F200087D50065EE25 /* SFPieChartPieView.m in Sources */,
+				6313E342200089840065EE25 /* SFSkin.m in Sources */,
+				6313E321200087D50065EE25 /* SFLineGraphChartView.m in Sources */,
 				636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */,
+				6313E35220008BF50065EE25 /* SFErrors.m in Sources */,
+				6313E338200087D50065EE25 /* SFYAxisView.m in Sources */,
+				6313E331200087D50065EE25 /* SFPieChartLegendCollectionViewLayout.m in Sources */,
+				6313E2FB200086810065EE25 /* SFTableView.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
 				637D6B0A1FB7F0C500397317 /* SFGradientGenerator.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
+				6313E332200087D50065EE25 /* SFGraphChartView.m in Sources */,
+				6313E2FD200086810065EE25 /* SFTableViewHeaderFooterView.swift in Sources */,
+				6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
+				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
+				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
+				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
 				6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */,
+				6313E34E20008A100065EE25 /* SFTypes.m in Sources */,
 				636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
+				6313E34A200089EF0065EE25 /* SFHelpers.m in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
+				6313E333200087D50065EE25 /* SFBarGraphChartView.m in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
+				6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */,
 				6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
 				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
 				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
+				6313E326200087D50065EE25 /* SFPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
