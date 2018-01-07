@@ -57,7 +57,7 @@
 		6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */; };
 		6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6313E35D200122600065EE25 /* SFAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E35C2001225F0065EE25 /* SFAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6313E36220019C3D0065EE25 /* SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313E36120019C3D0065EE25 /* SFReuseable.swift */; };
+		6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
@@ -86,6 +86,7 @@
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
+		63F6EFA02002CDF500B7D3E8 /* UIStoryboard+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* UIStoryboard+Identifiable.swift */; };
 		63F90A871F3128530037E5CD /* SFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E351F0988D20064A0CA /* SFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -146,7 +147,7 @@
 		6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphAccessibilityElement.m; sourceTree = "<group>"; };
 		6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphAccessibilityElement.h; sourceTree = "<group>"; };
 		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
-		6313E36120019C3D0065EE25 /* SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFReuseable.swift; sourceTree = "<group>"; };
+		6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Identifiable+SFReuseable.swift"; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
@@ -331,6 +332,7 @@
 		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
+		63F6EF9F2002CDF500B7D3E8 /* UIStoryboard+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,7 +472,8 @@
 		6313E36320019D9C0065EE25 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				6313E36120019C3D0065EE25 /* SFReuseable.swift */,
+				6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */,
+				63F6EF9F2002CDF500B7D3E8 /* UIStoryboard+Identifiable.swift */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
@@ -917,8 +920,9 @@
 				6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
+				63F6EFA02002CDF500B7D3E8 /* UIStoryboard+Identifiable.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
-				6313E36220019C3D0065EE25 /* SFReuseable.swift in Sources */,
+				6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
 				6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */,

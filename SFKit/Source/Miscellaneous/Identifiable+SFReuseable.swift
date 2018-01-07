@@ -16,14 +16,14 @@ fileprivate func name<T>(of type: T) -> String {
 
 public protocol Identifiable {
     /// Unique string-based identifier that represents the name of the object.
-    static var name: String { get }
+    static var typeName: String { get }
 }
 
 // MARK: - Identifiable Default Conformance
 extension Identifiable {
     /// Unique string-based identifier that represents the name of the object.
-    public static var name: String {
-        return SFKit.name(of: Self.self)
+    public static var typeName: String {
+        return name(of: Self.self)
     }
 }
 
@@ -37,7 +37,7 @@ public protocol SFReuseable: class, Identifiable {
 extension SFReuseable {
     /// Unique string-based identifier which represents the reuseable cell.
     public static var reuseIdentifier: String {
-        return self.name
+        return typeName
     }
 }
 
