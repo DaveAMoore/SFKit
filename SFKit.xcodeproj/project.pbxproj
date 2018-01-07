@@ -57,6 +57,7 @@
 		6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */; };
 		6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6313E35D200122600065EE25 /* SFAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E35C2001225F0065EE25 /* SFAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6313E36220019C3D0065EE25 /* SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313E36120019C3D0065EE25 /* SFReuseable.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
@@ -145,6 +146,7 @@
 		6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphAccessibilityElement.m; sourceTree = "<group>"; };
 		6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphAccessibilityElement.h; sourceTree = "<group>"; };
 		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
+		6313E36120019C3D0065EE25 /* SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFReuseable.swift; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
@@ -465,7 +467,15 @@
 			path = Definitions;
 			sourceTree = "<group>";
 		};
-		63167CC71F3670C800054924 /* Environment Conforming */ = {
+		6313E36320019D9C0065EE25 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				6313E36120019C3D0065EE25 /* SFReuseable.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		63167CC71F3670C800054924 /* Appearance Updating */ = {
 			isa = PBXGroup;
 			children = (
 				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
@@ -481,7 +491,7 @@
 				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 				63686DD91F0988D20064A0CA /* SFLabel.swift */,
 			);
-			path = "Environment Conforming";
+			path = "Appearance Updating";
 			sourceTree = "<group>";
 		};
 		636D65BA1F376D7400F3BF35 /* Categories & Extensions */ = {
@@ -496,13 +506,21 @@
 			path = "Categories & Extensions";
 			sourceTree = "<group>";
 		};
-		637D6B061FB7F0B100397317 /* Custom Controls */ = {
+		637D6B061FB7F0B100397317 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
+				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
+				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
+				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
+				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
+				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
+				63686E341F0988D20064A0CA /* SFView.swift */,
+				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
 				6313E300200087660065EE25 /* Charts */,
 				6313E33D200089620065EE25 /* Ring */,
 			);
-			path = "Custom Controls";
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		6385A2191F06EB36002B9244 = {
@@ -546,11 +564,11 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				639E37971F09882900C08D8E /* Include */,
-				63167CC71F3670C800054924 /* Environment Conforming */,
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
-				637D6B061FB7F0B100397317 /* Custom Controls */,
-				63F459681FE404DD008B62C4 /* Subclasses */,
+				639E37971F09882900C08D8E /* Include */,
+				63167CC71F3670C800054924 /* Appearance Updating */,
+				637D6B061FB7F0B100397317 /* Objects */,
+				6313E36320019D9C0065EE25 /* Miscellaneous */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -718,21 +736,6 @@
 				636D65BA1F376D7400F3BF35 /* Categories & Extensions */,
 			);
 			path = Appearance;
-			sourceTree = "<group>";
-		};
-		63F459681FE404DD008B62C4 /* Subclasses */ = {
-			isa = PBXGroup;
-			children = (
-				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
-				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
-				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
-				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
-				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
-				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
-				63686E341F0988D20064A0CA /* SFView.swift */,
-				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
-			);
-			path = Subclasses;
 			sourceTree = "<group>";
 		};
 		63F459691FE404FF008B62C4 /* Supporting Files */ = {
@@ -915,6 +918,7 @@
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
+				6313E36220019C3D0065EE25 /* SFReuseable.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
 				6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */,
