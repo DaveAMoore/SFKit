@@ -14,8 +14,21 @@ fileprivate func name<T>(of type: T) -> String {
     return String(describing: type)
 }
 
+public protocol Identifiable {
+    /// Unique string-based identifier that represents the name of the object.
+    static var name: String { get }
+}
+
+// MARK: - Identifiable Default Conformance
+extension Identifiable {
+    /// Unique string-based identifier that represents the name of the object.
+    public static var name: String {
+        return SFKit.name(of: Self.self)
+    }
+}
+
 /// `SFReuseable` provides an automatic `reuseIdentifier` which may be used to enqueue and dequeue cells and/or reuseable views. The functionality is primarily useful for table views and collection views, but may be applied to other cases as well.
-public protocol SFReuseable: class {
+public protocol SFReuseable: class, Identifiable {
     /// Unique string-based identifier which represents the reuseable cell.
     static var reuseIdentifier: String { get }
 }
@@ -24,11 +37,13 @@ public protocol SFReuseable: class {
 extension SFReuseable {
     /// Unique string-based identifier which represents the reuseable cell.
     public static var reuseIdentifier: String {
-        return name(of: Self.self)
+        return self.name
     }
 }
 
 // MARK: - General Conformance
+
+extension NSObject: Identifiable {}
 
 extension SFTableViewCell: SFReuseable {}
 extension SFTableViewHeaderFooterView: SFReuseable {}
