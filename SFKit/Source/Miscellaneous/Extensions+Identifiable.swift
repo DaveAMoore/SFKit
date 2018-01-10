@@ -6,6 +6,13 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+extension UITableView {
+    
+    open func dequeueReusableCell<T>(ofType type: T.Type, for indexPath: IndexPath) -> T where T: UITableViewCell {
+        return dequeueReusableCell(withIdentifier: type.typeName, for: indexPath) as! T
+    }
+}
+
 extension UIStoryboard {
     
     /// Instantiates and returns the view controller with the specified identifier.
