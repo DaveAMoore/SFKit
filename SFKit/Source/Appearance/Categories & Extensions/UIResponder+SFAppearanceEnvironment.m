@@ -30,7 +30,7 @@ static char kSFAppearanceEnvironmentAppearance;
     objc_setAssociatedObject(self, &kSFAppearanceEnvironmentAppearance, appearance, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-#pragma mark: - Default Implementation
+#pragma mark - Default Implementation
 
 - (void)appearanceStyleDidChange:(SFAppearanceStyle)newAppearanceStyle {}
 
