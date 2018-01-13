@@ -11,6 +11,14 @@
 
 @implementation UIViewController (SFAppearanceEnvironment)
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+#warning overriding initial '-viewDidLoad' method body can be potentially catastrophic.
+- (void)viewDidLoad {
+    [self registerForAppearanceUpdates];
+}
+#pragma clang diagnostic pop
+
 - (void)appearanceStyleDidChange:(SFAppearanceStyle)newAppearanceStyle {
     [self setNeedsStatusBarAppearanceUpdate];
 }

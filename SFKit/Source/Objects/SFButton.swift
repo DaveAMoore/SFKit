@@ -160,7 +160,7 @@ extension SFColor {
         case .rounded:
             // Use UIFontMetrics for a more custom look, but that only works on iOS 11 and later.
             if #available(iOS 11.0, *) {
-                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 16, weight: .semibold))
+                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 16, weight: .medium))
             } else {
                 font = UIFont.preferredFont(forTextStyle: .headline)
             }
@@ -176,7 +176,7 @@ extension SFColor {
         case .square:
             // Use UIFontMetrics for a more custom look, but that only works on iOS 11 and later.
             if #available(iOS 11.0, *) {
-                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .semibold))
+                font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .medium))
             } else {
                 font = UIFont.preferredFont(forTextStyle: .headline)
             }
