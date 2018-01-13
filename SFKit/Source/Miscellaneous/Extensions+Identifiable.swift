@@ -8,8 +8,12 @@
 
 extension UITableView {
     
+    open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UITableViewCell {
+        return dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! T
+    }
+    
     open func dequeueReusableCell<T>(ofType type: T.Type, for indexPath: IndexPath) -> T where T: UITableViewCell {
-        return dequeueReusableCell(withIdentifier: type.typeName, for: indexPath) as! T
+        return dequeueReusableCell(ofType: type, withIdentifier: type.typeName, for: indexPath)
     }
 }
 

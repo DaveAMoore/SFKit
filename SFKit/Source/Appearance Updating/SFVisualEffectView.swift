@@ -8,7 +8,11 @@
 
 import UIKit
 
+@IBDesignable
 open class SFVisualEffectView: UIVisualEffectView {
+    
+    /// Boolean value indicating if the visual effect view uses an extra light blur effect.
+    @IBInspectable open var isExtraLight: Bool = false
     
     // MARK: - Lifecycle
     
@@ -37,7 +41,7 @@ open class SFVisualEffectView: UIVisualEffectView {
         let isLightAppearance = newAppearanceStyle == .light
         
         // Select the appropriate effect style.
-        let effectStyle: UIBlurEffectStyle = isLightAppearance ? .extraLight : .dark
+        let effectStyle: UIBlurEffectStyle = isLightAppearance ? (isExtraLight ? .extraLight : .light) : .dark
         
         // Make a blur effect for the newly determined style.
         let blurEffect = UIBlurEffect(style: effectStyle)

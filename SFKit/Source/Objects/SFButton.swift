@@ -228,60 +228,26 @@ extension SFColor {
     private func updateIsHighlighted() {
         // Adjust as needed.
         if self.isHighlighted {
-            backgroundColor = SFColor.clear
+            /*backgroundColor = SFColor.darkBlue
             setTitleColor(SFColor.blue, for: .normal)
             self.layer.borderColor = SFColor.blue.cgColor
             self.layer.borderWidth = 3.0
-            tintColor = SFColor.blue
+            tintColor = SFColor.blue*/
+            UIView.animate(withDuration: 0.255) {
+                self.alpha = 0.6
+            }
         } else {
+            UIView.animate(withDuration: 0.155) {
+                self.alpha = 1.0
+            }
+            
             backgroundColor = SFColor.blue
             setTitleColor(SFColor.white, for: .normal)
-            self.layer.borderColor = SFColor.darkBlue.cgColor
-            self.layer.borderWidth = self.restingBorderWidth
+            layer.borderColor = SFColor.darkBlue.cgColor
+            layer.borderWidth = restingBorderWidth
             tintColor = SFColor.white
         }
         
-        /*
-         let wasHighlighted = isHighlighted
-         // let wasEnabled = isEnabled
-         // let wasSelected = isSelected
-         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
-            // Only continue if the values didn't change since we waited.
-            guard wasHighlighted == self.isHighlighted /* wasEnabled == self.isEnabled, wasSelected == self.isSelected */ else { return }
-            
-            // Declare the background and title colors.
-            let backgroundColor: UIColor?
-            let titleColor: UIColor?
-            let tintColor: UIColor
-            
-            // Adjust as needed.
-            if self.isHighlighted {
-                backgroundColor = SFColor.clear
-                titleColor = SFColor.blue
-                self.layer.borderColor = SFColor.blue.cgColor
-                self.layer.borderWidth = 3.0
-                tintColor = SFColor.blue
-            } else {
-                backgroundColor = SFColor.blue
-                titleColor = SFColor.white
-                self.layer.borderColor = SFColor.darkBlue.cgColor
-                self.layer.borderWidth = self.restingBorderWidth
-                tintColor = SFColor.white
-            }
-            
-            // Cancel any previous transitions.
-            self.layer.removeAllAnimations()
-            
-            // Start the transition.
-            UIView.animate(withDuration: 0.2, delay: 0.75,
-                           options: [.transitionCrossDissolve, .allowUserInteraction],
-                           animations: {
-                            self.backgroundColor = backgroundColor
-                            self.setTitleColor(titleColor, for: .normal)
-                            self.tintColor = tintColor
-            }, completion: nil)
-        } */
     }
     
     // MARK: - Helper Methods
