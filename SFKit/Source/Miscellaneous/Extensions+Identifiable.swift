@@ -15,6 +15,10 @@ extension UITableView {
     open func dequeueReusableCell<T>(ofType type: T.Type, for indexPath: IndexPath) -> T where T: UITableViewCell {
         return dequeueReusableCell(ofType: type, withIdentifier: type.typeName, for: indexPath)
     }
+    
+    open func cell<T>(ofType type: T.Type, forRowAt indexPath: IndexPath) -> T? where T: UITableViewCell {
+        return cellForRow(at: indexPath) as? T
+    }
 }
 
 extension UIStoryboard {
