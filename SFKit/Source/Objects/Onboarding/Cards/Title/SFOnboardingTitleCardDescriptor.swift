@@ -6,7 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-public class SFOnboardingTitleCardDescriptor: SFOnboardingCardDescriptor {
+final public class SFOnboardingTitleCardDescriptor: SFOnboardingCardDescriptor {
     
     /// Cell type that is associated with the descriptor.
     private typealias CardType = SFOnboardingTitleCard

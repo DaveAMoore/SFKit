@@ -78,6 +78,7 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
         // Configure the appearance.
         view.backgroundColor = SFColor.white
         secondaryButton.setTitleColor(SFColor.blue, for: .normal)
+        bottomContainer.backgroundColor = SFColor.white
     }
     
     func stageWillUpdate() {

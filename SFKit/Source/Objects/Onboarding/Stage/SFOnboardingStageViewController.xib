@@ -115,7 +115,7 @@
                 <outlet property="primaryButton" destination="udg-RT-sDx" id="8kU-XQ-5AZ"/>
                 <outlet property="secondaryButton" destination="cg9-WO-gE6" id="HRK-8W-yUC"/>
                 <outlet property="tableView" destination="MLO-jM-z7i" id="NWp-hD-4um"/>
-                <outlet property="topContainer" destination="yWd-Bm-pOh" id="BpJ-Ov-80W"/>
+                <outlet property="topContainer" destination="txA-7P-c98" id="f8y-gP-Voy"/>
                 <outlet property="trailingButton" destination="xPt-ap-Tbh" id="HdU-xf-UD9"/>
             </connections>
             <point key="canvasLocation" x="761.5" y="319"/>
