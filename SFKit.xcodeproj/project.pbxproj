@@ -63,6 +63,19 @@
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
 		63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */; };
 		63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */; };
+		6324D3E7201EBFC500D762DA /* SFOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */; };
+		6324D3EA201EC05700D762DA /* SFOnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */; };
+		6324D3EC201EC0DD00D762DA /* SFOnboardingCardDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3EB201EC0DD00D762DA /* SFOnboardingCardDescriptor.swift */; };
+		6324D3EE201EC47300D762DA /* SFOnboardingTitleCardDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3ED201EC47300D762DA /* SFOnboardingTitleCardDescriptor.swift */; };
+		6324D3F0201EC7A100D762DA /* SFOnboardingTextFieldCardDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3EF201EC7A100D762DA /* SFOnboardingTextFieldCardDescriptor.swift */; };
+		6324D3F4201FC2B000D762DA /* SFOnboardingPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3F2201FC2B000D762DA /* SFOnboardingPushAnimator.swift */; };
+		6324D3F5201FC2B000D762DA /* SFOnboardingTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3F3201FC2B000D762DA /* SFOnboardingTransitionController.swift */; };
+		6324D3F9201FC66200D762DA /* SFOnboardingTitleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3F7201FC66200D762DA /* SFOnboardingTitleCard.swift */; };
+		6324D3FA201FC66200D762DA /* SFOnboardingTitleCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324D3F8201FC66200D762DA /* SFOnboardingTitleCard.xib */; };
+		6324D400201FCE9200D762DA /* SFOnboardingTextFieldCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3FE201FCE9200D762DA /* SFOnboardingTextFieldCard.swift */; };
+		6324D401201FCE9200D762DA /* SFOnboardingTextFieldCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324D3FF201FCE9200D762DA /* SFOnboardingTextFieldCard.xib */; };
+		6324D403201FD01B00D762DA /* SFOnboardingStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D402201FD01B00D762DA /* SFOnboardingStageViewController.swift */; };
+		6324D405201FD5D100D762DA /* SFOnboardingStageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324D404201FD5D100D762DA /* SFOnboardingStageViewController.xib */; };
 		6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */; };
 		6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2CD1F3619B7005C73F3 /* SFAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -149,6 +162,19 @@
 		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
 		6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Identifiable+SFReuseable.swift"; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
+		6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingController.swift; sourceTree = "<group>"; };
+		6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingStage.swift; sourceTree = "<group>"; };
+		6324D3EB201EC0DD00D762DA /* SFOnboardingCardDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingCardDescriptor.swift; sourceTree = "<group>"; };
+		6324D3ED201EC47300D762DA /* SFOnboardingTitleCardDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTitleCardDescriptor.swift; sourceTree = "<group>"; };
+		6324D3EF201EC7A100D762DA /* SFOnboardingTextFieldCardDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTextFieldCardDescriptor.swift; sourceTree = "<group>"; };
+		6324D3F2201FC2B000D762DA /* SFOnboardingPushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFOnboardingPushAnimator.swift; sourceTree = "<group>"; };
+		6324D3F3201FC2B000D762DA /* SFOnboardingTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFOnboardingTransitionController.swift; sourceTree = "<group>"; };
+		6324D3F7201FC66200D762DA /* SFOnboardingTitleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTitleCard.swift; sourceTree = "<group>"; };
+		6324D3F8201FC66200D762DA /* SFOnboardingTitleCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOnboardingTitleCard.xib; sourceTree = "<group>"; };
+		6324D3FE201FCE9200D762DA /* SFOnboardingTextFieldCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTextFieldCard.swift; sourceTree = "<group>"; };
+		6324D3FF201FCE9200D762DA /* SFOnboardingTextFieldCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOnboardingTextFieldCard.xib; sourceTree = "<group>"; };
+		6324D402201FD01B00D762DA /* SFOnboardingStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingStageViewController.swift; sourceTree = "<group>"; };
+		6324D404201FD5D100D762DA /* SFOnboardingStageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOnboardingStageViewController.xib; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
 		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
@@ -497,6 +523,56 @@
 			path = "Appearance Updating";
 			sourceTree = "<group>";
 		};
+		6324D3E8201EC03C00D762DA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */,
+				63D40AA020211A1700DD1AF9 /* Stage */,
+				6324D3F1201EC8A400D762DA /* Cards */,
+				6324D3F6201FC30C00D762DA /* Transition */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6324D3F1201EC8A400D762DA /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3EB201EC0DD00D762DA /* SFOnboardingCardDescriptor.swift */,
+				6324D3FC201FCB5700D762DA /* Title */,
+				6324D3FD201FCE7A00D762DA /* Text Field */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		6324D3F6201FC30C00D762DA /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3F2201FC2B000D762DA /* SFOnboardingPushAnimator.swift */,
+				6324D3F3201FC2B000D762DA /* SFOnboardingTransitionController.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		6324D3FC201FCB5700D762DA /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3ED201EC47300D762DA /* SFOnboardingTitleCardDescriptor.swift */,
+				6324D3F7201FC66200D762DA /* SFOnboardingTitleCard.swift */,
+				6324D3F8201FC66200D762DA /* SFOnboardingTitleCard.xib */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		6324D3FD201FCE7A00D762DA /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3EF201EC7A100D762DA /* SFOnboardingTextFieldCardDescriptor.swift */,
+				6324D3FE201FCE9200D762DA /* SFOnboardingTextFieldCard.swift */,
+				6324D3FF201FCE9200D762DA /* SFOnboardingTextFieldCard.xib */,
+			);
+			path = "Text Field";
+			sourceTree = "<group>";
+		};
 		636D65BA1F376D7400F3BF35 /* Categories & Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +588,9 @@
 		637D6B061FB7F0B100397317 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				6324D3E8201EC03C00D762DA /* Onboarding */,
+				6313E300200087660065EE25 /* Charts */,
+				6313E33D200089620065EE25 /* Ring */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
@@ -520,8 +599,6 @@
 				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
-				6313E300200087660065EE25 /* Charts */,
-				6313E33D200089620065EE25 /* Ring */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -741,6 +818,16 @@
 			path = Appearance;
 			sourceTree = "<group>";
 		};
+		63D40AA020211A1700DD1AF9 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */,
+				6324D402201FD01B00D762DA /* SFOnboardingStageViewController.swift */,
+				6324D404201FD5D100D762DA /* SFOnboardingStageViewController.xib */,
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
 		63F459691FE404FF008B62C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,6 +962,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6324D3FA201FC66200D762DA /* SFOnboardingTitleCard.xib in Resources */,
+				6324D401201FCE9200D762DA /* SFOnboardingTextFieldCard.xib in Resources */,
+				6324D405201FD5D100D762DA /* SFOnboardingStageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,15 +984,21 @@
 			files = (
 				6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */,
 				6313E356200121430065EE25 /* SFAccessibilityFunctions.m in Sources */,
+				6324D3EC201EC0DD00D762DA /* SFOnboardingCardDescriptor.swift in Sources */,
 				63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */,
 				63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */,
+				6324D3F0201EC7A100D762DA /* SFOnboardingTextFieldCardDescriptor.swift in Sources */,
 				6313E335200087D50065EE25 /* SFPieChartLegendCell.m in Sources */,
 				637D6B091FB7F0C500397317 /* SFRingProgressView.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6313E336200087D50065EE25 /* SFDiscreteGraphChartView.m in Sources */,
 				6313E323200087D50065EE25 /* SFPieChartLegendView.m in Sources */,
+				6324D403201FD01B00D762DA /* SFOnboardingStageViewController.swift in Sources */,
 				6313E2FC200086810065EE25 /* SFTableViewController.swift in Sources */,
 				6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */,
+				6324D3F5201FC2B000D762DA /* SFOnboardingTransitionController.swift in Sources */,
+				6324D3F9201FC66200D762DA /* SFOnboardingTitleCard.swift in Sources */,
+				6324D3E7201EBFC500D762DA /* SFOnboardingController.swift in Sources */,
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				6313E31F200087D50065EE25 /* SFPieChartPieView.m in Sources */,
 				6313E342200089840065EE25 /* SFSkin.m in Sources */,
@@ -913,6 +1009,7 @@
 				6313E331200087D50065EE25 /* SFPieChartLegendCollectionViewLayout.m in Sources */,
 				6313E2FB200086810065EE25 /* SFTableView.swift in Sources */,
 				63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */,
+				6324D3EA201EC05700D762DA /* SFOnboardingStage.swift in Sources */,
 				637D6B0A1FB7F0C500397317 /* SFGradientGenerator.swift in Sources */,
 				63F90A871F3128530037E5CD /* SFViewController.swift in Sources */,
 				6313E332200087D50065EE25 /* SFGraphChartView.m in Sources */,
@@ -923,11 +1020,13 @@
 				63F6EFA02002CDF500B7D3E8 /* Extensions+Identifiable.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
 				6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */,
+				6324D400201FCE9200D762DA /* SFOnboardingTextFieldCard.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
 				6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */,
 				6313E34E20008A100065EE25 /* SFTypes.m in Sources */,
 				636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */,
+				6324D3F4201FC2B000D762DA /* SFOnboardingPushAnimator.swift in Sources */,
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				6313E34A200089EF0065EE25 /* SFHelpers.m in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
@@ -939,6 +1038,7 @@
 				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
 				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
+				6324D3EE201EC47300D762DA /* SFOnboardingTitleCardDescriptor.swift in Sources */,
 				6313E326200087D50065EE25 /* SFPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1072,7 +1172,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
