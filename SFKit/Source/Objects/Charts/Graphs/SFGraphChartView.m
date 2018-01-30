@@ -782,9 +782,9 @@ SF_INLINE CALayer *graphPointLayerWithColor(UIColor *color, BOOL drawPointIndica
 - (void)setScrubberViewsHidden:(BOOL)hidden animated:(BOOL)animated {
     void (^updateAlpha)(BOOL) = ^(BOOL hidden) {
         CGFloat alpha = hidden ? 0.0 : 1.0;
-        _scrubberThumbView.alpha = alpha;
-        _scrubberLine.alpha = alpha;
-        _scrubberLabel.alpha = alpha;
+        self->_scrubberThumbView.alpha = alpha;
+        self->_scrubberLine.alpha = alpha;
+        self->_scrubberLabel.alpha = alpha;
     };
     
     if (animated) {
