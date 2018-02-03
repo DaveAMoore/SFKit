@@ -6,12 +6,27 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final internal class SFOnboardingStageViewController: SFViewController, UITableViewDataSource {
+internal extension Selector {
+    
+    static let primaryButtonAction = #selector(SFOnboardingStageViewController.primaryButtonAction(_:))
+
+    static let secondaryButtonAction = #selector(SFOnboardingStageViewController.secondaryButtonAction(_:))
+    
+    static let leadingButtonAction = #selector(SFOnboardingStageViewController.leadingButtonAction(_:))
+    
+    static let trailingButtonAction = #selector(SFOnboardingStageViewController.trailingButtonAction(_:))
+}
+
+open class SFOnboardingStageViewController: SFViewController, UITableViewDataSource {
     
     // MARK: - Properties
     
+    /// Retained transition controller.
+    private let transitionController = SFOnboardingTransitionController(withPresentingAnimator: SFOnboardingPushAnimator(),
+                                                                        dismissingAnimator: SFOnboardingPushAnimator(isDismissing: true))
+    
     /// Stage associated with this specific view controller.
-    var stage: SFOnboardingStage! {
+    final public var stage: SFOnboardingStage! {
         willSet {
             stageWillUpdate()
         } didSet {
@@ -19,44 +34,50 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
         }
     }
     
+    /// Parent view controller that is an onboarding controller. This property is computed and operates recursively.
+    open var onboardingController: SFOnboardingController? {
+        return parent as? SFOnboardingController
+    }
+    
+    // MARK: - Outlets
+    
     /// Primary button title that will be presented to users.
-    @IBOutlet var primaryButton: SFButton!
+    @IBOutlet open var primaryButton: UIButton!
     
     /// Secondary button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the secondary button is hidden.
-    @IBOutlet var secondaryButton: UIButton!
+    @IBOutlet open var secondaryButton: UIButton!
     
     /// Leading button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the leading button is hidden.
-    @IBOutlet var leadingButton: SFButton!
+    @IBOutlet open var leadingButton: UIButton!
     
     /// Trailing button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the trailing button is hidden.
-    @IBOutlet var trailingButton: SFButton!
+    @IBOutlet open var trailingButton: UIButton!
+    
+    /// Accessory label that acts as a secondary UI element which can be found above the `primaryControl`.
+    @IBOutlet open var accessoryLabel: UILabel!
     
     /// Contains the `leadingButton` and the `trailingButton`.
     ///
     /// - Note: When the leading & trailing buttons are both hidden, this view is also hidden.
-    @IBOutlet var topContainer: UIView!
+    @IBOutlet open var topContainer: UIView!
     
     /// Contains the `primaryButton` and the `secondaryButton`.
     ///
     /// - Note: When the primary & secondary buttons are both hidden, this view is also hidden.
-    @IBOutlet var bottomContainer: UIView!
+    @IBOutlet open var bottomContainer: UIView!
     
     /// Displays the cards.
-    @IBOutlet var tableView: SFTableView!
-    
-    /// Retained transition controller.
-    private let transitionController = SFOnboardingTransitionController(withPresentingAnimator: SFOnboardingPushAnimator(),
-                                                              dismissingAnimator: SFOnboardingPushAnimator(isDismissing: true))
+    @IBOutlet open var tableView: SFTableView!
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -71,7 +92,7 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
         tableView.dataSource = self
     }
     
-    override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
+    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
         super.appearanceStyleDidChange(newAppearanceStyle)
         // Perform additional appearance setup here.
         
@@ -81,7 +102,14 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
         bottomContainer.backgroundColor = SFColor.white
     }
     
-    func stageWillUpdate() {
+    open override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Stage Interaction
+    
+    open func stageWillUpdate() {
         // Unwrap the stage for this update method.
         guard let stage = stage else { return }
         
@@ -96,20 +124,34 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
         }
     }
     
-    func stageDidUpdate() {
-        // Configure the buttons and labels.
-        primaryButton.setTitle(stage.primaryButtonLocalizedTitle, for: .normal)
-        secondaryButton.setTitle(stage.secondaryButtonLocalizedTitle, for: .normal)
-        leadingButton.setTitle(stage.leadingButtonLocalizedTitle, for: .normal)
-        trailingButton.setTitle(stage.trailingButtonLocalizedTitle, for: .normal)
+    open func stageDidUpdate() {
+        // Configure the controls & the label.
+        stage.primaryControl?.prepare(primaryButton, withDefaultAction: .custom(target: self,
+                                                                                method: .primaryButtonAction,
+                                                                                controlEvents: .touchUpInside),
+                                      for: self)
+        stage.secondaryControl?.prepare(secondaryButton, withDefaultAction: .custom(target: self,
+                                                                                    method: .secondaryButtonAction,
+                                                                                    controlEvents: .touchUpInside),
+                                        for: self)
+        stage.leadingControl?.prepare(leadingButton, withDefaultAction: .custom(target: self,
+                                                                                method: .leadingButtonAction,
+                                                                                controlEvents: .touchUpInside),
+                                      for: self)
+        stage.trailingControl?.prepare(trailingButton, withDefaultAction: .custom(target: self,
+                                                                                  method: .trailingButtonAction,
+                                                                                  controlEvents: .touchUpInside),
+                                       for: self)
+        stage.accessoryLabel?.prepare(accessoryLabel)
         
         // Configure the visibility of buttons and labels.
-        primaryButton.isHidden = stage.primaryButtonLocalizedTitle.isEmpty
-        secondaryButton.isHidden = stage.secondaryButtonLocalizedTitle == nil
-        leadingButton.isHidden = stage.leadingButtonLocalizedTitle == nil
-        trailingButton.isHidden = stage.trailingButtonLocalizedTitle == nil
+        primaryButton.isHidden = stage.primaryControl == nil
+        secondaryButton.isHidden = stage.secondaryControl == nil
+        accessoryLabel.isHidden = stage.accessoryLabel == nil
+        leadingButton.isHidden = stage.leadingControl == nil
+        trailingButton.isHidden = stage.trailingControl == nil
         topContainer.isHidden = leadingButton.isHidden && trailingButton.isHidden
-        bottomContainer.isHidden = primaryButton.isHidden && secondaryButton.isHidden
+        bottomContainer.isHidden = primaryButton.isHidden && secondaryButton.isHidden && accessoryLabel.isHidden
         
         // Enumerate the stage's cards.
         for card in stage.cards {
@@ -122,26 +164,32 @@ final internal class SFOnboardingStageViewController: SFViewController, UITableV
                                forCellReuseIdentifier: cardTypeName)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Actions
+    
+    @objc open func primaryButtonAction(_ sender: Any?) {
+        onboardingController?.presentStage(after: stage)
     }
     
-    // MARK: - Interface
+    @objc open func secondaryButtonAction(_ sender: Any?) {
+        
+    }
     
-    @IBAction func primaryButtonDidTouchUpInside(_ sender: SFButton) {
-        let onboardingController = parent as? SFOnboardingController
-        onboardingController?.presentStage(succeeding: stage, sender: self)
+    @objc open func leadingButtonAction(_ sender: Any?) {
+        onboardingController?.popViewController(animated: true)
+    }
+    
+    @objc open func trailingButtonAction(_ sender: Any?) {
+        onboardingController?.presentStage(after: stage)
     }
     
     // MARK: - Table View Data Source
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stage.cards.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Retrieve the card from the stage.
         let card = stage.cards[indexPath.row]
         

@@ -1,5 +1,5 @@
 //
-//  SFOnboardingCardDescriptor.swift
+//  SFOnboardingCard.swift
 //  SFKit
 //
 //  Created by David Moore on 1/28/18.
@@ -7,7 +7,7 @@
 //
 
 /// A discrete unit for an `SFOnboardingStage`. A particular stage will have cards associated with it, as this structure represents the content component.
-open class SFOnboardingCardDescriptor: Equatable {
+open class SFOnboardingCard: Equatable {
     
     /// Universally unique identifier associated with the receiver.
     private let uuid = UUID()
@@ -32,7 +32,7 @@ open class SFOnboardingCardDescriptor: Equatable {
     /// - Parameters:
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
-    public static func == (lhs: SFOnboardingCardDescriptor, rhs: SFOnboardingCardDescriptor) -> Bool {
+    public static func == (lhs: SFOnboardingCard, rhs: SFOnboardingCard) -> Bool {
         return lhs.associatedCardName == rhs.associatedCardName && lhs.uuid == rhs.uuid
     }
 }

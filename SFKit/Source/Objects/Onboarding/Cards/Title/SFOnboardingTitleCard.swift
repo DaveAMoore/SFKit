@@ -2,36 +2,49 @@
 //  SFOnboardingTitleCard.swift
 //  SFKit
 //
-//  Created by David Moore on 1/29/18.
+//  Created by David Moore on 1/28/18.
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final internal class SFOnboardingTitleCard: SFTableViewCell {
+final public class SFOnboardingTitleCard: SFOnboardingCard {
     
-    /// Label that will present the title.
-    @IBOutlet public var titleLabel: UILabel!
+    /// Cell type that is associated with the descriptor.
+    private typealias CardType = SFOnboardingTitleCardCell
     
-    /// Label that will present the description.
-    @IBOutlet public var detailLabel: UILabel!
+    /// Cell type that is associated with the descriptor.
+    public override var associatedCardName: String {
+        return CardType.typeName
+    }
     
-    /// Image view that will display the image.
-    @IBOutlet public var embeddedImageView: UIImageView!
+    /// Title will be displayed beneath the `image` `UIImageView`.
+    public var localizedTitle: String
     
-    public override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
-        
-        // Configure the view coloring.
-        backgroundColor = SFColor.white
-        titleLabel.textColor = SFColor.black
-        detailLabel.textColor = SFColor.black
-        embeddedImageView.tintColor = SFColor.blue
-        
-        // Configure the title label.
-        if #available(iOS 11.0, *) {
-            titleLabel.font = UIFontMetrics(forTextStyle: .largeTitle).scaledFont(for: UIFont.systemFont(ofSize: 40,
-                                                                                                         weight: .bold))
-            detailLabel.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.systemFont(ofSize: 17,
-                                                                                                    weight: .regular))
-        }
+    /// Description will be presented beneath the `localizedTitle` in the label.
+    public var localizedDescription: String?
+    
+    /// Image will be displayed above the `localizedTitle` label.
+    public var image: UIImage?
+    
+    /// Boolean value indicating if the separator will be hidden on the card.
+    public var separatorIsHidden: Bool
+    
+    /// Initializes a new receiver.
+    public init(localizedTitle: String, localizedDescription: String? = nil, image: UIImage? = nil,
+                separatorIsHidden: Bool = true) {
+        self.localizedTitle = localizedTitle
+        self.localizedDescription = localizedDescription
+        self.image = image
+        self.separatorIsHidden = separatorIsHidden
+    }
+    
+    /// Prepares a card for presentation within a table view.
+    ///
+    /// - Parameter card: Card that must be configured for display.
+    public override func prepare(_ card: SFTableViewCell) {
+        let card = card as! CardType
+        card.titleLabel.text = localizedTitle
+        card.detailLabel.text = localizedDescription
+        card.embeddedImageView.image = image
+        card.separatorInset = separatorIsHidden ? UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude) : UIEdgeInsets(top: 0, left: card.layoutMargins.left, bottom: 0, right: 0)
     }
 }

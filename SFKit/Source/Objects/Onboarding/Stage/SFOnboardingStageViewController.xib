@@ -18,18 +18,18 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-jM-z7i" customClass="SFTableView" customModule="SFKit">
-                        <rect key="frame" x="0.0" y="86" width="375" height="577"/>
+                        <rect key="frame" x="0.0" y="86" width="375" height="530.66666666666663"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections/>
                     </tableView>
                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txA-7P-c98" customClass="SFVisualEffectView" customModule="SFKit">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86.333333333333329"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yWd-Bm-pOh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.333333333333329"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPt-ap-Tbh" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="293.33333333333331" y="44" width="61.666666666666686" height="34"/>
+                                    <rect key="frame" x="293.33333333333331" y="44" width="61.666666666666686" height="34.333333333333343"/>
                                     <state key="normal" title="Next"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
@@ -38,7 +38,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-or-Oda" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="19.999999999999996" y="44" width="40.666666666666657" height="34"/>
+                                    <rect key="frame" x="19.999999999999996" y="44" width="40.666666666666657" height="34.333333333333343"/>
                                     <state key="normal" title="←"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
@@ -64,32 +64,45 @@
                         </userDefinedRuntimeAttributes>
                     </visualEffectView>
                     <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RDh-w0-mao">
-                        <rect key="frame" x="0.0" y="663" width="375" height="149"/>
+                        <rect key="frame" x="0.0" y="616.66666666666663" width="375" height="195.33333333333337"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udg-RT-sDx" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="335" height="50"/>
-                                <state key="normal" title="Continue"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-WO-gE6">
-                                <rect key="frame" x="20" y="82" width="335" height="33"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Skip"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BIs-8w-jze">
+                                <rect key="frame" x="20" y="20" width="335" height="141.33333333333334"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-LB-O9q">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="96.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information you provide will be verified by your selected municipality and used for authentication." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKh-eI-17l" customClass="SFLabel" customModule="SFKit">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                <color key="textColor" red="0.57700993789999999" green="0.57700993789999999" blue="0.57700993789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vek-mk-sB4" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="46.333333333333371" width="335" height="50"/>
+                                                <state key="normal" title="Continue"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LED-kH-h43">
+                                        <rect key="frame" x="0.0" y="108.33333333333337" width="335" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Skip"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ksi-Rv-hbY" firstAttribute="trailing" secondItem="cg9-WO-gE6" secondAttribute="trailing" constant="20" id="9Et-u7-8Zm"/>
-                            <constraint firstItem="udg-RT-sDx" firstAttribute="top" secondItem="ksi-Rv-hbY" secondAttribute="top" constant="20" id="Rq6-Xb-QKC"/>
-                            <constraint firstItem="cg9-WO-gE6" firstAttribute="leading" secondItem="ksi-Rv-hbY" secondAttribute="leading" constant="20" id="UxO-WA-nKK"/>
-                            <constraint firstItem="udg-RT-sDx" firstAttribute="leading" secondItem="ksi-Rv-hbY" secondAttribute="leading" constant="20" id="ZdF-R4-o3K"/>
-                            <constraint firstItem="ksi-Rv-hbY" firstAttribute="trailing" secondItem="udg-RT-sDx" secondAttribute="trailing" constant="20" id="e3R-Me-QzD"/>
-                            <constraint firstItem="cg9-WO-gE6" firstAttribute="top" secondItem="udg-RT-sDx" secondAttribute="bottom" constant="12" id="gZJ-pf-eAc"/>
-                            <constraint firstItem="ksi-Rv-hbY" firstAttribute="bottom" secondItem="cg9-WO-gE6" secondAttribute="bottom" id="zLb-Gy-j4C"/>
+                            <constraint firstAttribute="trailing" secondItem="BIs-8w-jze" secondAttribute="trailing" constant="20" id="Dj6-qj-fS1"/>
+                            <constraint firstItem="ksi-Rv-hbY" firstAttribute="bottom" secondItem="BIs-8w-jze" secondAttribute="bottom" id="TKB-83-ptm"/>
+                            <constraint firstItem="BIs-8w-jze" firstAttribute="leading" secondItem="RDh-w0-mao" secondAttribute="leading" constant="20" id="lhv-LJ-XSq"/>
+                            <constraint firstItem="BIs-8w-jze" firstAttribute="top" secondItem="ksi-Rv-hbY" secondAttribute="top" constant="20" id="oIv-Bt-MF4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ksi-Rv-hbY"/>
                     </view>
@@ -110,15 +123,16 @@
                 <viewLayoutGuide key="safeArea" id="taH-pw-Vr0"/>
             </view>
             <connections>
+                <outlet property="accessoryLabel" destination="yKh-eI-17l" id="NIy-4e-evc"/>
                 <outlet property="bottomContainer" destination="RDh-w0-mao" id="p8C-Cv-RPp"/>
                 <outlet property="leadingButton" destination="d9g-or-Oda" id="UYJ-Wn-SeH"/>
-                <outlet property="primaryButton" destination="udg-RT-sDx" id="8kU-XQ-5AZ"/>
-                <outlet property="secondaryButton" destination="cg9-WO-gE6" id="HRK-8W-yUC"/>
+                <outlet property="primaryButton" destination="Vek-mk-sB4" id="Xhk-YL-lHx"/>
+                <outlet property="secondaryButton" destination="LED-kH-h43" id="YK2-xA-fQU"/>
                 <outlet property="tableView" destination="MLO-jM-z7i" id="NWp-hD-4um"/>
                 <outlet property="topContainer" destination="txA-7P-c98" id="f8y-gP-Voy"/>
                 <outlet property="trailingButton" destination="xPt-ap-Tbh" id="HdU-xf-UD9"/>
             </connections>
-            <point key="canvasLocation" x="761.5" y="319"/>
+            <point key="canvasLocation" x="727" y="329"/>
         </viewController>
     </objects>
 </document>
