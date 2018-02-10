@@ -6,7 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-open class SFOnboardingStageElement: Equatable {
+open class SFOnboardingStageElement: NSObject {
     
     /// Universally unique identifier corresponding to this control only.
     private let uuid: UUID = UUID()
