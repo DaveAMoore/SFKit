@@ -1,32 +1,26 @@
 //
-//  SFOnboardingStageControl.swift
+//  SFOnboardingControl.swift
 //  SFKit
 //
 //  Created by David Moore on 1/30/18.
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-public let kSFOnboardingStageControlOnboardingStageViewController = "controller" as NSString
-
 fileprivate extension Selector {
-    
-    static let dismissOnboardingController = #selector(SFOnboardingStageControl.dismissOnboardingController(_:))
-    
-    static let startActivityIndicator = #selector(SFOnboardingStageControl.startActivityIndicator(_:))
-    
-    static let stopActivityIndicator = #selector(SFOnboardingStageControl.stopActivityIndicator(_:))
-    
-    static let enableUserInteraction = #selector(SFOnboardingStageControl.enableUserInteraction(_:))
-    
-    static let disableUserInteraction = #selector(SFOnboardingStageControl.disableUserInteraction(_:))
+    static let dismissOnboardingController  = #selector(SFOnboardingControl.dismissOnboardingController(_:))
+    static let startActivityIndicator       = #selector(SFOnboardingControl.startActivityIndicator(_:))
+    static let stopActivityIndicator        = #selector(SFOnboardingControl.stopActivityIndicator(_:))
+    static let enableUserInteraction        = #selector(SFOnboardingControl.enableUserInteraction(_:))
+    static let disableUserInteraction       = #selector(SFOnboardingControl.disableUserInteraction(_:))
+    static let void                         = #selector(SFOnboardingControl.void(_:))
 }
 
-open class SFOnboardingStageControl: SFOnboardingStageElement {
+open class SFOnboardingControl: SFOnboardingElement {
     
     // MARK: - Types
     
     /// Closure used for communication between the receiver and caller of an initialization call.
-    public typealias CommunicationClosure = ((Any?, (@escaping ([Action]) -> Void)) -> Void)
+    public typealias CommunicationClosure = ((SFOnboardingStageViewController?, Any?, (@escaping ([Action]) -> Void)) -> Void)
     
     /// Wrapper for `Selector` that allows precise indication of action-related parameters.
     public enum Action {
@@ -34,21 +28,22 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         case inherited
         
         /// Dismisses the entire onboarding controller.
-        case dismissOnboardingController
+        case dismissOnboardingController(UIControlEvents)
         
         /// Presents an activity indicator and starts it.
-        case startActivityIndicator
+        case startActivityIndicator(UIControlEvents)
         
         /// Stops an activity indicator and then removes it from the view hierarchy.
-        case stopActivityIndicator
+        case stopActivityIndicator(UIControlEvents)
         
         /// Enables user interaction of the controller's view.
-        case enableUserInteraction
+        case enableUserInteraction(UIControlEvents)
         
         /// Disables user interaction of the controller's view.
-        case disableUserInteraction
+        case disableUserInteraction(UIControlEvents)
         
-        indirect case callback(Action, CommunicationClosure)
+        /// Void method will be called.
+        case void(UIControlEvents)
         
         /// Custom defined action.
         ///
@@ -64,6 +59,10 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         ///
         /// A bitmask specifying the control-specific events for which the action method is called. Always specify at least one constant. For a list of possible constants, see UIControlEvents.
         case custom(target: Any?, method: Selector, controlEvents: UIControlEvents)
+        
+        /// Specifies an action that should be called and provides a closure to call after execution.
+        /// The communication closure may be used for any purpose. Actions should be returned on the main queue, failure to do so will result in undefined behaviour.
+        indirect case callback(Action, CommunicationClosure)
     }
     
     /// Contains metadata for an `Action`.
@@ -80,18 +79,14 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
     
     // MARK: - Properties
     
-    /// Contains a hodgepodge of different objects that are stored under keys.
-    open var userInfo = NSMapTable<NSString, AnyObject>.strongToWeakObjects()
+    /// Stage view controller that owns the stage control.
+    open weak private(set) var controller: SFOnboardingStageViewController?
     
     /// Collection of all actions that will be performed for the given control.
     open var actions: [Action]
     
+    /// Maps a method selector to a specific closure designated for communication.
     private lazy var callbackTable: [Selector: CommunicationClosure] = [:]
-    
-    /// Stage view controller that owns the stage control.
-    private var controller: SFOnboardingStageViewController? {
-        return userInfo.object(forKey: kSFOnboardingStageControlOnboardingStageViewController) as? SFOnboardingStageViewController
-    }
     
     // MARK: - Initialization
     
@@ -114,9 +109,9 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
     ///   - defaultAction: Action that will be run when a `.default` `Action` is encountered. This value must be an `Action` with the `custom(target:method:controlEvents:)` case. Providing another case invokes undefined behaviour.
     ////  - controller: Onboarding stage view controller that will be used as the ultimate `target` when needed. The `controller` is weakly referenced.
     open func prepare(_ control: UIControl, withDefaultAction defaultAction: Action?,
-                      for controller: SFOnboardingStageViewController) {
-        // Copy the controller weakly to the user info dictionary.
-        userInfo.setObject(controller, forKey: kSFOnboardingStageControlOnboardingStageViewController)
+                      for controller: SFOnboardingStageViewController?) {
+        // Copy the controller weakly.
+        self.controller = controller
         
         // Set the localized title on the control, if it is a button.
         if let control = control as? UIButton {
@@ -147,16 +142,18 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
     /// - Note: Calling this method will cause any relevant events to occur. For example, if a `.callback` case is provided as `action` it will be added to the callback table automatically. Therefore, it would be wise to use this method only when required and deemed a sufficent requirement. Result caching may be a useful technique in certain cases.
     private func metaAction(for action: Action) -> MetaAction {
         switch action {
-        case .dismissOnboardingController:
-            return MetaAction(target: self, action: .dismissOnboardingController, controlEvents: .touchUpInside)
-        case .startActivityIndicator:
-            return MetaAction(target: self, action: .startActivityIndicator, controlEvents: .touchUpInside)
-        case .stopActivityIndicator:
-            return MetaAction(target: self, action: .stopActivityIndicator, controlEvents: .touchUpInside)
-        case .enableUserInteraction:
-            return MetaAction(target: self, action: .enableUserInteraction, controlEvents: .touchUpInside)
-        case .disableUserInteraction:
-            return MetaAction(target: self, action: .disableUserInteraction, controlEvents: .touchUpInside)
+        case let .dismissOnboardingController(controlEvents):
+            return MetaAction(target: self, action: .dismissOnboardingController, controlEvents: controlEvents)
+        case let .startActivityIndicator(controlEvents):
+            return MetaAction(target: self, action: .startActivityIndicator, controlEvents: controlEvents)
+        case let .stopActivityIndicator(controlEvents):
+            return MetaAction(target: self, action: .stopActivityIndicator, controlEvents: controlEvents)
+        case let .enableUserInteraction(controlEvents):
+            return MetaAction(target: self, action: .enableUserInteraction, controlEvents: controlEvents)
+        case let .disableUserInteraction(controlEvents):
+            return MetaAction(target: self, action: .disableUserInteraction, controlEvents: controlEvents)
+        case let .void(controlEvents):
+            return MetaAction(target: self, action: .void, controlEvents: controlEvents)
         case let .custom(target, method, controlEvents):
             return MetaAction(target: target, action: method, controlEvents: controlEvents)
         case let .callback(action, closure):
@@ -222,7 +219,7 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         let callback = callbackTable[method]
         
         // Execute the callback, passing in the closure for additional calling.
-        callback?(sender) { actions in
+        callback?(controller, sender) { actions in
             for action in actions {
                 self.callAction(action, sender: sender)
             }
@@ -239,8 +236,11 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
     }
     
     /// Starts an activity indicator in the view.
-    @objc internal func startActivityIndicator(_ sender: UIButton) {
+    @objc internal func startActivityIndicator(_ sender: UIView) {
         guard let controller = controller else { return }
+        
+        // Selectively assign the sender.
+        let sender = sender is UIButton ? sender : controller.trailingButton
         
         // Configure an activity indicator (i.e., spinner).
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -267,9 +267,10 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         executeCallback(forMethod: .startActivityIndicator, sender: [sender, activityIndicator])
     }
     
+    /// Stops an activity indicator within the view.
     @objc internal func stopActivityIndicator(_ sender: [Any]) {
         // Retrieve the values from the sender.
-        let button = sender[0] as! UIButton
+        let button = sender[0] as! UIView
         let activityIndicator = sender[1] as! UIActivityIndicatorView
         
         // Prepare the button and activity indicator.
@@ -290,6 +291,7 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         executeCallback(forMethod: .stopActivityIndicator, sender: sender)
     }
     
+    /// Enables user interaction for the controller's view.
     @objc internal func enableUserInteraction(_ sender: Any?) {
         // Retrieve the controller from the user info map table.
         guard let controller = controller else { return }
@@ -301,6 +303,7 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         executeCallback(forMethod: .enableUserInteraction, sender: sender)
     }
     
+    /// Disables user interaction for the controller's view.
     @objc internal func disableUserInteraction(_ sender: Any?) {
         // Retrieve the controller from the user info map table.
         guard let controller = controller else { return }
@@ -310,5 +313,11 @@ open class SFOnboardingStageControl: SFOnboardingStageElement {
         
         // Execute the callback.
         executeCallback(forMethod: .disableUserInteraction, sender: sender)
+    }
+    
+    /// Void method.
+    @objc internal func void(_ sender: Any?) {
+        // Execute the callback.
+        executeCallback(forMethod: .void, sender: sender)
     }
 }

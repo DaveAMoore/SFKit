@@ -1,12 +1,12 @@
 //
-//  SFOnboardingStageLabel.swift
+//  SFOnboardingLabel.swift
 //  SFKit
 //
 //  Created by David Moore on 2/2/18.
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-open class SFOnboardingStageLabel: SFOnboardingStageElement {
+open class SFOnboardingLabel: SFOnboardingElement {
     
     /// Configures the `text` property of a `UILabel` with `localizedTitle`.
     ///

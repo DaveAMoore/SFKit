@@ -6,7 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final internal class SFOnboardingTitleCardCell: SFTableViewCell {
+final public class SFOnboardingTitleCardCell: SFTableViewCell {
     
     /// Label that will present the title.
     @IBOutlet public var titleLabel: UILabel!

@@ -6,43 +6,31 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final public class SFOnboardingTextFieldCard: SFOnboardingCard {
+open class SFOnboardingTextFieldCard: SFOnboardingCard {
     
-    /// Cell type that is associated with the descriptor.
-    private typealias CardType = SFOnboardingTextFieldCardCell
-    
-    /// Cell type that is associated with the descriptor.
-    public override var associatedCardName: String {
-        return CardType.typeName
+    /// Type of cell that will be created for the card.
+    open override var cellType: UITableViewCell.Type {
+        return SFOnboardingTextFieldCardCell.self
     }
     
-    /// Title will be displayed alongside text field.
-    public var localizedTitle: String
+    /// Displays the title that is presented alongside the text field.
+    open var titleLabel: SFOnboardingLabel?
     
-    /// 
-    public var localizedPlaceholder: String?
+    ///
+    open var textField: SFOnboardingTextField
     
-    /// Boolean value indicating if the text field will be for secure text entry.
-    public var isSecureTextEntry: Bool
-    
-    /// Type of return key that will be presented in the cell.
-    public var returnKeyType: UIReturnKeyType
-    
-    /// Initializes a new receiver.
-    public init(localizedTitle: String, isSecureTextEntry: Bool, returnKeyType: UIReturnKeyType) {
-        self.localizedTitle = localizedTitle
-        self.isSecureTextEntry = isSecureTextEntry
-        self.returnKeyType = returnKeyType
+    /// Initializes a new receiver.    
+    public init(titleLabel: SFOnboardingLabel?, textField: SFOnboardingTextField) {
+        self.titleLabel = titleLabel
+        self.textField = textField
     }
     
     /// Prepares a card for presentation within a table view.
     ///
     /// - Parameter card: Card that must be configured for display.
-    public override func prepare(_ card: SFTableViewCell) {
-        let card = card as! CardType
-        card.titleLabel.text = localizedTitle
-        card.textField.isSecureTextEntry = isSecureTextEntry
-        card.textField.returnKeyType = returnKeyType
-        card.textField.enablesReturnKeyAutomatically = true
+    open override func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
+        let card = card as! SFOnboardingTextFieldCardCell
+        titleLabel?.prepare(card.titleLabel)
+        textField.prepare(card.textField, withDefaultAction: nil, for: controller)
     }
 }

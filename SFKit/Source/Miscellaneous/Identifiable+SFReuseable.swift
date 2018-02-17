@@ -45,7 +45,6 @@ extension SFReuseable {
 
 extension NSObject: Identifiable {}
 
-extension SFTableViewCell: SFReuseable {}
-extension SFTableViewHeaderFooterView: SFReuseable {}
-extension SFCollectionViewCell: SFReuseable {}
-extension SFCollectionReusableView: SFReuseable {}
+extension UITableViewCell: SFReuseable {}
+extension UITableViewHeaderFooterView: SFReuseable {}
+extension UICollectionReusableView: SFReuseable {}

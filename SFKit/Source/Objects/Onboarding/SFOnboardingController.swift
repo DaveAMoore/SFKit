@@ -17,6 +17,9 @@ open class SFOnboardingController: SFViewController {
     /// Collection of all stages that will be presented by the receiver.
     open private(set) var stages: [SFOnboardingStage]
     
+    /// Dictionary that may contain a variety of different value pairs without any particular specificity.
+    open lazy var userInfo: [AnyHashable: Any] = [:]
+    
     /// The view controller at the root of the onboarding stack.
     open var rootViewController: UIViewController? {
         return childViewControllers.first

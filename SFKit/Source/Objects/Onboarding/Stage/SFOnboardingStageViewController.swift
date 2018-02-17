@@ -115,33 +115,26 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         
         // Enumerate the stage's cards.
         for card in stage.cards {
-            // Determine the name of the card's type.
-            let cardTypeName = card.associatedCardName
-            
             // Register the appropriate cell's nib.
             let intermediate: UINib? = nil
-            tableView.register(intermediate, forCellReuseIdentifier: cardTypeName)
+            tableView.register(intermediate, forCellReuseIdentifier: card.reuseIdentifier)
         }
     }
     
     open func stageDidUpdate() {
         // Configure the controls & the label.
-        stage.primaryControl?.prepare(primaryButton, withDefaultAction: .custom(target: self,
-                                                                                method: .primaryButtonAction,
-                                                                                controlEvents: .touchUpInside),
-                                      for: self)
-        stage.secondaryControl?.prepare(secondaryButton, withDefaultAction: .custom(target: self,
-                                                                                    method: .secondaryButtonAction,
-                                                                                    controlEvents: .touchUpInside),
-                                        for: self)
-        stage.leadingControl?.prepare(leadingButton, withDefaultAction: .custom(target: self,
-                                                                                method: .leadingButtonAction,
-                                                                                controlEvents: .touchUpInside),
-                                      for: self)
-        stage.trailingControl?.prepare(trailingButton, withDefaultAction: .custom(target: self,
-                                                                                  method: .trailingButtonAction,
-                                                                                  controlEvents: .touchUpInside),
-                                       for: self)
+        stage.primaryControl?.prepare(primaryButton,
+                                      withDefaultAction: .custom(target: self, method: .primaryButtonAction,
+                                                                 controlEvents: .touchUpInside), for: self)
+        stage.secondaryControl?.prepare(secondaryButton,
+                                        withDefaultAction: .custom(target: self, method: .secondaryButtonAction,
+                                                                   controlEvents: .touchUpInside), for: self)
+        stage.leadingControl?.prepare(leadingButton,
+                                      withDefaultAction: .custom(target: self, method: .leadingButtonAction,
+                                                                 controlEvents: .touchUpInside), for: self)
+        stage.trailingControl?.prepare(trailingButton,
+                                       withDefaultAction: .custom(target: self, method: .trailingButtonAction,
+                                                                  controlEvents: .touchUpInside), for: self)
         stage.accessoryLabel?.prepare(accessoryLabel)
         
         // Configure the visibility of buttons and labels.
@@ -155,13 +148,10 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         
         // Enumerate the stage's cards.
         for card in stage.cards {
-            // Determine the name of the card's type.
-            let cardTypeName = card.associatedCardName
-            
             // Register the appropriate cell's nib.
-            tableView.register(UINib(nibName: cardTypeName,
-                                     bundle: Bundle(for: SFOnboardingStageViewController.self)),
-                               forCellReuseIdentifier: cardTypeName)
+            tableView.register(UINib(nibName: card.nibName,
+                                     bundle: Bundle(for: type(of: card))),
+                               forCellReuseIdentifier: card.reuseIdentifier)
         }
     }
     
@@ -183,6 +173,20 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         onboardingController?.presentStage(after: stage)
     }
     
+    // MARK: - Table View Cell Access
+    
+    /// Retrieves a cell associated with a given `card`. The behaviour of this method is undefined when `tableView`'s cell contents have been modified externally.
+    ///
+    /// - Parameter card: The onboarding card that will be matched to a given cell.
+    /// - Returns: Cell that was prepared and associated with an onboarding card.
+    open func cell(for card: SFOnboardingCard) -> UITableViewCell? {
+        if let index = stage.cards.index(of: card) {
+            return tableView.cellForRow(at: IndexPath(row: index, section: 0))
+        } else {
+            return nil
+        }
+    }
+    
     // MARK: - Table View Data Source
     
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -194,10 +198,10 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         let card = stage.cards[indexPath.row]
         
         // Dequeue the appropriate cell for the card.
-        let cardCell = tableView.dequeueReusableCell(withIdentifier: card.associatedCardName, for: indexPath) as! SFTableViewCell
+        let cardCell = tableView.dequeueReusableCell(withIdentifier: card.reuseIdentifier, for: indexPath)
         
         // Request that the card prepare its cell.
-        card.prepare(cardCell)
+        card.prepare(cardCell, forController: self)
         
         return cardCell
     }

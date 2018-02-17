@@ -13,32 +13,32 @@ public struct SFOnboardingStage: Equatable {
     public var cards: [SFOnboardingCard]
     
     /// Primary button title that will be presented to users.
-    public var primaryControl: SFOnboardingStageControl?
+    public var primaryControl: SFOnboardingControl?
     
     /// Secondary button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the secondary button is hidden.
-    public var secondaryControl: SFOnboardingStageControl?
+    public var secondaryControl: SFOnboardingControl?
     
     /// Leading button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the leading button is hidden.
-    public var leadingControl: SFOnboardingStageControl?
+    public var leadingControl: SFOnboardingControl?
     
     /// Trailing button title that will be presented to users.
     ///
     /// - Note: When set to `nil` the trailing button is hidden.
-    public var trailingControl: SFOnboardingStageControl?
+    public var trailingControl: SFOnboardingControl?
     
     /// Accessory label that acts as a secondary UI element which can be found above the `primaryControl`.
-    public var accessoryLabel: SFOnboardingStageLabel?
+    public var accessoryLabel: SFOnboardingLabel?
     
     public init(cards: [SFOnboardingCard],
-                primaryControl: SFOnboardingStageControl? = nil,
-                secondaryControl: SFOnboardingStageControl? = nil,
-                leadingControl: SFOnboardingStageControl? = nil,
-                trailingControl: SFOnboardingStageControl? = nil,
-                accessoryLabel: SFOnboardingStageLabel? = nil) {
+                primaryControl: SFOnboardingControl? = nil,
+                secondaryControl: SFOnboardingControl? = nil,
+                leadingControl: SFOnboardingControl? = nil,
+                trailingControl: SFOnboardingControl? = nil,
+                accessoryLabel: SFOnboardingLabel? = nil) {
         self.cards = cards
         self.primaryControl = primaryControl
         self.secondaryControl = secondaryControl

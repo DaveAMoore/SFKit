@@ -1,12 +1,12 @@
 //
-//  SFOnboardingStageElement.swift
+//  SFOnboardingElement.swift
 //  SFKit
 //
 //  Created by David Moore on 2/1/18.
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-open class SFOnboardingStageElement: NSObject {
+open class SFOnboardingElement: NSObject {
     
     /// Universally unique identifier corresponding to this control only.
     private let uuid: UUID = UUID()
@@ -31,7 +31,7 @@ open class SFOnboardingStageElement: NSObject {
     /// - Parameters:
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
-    public static func == (lhs: SFOnboardingStageElement, rhs: SFOnboardingStageElement) -> Bool {
+    public static func == (lhs: SFOnboardingElement, rhs: SFOnboardingElement) -> Bool {
         return lhs.uuid == rhs.uuid
     }
 }

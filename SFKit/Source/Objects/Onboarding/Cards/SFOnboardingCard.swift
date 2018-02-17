@@ -7,32 +7,27 @@
 //
 
 /// A discrete unit for an `SFOnboardingStage`. A particular stage will have cards associated with it, as this structure represents the content component.
-open class SFOnboardingCard: Equatable {
+open class SFOnboardingCard: NSObject {
     
-    /// Universally unique identifier associated with the receiver.
-    private let uuid = UUID()
+    /// Type of cell that will be created for the card.
+    open var cellType: UITableViewCell.Type {
+        fatalError("expected 'cellType' to be implemented")
+    }
     
-    /// Cell type that is associated with the descriptor.    
-    open var associatedCardName: String {
-        fatalError("expected 'associatedCardName' computed property to be implemented")
+    /// Name of the cell's associated nib.
+    open var nibName: String {
+        return reuseIdentifier
+    }
+    
+    /// Unique identifier that should be used for cell instances of this class.
+    open var reuseIdentifier: String {
+        return String(describing: cellType)
     }
     
     /// Prepares a card for presentation within a table view.
     ///
     /// - Parameter card: Card that must be configured for display.
-    open func prepare(_ card: SFTableViewCell) {
+    open func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
         fatalError("expected 'prepare(_:)' to be implemented")
-    }
-    
-    /// Returns a Boolean value indicating whether two values are equal.
-    ///
-    /// Equality is the inverse of inequality. For any values `a` and `b`,
-    /// `a == b` implies that `a != b` is `false`.
-    ///
-    /// - Parameters:
-    ///   - lhs: A value to compare.
-    ///   - rhs: Another value to compare.
-    public static func == (lhs: SFOnboardingCard, rhs: SFOnboardingCard) -> Bool {
-        return lhs.associatedCardName == rhs.associatedCardName && lhs.uuid == rhs.uuid
     }
 }
