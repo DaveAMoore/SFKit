@@ -12,6 +12,8 @@ fileprivate extension Selector {
     static let stopActivityIndicator        = #selector(SFOnboardingControl.stopActivityIndicator(_:))
     static let enableUserInteraction        = #selector(SFOnboardingControl.enableUserInteraction(_:))
     static let disableUserInteraction       = #selector(SFOnboardingControl.disableUserInteraction(_:))
+    static let pushNextStage                = #selector(SFOnboardingControl.pushNextStage(_:))
+    static let popStage                     = #selector(SFOnboardingControl.popStage(_:))
     static let void                         = #selector(SFOnboardingControl.void(_:))
 }
 
@@ -41,6 +43,12 @@ open class SFOnboardingControl: SFOnboardingElement {
         
         /// Disables user interaction of the controller's view.
         case disableUserInteraction(UIControlEvents)
+        
+        /// Pushes the next stage controller onto the onboarding stack.
+        case pushNextStage(UIControlEvents)
+        
+        /// Pops the current stage controller from the top of the onboarding stack.
+        case popStage(UIControlEvents)
         
         /// Void method will be called.
         case void(UIControlEvents)
@@ -80,7 +88,7 @@ open class SFOnboardingControl: SFOnboardingElement {
     // MARK: - Properties
     
     /// Stage view controller that owns the stage control.
-    open weak private(set) var controller: SFOnboardingStageViewController?
+    open weak internal(set) var controller: SFOnboardingStageViewController?
     
     /// Collection of all actions that will be performed for the given control.
     open var actions: [Action]
@@ -100,7 +108,7 @@ open class SFOnboardingControl: SFOnboardingElement {
         super.init(localizedTitle: localizedTitle)
     }
     
-    // MARK: -
+    // MARK: - Preparation
     
     /// Prepares a control for a given set of actions that have been designated by the receiver.
     ///
@@ -152,6 +160,10 @@ open class SFOnboardingControl: SFOnboardingElement {
             return MetaAction(target: self, action: .enableUserInteraction, controlEvents: controlEvents)
         case let .disableUserInteraction(controlEvents):
             return MetaAction(target: self, action: .disableUserInteraction, controlEvents: controlEvents)
+        case let .pushNextStage(controlEvents):
+            return MetaAction(target: self, action: .pushNextStage, controlEvents: controlEvents)
+        case let .popStage(controlEvents):
+            return MetaAction(target: self, action: .popStage, controlEvents: controlEvents)
         case let .void(controlEvents):
             return MetaAction(target: self, action: .void, controlEvents: controlEvents)
         case let .custom(target, method, controlEvents):
@@ -198,7 +210,7 @@ open class SFOnboardingControl: SFOnboardingElement {
     /// - Parameters:
     ///   - action: The action that will be called.
     ///   - sender: The object associated with the action calling.
-    private func callAction(_ action: Action, sender: Any?) {
+    internal func callAction(_ action: Action, sender: Any?) {
         // Retrieve the MetaAction for this action.
         let meta = metaAction(for: action)
         
@@ -240,7 +252,7 @@ open class SFOnboardingControl: SFOnboardingElement {
         guard let controller = controller else { return }
         
         // Selectively assign the sender.
-        let sender = sender is UIButton ? sender : controller.trailingButton
+        let sender = controller.trailingButton!
         
         // Configure an activity indicator (i.e., spinner).
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -264,14 +276,16 @@ open class SFOnboardingControl: SFOnboardingElement {
         }
         
         // Execute the callback.
-        executeCallback(forMethod: .startActivityIndicator, sender: [sender, activityIndicator])
+        executeCallback(forMethod: .startActivityIndicator, sender: activityIndicator)
     }
     
     /// Stops an activity indicator within the view.
-    @objc internal func stopActivityIndicator(_ sender: [Any]) {
+    @objc internal func stopActivityIndicator(_ sender: UIActivityIndicatorView) {
+        guard let controller = controller else { return }
+        
         // Retrieve the values from the sender.
-        let button = sender[0] as! UIView
-        let activityIndicator = sender[1] as! UIActivityIndicatorView
+        let button = controller.trailingButton!
+        let activityIndicator = sender
         
         // Prepare the button and activity indicator.
         activityIndicator.hidesWhenStopped = false
@@ -313,6 +327,30 @@ open class SFOnboardingControl: SFOnboardingElement {
         
         // Execute the callback.
         executeCallback(forMethod: .disableUserInteraction, sender: sender)
+    }
+    
+    /// Pushes the next stage controller onto the onboarding stack.
+    @objc internal func pushNextStage(_ sender: Any?) {
+        // Retrieve the controller from the user info map table.
+        guard let controller = controller else { return }
+        
+        // Present the suceeding stage.
+        controller.onboardingController?.presentStage(after: controller.stage, animated: true)
+        
+        // Execute the callback.
+        executeCallback(forMethod: .pushNextStage, sender: sender)
+    }
+    
+    /// Pops the curent stage controller from the top of the onboarding stack.
+    @objc internal func popStage(_ sender: Any?) {
+        // Retrieve the controller from the user info map table.
+        guard let controller = controller else { return }
+        
+        // Pop the current view controller from the onboarding stack.
+        controller.onboardingController?.popViewController(animated: true)
+        
+        // Execute the callback.
+        executeCallback(forMethod: .popStage, sender: sender)
     }
     
     /// Void method.

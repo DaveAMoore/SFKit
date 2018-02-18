@@ -251,7 +251,7 @@ open class SFOnboardingController: SFViewController {
     ///   - stage: Stage that functions as the preceeding parameter.
     ///
     /// - Note: In the event where there is no succeeding stage to be presented, the receiver/caller remain unaffected.
-    open func presentStage(after stage: SFOnboardingStage) {
+    open func presentStage(after stage: SFOnboardingStage, animated isAnimated: Bool) {
         // Determine the index of the given stage.
         guard let index = stages.index(of: stage) else { return }
         
@@ -265,7 +265,7 @@ open class SFOnboardingController: SFViewController {
             let content = viewController(for: stage)
             
             // Push to the content view controller.
-            pushViewController(content, animated: true)
+            pushViewController(content, animated: isAnimated)
         }
     }
     
@@ -309,13 +309,29 @@ open class SFOnboardingController: SFViewController {
     ///
     /// - Parameter stage: A stage that will be appended to the end of the current `stages` collection.
     open func addStage(_ stage: SFOnboardingStage) {
-        // Add the stage to the collection.
-        stages.append(stage)
+        insertStage(stage, at: stages.endIndex)
+    }
+    
+    /// Inserts a stage object into the controller's stack queue at a specific index. The new element is inserted before the element currently at the specified index. If you pass the array’s endIndex property as the index parameter, the new element is appended to the array.
+    ///
+    /// - Parameters:
+    ///   - stage: The stage that will be inserted into the `stages` array.
+    ///   - index: Index where the stage will be inserted.
+    open func insertStage(_ stage: SFOnboardingStage, at index: Int) {
+        // Insert the stage.
+        stages.insert(stage, at: index)
         
         // Try to push the root if it seems eligible.
         if stages.first == stage, let _ = viewIfLoaded {
             // Attempt to push the root onto the onboarding stack.
             pushRootViewController()
         }
+    }
+    
+    /// Removes a stage object that is located at a specific index.
+    ///
+    /// - Parameter index: The index of the stage that will be removed.
+    open func removeStage(at index: Int) {
+        stages.remove(at: index)
     }
 }

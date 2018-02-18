@@ -25,13 +25,5 @@ final public class SFOnboardingTitleCardCell: SFTableViewCell {
         titleLabel.textColor = SFColor.black
         detailLabel.textColor = SFColor.black
         embeddedImageView.tintColor = SFColor.blue
-        
-        // Configure the title label.
-        if #available(iOS 11.0, *) {
-            titleLabel.font = UIFontMetrics(forTextStyle: .largeTitle).scaledFont(for: UIFont.systemFont(ofSize: 40,
-                                                                                                         weight: .bold))
-            detailLabel.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.systemFont(ofSize: 17,
-                                                                                                    weight: .regular))
-        }
     }
 }

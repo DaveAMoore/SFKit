@@ -8,6 +8,8 @@
 
 open class SFOnboardingTitleCard: SFOnboardingCard {
     
+    // MARK: - Properties
+    
     /// Type of cell that will be created for the card.
     open override var cellType: UITableViewCell.Type {
         return SFOnboardingTitleCardCell.self
@@ -25,33 +27,63 @@ open class SFOnboardingTitleCard: SFOnboardingCard {
     /// Boolean value indicating if the separator will be hidden on the card.
     open var separatorIsHidden: Bool
     
-    /// Initializes a new receiver.
-    @available(iOS, unavailable, message: "use 'init(titleLabel:detailLabel:image:separatorIsHidden)' instead")
-    public init(localizedTitle: String, localizedDescription: String? = nil, image: UIImage? = nil,
-                separatorIsHidden: Bool = true) {
-        self.image = image
-        self.separatorIsHidden = separatorIsHidden
-    }
+    /// Boolean value indicating if the title will be large.
+    open var isLargeTitle: Bool
+    
+    // MARK: - Initialization
     
     /// Initializes a new receiver.
     public init(titleLabel: SFOnboardingLabel, detailLabel: SFOnboardingLabel? = nil, image: UIImage? = nil,
-                separatorIsHidden: Bool = true) {
+                isLargeTitle: Bool = true, separatorIsHidden: Bool = true) {
         self.titleLabel = titleLabel
         self.detailLabel = detailLabel
         self.image = image
+        self.isLargeTitle = isLargeTitle
         self.separatorIsHidden = separatorIsHidden
+        super.init()
+        self.selectionStyle = .none
     }
+    
+    // MARK: - Interface
     
     /// Prepares a card for presentation within a table view.
     ///
     /// - Parameter card: Card that must be configured for display.
     open override func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
+        super.prepare(card, forController: controller)
+        
         let card = card as! SFOnboardingTitleCardCell
+        
         titleLabel?.prepare(card.titleLabel)
         detailLabel?.prepare(card.detailLabel)
+        
         card.titleLabel.isHidden = titleLabel == nil
         card.detailLabel.isHidden = detailLabel == nil
+        
+        let titleFont: UIFont
+        let detailFont: UIFont
+        if #available(iOS 11.0, *) {
+            if isLargeTitle {
+                titleFont = UIFontMetrics(forTextStyle: .largeTitle).scaledFont(for: UIFont.systemFont(ofSize: 34, weight: .bold))
+            } else {
+                titleFont = UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.systemFont(ofSize: 24, weight: .bold))
+            }
+            detailFont = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 17, weight: .regular))
+        } else {
+            titleFont = UIFont.systemFont(ofSize: isLargeTitle ? 34 : 17, weight: .bold)
+            detailFont = UIFont.systemFont(ofSize: 17, weight: .regular)
+        }
+        
+        // Configure the label's.
+        card.titleLabel.font = titleFont
+        card.detailLabel.font = detailFont
+        
         card.embeddedImageView.image = image
-        card.separatorInset = separatorIsHidden ? UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude) : UIEdgeInsets(top: 0, left: card.layoutMargins.left, bottom: 0, right: 0)
+        
+        if separatorIsHidden {
+            card.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+        } else {
+            card.separatorInset = .zero
+        }
     }
 }

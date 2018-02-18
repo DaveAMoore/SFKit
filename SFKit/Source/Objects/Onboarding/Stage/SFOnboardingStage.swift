@@ -9,6 +9,8 @@
 /// Single step within onboarding controller.
 public struct SFOnboardingStage: Equatable {
     
+    // MARK: - Properties
+    
     /// Collection of cards that will be presented by the receiver.
     public var cards: [SFOnboardingCard]
     
@@ -33,19 +35,28 @@ public struct SFOnboardingStage: Equatable {
     /// Accessory label that acts as a secondary UI element which can be found above the `primaryControl`.
     public var accessoryLabel: SFOnboardingLabel?
     
+    /// Action that will be invoked when a table view cell is selected.
+    public var cellSelected: SFOnboardingControl.Action?
+    
+    // MARK: - Initialization
+    
     public init(cards: [SFOnboardingCard],
                 primaryControl: SFOnboardingControl? = nil,
                 secondaryControl: SFOnboardingControl? = nil,
                 leadingControl: SFOnboardingControl? = nil,
                 trailingControl: SFOnboardingControl? = nil,
-                accessoryLabel: SFOnboardingLabel? = nil) {
+                accessoryLabel: SFOnboardingLabel? = nil,
+                cellSelected: SFOnboardingControl.Action? = nil) {
         self.cards = cards
         self.primaryControl = primaryControl
         self.secondaryControl = secondaryControl
         self.leadingControl = leadingControl
         self.trailingControl = trailingControl
         self.accessoryLabel = accessoryLabel
+        self.cellSelected = cellSelected
     }
+    
+    // MARK: - Equatable
     
     /// Returns a Boolean value indicating whether two values are equal.
     ///

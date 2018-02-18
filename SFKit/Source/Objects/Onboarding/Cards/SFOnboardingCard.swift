@@ -24,10 +24,13 @@ open class SFOnboardingCard: NSObject {
         return String(describing: cellType)
     }
     
+    /// Selection style of the associated cell.
+    open var selectionStyle: UITableViewCellSelectionStyle = .default
+    
     /// Prepares a card for presentation within a table view.
     ///
     /// - Parameter card: Card that must be configured for display.
     open func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
-        fatalError("expected 'prepare(_:)' to be implemented")
+        card.selectionStyle = selectionStyle
     }
 }

@@ -17,7 +17,7 @@ internal extension Selector {
     static let trailingButtonAction = #selector(SFOnboardingStageViewController.trailingButtonAction(_:))
 }
 
-open class SFOnboardingStageViewController: SFViewController, UITableViewDataSource {
+open class SFOnboardingStageViewController: SFViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Properties
     
@@ -88,8 +88,9 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         // Hide the seperator for all empty table view cells.
         tableView?.tableFooterView = UIView(frame: .zero)
         
-        // Configure the table view's data source.
+        // Configure the table view's data source & delegate.
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
@@ -158,7 +159,7 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
     // MARK: - Actions
     
     @objc open func primaryButtonAction(_ sender: Any?) {
-        onboardingController?.presentStage(after: stage)
+        onboardingController?.presentStage(after: stage, animated: true)
     }
     
     @objc open func secondaryButtonAction(_ sender: Any?) {
@@ -170,7 +171,7 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
     }
     
     @objc open func trailingButtonAction(_ sender: Any?) {
-        onboardingController?.presentStage(after: stage)
+        onboardingController?.presentStage(after: stage, animated: true)
     }
     
     // MARK: - Table View Cell Access
@@ -204,5 +205,19 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         card.prepare(cardCell, forController: self)
         
         return cardCell
+    }
+    
+    // MARK: - Table View Delegate
+    
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cellSelected = stage.cellSelected else { return }
+        
+        // Retrieve the selected cell.
+        let cell = tableView.cellForRow(at: indexPath)!
+        
+        // Create a control to call the action.
+        let control = SFOnboardingControl(localizedTitle: "", actions: [])
+        control.controller = self
+        control.callAction(cellSelected, sender: cell)
     }
 }
