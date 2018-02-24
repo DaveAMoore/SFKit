@@ -17,7 +17,7 @@ fileprivate extension Selector {
     static let void                         = #selector(SFOnboardingControl.void(_:))
 }
 
-open class SFOnboardingControl: SFOnboardingElement {
+open class SFOnboardingControl: SFOnboardingElement<UIControl> {
     
     // MARK: - Types
     
@@ -120,6 +120,9 @@ open class SFOnboardingControl: SFOnboardingElement {
                       for controller: SFOnboardingStageViewController?) {
         // Copy the controller weakly.
         self.controller = controller
+        
+        // Call super.
+        super.prepare(control)
         
         // Set the localized title on the control, if it is a button.
         if let control = control as? UIButton {

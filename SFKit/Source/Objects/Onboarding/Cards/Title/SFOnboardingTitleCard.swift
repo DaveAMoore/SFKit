@@ -52,14 +52,14 @@ open class SFOnboardingTitleCard: SFOnboardingCard {
     open override func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
         super.prepare(card, forController: controller)
         
+        // Cast the card as the appropriate cell type.
         let card = card as! SFOnboardingTitleCardCell
         
+        // Prepare the labels.
         titleLabel?.prepare(card.titleLabel)
         detailLabel?.prepare(card.detailLabel)
         
-        card.titleLabel.isHidden = titleLabel == nil
-        card.detailLabel.isHidden = detailLabel == nil
-        
+        // Configure the labeol fonts.
         let titleFont: UIFont
         let detailFont: UIFont
         if #available(iOS 11.0, *) {
@@ -74,16 +74,23 @@ open class SFOnboardingTitleCard: SFOnboardingCard {
             detailFont = UIFont.systemFont(ofSize: 17, weight: .regular)
         }
         
-        // Configure the label's.
+        // Configure the label fonts.
         card.titleLabel.font = titleFont
         card.detailLabel.font = detailFont
         
+        // Set the image.
         card.embeddedImageView.image = image
         
+        // Configure the separator.
         if separatorIsHidden {
             card.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
         } else {
             card.separatorInset = .zero
         }
+        
+        // Hide/show the card's elements, depending on their optionality.
+        card.embeddedImageView.isHidden = image == nil
+        card.titleLabel.isHidden = titleLabel == nil
+        card.detailLabel.isHidden = detailLabel == nil
     }
 }

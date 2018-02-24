@@ -6,13 +6,16 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-open class SFOnboardingElement: NSObject {
+open class SFOnboardingElement<T: NSObject>: NSObject {
     
     /// Universally unique identifier corresponding to this control only.
     private let uuid: UUID = UUID()
     
     /// Primary button title that will be presented to users.
     open var localizedTitle: String
+    
+    /// Dictionary of keys and associated values. This collection is not type safe, and thus should be handled with extreme care.
+    open lazy var keyedValues: [String: Any] = [:]
     
     /// Initializes a new stage control using the title & actions specified.
     ///
@@ -21,6 +24,13 @@ open class SFOnboardingElement: NSObject {
     ///   - actions: Collection of all actions that may be performed for the control object. Default value is `[.default]`.
     public init(localizedTitle: String) {
         self.localizedTitle = localizedTitle
+    }
+    
+    /// Prepares an element of generic type `T`.
+    ///
+    /// - Parameter element: The element that will be prepared.
+    open func prepare(_ element: T) {
+        element.setValuesForKeys(keyedValues)
     }
     
     /// Returns a Boolean value indicating whether two values are equal.

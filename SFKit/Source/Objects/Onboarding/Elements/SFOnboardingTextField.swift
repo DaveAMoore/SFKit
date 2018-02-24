@@ -9,16 +9,19 @@
 open class SFOnboardingTextField: SFOnboardingControl {
     
     /// Boolean value indicating if the text field will be for secure text entry.
-    open var isSecureTextEntry: Bool
+    open var isSecureTextEntry: Bool = false
     
     /// Type of return key that will be presented in the cell.
-    open var returnKeyType: UIReturnKeyType
+    open var returnKeyType: UIReturnKeyType = .default
+    
+    open var keyboardType: UIKeyboardType = .default
+    
+    open var textContentType: UITextContentType?
+    
+    //open var 
     
     /// Initializes a new receiver.
-    public init(localizedPlaceholder: String? = nil, isSecureTextEntry: Bool, returnKeyType: UIReturnKeyType,
-                actions: [Action] = [.inherited]) {
-        self.isSecureTextEntry = isSecureTextEntry
-        self.returnKeyType = returnKeyType
+    public init(localizedPlaceholder: String? = nil, actions: [Action] = [.inherited]) {
         super.init(localizedTitle: localizedPlaceholder ?? "", actions: actions)
     }
     
@@ -37,6 +40,8 @@ open class SFOnboardingTextField: SFOnboardingControl {
         textField.placeholder = localizedTitle
         textField.isSecureTextEntry = isSecureTextEntry
         textField.returnKeyType = returnKeyType
+        textField.keyboardType = keyboardType
+        if let textContentType = textContentType { textField.textContentType = textContentType }
         textField.enablesReturnKeyAutomatically = true
     }
 }
