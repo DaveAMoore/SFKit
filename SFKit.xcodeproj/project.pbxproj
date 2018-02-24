@@ -636,6 +636,7 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63BA899920420E69000684BA /* Collection View */,
 				63BA899820420DF1000684BA /* Onboarding */,
 				6313E300200087660065EE25 /* Charts */,
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
@@ -822,6 +823,13 @@
 				6324D3F6201FC30C00D762DA /* Transition */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		63BA899920420E69000684BA /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Collection View";
 			sourceTree = "<group>";
 		};
 		63D40AA020211A1700DD1AF9 /* Stage */ = {
