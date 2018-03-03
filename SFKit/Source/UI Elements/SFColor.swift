@@ -32,6 +32,42 @@ open class SFColor: UIColor {
         return SFColor(white: 0.0, alpha: 1.0)
     }
     
+    // MARK: Colorful
+    
+    open override class var red: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1) : #colorLiteral(red: 0.9952381253, green: 0.3384355307, blue: 0.1943919361, alpha: 1)
+    }
+    
+    open override class var orange: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 0.5583720207, blue: 0, alpha: 1) : #colorLiteral(red: 1, green: 0.5583720207, blue: 0, alpha: 1)
+    }
+    
+    open override class var yellow: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 0.7921642661, blue: 0, alpha: 1) : #colorLiteral(red: 1, green: 0.7921642661, blue: 0, alpha: 1)
+    }
+    
+    open override class var green: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0, green: 0.8660034537, blue: 0.3203170896, alpha: 1) : #colorLiteral(red: 0, green: 0.8660034537, blue: 0.3203170896, alpha: 1)
+    }
+    
+    open class var tealBlue: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0, green: 0.7967023253, blue: 1, alpha: 1) : #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1)
+    }
+    
+    open override class var blue: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.3528000116, green: 0.7813866735, blue: 0.9800000787, alpha: 1)
+    }
+    
+    open override class var purple: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 0.3467972279, green: 0.3371668756, blue: 0.8699499965, alpha: 1) : #colorLiteral(red: 0.3467972279, green: 0.3371668756, blue: 0.8699499965, alpha: 1)
+    }
+    
+    open class var pink: SFColor {
+        return isLightAppearance() ? #colorLiteral(red: 1, green: 0, blue: 0.3104304075, alpha: 1) : #colorLiteral(red: 1, green: 0, blue: 0.3104304075, alpha: 1)
+    }
+    
+    // MARK: Grayscale
+    
     /// An off-white color.
     open override class var white: SFColor {
         return isLightAppearance() ? .trueWhite : #colorLiteral(red: 0.1992851496, green: 0.1992851496, blue: 0.1992851496, alpha: 1)
@@ -63,15 +99,6 @@ open class SFColor: UIColor {
     /// Depp black color which is adaptive.
     open override class var black: SFColor {
         return isLightAppearance() ? .trueBlack : .trueWhite
-    }
-    
-    /// Rich blue which can be used to indicate interactivity.
-    open override class var blue: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 0.02291317284, green: 0.5002143383, blue: 1, alpha: 1) : #colorLiteral(red: 0.3528000116, green: 0.7813866735, blue: 0.9800000787, alpha: 1)
-    }
-    
-    open override class var red: SFColor {
-        return isLightAppearance() ? #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1) : #colorLiteral(red: 0.9952381253, green: 0.3384355307, blue: 0.1943919361, alpha: 1)
     }
     
     // MARK: - Unavailable Colors

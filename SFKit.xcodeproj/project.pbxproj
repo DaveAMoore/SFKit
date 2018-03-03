@@ -580,7 +580,7 @@
 			path = "Categories & Extensions";
 			sourceTree = "<group>";
 		};
-		637D6B061FB7F0B100397317 /* Objects */ = {
+		637D6B061FB7F0B100397317 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
@@ -592,7 +592,7 @@
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
 			);
-			path = Objects;
+			path = "UI Elements";
 			sourceTree = "<group>";
 		};
 		6385A2191F06EB36002B9244 = {
@@ -636,13 +636,12 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				63BA899920420E69000684BA /* Collection View */,
 				63BA899820420DF1000684BA /* Onboarding */,
 				6313E300200087660065EE25 /* Charts */,
 				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				639E37971F09882900C08D8E /* Include */,
 				63167CC71F3670C800054924 /* Appearance Updating */,
-				637D6B061FB7F0B100397317 /* Objects */,
+				637D6B061FB7F0B100397317 /* UI Elements */,
 				6313E36320019D9C0065EE25 /* Miscellaneous */,
 			);
 			path = Source;
@@ -823,13 +822,6 @@
 				6324D3F6201FC30C00D762DA /* Transition */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		63BA899920420E69000684BA /* Collection View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Collection View";
 			sourceTree = "<group>";
 		};
 		63D40AA020211A1700DD1AF9 /* Stage */ = {
