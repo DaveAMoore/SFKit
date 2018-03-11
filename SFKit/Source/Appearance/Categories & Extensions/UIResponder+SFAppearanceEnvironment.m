@@ -40,6 +40,8 @@ static char kSFAppearanceEnvironmentAppearance;
         SFAppearance *defaultAppearance = [SFAppearance globalAppearance];
         [defaultAppearance addAppearanceEnvironment:self];
         [self setAppearance:defaultAppearance];
+    } else {
+        [[self appearance] addAppearanceEnvironment:self];
     }
 }
 
