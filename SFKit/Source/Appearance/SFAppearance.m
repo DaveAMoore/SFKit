@@ -58,7 +58,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
     
     // Tell every appearance environment about this change.
     for (id <SFAppearanceEnvironment> environment in [appearanceEnvironments allObjects]) {
-        [environment appearanceStyleDidChange:[self style]];
+        [environment appearanceStyleDidChange:self.style];
     }
 }
 
@@ -87,7 +87,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 }
 
 - (BOOL)isLightAppearanceStyle {
-    return [self style] == SFAppearanceStyleLight;
+    return self.style == SFAppearanceStyleLight;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -126,12 +126,14 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 #pragma mark - Appearance Synchronization
 
 - (void)keyValueStoreDidChangeExternally:(NSNotification *)note {
+    [self.keyValueStore.dictionaryRepresentation.allKeys containsObject:SFAppearanceStyleRawValueKey];
+    
     // Retrieve and cast the raw appearance style value.
-    NSInteger rawValue = [[self keyValueStore] longLongForKey:SFAppearanceStyleRawValueKey];
+    NSInteger rawValue = [self.keyValueStore longLongForKey:SFAppearanceStyleRawValueKey];
     SFAppearanceStyle style = (SFAppearanceStyle)rawValue;
     
     // Update the style if it has changed.
-    if ([self style] != style) {
+    if (self.style != style) {
         [self setStyle:style];
     }
 }
@@ -140,7 +142,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 
 - (void)addAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
     [appearanceEnvironments addObject:appearanceEnvironment];
-    [appearanceEnvironment appearanceStyleDidChange:[self style]];
+    [appearanceEnvironment appearanceStyleDidChange:self.style];
 }
 
 - (void)removeAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
