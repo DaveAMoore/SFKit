@@ -126,7 +126,12 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 #pragma mark - Appearance Synchronization
 
 - (void)keyValueStoreDidChangeExternally:(NSNotification *)note {
-    [self.keyValueStore.dictionaryRepresentation.allKeys containsObject:SFAppearanceStyleRawValueKey];
+    // Synchronize the values between memory and disk.
+    [self.keyValueStore synchronize];
+    
+    // Make sure the value exists.
+    if (![self.keyValueStore.dictionaryRepresentation.allKeys containsObject:SFAppearanceStyleRawValueKey])
+        return;
     
     // Retrieve and cast the raw appearance style value.
     NSInteger rawValue = [self.keyValueStore longLongForKey:SFAppearanceStyleRawValueKey];
