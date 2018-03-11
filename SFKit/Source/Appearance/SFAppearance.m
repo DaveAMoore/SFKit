@@ -81,6 +81,9 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyValueStoreDidChangeExternally:)
                                                  name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification
                                                object:keyValueStore];
+    
+    // Explicitly call the appropriate method to trigger an update.
+    [self keyValueStoreDidChangeExternally:nil];
 }
 
 - (BOOL)isLightAppearanceStyle {
