@@ -35,17 +35,25 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Style of appearance in this object.
  */
-@property (nonatomic) SFAppearanceStyle appearanceStyle;
+@property (nonatomic) SFAppearanceStyle appearanceStyle DEPRECATED_MSG_ATTRIBUTE("use 'style' instead");
+
+/**
+ Style of the appearance as contained by the receiver.
+ */
+@property (nonatomic) SFAppearanceStyle style;
+
+
+@property (nonatomic, retain) NSUbiquitousKeyValueStore *_Nullable keyValueStore;
 
 /**
  Boolean value detailing if the appearance style is light.
  */
-@property (readonly,getter=isLightAppearanceStyle) BOOL isLightAppearanceStyle;
+@property (readonly,getter=isLightAppearanceStyle) BOOL isLightAppearanceStyle DEPRECATED_ATTRIBUTE;
 
 /**
   Determines the most probable status bar style for the current appearance style.
  */
-@property (readonly,getter=preferredStatusBarStyle) UIStatusBarStyle preferredStatusBarStyle;
+@property (readonly,getter=preferredStatusBarStyle) UIStatusBarStyle preferredStatusBarStyle DEPRECATED_ATTRIBUTE;
 
 #pragma mark - Initialization
 
@@ -54,7 +62,14 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param appearanceStyle The appearance style for the new `SFAppearance` object.
  */
-- (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle;
+- (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle DEPRECATED_MSG_ATTRIBUTE("Use initWithStyle: instead");
+
+/**
+ Creates a new `SFAppearance` object with a given appearance style.
+ 
+ @param style The appearance style for the new `SFAppearance` object.
+ */
+- (instancetype)initWithStyle:(SFAppearanceStyle)style;
 
 #pragma mark - Appearance Environment Management
 

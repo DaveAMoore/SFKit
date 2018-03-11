@@ -57,7 +57,11 @@
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    return [SFAppearance globalAppearance].preferredStatusBarStyle;
+    if ([[SFAppearance globalAppearance] style] == SFAppearanceStyleLight) {
+        return UIStatusBarStyleDefault;
+    } else {
+        return UIStatusBarStyleLightContent;
+    }
 }
 
 @end

@@ -45,7 +45,7 @@ extension SFColor {
     /// The kind of button that will be displayed.
     open var buttonKind: Kind = .square {
         didSet {
-            appearanceStyleDidChange(appearance.appearanceStyle)
+            appearanceStyleDidChange(appearance.style)
         }
     }
     
@@ -85,7 +85,7 @@ extension SFColor {
     /// Frame must be overriden to ensure the elliptical boolean remains equivalent.
     open override var frame: CGRect {
         didSet {
-            appearanceStyleDidChange(appearance.appearanceStyle)
+            appearanceStyleDidChange(appearance.style)
         }
     }
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SFTabBar: UITabBar {
+open class SFTabBar: UITabBar {
     
     // MARK: - Lifecycle
     

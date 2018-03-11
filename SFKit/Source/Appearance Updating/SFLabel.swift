@@ -12,7 +12,7 @@ open class SFLabel: UILabel {
     
     open override var font: UIFont! {
         didSet {
-            appearanceStyleDidChange(SFAppearance.global.appearanceStyle)
+            appearanceStyleDidChange(SFAppearance.global.style)
         }
     }
     

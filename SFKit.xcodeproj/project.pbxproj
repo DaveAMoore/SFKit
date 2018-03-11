@@ -58,12 +58,13 @@
 		6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */; };
 		6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6313E35D200122600065EE25 /* SFAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E35C2001225F0065EE25 /* SFAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
 		63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */; };
 		63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */; };
+		631DC2AB2054CF5500351241 /* SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AA2054CF5500351241 /* SFReuseable.swift */; };
+		631DC2AD2054CF6F00351241 /* SFIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */; };
 		6324D3E7201EBFC500D762DA /* SFOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */; };
 		6324D3EA201EC05700D762DA /* SFOnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */; };
 		6324D3EC201EC0DD00D762DA /* SFOnboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3EB201EC0DD00D762DA /* SFOnboardingCard.swift */; };
@@ -83,6 +84,7 @@
 		6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CE1F3619B7005C73F3 /* SFAppearance.m */; };
 		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633EB3A6205046620045A6E0 /* SFLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EB3A5205046620045A6E0 /* SFLine.swift */; };
 		6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2B1F0988D20064A0CA /* SFTextField.swift */; };
 		6351C46A2023C67C00994AAC /* SFOnboardingElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C4692023C67C00994AAC /* SFOnboardingElement.swift */; };
 		6351C46C2024F51800994AAC /* SFOnboardingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */; };
@@ -95,13 +97,14 @@
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
+		638B1BDE2050C684009CA8D7 /* SFPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B1BDD2050C684009CA8D7 /* SFPolygon.swift */; };
 		63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD51F0988D20064A0CA /* SFImageView.swift */; };
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63D40AA220211FF300DD1AF9 /* SFOnboardingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
-		63F6EFA02002CDF500B7D3E8 /* Extensions+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */; };
+		63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */; };
 		63F90A871F3128530037E5CD /* SFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E351F0988D20064A0CA /* SFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,8 +166,9 @@
 		6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphAccessibilityElement.m; sourceTree = "<group>"; };
 		6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphAccessibilityElement.h; sourceTree = "<group>"; };
 		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
-		6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Identifiable+SFReuseable.swift"; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
+		631DC2AA2054CF5500351241 /* SFReuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFReuseable.swift; sourceTree = "<group>"; };
+		631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFIdentifiable.swift; sourceTree = "<group>"; };
 		6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingController.swift; sourceTree = "<group>"; };
 		6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingStage.swift; sourceTree = "<group>"; };
 		6324D3EB201EC0DD00D762DA /* SFOnboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingCard.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
 		6331B2CE1F3619B7005C73F3 /* SFAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppearance.m; sourceTree = "<group>"; };
 		6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceStyle.h; sourceTree = "<group>"; };
+		633EB3A5205046620045A6E0 /* SFLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLine.swift; sourceTree = "<group>"; };
 		6351C4692023C67C00994AAC /* SFOnboardingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingElement.swift; sourceTree = "<group>"; };
 		6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingLabel.swift; sourceTree = "<group>"; };
 		63686D981F0988D20064A0CA /* SFActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActionSheet.swift; sourceTree = "<group>"; };
@@ -360,9 +365,10 @@
 		6385A2331F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
+		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
-		63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Identifiable.swift"; sourceTree = "<group>"; };
+		63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,8 +499,9 @@
 		6313E36320019D9C0065EE25 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */,
-				63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */,
+				631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */,
+				631DC2AA2054CF5500351241 /* SFReuseable.swift */,
+				63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
@@ -591,6 +598,8 @@
 				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
+				638B1BDD2050C684009CA8D7 /* SFPolygon.swift */,
+				633EB3A5205046620045A6E0 /* SFLine.swift */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -996,6 +1005,7 @@
 				6324D3F0201EC7A100D762DA /* SFOnboardingTextFieldCard.swift in Sources */,
 				6313E335200087D50065EE25 /* SFPieChartLegendCell.m in Sources */,
 				6351C46C2024F51800994AAC /* SFOnboardingLabel.swift in Sources */,
+				631DC2AD2054CF6F00351241 /* SFIdentifiable.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6313E336200087D50065EE25 /* SFDiscreteGraphChartView.m in Sources */,
 				6313E323200087D50065EE25 /* SFPieChartLegendView.m in Sources */,
@@ -1024,9 +1034,8 @@
 				6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
-				63F6EFA02002CDF500B7D3E8 /* Extensions+Identifiable.swift in Sources */,
+				63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
-				6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */,
 				6324D400201FCE9200D762DA /* SFOnboardingTextFieldCardCell.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
@@ -1040,7 +1049,9 @@
 				6313E333200087D50065EE25 /* SFBarGraphChartView.m in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
 				6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */,
+				631DC2AB2054CF5500351241 /* SFReuseable.swift in Sources */,
 				6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */,
+				638B1BDE2050C684009CA8D7 /* SFPolygon.swift in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
 				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
@@ -1048,6 +1059,7 @@
 				6324D3EE201EC47300D762DA /* SFOnboardingTitleCard.swift in Sources */,
 				6313E326200087D50065EE25 /* SFPieChartView.m in Sources */,
 				6351C46A2023C67C00994AAC /* SFOnboardingElement.swift in Sources */,
+				633EB3A6205046620045A6E0 /* SFLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

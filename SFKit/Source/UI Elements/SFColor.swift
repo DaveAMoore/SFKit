@@ -149,7 +149,7 @@ open class SFColor: UIColor {
     // MARK: - Private Helper Methods
     
     @inline(__always) private class func isLightAppearance() -> Bool {
-        return SFAppearance.global.isLightAppearanceStyle
+        return SFAppearance.global.style == .light
     }
     
     // MARK: - Methods
