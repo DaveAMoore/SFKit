@@ -8,14 +8,16 @@
 
 #import "SFAppearance.h"
 
+NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
+
 @interface SFAppearance ()
 
-@property (nonatomic, retain) NSHashTable<id <SFAppearanceEnvironment>> *appearanceEnvironments;
+@property (retain) NSHashTable<id <SFAppearanceEnvironment>> *appearanceEnvironments;
 
 @end
 
 @implementation SFAppearance
-@synthesize appearanceStyle=_appearanceStyle, isLightAppearanceStyle, preferredStatusBarStyle, appearanceEnvironments;
+@synthesize style=_style, appearanceStyle, isLightAppearanceStyle, preferredStatusBarStyle, appearanceEnvironments, keyValueStore=_keyValueStore;
 
 #pragma mark - Singletons
 
@@ -23,30 +25,72 @@
     static SFAppearance *globalAppearance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        globalAppearance =[[SFAppearance alloc] initWithAppearanceStyle:SFAppearanceStyleLight];
+        globalAppearance = [[SFAppearance alloc] initWithStyle:SFAppearanceStyleLight];
     });
     
     return globalAppearance;
 }
 
-#pragma mark - Properties
+#pragma mark - Accessors
 
 - (SFAppearanceStyle)appearanceStyle {
-    return _appearanceStyle;
+    return [self style];
 }
 
 - (void)setAppearanceStyle:(SFAppearanceStyle)appearanceStyle {
-    // Change the value.
-    _appearanceStyle = appearanceStyle;
+    [self setStyle:appearanceStyle];
+}
+
+- (SFAppearanceStyle)style {
+    return _style;
+}
+
+- (void)setStyle:(SFAppearanceStyle)style {
+    // Capture the last appearance style.
+    SFAppearanceStyle previousStyle = _style;
     
-    // Tell every appearance environment about the change.
+    // Change the value.
+    _style = style;
+    
+    // Retrieve the key value store and ensure the value is non-nil.
+    NSUbiquitousKeyValueStore *keyValueStore = [self keyValueStore];
+    if (keyValueStore) {
+        // Use the 'setLongLong:forKey:' method.
+        [keyValueStore setLongLong:(NSInteger)style forKey:SFAppearanceStyleRawValueKey];
+    }
+    
+    // Tell every appearance environment about this change.
     for (id <SFAppearanceEnvironment> environment in [appearanceEnvironments allObjects]) {
-        [environment appearanceStyleDidChange:[self appearanceStyle]];
+        [environment appearanceStyleDidChange:previousStyle];
     }
 }
 
+- (NSUbiquitousKeyValueStore *)keyValueStore {
+    return _keyValueStore;
+}
+
+- (void)setKeyValueStore:(NSUbiquitousKeyValueStore *)keyValueStore {
+    // Remove the observer it the key value store is different.
+    if (_keyValueStore != keyValueStore) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                        name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+                                                      object:_keyValueStore];
+    }
+    
+    // Change the value.
+    _keyValueStore = keyValueStore;
+    
+    // Register for observation of key value store changes.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyValueStoreDidChangeExternally:)
+                                                 name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+                                               object:keyValueStore];
+    
+    // Explicitly call the appropriate method to trigger an update.
+    [self keyValueStoreDidChangeExternally:nil];
+}
+
 - (BOOL)isLightAppearanceStyle {
-    return [self appearanceStyle] == SFAppearanceStyleLight;
+    return self.style == SFAppearanceStyleLight;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
@@ -59,16 +103,16 @@
 
 #pragma mark - Initialization
 
-/**
- Creates a new `SFAppearance` object with a given style of appearance.
-
- @param appearanceStyle The appearance style for the new `SFAppearance` object.
- */
 - (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle {
+    self = [self initWithStyle:appearanceStyle];
+    return self;
+}
+
+- (instancetype)initWithStyle:(SFAppearanceStyle)style {
     self = [super init];
     if (self) {
         // Setup the appearance style.
-        [self setAppearanceStyle:appearanceStyle];
+        [self setStyle:appearanceStyle];
         
         // Initialize appearance environments.
         [self setAppearanceEnvironments:[NSHashTable weakObjectsHashTable]];
@@ -76,19 +120,39 @@
     return self;
 }
 
-#pragma mark - Appearance Environment Management
+#pragma mark - Deallocation
 
-/**
- Appends the appearance environment to the weakly referencing hash table.
- */
-- (void)addAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
-    [appearanceEnvironments addObject:appearanceEnvironment];
-    [appearanceEnvironment appearanceStyleDidChange:[self appearanceStyle]];
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-/**
- Removes the appearance environment-complying object from the hash table and subsequently stops further updates from taking place.
- */
+#pragma mark - Appearance Synchronization
+
+- (void)keyValueStoreDidChangeExternally:(NSNotification *)note {
+    // Synchronize the values between memory and disk.
+    [self.keyValueStore synchronize];
+    
+    // Make sure the value exists.
+    if (![self.keyValueStore.dictionaryRepresentation.allKeys containsObject:SFAppearanceStyleRawValueKey])
+        return;
+    
+    // Retrieve and cast the raw appearance style value.
+    NSInteger rawValue = (NSInteger)[self.keyValueStore longLongForKey:SFAppearanceStyleRawValueKey];
+    SFAppearanceStyle style = (SFAppearanceStyle)rawValue;
+    
+    // Update the style if it has changed.
+    if (self.style != style) {
+        [self setStyle:style];
+    }
+}
+
+#pragma mark - Appearance Environment Management
+
+- (void)addAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
+    [appearanceEnvironments addObject:appearanceEnvironment];
+    [appearanceEnvironment appearanceStyleDidChange:self.style];
+}
+
 - (void)removeAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
     [appearanceEnvironments removeObject:appearanceEnvironment];
 }
@@ -109,9 +173,7 @@
         return;
     
     // Create a notification for the appearance style changing.
-    NSNotification *changeNotification = [[NSNotification alloc] initWithName:name
-                                                                       object:self
-                                                                     userInfo:nil];
+    NSNotification *changeNotification = [[NSNotification alloc] initWithName:name object:self userInfo:nil];
     
     // Post the change notification.
     [[NSNotificationCenter defaultCenter] postNotification:changeNotification];

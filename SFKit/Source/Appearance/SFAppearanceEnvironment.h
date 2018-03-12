@@ -25,14 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The appearance object which the style changes are concerned with.
  */
-@property (nonatomic, readonly) SFAppearance *appearance;
+@property (retain, readonly) SFAppearance *appearance;
 
 /**
  This method is called whenever the appearance an object is correlated to, changes.
  
- @param newAppearanceStyle The new appearance style after the change.
+ @param previousAppearanceStyle The appearance style before the change occurred.
+ 
+ @warning Method behaviour changed from passing newAppearanceStyle to providing the previousAppearanceStyle.
  */
-- (void)appearanceStyleDidChange:(SFAppearanceStyle)newAppearanceStyle;
+- (void)appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle;
 
 @end
 

@@ -11,28 +11,26 @@
 #import <SFKit/SFKit-Swift.h>
 #import <objc/runtime.h>
 
-/**
- Key which the `appearance` is stored under 'objc_getAssociatedObject' as.
- */
-static char kSFAppearanceEnvironmentAppearance;
-
 @implementation UIResponder (SFAppearanceEnvironment)
 @dynamic appearance;
 
 #pragma mark - Properties
 
 - (SFAppearance *)appearance {
-    SFAppearance *associatedAppearance = (SFAppearance *)objc_getAssociatedObject(self, &kSFAppearanceEnvironmentAppearance);
+    SFAppearance *associatedAppearance = (SFAppearance *)objc_getAssociatedObject(self, @selector(appearance));
+    if (!associatedAppearance) {
+        return [SFAppearance globalAppearance];
+    }
     return associatedAppearance;
 }
 
 - (void)setAppearance:(SFAppearance *)appearance {
-    objc_setAssociatedObject(self, &kSFAppearanceEnvironmentAppearance, appearance, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(appearance), appearance, OBJC_ASSOCIATION_RETAIN);
 }
 
 #pragma mark - Default Implementation
 
-- (void)appearanceStyleDidChange:(SFAppearanceStyle)newAppearanceStyle {}
+- (void)appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle {}
 
 - (void)registerForAppearanceUpdates {
     if (![self appearance]) {
@@ -40,6 +38,8 @@ static char kSFAppearanceEnvironmentAppearance;
         SFAppearance *defaultAppearance = [SFAppearance globalAppearance];
         [defaultAppearance addAppearanceEnvironment:self];
         [self setAppearance:defaultAppearance];
+    } else {
+        [[self appearance] addAppearanceEnvironment:self];
     }
 }
 

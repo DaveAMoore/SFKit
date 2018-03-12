@@ -17,7 +17,7 @@ internal extension Selector {
     static let trailingButtonAction = #selector(SFOnboardingStageViewController.trailingButtonAction(_:))
 }
 
-open class SFOnboardingStageViewController: SFViewController, UITableViewDataSource, UITableViewDelegate {
+open class SFOnboardingStageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Properties
     
@@ -73,7 +73,7 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
     @IBOutlet open var bottomContainer: UIView!
     
     /// Displays the cards.
-    @IBOutlet open var tableView: SFTableView!
+    @IBOutlet open var tableView: UITableView!
     
     // MARK: - Lifecycle
     
@@ -93,14 +93,15 @@ open class SFOnboardingStageViewController: SFViewController, UITableViewDataSou
         tableView.delegate = self
     }
     
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         // Perform additional appearance setup here.
         
         // Configure the appearance.
-        view.backgroundColor = SFColor.white
-        secondaryButton.setTitleColor(SFColor.blue, for: .normal)
-        bottomContainer.backgroundColor = SFColor.white
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
+        view.backgroundColor = colorMetrics.color(forRelativeHue: .white)
+        secondaryButton.setTitleColor(colorMetrics.color(forRelativeHue: .blue), for: .normal)
+        bottomContainer.backgroundColor = colorMetrics.color(forRelativeHue: .white)
     }
     
     open override func didReceiveMemoryWarning() {

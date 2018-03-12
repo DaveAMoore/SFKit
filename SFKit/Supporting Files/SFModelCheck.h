@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SFModelCheck : NSObject
 
 /// Boolean value indicating if the current device is an iPhone X.
-+ (BOOL)IPHONE_X NS_SWIFT_NAME(iPhoneX());
++ (BOOL)is_iPhoneX NS_REFINED_FOR_SWIFT;
 
 @end
 

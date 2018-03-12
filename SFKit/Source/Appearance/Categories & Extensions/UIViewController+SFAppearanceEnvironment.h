@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SFKit/SFAppearanceAdjusting.h>
 
-@interface UIViewController (SFAppearanceEnvironment)
+@interface UIViewController (SFAppearanceEnvironment) <SFAppearanceAdjusting>
 
 @end

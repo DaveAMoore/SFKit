@@ -6,7 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final public class SFOnboardingTextFieldCardCell: SFTableViewCell {
+final public class SFOnboardingTextFieldCardCell: UITableViewCell {
     
     /// Label that will present the title.
     @IBOutlet public var titleLabel: UILabel!
@@ -14,12 +14,13 @@ final public class SFOnboardingTextFieldCardCell: SFTableViewCell {
     /// Text field from which input will be taken.
     @IBOutlet public var textField: UITextField!
     
-    public override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    public override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         
         // Configure the view coloring.
-        backgroundColor = SFColor.white
-        titleLabel.textColor = SFColor.black
-        textField.textColor = SFColor.black
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
+        backgroundColor = colorMetrics.color(forRelativeHue: .white)
+        titleLabel.textColor = colorMetrics.color(forRelativeHue: .black)
+        textField.textColor = colorMetrics.color(forRelativeHue: .black)
     }
 }

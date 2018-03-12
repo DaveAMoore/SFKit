@@ -11,7 +11,7 @@
 
 @implementation SFModelCheck
 
-+ (BOOL)IPHONE_X {
++ (BOOL)is_iPhoneX {
     // Declare the interal result.
     static BOOL result = NO;
     

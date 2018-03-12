@@ -58,12 +58,15 @@
 		6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */; };
 		6313E35B200122340065EE25 /* SFLineGraphAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6313E35D200122600065EE25 /* SFAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6313E35C2001225F0065EE25 /* SFAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */; };
 		6314A1B21F1A9BBD00E6D8DD /* SFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A13DC41F1A7D5500FE5760 /* SFTextView.swift */; };
 		63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DA91F0988D20064A0CA /* SFCollectionView.swift */; };
 		63167CC91F3670E700054924 /* SFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */; };
 		63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */; };
 		63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */; };
+		631DC2AB2054CF5500351241 /* SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AA2054CF5500351241 /* SFReuseable.swift */; };
+		631DC2AD2054CF6F00351241 /* SFIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */; };
+		631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 631DC2AE2054D4CF00351241 /* UIView+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		631DC2B12054D4CF00351241 /* UIView+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AF2054D4CF00351241 /* UIView+SFAppearanceEnvironment.m */; };
 		6324D3E7201EBFC500D762DA /* SFOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */; };
 		6324D3EA201EC05700D762DA /* SFOnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */; };
 		6324D3EC201EC0DD00D762DA /* SFOnboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3EB201EC0DD00D762DA /* SFOnboardingCard.swift */; };
@@ -83,6 +86,9 @@
 		6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CE1F3619B7005C73F3 /* SFAppearance.m */; };
 		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633EB3A6205046620045A6E0 /* SFLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EB3A5205046620045A6E0 /* SFLine.swift */; };
+		634557602054DDFF00186815 /* UIColorMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6345575F2054DDFF00186815 /* UIColorMetrics.swift */; };
+		634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */ = {isa = PBXBuildFile; fileRef = 634557612054EA7500186815 /* SFAppearanceAdjusting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2B1F0988D20064A0CA /* SFTextField.swift */; };
 		6351C46A2023C67C00994AAC /* SFOnboardingElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C4692023C67C00994AAC /* SFOnboardingElement.swift */; };
 		6351C46C2024F51800994AAC /* SFOnboardingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */; };
@@ -95,13 +101,14 @@
 		6385A2341F06EB36002B9244 /* SFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6385A2261F06EB36002B9244 /* SFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23D1F06EB4D002B9244 /* SFColor.swift */; };
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
+		638B1BDE2050C684009CA8D7 /* SFPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B1BDD2050C684009CA8D7 /* SFPolygon.swift */; };
 		63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD51F0988D20064A0CA /* SFImageView.swift */; };
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63D40AA220211FF300DD1AF9 /* SFOnboardingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
-		63F6EFA02002CDF500B7D3E8 /* Extensions+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */; };
+		63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */; };
 		63F90A871F3128530037E5CD /* SFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E351F0988D20064A0CA /* SFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,8 +170,11 @@
 		6313E358200122330065EE25 /* SFLineGraphAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineGraphAccessibilityElement.m; sourceTree = "<group>"; };
 		6313E359200122340065EE25 /* SFLineGraphAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLineGraphAccessibilityElement.h; sourceTree = "<group>"; };
 		6313E35C2001225F0065EE25 /* SFAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAccessibility.h; sourceTree = "<group>"; };
-		6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Identifiable+SFReuseable.swift"; sourceTree = "<group>"; };
 		63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCollectionReusableView.swift; sourceTree = "<group>"; };
+		631DC2AA2054CF5500351241 /* SFReuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFReuseable.swift; sourceTree = "<group>"; };
+		631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFIdentifiable.swift; sourceTree = "<group>"; };
+		631DC2AE2054D4CF00351241 /* UIView+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
+		631DC2AF2054D4CF00351241 /* UIView+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
 		6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingController.swift; sourceTree = "<group>"; };
 		6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingStage.swift; sourceTree = "<group>"; };
 		6324D3EB201EC0DD00D762DA /* SFOnboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingCard.swift; sourceTree = "<group>"; };
@@ -183,169 +193,26 @@
 		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
 		6331B2CE1F3619B7005C73F3 /* SFAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppearance.m; sourceTree = "<group>"; };
 		6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceStyle.h; sourceTree = "<group>"; };
+		633EB3A5205046620045A6E0 /* SFLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLine.swift; sourceTree = "<group>"; };
+		6345575F2054DDFF00186815 /* UIColorMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorMetrics.swift; sourceTree = "<group>"; };
+		634557612054EA7500186815 /* SFAppearanceAdjusting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceAdjusting.h; sourceTree = "<group>"; };
 		6351C4692023C67C00994AAC /* SFOnboardingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingElement.swift; sourceTree = "<group>"; };
 		6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingLabel.swift; sourceTree = "<group>"; };
-		63686D981F0988D20064A0CA /* SFActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActionSheet.swift; sourceTree = "<group>"; };
-		63686D991F0988D20064A0CA /* SFActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivity.swift; sourceTree = "<group>"; };
-		63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityIndicatorView.swift; sourceTree = "<group>"; };
-		63686D9B1F0988D20064A0CA /* SFActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityItemProvider.swift; sourceTree = "<group>"; };
-		63686D9C1F0988D20064A0CA /* SFActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFActivityViewController.swift; sourceTree = "<group>"; };
-		63686D9D1F0988D20064A0CA /* SFAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlertController.swift; sourceTree = "<group>"; };
-		63686D9E1F0988D20064A0CA /* SFAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAlertView.swift; sourceTree = "<group>"; };
-		63686D9F1F0988D20064A0CA /* SFApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFApplication.swift; sourceTree = "<group>"; };
-		63686DA01F0988D20064A0CA /* SFApplicationShortcutItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFApplicationShortcutItem.swift; sourceTree = "<group>"; };
-		63686DA11F0988D20064A0CA /* SFAttachmentBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAttachmentBehavior.swift; sourceTree = "<group>"; };
-		63686DA21F0988D20064A0CA /* SFAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAttributedString.swift; sourceTree = "<group>"; };
-		63686DA31F0988D20064A0CA /* SFBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarButtonItem.swift; sourceTree = "<group>"; };
-		63686DA41F0988D20064A0CA /* SFBarButtonItemGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarButtonItemGroup.swift; sourceTree = "<group>"; };
-		63686DA51F0988D20064A0CA /* SFBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBarItem.swift; sourceTree = "<group>"; };
-		63686DA61F0988D20064A0CA /* SFBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBezierPath.swift; sourceTree = "<group>"; };
-		63686DA71F0988D20064A0CA /* SFBlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBlurEffect.swift; sourceTree = "<group>"; };
-		63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCloudSharingController.swift; sourceTree = "<group>"; };
 		63686DA91F0988D20064A0CA /* SFCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionView.swift; sourceTree = "<group>"; };
 		63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewCell.swift; sourceTree = "<group>"; };
 		63686DAB1F0988D20064A0CA /* SFCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewController.swift; sourceTree = "<group>"; };
-		63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewLayout.swift; sourceTree = "<group>"; };
-		63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionViewTransitionLayout.swift; sourceTree = "<group>"; };
-		63686DAF1F0988D20064A0CA /* SFCollisionBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollisionBehavior.swift; sourceTree = "<group>"; };
-		63686DB01F0988D20064A0CA /* SFContextualAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFContextualAction.swift; sourceTree = "<group>"; };
-		63686DB11F0988D20064A0CA /* SFControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFControl.swift; sourceTree = "<group>"; };
-		63686DB21F0988D20064A0CA /* SFDataAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDataAsset.swift; sourceTree = "<group>"; };
-		63686DB31F0988D20064A0CA /* SFDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDatePicker.swift; sourceTree = "<group>"; };
-		63686DB41F0988D20064A0CA /* SFDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDevice.swift; sourceTree = "<group>"; };
-		63686DB51F0988D20064A0CA /* SFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocument.swift; sourceTree = "<group>"; };
-		63686DB61F0988D20064A0CA /* SFDocumentInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentInteractionController.swift; sourceTree = "<group>"; };
-		63686DB71F0988D20064A0CA /* SFDocumentMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentMenuViewController.swift; sourceTree = "<group>"; };
-		63686DB81F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentPickerExtensionViewController.swift; sourceTree = "<group>"; };
-		63686DB91F0988D20064A0CA /* SFDocumentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDocumentPickerViewController.swift; sourceTree = "<group>"; };
-		63686DBA1F0988D20064A0CA /* SFDragInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragInteraction.swift; sourceTree = "<group>"; };
-		63686DBB1F0988D20064A0CA /* SFDragItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragItem.swift; sourceTree = "<group>"; };
-		63686DBC1F0988D20064A0CA /* SFDragPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragPreview.swift; sourceTree = "<group>"; };
-		63686DBD1F0988D20064A0CA /* SFDragPreviewParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDragPreviewParameters.swift; sourceTree = "<group>"; };
-		63686DBE1F0988D20064A0CA /* SFDropInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDropInteraction.swift; sourceTree = "<group>"; };
-		63686DBF1F0988D20064A0CA /* SFDynamicAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicAnimator.swift; sourceTree = "<group>"; };
-		63686DC01F0988D20064A0CA /* SFDynamicBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicBehavior.swift; sourceTree = "<group>"; };
-		63686DC11F0988D20064A0CA /* SFDynamicItemBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDynamicItemBehavior.swift; sourceTree = "<group>"; };
-		63686DC21F0988D20064A0CA /* SFEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFEvent.swift; sourceTree = "<group>"; };
-		63686DC31F0988D20064A0CA /* SFFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFeedbackGenerator.swift; sourceTree = "<group>"; };
-		63686DC41F0988D20064A0CA /* SFFieldBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFieldBehavior.swift; sourceTree = "<group>"; };
-		63686DC51F0988D20064A0CA /* SFFileProviderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFileProviderExtension.swift; sourceTree = "<group>"; };
-		63686DC61F0988D20064A0CA /* SFFocusAnimationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusAnimationCoordinator.swift; sourceTree = "<group>"; };
-		63686DC71F0988D20064A0CA /* SFFocusDebugger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusDebugger.swift; sourceTree = "<group>"; };
-		63686DC81F0988D20064A0CA /* SFFocusGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusGuide.swift; sourceTree = "<group>"; };
-		63686DC91F0988D20064A0CA /* SFFocusSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusSystem.swift; sourceTree = "<group>"; };
-		63686DCA1F0988D20064A0CA /* SFFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFont.swift; sourceTree = "<group>"; };
-		63686DCB1F0988D20064A0CA /* SFFontDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFontDescriptor.swift; sourceTree = "<group>"; };
-		63686DCC1F0988D20064A0CA /* SFFontMetrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFontMetrics.swift; sourceTree = "<group>"; };
-		63686DCD1F0988D20064A0CA /* SFGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686DCE1F0988D20064A0CA /* SFGraphicsImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsImageRenderer.swift; sourceTree = "<group>"; };
-		63686DCF1F0988D20064A0CA /* SFGraphicsPDFRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsPDFRenderer.swift; sourceTree = "<group>"; };
-		63686DD01F0988D20064A0CA /* SFGraphicsRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGraphicsRenderer.swift; sourceTree = "<group>"; };
-		63686DD11F0988D20064A0CA /* SFGravityBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGravityBehavior.swift; sourceTree = "<group>"; };
-		63686DD21F0988D20064A0CA /* SFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImage.swift; sourceTree = "<group>"; };
-		63686DD31F0988D20064A0CA /* SFImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImageAsset.swift; sourceTree = "<group>"; };
-		63686DD41F0988D20064A0CA /* SFImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImagePickerController.swift; sourceTree = "<group>"; };
 		63686DD51F0988D20064A0CA /* SFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImageView.swift; sourceTree = "<group>"; };
-		63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFImpactFeedbackGenerator.swift; sourceTree = "<group>"; };
-		63686DD71F0988D20064A0CA /* SFInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInputView.swift; sourceTree = "<group>"; };
-		63686DD81F0988D20064A0CA /* SFInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFInputViewController.swift; sourceTree = "<group>"; };
 		63686DD91F0988D20064A0CA /* SFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLabel.swift; sourceTree = "<group>"; };
-		63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutConstraint.swift; sourceTree = "<group>"; };
-		63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutGuide.swift; sourceTree = "<group>"; };
-		63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLayoutManager.swift; sourceTree = "<group>"; };
-		63686DDD1F0988D20064A0CA /* SFLexicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLexicon.swift; sourceTree = "<group>"; };
-		63686DDE1F0988D20064A0CA /* SFLocalizedIndexedCollation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLocalizedIndexedCollation.swift; sourceTree = "<group>"; };
-		63686DDF1F0988D20064A0CA /* SFLocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLocalNotification.swift; sourceTree = "<group>"; };
-		63686DE01F0988D20064A0CA /* SFLongPressGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLongPressGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686DE11F0988D20064A0CA /* SFManagedDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFManagedDocument.swift; sourceTree = "<group>"; };
-		63686DE21F0988D20064A0CA /* SFMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMenuController.swift; sourceTree = "<group>"; };
-		63686DE31F0988D20064A0CA /* SFMotionEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMotionEffect.swift; sourceTree = "<group>"; };
 		63686DE41F0988D20064A0CA /* SFNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationBar.swift; sourceTree = "<group>"; };
-		63686DE61F0988D20064A0CA /* SFNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNavigationItem.swift; sourceTree = "<group>"; };
-		63686DE71F0988D20064A0CA /* SFNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNib.swift; sourceTree = "<group>"; };
-		63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNotificationFeedbackGenerator.swift; sourceTree = "<group>"; };
-		63686DE91F0988D20064A0CA /* SFPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPageControl.swift; sourceTree = "<group>"; };
-		63686DEA1F0988D20064A0CA /* SFPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPageViewController.swift; sourceTree = "<group>"; };
-		63686DEB1F0988D20064A0CA /* SFPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPanGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686DEC1F0988D20064A0CA /* SFParagraphStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFParagraphStyle.swift; sourceTree = "<group>"; };
-		63686DED1F0988D20064A0CA /* SFPasteboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPasteboard.swift; sourceTree = "<group>"; };
-		63686DEE1F0988D20064A0CA /* SFPasteConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPasteConfiguration.swift; sourceTree = "<group>"; };
-		63686DEF1F0988D20064A0CA /* SFPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPickerView.swift; sourceTree = "<group>"; };
-		63686DF01F0988D20064A0CA /* SFPinchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPinchGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686DF11F0988D20064A0CA /* SFPopoverBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverBackgroundView.swift; sourceTree = "<group>"; };
-		63686DF21F0988D20064A0CA /* SFPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverController.swift; sourceTree = "<group>"; };
-		63686DF31F0988D20064A0CA /* SFPopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPopoverPresentationController.swift; sourceTree = "<group>"; };
-		63686DF41F0988D20064A0CA /* SFPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPresentationController.swift; sourceTree = "<group>"; };
-		63686DF51F0988D20064A0CA /* SFPress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPress.swift; sourceTree = "<group>"; };
-		63686DF61F0988D20064A0CA /* SFPressesEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPressesEvent.swift; sourceTree = "<group>"; };
-		63686DF71F0988D20064A0CA /* SFPreviewInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPreviewInteraction.swift; sourceTree = "<group>"; };
-		63686DF81F0988D20064A0CA /* SFPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrinter.swift; sourceTree = "<group>"; };
-		63686DF91F0988D20064A0CA /* SFPrinterPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrinterPickerController.swift; sourceTree = "<group>"; };
-		63686DFA1F0988D20064A0CA /* SFPrintFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintFormatter.swift; sourceTree = "<group>"; };
-		63686DFB1F0988D20064A0CA /* SFPrintInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintInfo.swift; sourceTree = "<group>"; };
-		63686DFC1F0988D20064A0CA /* SFPrintInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintInteractionController.swift; sourceTree = "<group>"; };
-		63686DFD1F0988D20064A0CA /* SFPrintPageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintPageRenderer.swift; sourceTree = "<group>"; };
-		63686DFE1F0988D20064A0CA /* SFPrintPaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPrintPaper.swift; sourceTree = "<group>"; };
-		63686DFF1F0988D20064A0CA /* SFProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFProgressView.swift; sourceTree = "<group>"; };
-		63686E001F0988D20064A0CA /* SFPushBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPushBehavior.swift; sourceTree = "<group>"; };
-		63686E011F0988D20064A0CA /* SFReferenceLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFReferenceLibraryViewController.swift; sourceTree = "<group>"; };
-		63686E021F0988D20064A0CA /* SFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRefreshControl.swift; sourceTree = "<group>"; };
-		63686E031F0988D20064A0CA /* SFRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRegion.swift; sourceTree = "<group>"; };
-		63686E041F0988D20064A0CA /* SFResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFResponder.swift; sourceTree = "<group>"; };
-		63686E051F0988D20064A0CA /* SFRotationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRotationGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686E061F0988D20064A0CA /* SFScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreen.swift; sourceTree = "<group>"; };
-		63686E071F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreenEdgePanGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686E081F0988D20064A0CA /* SFScreenMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScreenMode.swift; sourceTree = "<group>"; };
-		63686E091F0988D20064A0CA /* SFScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFScrollView.swift; sourceTree = "<group>"; };
-		63686E0A1F0988D20064A0CA /* SFSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchBar.swift; sourceTree = "<group>"; };
-		63686E0B1F0988D20064A0CA /* SFSearchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchContainerViewController.swift; sourceTree = "<group>"; };
-		63686E0C1F0988D20064A0CA /* SFSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchController.swift; sourceTree = "<group>"; };
-		63686E0D1F0988D20064A0CA /* SFSearchDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSearchDisplayController.swift; sourceTree = "<group>"; };
-		63686E0E1F0988D20064A0CA /* SFSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSegmentedControl.swift; sourceTree = "<group>"; };
-		63686E0F1F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSelectionFeedbackGenerator.swift; sourceTree = "<group>"; };
-		63686E101F0988D20064A0CA /* SFShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFShadow.swift; sourceTree = "<group>"; };
-		63686E111F0988D20064A0CA /* SFSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSlider.swift; sourceTree = "<group>"; };
-		63686E121F0988D20064A0CA /* SFSnapBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSnapBehavior.swift; sourceTree = "<group>"; };
-		63686E131F0988D20064A0CA /* SFSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSplitViewController.swift; sourceTree = "<group>"; };
-		63686E141F0988D20064A0CA /* SFSpringLoadedInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSpringLoadedInteraction.swift; sourceTree = "<group>"; };
-		63686E151F0988D20064A0CA /* SFStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStackView.swift; sourceTree = "<group>"; };
-		63686E161F0988D20064A0CA /* SFStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStepper.swift; sourceTree = "<group>"; };
-		63686E171F0988D20064A0CA /* SFStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboard.swift; sourceTree = "<group>"; };
-		63686E181F0988D20064A0CA /* SFStoryboardPopoverSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboardPopoverSegue.swift; sourceTree = "<group>"; };
-		63686E191F0988D20064A0CA /* SFStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFStoryboardSegue.swift; sourceTree = "<group>"; };
-		63686E1A1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwipeActionsConfiguration.swift; sourceTree = "<group>"; };
-		63686E1B1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686E1C1F0988D20064A0CA /* SFSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSwitch.swift; sourceTree = "<group>"; };
 		63686E1D1F0988D20064A0CA /* SFTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBar.swift; sourceTree = "<group>"; };
-		63686E1E1F0988D20064A0CA /* SFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBarController.swift; sourceTree = "<group>"; };
-		63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTabBarItem.swift; sourceTree = "<group>"; };
 		63686E201F0988D20064A0CA /* SFTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableView.swift; sourceTree = "<group>"; };
 		63686E211F0988D20064A0CA /* SFTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewCell.swift; sourceTree = "<group>"; };
 		63686E221F0988D20064A0CA /* SFTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewController.swift; sourceTree = "<group>"; };
 		63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTapGestureRecognizer.swift; sourceTree = "<group>"; };
-		63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTargetedDragPreview.swift; sourceTree = "<group>"; };
-		63686E261F0988D20064A0CA /* SFTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextAttachment.swift; sourceTree = "<group>"; };
-		63686E271F0988D20064A0CA /* SFTextChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextChecker.swift; sourceTree = "<group>"; };
-		63686E281F0988D20064A0CA /* SFTextContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextContainer.swift; sourceTree = "<group>"; };
-		63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextDragPreviewRenderer.swift; sourceTree = "<group>"; };
-		63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextDropProposal.swift; sourceTree = "<group>"; };
 		63686E2B1F0988D20064A0CA /* SFTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextField.swift; sourceTree = "<group>"; };
-		63686E2C1F0988D20064A0CA /* SFTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextStorage.swift; sourceTree = "<group>"; };
-		63686E2E1F0988D20064A0CA /* SFToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFToolbar.swift; sourceTree = "<group>"; };
-		63686E2F1F0988D20064A0CA /* SFTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTouch.swift; sourceTree = "<group>"; };
-		63686E301F0988D20064A0CA /* SFTraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTraitCollection.swift; sourceTree = "<group>"; };
-		63686E311F0988D20064A0CA /* SFUserNotificationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUserNotificationSettings.swift; sourceTree = "<group>"; };
-		63686E321F0988D20064A0CA /* SFVibrancyEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVibrancyEffect.swift; sourceTree = "<group>"; };
-		63686E331F0988D20064A0CA /* SFVideoEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVideoEditorController.swift; sourceTree = "<group>"; };
 		63686E341F0988D20064A0CA /* SFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFView.swift; sourceTree = "<group>"; };
 		63686E351F0988D20064A0CA /* SFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFViewController.swift; sourceTree = "<group>"; };
-		63686E361F0988D20064A0CA /* SFViewPropertyAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFViewPropertyAnimator.swift; sourceTree = "<group>"; };
-		63686E371F0988D20064A0CA /* SFVisualEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVisualEffect.swift; sourceTree = "<group>"; };
 		63686E381F0988D20064A0CA /* SFVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVisualEffectView.swift; sourceTree = "<group>"; };
-		63686E391F0988D20064A0CA /* SFWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebView.swift; sourceTree = "<group>"; };
-		63686E3A1F0988D20064A0CA /* SFWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWindow.swift; sourceTree = "<group>"; };
 		636CF9C01F098C2E00C724C4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
@@ -360,9 +227,10 @@
 		6385A2331F06EB36002B9244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6385A23D1F06EB4D002B9244 /* SFColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFColor.swift; sourceTree = "<group>"; };
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
+		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
-		63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Identifiable.swift"; sourceTree = "<group>"; };
+		63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,15 +361,17 @@
 		6313E36320019D9C0065EE25 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				6313E36120019C3D0065EE25 /* Identifiable+SFReuseable.swift */,
-				63F6EF9F2002CDF500B7D3E8 /* Extensions+Identifiable.swift */,
+				631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */,
+				631DC2AA2054CF5500351241 /* SFReuseable.swift */,
+				63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
-		63167CC71F3670C800054924 /* Appearance Updating */ = {
+		63167CC71F3670C800054924 /* Deprecated Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
 				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
 				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
@@ -512,10 +382,17 @@
 				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686DD51F0988D20064A0CA /* SFImageView.swift */,
-				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
-				63686DD91F0988D20064A0CA /* SFLabel.swift */,
 			);
-			path = "Appearance Updating";
+			path = "Deprecated Classes";
+			sourceTree = "<group>";
+		};
+		631DC2B22054DA4C00351241 /* Polygons */ = {
+			isa = PBXGroup;
+			children = (
+				638B1BDD2050C684009CA8D7 /* SFPolygon.swift */,
+				633EB3A5205046620045A6E0 /* SFLine.swift */,
+			);
+			path = Polygons;
 			sourceTree = "<group>";
 		};
 		6324D3F1201EC8A400D762DA /* Cards */ = {
@@ -576,23 +453,28 @@
 				6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */,
 				636D65B41F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.h */,
 				636D65B51F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m */,
+				631DC2AE2054D4CF00351241 /* UIView+SFAppearanceEnvironment.h */,
+				631DC2AF2054D4CF00351241 /* UIView+SFAppearanceEnvironment.m */,
 			);
 			path = "Categories & Extensions";
 			sourceTree = "<group>";
 		};
-		637D6B061FB7F0B100397317 /* Objects */ = {
+		637D6B061FB7F0B100397317 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				6345575F2054DDFF00186815 /* UIColorMetrics.swift */,
+				63686DD91F0988D20064A0CA /* SFLabel.swift */,
+				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
-				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
 				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
 				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
 				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
+				631DC2B22054DA4C00351241 /* Polygons */,
 			);
-			path = Objects;
+			path = "UI Elements";
 			sourceTree = "<group>";
 		};
 		6385A2191F06EB36002B9244 = {
@@ -636,169 +518,14 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				63BA899920420E69000684BA /* Collection View */,
+				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				63BA899820420DF1000684BA /* Onboarding */,
 				6313E300200087660065EE25 /* Charts */,
-				63A13DC61F1A7D7400FE5760 /* Appearance */,
-				639E37971F09882900C08D8E /* Include */,
-				63167CC71F3670C800054924 /* Appearance Updating */,
-				637D6B061FB7F0B100397317 /* Objects */,
+				637D6B061FB7F0B100397317 /* UI Elements */,
 				6313E36320019D9C0065EE25 /* Miscellaneous */,
+				63167CC71F3670C800054924 /* Deprecated Classes */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		639E37971F09882900C08D8E /* Include */ = {
-			isa = PBXGroup;
-			children = (
-				63686D981F0988D20064A0CA /* SFActionSheet.swift */,
-				63686D991F0988D20064A0CA /* SFActivity.swift */,
-				63686D9A1F0988D20064A0CA /* SFActivityIndicatorView.swift */,
-				63686D9B1F0988D20064A0CA /* SFActivityItemProvider.swift */,
-				63686D9C1F0988D20064A0CA /* SFActivityViewController.swift */,
-				63686D9D1F0988D20064A0CA /* SFAlertController.swift */,
-				63686D9E1F0988D20064A0CA /* SFAlertView.swift */,
-				63686D9F1F0988D20064A0CA /* SFApplication.swift */,
-				63686DA01F0988D20064A0CA /* SFApplicationShortcutItem.swift */,
-				63686DA11F0988D20064A0CA /* SFAttachmentBehavior.swift */,
-				63686DA21F0988D20064A0CA /* SFAttributedString.swift */,
-				63686DA31F0988D20064A0CA /* SFBarButtonItem.swift */,
-				63686DA41F0988D20064A0CA /* SFBarButtonItemGroup.swift */,
-				63686DA51F0988D20064A0CA /* SFBarItem.swift */,
-				63686DA61F0988D20064A0CA /* SFBezierPath.swift */,
-				63686DA71F0988D20064A0CA /* SFBlurEffect.swift */,
-				63686DA81F0988D20064A0CA /* SFCloudSharingController.swift */,
-				63686DAC1F0988D20064A0CA /* SFCollectionViewFlowLayout.swift */,
-				63686DAD1F0988D20064A0CA /* SFCollectionViewLayout.swift */,
-				63686DAE1F0988D20064A0CA /* SFCollectionViewTransitionLayout.swift */,
-				63686DAF1F0988D20064A0CA /* SFCollisionBehavior.swift */,
-				63686DB01F0988D20064A0CA /* SFContextualAction.swift */,
-				63686DB11F0988D20064A0CA /* SFControl.swift */,
-				63686DB21F0988D20064A0CA /* SFDataAsset.swift */,
-				63686DB31F0988D20064A0CA /* SFDatePicker.swift */,
-				63686DB41F0988D20064A0CA /* SFDevice.swift */,
-				63686DB51F0988D20064A0CA /* SFDocument.swift */,
-				63686DB61F0988D20064A0CA /* SFDocumentInteractionController.swift */,
-				63686DB71F0988D20064A0CA /* SFDocumentMenuViewController.swift */,
-				63686DB81F0988D20064A0CA /* SFDocumentPickerExtensionViewController.swift */,
-				63686DB91F0988D20064A0CA /* SFDocumentPickerViewController.swift */,
-				63686DBA1F0988D20064A0CA /* SFDragInteraction.swift */,
-				63686DBB1F0988D20064A0CA /* SFDragItem.swift */,
-				63686DBC1F0988D20064A0CA /* SFDragPreview.swift */,
-				63686DBD1F0988D20064A0CA /* SFDragPreviewParameters.swift */,
-				63686DBE1F0988D20064A0CA /* SFDropInteraction.swift */,
-				63686DBF1F0988D20064A0CA /* SFDynamicAnimator.swift */,
-				63686DC01F0988D20064A0CA /* SFDynamicBehavior.swift */,
-				63686DC11F0988D20064A0CA /* SFDynamicItemBehavior.swift */,
-				63686DC21F0988D20064A0CA /* SFEvent.swift */,
-				63686DC31F0988D20064A0CA /* SFFeedbackGenerator.swift */,
-				63686DC41F0988D20064A0CA /* SFFieldBehavior.swift */,
-				63686DC51F0988D20064A0CA /* SFFileProviderExtension.swift */,
-				63686DC61F0988D20064A0CA /* SFFocusAnimationCoordinator.swift */,
-				63686DC71F0988D20064A0CA /* SFFocusDebugger.swift */,
-				63686DC81F0988D20064A0CA /* SFFocusGuide.swift */,
-				63686DC91F0988D20064A0CA /* SFFocusSystem.swift */,
-				63686DCA1F0988D20064A0CA /* SFFont.swift */,
-				63686DCB1F0988D20064A0CA /* SFFontDescriptor.swift */,
-				63686DCC1F0988D20064A0CA /* SFFontMetrics.swift */,
-				63686DCD1F0988D20064A0CA /* SFGestureRecognizer.swift */,
-				63686DCE1F0988D20064A0CA /* SFGraphicsImageRenderer.swift */,
-				63686DCF1F0988D20064A0CA /* SFGraphicsPDFRenderer.swift */,
-				63686DD01F0988D20064A0CA /* SFGraphicsRenderer.swift */,
-				63686DD11F0988D20064A0CA /* SFGravityBehavior.swift */,
-				63686DD21F0988D20064A0CA /* SFImage.swift */,
-				63686DD31F0988D20064A0CA /* SFImageAsset.swift */,
-				63686DD41F0988D20064A0CA /* SFImagePickerController.swift */,
-				63686DD61F0988D20064A0CA /* SFImpactFeedbackGenerator.swift */,
-				63686DD71F0988D20064A0CA /* SFInputView.swift */,
-				63686DD81F0988D20064A0CA /* SFInputViewController.swift */,
-				63686DDA1F0988D20064A0CA /* SFLayoutConstraint.swift */,
-				63686DDB1F0988D20064A0CA /* SFLayoutGuide.swift */,
-				63686DDC1F0988D20064A0CA /* SFLayoutManager.swift */,
-				63686DDD1F0988D20064A0CA /* SFLexicon.swift */,
-				63686DDE1F0988D20064A0CA /* SFLocalizedIndexedCollation.swift */,
-				63686DDF1F0988D20064A0CA /* SFLocalNotification.swift */,
-				63686DE01F0988D20064A0CA /* SFLongPressGestureRecognizer.swift */,
-				63686DE11F0988D20064A0CA /* SFManagedDocument.swift */,
-				63686DE21F0988D20064A0CA /* SFMenuController.swift */,
-				63686DE31F0988D20064A0CA /* SFMotionEffect.swift */,
-				63686DE61F0988D20064A0CA /* SFNavigationItem.swift */,
-				63686DE71F0988D20064A0CA /* SFNib.swift */,
-				63686DE81F0988D20064A0CA /* SFNotificationFeedbackGenerator.swift */,
-				63686DE91F0988D20064A0CA /* SFPageControl.swift */,
-				63686DEA1F0988D20064A0CA /* SFPageViewController.swift */,
-				63686DEB1F0988D20064A0CA /* SFPanGestureRecognizer.swift */,
-				63686DEC1F0988D20064A0CA /* SFParagraphStyle.swift */,
-				63686DED1F0988D20064A0CA /* SFPasteboard.swift */,
-				63686DEE1F0988D20064A0CA /* SFPasteConfiguration.swift */,
-				63686DEF1F0988D20064A0CA /* SFPickerView.swift */,
-				63686DF01F0988D20064A0CA /* SFPinchGestureRecognizer.swift */,
-				63686DF11F0988D20064A0CA /* SFPopoverBackgroundView.swift */,
-				63686DF21F0988D20064A0CA /* SFPopoverController.swift */,
-				63686DF31F0988D20064A0CA /* SFPopoverPresentationController.swift */,
-				63686DF41F0988D20064A0CA /* SFPresentationController.swift */,
-				63686DF51F0988D20064A0CA /* SFPress.swift */,
-				63686DF61F0988D20064A0CA /* SFPressesEvent.swift */,
-				63686DF71F0988D20064A0CA /* SFPreviewInteraction.swift */,
-				63686DF81F0988D20064A0CA /* SFPrinter.swift */,
-				63686DF91F0988D20064A0CA /* SFPrinterPickerController.swift */,
-				63686DFA1F0988D20064A0CA /* SFPrintFormatter.swift */,
-				63686DFB1F0988D20064A0CA /* SFPrintInfo.swift */,
-				63686DFC1F0988D20064A0CA /* SFPrintInteractionController.swift */,
-				63686DFD1F0988D20064A0CA /* SFPrintPageRenderer.swift */,
-				63686DFE1F0988D20064A0CA /* SFPrintPaper.swift */,
-				63686DFF1F0988D20064A0CA /* SFProgressView.swift */,
-				63686E001F0988D20064A0CA /* SFPushBehavior.swift */,
-				63686E011F0988D20064A0CA /* SFReferenceLibraryViewController.swift */,
-				63686E021F0988D20064A0CA /* SFRefreshControl.swift */,
-				63686E031F0988D20064A0CA /* SFRegion.swift */,
-				63686E041F0988D20064A0CA /* SFResponder.swift */,
-				63686E051F0988D20064A0CA /* SFRotationGestureRecognizer.swift */,
-				63686E061F0988D20064A0CA /* SFScreen.swift */,
-				63686E071F0988D20064A0CA /* SFScreenEdgePanGestureRecognizer.swift */,
-				63686E081F0988D20064A0CA /* SFScreenMode.swift */,
-				63686E091F0988D20064A0CA /* SFScrollView.swift */,
-				63686E0A1F0988D20064A0CA /* SFSearchBar.swift */,
-				63686E0B1F0988D20064A0CA /* SFSearchContainerViewController.swift */,
-				63686E0C1F0988D20064A0CA /* SFSearchController.swift */,
-				63686E0D1F0988D20064A0CA /* SFSearchDisplayController.swift */,
-				63686E0E1F0988D20064A0CA /* SFSegmentedControl.swift */,
-				63686E0F1F0988D20064A0CA /* SFSelectionFeedbackGenerator.swift */,
-				63686E101F0988D20064A0CA /* SFShadow.swift */,
-				63686E111F0988D20064A0CA /* SFSlider.swift */,
-				63686E121F0988D20064A0CA /* SFSnapBehavior.swift */,
-				63686E131F0988D20064A0CA /* SFSplitViewController.swift */,
-				63686E141F0988D20064A0CA /* SFSpringLoadedInteraction.swift */,
-				63686E151F0988D20064A0CA /* SFStackView.swift */,
-				63686E161F0988D20064A0CA /* SFStepper.swift */,
-				63686E171F0988D20064A0CA /* SFStoryboard.swift */,
-				63686E181F0988D20064A0CA /* SFStoryboardPopoverSegue.swift */,
-				63686E191F0988D20064A0CA /* SFStoryboardSegue.swift */,
-				63686E1A1F0988D20064A0CA /* SFSwipeActionsConfiguration.swift */,
-				63686E1B1F0988D20064A0CA /* SFSwipeGestureRecognizer.swift */,
-				63686E1C1F0988D20064A0CA /* SFSwitch.swift */,
-				63686E1E1F0988D20064A0CA /* SFTabBarController.swift */,
-				63686E1F1F0988D20064A0CA /* SFTabBarItem.swift */,
-				63686E241F0988D20064A0CA /* SFTapGestureRecognizer.swift */,
-				63686E251F0988D20064A0CA /* SFTargetedDragPreview.swift */,
-				63686E261F0988D20064A0CA /* SFTextAttachment.swift */,
-				63686E271F0988D20064A0CA /* SFTextChecker.swift */,
-				63686E281F0988D20064A0CA /* SFTextContainer.swift */,
-				63686E291F0988D20064A0CA /* SFTextDragPreviewRenderer.swift */,
-				63686E2A1F0988D20064A0CA /* SFTextDropProposal.swift */,
-				63686E2C1F0988D20064A0CA /* SFTextStorage.swift */,
-				63686E2E1F0988D20064A0CA /* SFToolbar.swift */,
-				63686E2F1F0988D20064A0CA /* SFTouch.swift */,
-				63686E301F0988D20064A0CA /* SFTraitCollection.swift */,
-				63686E311F0988D20064A0CA /* SFUserNotificationSettings.swift */,
-				63686E321F0988D20064A0CA /* SFVibrancyEffect.swift */,
-				63686E331F0988D20064A0CA /* SFVideoEditorController.swift */,
-				63686E361F0988D20064A0CA /* SFViewPropertyAnimator.swift */,
-				63686E371F0988D20064A0CA /* SFVisualEffect.swift */,
-				63686E391F0988D20064A0CA /* SFWebView.swift */,
-				63686E3A1F0988D20064A0CA /* SFWindow.swift */,
-			);
-			path = Include;
 			sourceTree = "<group>";
 		};
 		63A13DC61F1A7D7400FE5760 /* Appearance */ = {
@@ -808,6 +535,7 @@
 				6331B2CD1F3619B7005C73F3 /* SFAppearance.h */,
 				6331B2CE1F3619B7005C73F3 /* SFAppearance.m */,
 				63761BF61F36097000115594 /* SFAppearanceEnvironment.h */,
+				634557612054EA7500186815 /* SFAppearanceAdjusting.h */,
 				636D65BA1F376D7400F3BF35 /* Categories & Extensions */,
 			);
 			path = Appearance;
@@ -823,13 +551,6 @@
 				6324D3F6201FC30C00D762DA /* Transition */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		63BA899920420E69000684BA /* Collection View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Collection View";
 			sourceTree = "<group>";
 		};
 		63D40AA020211A1700DD1AF9 /* Stage */ = {
@@ -876,6 +597,8 @@
 				6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */,
 				6313E341200089840065EE25 /* SFSkin.h in Headers */,
 				6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */,
+				634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */,
+				631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */,
 				6313E349200089EF0065EE25 /* SFHelpers_Internal.h in Headers */,
 				6313E32A200087D50065EE25 /* SFPieChartTitleTextView.h in Headers */,
 				6313E32D200087D50065EE25 /* SFGraphChartView.h in Headers */,
@@ -1004,6 +727,7 @@
 				6324D3F0201EC7A100D762DA /* SFOnboardingTextFieldCard.swift in Sources */,
 				6313E335200087D50065EE25 /* SFPieChartLegendCell.m in Sources */,
 				6351C46C2024F51800994AAC /* SFOnboardingLabel.swift in Sources */,
+				631DC2AD2054CF6F00351241 /* SFIdentifiable.swift in Sources */,
 				63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */,
 				6313E336200087D50065EE25 /* SFDiscreteGraphChartView.m in Sources */,
 				6313E323200087D50065EE25 /* SFPieChartLegendView.m in Sources */,
@@ -1032,9 +756,8 @@
 				6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
-				63F6EFA02002CDF500B7D3E8 /* Extensions+Identifiable.swift in Sources */,
+				63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
-				6313E36220019C3D0065EE25 /* Identifiable+SFReuseable.swift in Sources */,
 				6324D400201FCE9200D762DA /* SFOnboardingTextFieldCardCell.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
@@ -1045,17 +768,22 @@
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				6313E34A200089EF0065EE25 /* SFHelpers.m in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
+				634557602054DDFF00186815 /* UIColorMetrics.swift in Sources */,
 				6313E333200087D50065EE25 /* SFBarGraphChartView.m in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
 				6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */,
+				631DC2AB2054CF5500351241 /* SFReuseable.swift in Sources */,
 				6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */,
+				638B1BDE2050C684009CA8D7 /* SFPolygon.swift in Sources */,
 				63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */,
 				636D65BC1F376E1E00F3BF35 /* SFNavigationController.swift in Sources */,
 				6331B2D01F3619B7005C73F3 /* SFAppearance.m in Sources */,
+				631DC2B12054D4CF00351241 /* UIView+SFAppearanceEnvironment.m in Sources */,
 				6385A23F1F06EB4D002B9244 /* SFColor.swift in Sources */,
 				6324D3EE201EC47300D762DA /* SFOnboardingTitleCard.swift in Sources */,
 				6313E326200087D50065EE25 /* SFPieChartView.m in Sources */,
 				6351C46A2023C67C00994AAC /* SFOnboardingElement.swift in Sources */,
+				633EB3A6205046620045A6E0 /* SFLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

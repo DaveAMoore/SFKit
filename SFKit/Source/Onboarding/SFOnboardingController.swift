@@ -10,7 +10,7 @@
 ///
 /// # Onboarding
 /// Launch time is your first opportunity to onboard new users and reconnect with returning ones. Use `SFOnboardingController` to design a launch experience that’s fast, fun, and educational.
-open class SFOnboardingController: SFViewController {
+open class SFOnboardingController: UIViewController {
 
     // MARK: - Properties
     
