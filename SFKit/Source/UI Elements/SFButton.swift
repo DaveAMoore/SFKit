@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated, message: "use UIColorMetrics instead")
 extension SFColor {
     /// Rich outlining blue which can be used to clarify an interactive object. This should be used to outline objects with the `SFColor.blue` color.
     fileprivate static var darkBlue: SFColor {
@@ -30,7 +31,7 @@ extension SFColor {
     private var restingBorderWidth: CGFloat = 0.0
     
     /// Cached background color that is used for selection and enabling.
-    @available(iOS, deprecated: 10.0, message: "use 'SFColor' static properties instead")
+    @available(*, deprecated, message: "use SFColor class properties instead")
     private var cachedBackgroundColor: SFColor?
     
     /// The corner radius of the button.
@@ -67,7 +68,7 @@ extension SFColor {
     }
     
     /// Boolean value indicating if the corner radius of the button is equal to the halving of the minimal dimension (width or height).
-    @available(iOS, deprecated: 10.0, message: "use 'buttonKind' instead")
+    @available(*, deprecated, message: "use 'buttonKind' instead")
     open var isElliptical: Bool {
         get {
             return layer.cornerRadius == ellipticalCornerRadius(for: frame)
@@ -127,17 +128,18 @@ extension SFColor {
         registerForAppearanceUpdates()
     }
     
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         
         // Configure the appearance.
-        backgroundColor = SFColor.blue
-        setTitleColor(SFColor.white, for: .normal)
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
+        backgroundColor = colorMetrics.color(forRelativeHue: .blue)
+        setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
         titleLabel?.adjustsFontForContentSizeCategory = true
-        tintColor = SFColor.white
+        tintColor = colorMetrics.color(forRelativeHue: .white)
         
         // Set the border color and width.
-        layer.borderColor = SFColor.darkBlue.cgColor
+        layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
         layer.borderWidth = restingBorderWidth
         layer.allowsEdgeAntialiasing = true
         
@@ -198,35 +200,38 @@ extension SFColor {
     /// Updates appearance for `isEnabled`.
     private func updateIsEnabled() {
         // Adjust the background color as needed.
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if isEnabled {
-            backgroundColor = SFColor.blue
+            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
             layer.borderWidth = restingBorderWidth
-            tintColor = SFColor.white
+            tintColor = colorMetrics.color(forRelativeHue: .white)
         } else {
-            backgroundColor = SFColor.lightGray
+            backgroundColor = colorMetrics.color(forRelativeHue: .lightGray)
             layer.borderWidth = 0.0
-            tintColor = SFColor.gray
+            tintColor = colorMetrics.color(forRelativeHue: .gray)
         }
     }
     
     /// Updates the appearance of the receiver for the `isSelected` property.
     private func updateIsSelected() {
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if isSelected {
             layer.borderWidth = 0.0
-            backgroundColor = SFColor.blue.withAlphaComponent(0.5)
-            tintColor = SFColor.white
+            backgroundColor = colorMetrics.color(forRelativeHue: .blue).withAlphaComponent(0.5)
+            tintColor = colorMetrics.color(forRelativeHue: .white)
         } else {
-            backgroundColor = SFColor.blue
-            layer.borderColor = SFColor.darkBlue.cgColor
+            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
+            layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
             layer.borderWidth = restingBorderWidth
-            setTitleColor(SFColor.white, for: .normal)
-            tintColor = SFColor.white
+            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
+            tintColor = colorMetrics.color(forRelativeHue: .white)
         }
     }
     
     /// Update the appearance for `isHighlighted`.
     private func updateIsHighlighted() {
         // Adjust as needed.
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if self.isHighlighted {
             /*backgroundColor = SFColor.darkBlue
             setTitleColor(SFColor.blue, for: .normal)
@@ -241,11 +246,11 @@ extension SFColor {
                 self.alpha = 1.0
             }
             
-            backgroundColor = SFColor.blue
-            setTitleColor(SFColor.white, for: .normal)
-            layer.borderColor = SFColor.darkBlue.cgColor
+            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
+            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
+            layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
             layer.borderWidth = restingBorderWidth
-            tintColor = SFColor.white
+            tintColor = colorMetrics.color(forRelativeHue: .white)
         }
         
     }

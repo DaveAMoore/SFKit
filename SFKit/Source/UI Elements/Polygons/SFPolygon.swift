@@ -27,7 +27,7 @@ open class SFPolygon: SFView {
     
     /// Stroke color of the resulting polygon line.
     @IBInspectable
-    open var strokeColor: UIColor? = SFColor.lightGray {
+    open var strokeColor: UIColor? {
         didSet {
             setNeedsDisplay()
         }
@@ -109,6 +109,7 @@ open class SFPolygon: SFView {
         self.points = points
         super.init(frame: .zero)
         self.backgroundColor = .clear
+        self.strokeColor = UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .lightGray)
     }
     
     public required init?(coder aDecoder: NSCoder) {

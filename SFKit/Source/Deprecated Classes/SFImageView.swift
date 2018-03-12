@@ -1,5 +1,5 @@
 //
-//  SFTableViewCell.swift
+//  SFImageView.swift
 //  SFKit
 //
 //  Created by David Moore on 7/01/17.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-open class SFTableViewCell: UITableViewCell {
+@available(*, deprecated, message: "use UIImageView instead")
+open class SFImageView: UIImageView {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

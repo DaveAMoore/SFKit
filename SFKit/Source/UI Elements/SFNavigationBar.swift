@@ -28,11 +28,11 @@ open class SFNavigationBar: UINavigationBar {
         registerForAppearanceUpdates()
     }
     
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         
         // Change the bar style for the new appearance style.
-        barStyle = newAppearanceStyle == .light ? .default : .black
-        tintColor = SFColor.blue
+        barStyle = appearance.style == .light ? .default : .black
+        tintColor = UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .blue)
     }
 }

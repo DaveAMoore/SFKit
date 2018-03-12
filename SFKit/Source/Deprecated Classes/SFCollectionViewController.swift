@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated, message: "use UICollectionViewController instead")
 open class SFCollectionViewController: UICollectionViewController {
     
     open override func viewDidLoad() {

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
-final public class SFOnboardingTitleCardCell: SFTableViewCell {
+final public class SFOnboardingTitleCardCell: UITableViewCell {
     
     /// Label that will present the title.
     @IBOutlet public var titleLabel: UILabel!
@@ -17,13 +17,14 @@ final public class SFOnboardingTitleCardCell: SFTableViewCell {
     /// Image view that will display the image.
     @IBOutlet public var embeddedImageView: UIImageView!
     
-    public override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    public override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         
         // Configure the view coloring.
-        backgroundColor = SFColor.white
-        titleLabel.textColor = SFColor.black
-        detailLabel.textColor = SFColor.black
-        embeddedImageView.tintColor = SFColor.blue
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
+        backgroundColor = colorMetrics.color(forRelativeHue: .white)
+        titleLabel.textColor = colorMetrics.color(forRelativeHue: .black)
+        detailLabel.textColor = colorMetrics.color(forRelativeHue: .black)
+        embeddedImageView.tintColor = colorMetrics.color(forRelativeHue: .blue)
     }
 }

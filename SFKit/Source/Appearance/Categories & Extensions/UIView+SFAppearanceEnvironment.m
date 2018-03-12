@@ -9,13 +9,34 @@
 #import "UIView+SFAppearanceEnvironment.h"
 #import <SFKit/SFKit.h>
 #import <objc/runtime.h>
+#import <SFKit/SFKit-Swift.h>
 
 @implementation UIView (SFAppearanceEnvironment)
+@dynamic adjustsColorForAppearanceStyle;
+
+#pragma mark - Properties
+
+- (BOOL)adjustsColorForAppearanceStyle {
+    NSNumber *associatedValue = objc_getAssociatedObject(self, @selector(adjustsColorForAppearanceStyle));
+    if (!associatedValue) {
+        return true;
+    }
+    return [associatedValue boolValue];
+}
+
+- (void)setAdjustsColorForAppearanceStyle:(BOOL)adjustsColorForAppearanceStyle {
+    NSNumber *associatedValue = [NSNumber numberWithBool:adjustsColorForAppearanceStyle];
+    objc_setAssociatedObject(self, @selector(adjustsColorForAppearanceStyle),
+                             associatedValue, OBJC_ASSOCIATION_RETAIN);
+}
+
+#pragma mark - Swizzling
 
 + (void)load {
     // Perform the method swizzling.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        [self _extendsAppearanceStyleDidChange];
         [self _extendsPrepareForInterfaceBuilder];
         [self _extendsWillMoveToSuperview];
     });
@@ -30,6 +51,25 @@
 - (void)_willMoveToSuperview:(nullable UIView *)newSuperview {
     [self registerForAppearanceUpdates];
     [self _willMoveToSuperview:newSuperview];
+}
+
+- (void)_appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle {
+    if ([self adjustsColorForAppearanceStyle])
+        [self adjustColorForAppearanceStyle:previousAppearanceStyle];
+    [self _appearanceStyleDidChange:previousAppearanceStyle];
+}
+
+- (void)adjustColorForAppearanceStyle:(SFAppearanceStyle)previousAppearanceStyle {
+    if (!self.backgroundColor)
+        return;
+    
+    UIColorMetrics *previousMetrics = [[UIColorMetrics alloc] initForAppearanceStyle:previousAppearanceStyle];
+    //[self setBackgroundColor:[previousMetrics colorForRelativeHue:UIColorMetricsHueWhite]];
+    UIColorMetricsHue previousHue = [previousMetrics relativeHueForColor:self.backgroundColor];
+    
+    UIColorMetrics *currentMetrics = [[UIColorMetrics alloc] initForAppearance:self.appearance];
+    UIColor *adjustedColor = [currentMetrics colorForRelativeHue:previousHue];
+    [self setBackgroundColor:adjustedColor];
 }
 
 /// Performs method swizzling between '-prepareForInterfaceBuilder' and '-_prepareForInterfaceBuilder'.
@@ -73,11 +113,35 @@
                                           method_getTypeEncoding(_willMoveToSuperviewMethod));
     
     if (methodWasAdded) {
-        // Update the selector points to the original '-prepareForInterfaceBuilder' method.
+        // Update the selector points to the original '-willMoveToSuperview' method.
         class_replaceMethod(self, _willMoveToSuperviewSelector, willMoveToSuperviewImplementation,
                             method_getTypeEncoding(willMoveToSuperviewMethod));
     } else {
         method_exchangeImplementations(willMoveToSuperviewMethod, _willMoveToSuperviewMethod);
+    }
+}
+
++ (void)_extendsAppearanceStyleDidChange {
+    // Retrieve the '-prepareForInterfaceBuilder' selector and method implementation.
+    SEL appearanceStyleDidChangeSelector = @selector(appearanceStyleDidChange:);
+    Method appearanceStyleDidChangeMethod = class_getInstanceMethod(self, appearanceStyleDidChangeSelector);
+    IMP appearanceStyleDidChangeImplementation = method_getImplementation(appearanceStyleDidChangeMethod);
+    
+    // Retrieve the '-_prepareForInterfaceBuilder' selector and method implementation.
+    SEL _appearanceStyleDidChangeSelector = @selector(_appearanceStyleDidChange:);
+    Method _appearanceStyleDidChangeMethod = class_getInstanceMethod(self, _appearanceStyleDidChangeSelector);
+    IMP _appearanceStyleDidChangeImplementation = method_getImplementation(_appearanceStyleDidChangeMethod);
+    
+    // Attempt to add '-prepareForInterfaceBuilder' with the new implementation.
+    BOOL methodWasAdded = class_addMethod(self, appearanceStyleDidChangeSelector, _appearanceStyleDidChangeImplementation,
+                                          method_getTypeEncoding(_appearanceStyleDidChangeMethod));
+    
+    if (methodWasAdded) {
+        // Update the selector points to the original '-appearanceStyleDidChange' method.
+        class_replaceMethod(self, _appearanceStyleDidChangeSelector, appearanceStyleDidChangeImplementation,
+                            method_getTypeEncoding(appearanceStyleDidChangeMethod));
+    } else {
+        method_exchangeImplementations(appearanceStyleDidChangeMethod, _appearanceStyleDidChangeMethod);
     }
 }
 

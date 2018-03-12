@@ -65,7 +65,7 @@
 		63167CCC1F3671E700054924 /* SFCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */; };
 		631DC2AB2054CF5500351241 /* SFReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AA2054CF5500351241 /* SFReuseable.swift */; };
 		631DC2AD2054CF6F00351241 /* SFIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */; };
-		631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 631DC2AE2054D4CF00351241 /* UIView+SFAppearanceEnvironment.h */; };
+		631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 631DC2AE2054D4CF00351241 /* UIView+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		631DC2B12054D4CF00351241 /* UIView+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 631DC2AF2054D4CF00351241 /* UIView+SFAppearanceEnvironment.m */; };
 		6324D3E7201EBFC500D762DA /* SFOnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E6201EBFC500D762DA /* SFOnboardingController.swift */; };
 		6324D3EA201EC05700D762DA /* SFOnboardingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D3E9201EC05700D762DA /* SFOnboardingStage.swift */; };
@@ -87,6 +87,8 @@
 		6331B2D21F3621F3005C73F3 /* SFAppearanceStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2D31F365E53005C73F3 /* SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 63761BF61F36097000115594 /* SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		633EB3A6205046620045A6E0 /* SFLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633EB3A5205046620045A6E0 /* SFLine.swift */; };
+		634557602054DDFF00186815 /* UIColorMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6345575F2054DDFF00186815 /* UIColorMetrics.swift */; };
+		634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */ = {isa = PBXBuildFile; fileRef = 634557612054EA7500186815 /* SFAppearanceAdjusting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6347637D1F68D7CF0027B71F /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E2B1F0988D20064A0CA /* SFTextField.swift */; };
 		6351C46A2023C67C00994AAC /* SFOnboardingElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C4692023C67C00994AAC /* SFOnboardingElement.swift */; };
 		6351C46C2024F51800994AAC /* SFOnboardingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */; };
@@ -192,6 +194,8 @@
 		6331B2CE1F3619B7005C73F3 /* SFAppearance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppearance.m; sourceTree = "<group>"; };
 		6331B2D11F3621F3005C73F3 /* SFAppearanceStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceStyle.h; sourceTree = "<group>"; };
 		633EB3A5205046620045A6E0 /* SFLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLine.swift; sourceTree = "<group>"; };
+		6345575F2054DDFF00186815 /* UIColorMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorMetrics.swift; sourceTree = "<group>"; };
+		634557612054EA7500186815 /* SFAppearanceAdjusting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearanceAdjusting.h; sourceTree = "<group>"; };
 		6351C4692023C67C00994AAC /* SFOnboardingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingElement.swift; sourceTree = "<group>"; };
 		6351C46B2024F51800994AAC /* SFOnboardingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingLabel.swift; sourceTree = "<group>"; };
 		63686DA91F0988D20064A0CA /* SFCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCollectionView.swift; sourceTree = "<group>"; };
@@ -364,9 +368,10 @@
 			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
-		63167CC71F3670C800054924 /* Appearance Updating */ = {
+		63167CC71F3670C800054924 /* Deprecated Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DA91F0988D20064A0CA /* SFCollectionView.swift */,
 				63686DAA1F0988D20064A0CA /* SFCollectionViewCell.swift */,
 				63167CCB1F3671E700054924 /* SFCollectionReusableView.swift */,
@@ -377,10 +382,17 @@
 				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686DD51F0988D20064A0CA /* SFImageView.swift */,
-				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
-				63686DD91F0988D20064A0CA /* SFLabel.swift */,
 			);
-			path = "Appearance Updating";
+			path = "Deprecated Classes";
+			sourceTree = "<group>";
+		};
+		631DC2B22054DA4C00351241 /* Polygons */ = {
+			isa = PBXGroup;
+			children = (
+				638B1BDD2050C684009CA8D7 /* SFPolygon.swift */,
+				633EB3A5205046620045A6E0 /* SFLine.swift */,
+			);
+			path = Polygons;
 			sourceTree = "<group>";
 		};
 		6324D3F1201EC8A400D762DA /* Cards */ = {
@@ -450,16 +462,17 @@
 		637D6B061FB7F0B100397317 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				6345575F2054DDFF00186815 /* UIColorMetrics.swift */,
+				63686DD91F0988D20064A0CA /* SFLabel.swift */,
+				63686E381F0988D20064A0CA /* SFVisualEffectView.swift */,
 				6385A23E1F06EB4D002B9244 /* SFButton.swift */,
-				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
 				63686DE41F0988D20064A0CA /* SFNavigationBar.swift */,
 				636D65BB1F376E1E00F3BF35 /* SFNavigationController.swift */,
 				63A13DC41F1A7D5500FE5760 /* SFTextView.swift */,
 				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
-				638B1BDD2050C684009CA8D7 /* SFPolygon.swift */,
-				633EB3A5205046620045A6E0 /* SFLine.swift */,
+				631DC2B22054DA4C00351241 /* Polygons */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -505,12 +518,12 @@
 		639989AC1F094ECF007F1590 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				63A13DC61F1A7D7400FE5760 /* Appearance */,
 				63BA899820420DF1000684BA /* Onboarding */,
 				6313E300200087660065EE25 /* Charts */,
-				63A13DC61F1A7D7400FE5760 /* Appearance */,
-				63167CC71F3670C800054924 /* Appearance Updating */,
 				637D6B061FB7F0B100397317 /* UI Elements */,
 				6313E36320019D9C0065EE25 /* Miscellaneous */,
+				63167CC71F3670C800054924 /* Deprecated Classes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -522,6 +535,7 @@
 				6331B2CD1F3619B7005C73F3 /* SFAppearance.h */,
 				6331B2CE1F3619B7005C73F3 /* SFAppearance.m */,
 				63761BF61F36097000115594 /* SFAppearanceEnvironment.h */,
+				634557612054EA7500186815 /* SFAppearanceAdjusting.h */,
 				636D65BA1F376D7400F3BF35 /* Categories & Extensions */,
 			);
 			path = Appearance;
@@ -583,6 +597,7 @@
 				6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */,
 				6313E341200089840065EE25 /* SFSkin.h in Headers */,
 				6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */,
+				634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */,
 				631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */,
 				6313E349200089EF0065EE25 /* SFHelpers_Internal.h in Headers */,
 				6313E32A200087D50065EE25 /* SFPieChartTitleTextView.h in Headers */,
@@ -753,6 +768,7 @@
 				63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */,
 				6313E34A200089EF0065EE25 /* SFHelpers.m in Sources */,
 				63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */,
+				634557602054DDFF00186815 /* UIColorMetrics.swift in Sources */,
 				6313E333200087D50065EE25 /* SFBarGraphChartView.m in Sources */,
 				6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */,
 				6313E35A200122340065EE25 /* SFLineGraphAccessibilityElement.m in Sources */,

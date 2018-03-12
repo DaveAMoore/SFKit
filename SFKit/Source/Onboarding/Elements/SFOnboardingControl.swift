@@ -259,7 +259,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         // Configure an activity indicator (i.e., spinner).
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityIndicator.color = SFColor.darkGray
+        activityIndicator.color = UIColorMetrics(forAppearance: sender.appearance).color(forRelativeHue: .darkGray)
         activityIndicator.alpha = 0.0
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         

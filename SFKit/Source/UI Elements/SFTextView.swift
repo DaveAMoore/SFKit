@@ -14,6 +14,7 @@ import UIKit
     
     // MARK: - Inspectable Properties
     /// Boolean value determining whether or not the appearance will be forcefully applied.
+    @available(*, deprecated, message: "use 'adjustsColorForAppearanceStyle' instead")
     @IBInspectable public var shouldEnforceAppearance: Bool = true
     
     /// Corner radius of the text view.
@@ -77,19 +78,5 @@ import UIKit
         
         // Register for any updates with regards to appearance.
         registerForAppearanceUpdates()
-    }
-    
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
-        
-        // Prevent asserting the defaults if the default design shall not be enforced.
-        guard shouldEnforceAppearance else { return }
-        
-        // Set the appropriate values for the new appearance.
-        // cornerRadius = 16.0
-        
-        // Set the default background and text colors.
-        backgroundColor = SFColor.white
-        textColor = SFColor.black
     }
 }

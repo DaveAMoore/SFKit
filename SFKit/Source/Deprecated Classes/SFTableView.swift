@@ -1,5 +1,5 @@
 //
-//  SFTableViewHeaderFooterView.swift
+//  SFTableView.swift
 //  SFKit
 //
 //  Created by David Moore on 7/01/17.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-open class SFTableViewHeaderFooterView: UITableViewHeaderFooterView {
+@available(*, deprecated, message: "use UITableView instead")
+open class SFTableView: UITableView {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

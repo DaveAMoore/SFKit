@@ -19,8 +19,10 @@ FOUNDATION_EXPORT const unsigned char SFKitVersionString[];
 #import <SFKit/SFAppearance.h>
 #import <SFKit/SFAppearanceStyle.h>
 #import <SFKit/SFAppearanceEnvironment.h>
+#import <SFKit/SFAppearanceAdjusting.h>
 #import <SFKit/UIResponder+SFAppearanceEnvironment.h>
 #import <SFKit/UIViewController+SFAppearanceEnvironment.h>
+#import <SFKit/UIView+SFAppearanceEnvironment.h>
 
 #import <SFKit/SFChartTypes.h>
 #import <SFKit/SFBarGraphChartView.h>

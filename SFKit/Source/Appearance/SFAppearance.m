@@ -12,7 +12,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 
 @interface SFAppearance ()
 
-@property (nonatomic, retain) NSHashTable<id <SFAppearanceEnvironment>> *appearanceEnvironments;
+@property (retain) NSHashTable<id <SFAppearanceEnvironment>> *appearanceEnvironments;
 
 @end
 
@@ -46,6 +46,9 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 }
 
 - (void)setStyle:(SFAppearanceStyle)style {
+    // Capture the last appearance style.
+    SFAppearanceStyle previousStyle = _style;
+    
     // Change the value.
     _style = style;
     
@@ -58,7 +61,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
     
     // Tell every appearance environment about this change.
     for (id <SFAppearanceEnvironment> environment in [appearanceEnvironments allObjects]) {
-        [environment appearanceStyleDidChange:self.style];
+        [environment appearanceStyleDidChange:previousStyle];
     }
 }
 
@@ -134,7 +137,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
         return;
     
     // Retrieve and cast the raw appearance style value.
-    NSInteger rawValue = [self.keyValueStore longLongForKey:SFAppearanceStyleRawValueKey];
+    NSInteger rawValue = (NSInteger)[self.keyValueStore longLongForKey:SFAppearanceStyleRawValueKey];
     SFAppearanceStyle style = (SFAppearanceStyle)rawValue;
     
     // Update the style if it has changed.

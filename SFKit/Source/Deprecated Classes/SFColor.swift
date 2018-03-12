@@ -18,6 +18,7 @@ infix operator -: AdditionPrecedence
 /// Subclasses `UIColor` to provide a more fine-tuned selection of static color variables. `SFColor` also provides an array of more specific color brightness adjustments.
 /// Static colors are available as computed properties which are subject to change between different releases of *SFKit*. Any change made to the statically available color scheme is guranteed to be visually compatible, meaning the design will still work as intended.
 /// The color values exposed by `SFColor` are guaranteed to be reflective of the current global appearance style. The color cannot be expected to update autonomously in the event of an appearance style change, therefore colors must be updated by setting the statically defined colors again. The caller is fully responsible for color changes to take place.
+@available(*, deprecated, message: "use SFColorMetrics instead")
 open class SFColor: UIColor {
     
     // MARK: - Adaptive Colors

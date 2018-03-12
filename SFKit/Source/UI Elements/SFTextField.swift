@@ -28,17 +28,16 @@ open class SFTextField: UITextField, UITextFieldDelegate {
         registerForAppearanceUpdates()
     }
     
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         // Apply additional appearance adjustments here.
         
         // Configure the appearance.
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
         layer.cornerRadius = 11
         contentInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-        textColor = SFColor.black
-        backgroundColor = SFColor.lightGray
         adjustsFontForContentSizeCategory = true
-        keyboardAppearance = newAppearanceStyle == .light ? .light : .dark
+        keyboardAppearance = appearance.style == .light ? .light : .dark
         
         // Get the appropriate system font.
         let mediumFont = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -48,6 +47,15 @@ open class SFTextField: UITextField, UITextFieldDelegate {
             font = UIFontMetrics.default.scaledFont(for: mediumFont)
         } else {
             font = mediumFont
+        }
+        
+        if adjustsColorForAppearanceStyle {
+            if let textColor = textColor {
+                let previousColorMetrics = UIColorMetrics(forAppearanceStyle: previousAppearanceStyle)
+                self.textColor = colorMetrics.color(forRelativeHue: previousColorMetrics.relativeHue(forColor: textColor))
+            } else {
+                textColor = colorMetrics.color(forRelativeHue: .black)
+            }
         }
     }
     

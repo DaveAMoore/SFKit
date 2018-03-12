@@ -91,7 +91,7 @@ internal class SFOnboardingPushAnimator: NSObject, UIViewControllerAnimatedTrans
         }
         
         // Configure the destination view's shadow.
-        destination.view.layer.shadowColor = SFColor.black.cgColor
+        destination.view.layer.shadowColor = UIColorMetrics(forAppearance: source.appearance).color(forRelativeHue: .black).cgColor
         destination.view.layer.shadowOffset = .zero
         destination.view.layer.shadowRadius = 4.0
         destination.view.layer.shadowOpacity = shadowFromValue

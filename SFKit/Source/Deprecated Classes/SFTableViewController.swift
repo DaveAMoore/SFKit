@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated, message: "use UITableViewController instead")
 open class SFTableViewController: UITableViewController {
     
     open override func viewDidLoad() {

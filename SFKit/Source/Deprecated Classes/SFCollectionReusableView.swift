@@ -1,14 +1,15 @@
 //
-//  SFCollectionView.swift
+//  SFCollectionReusableView.swift
 //  SFKit
 //
-//  Created by David Moore on 7/01/17.
+//  Created by David Moore on 8/5/17.
 //  Copyright © 2017 Moore Development. All rights reserved.
 //
 
 import UIKit
 
-open class SFCollectionView: UICollectionView {
+@available(*, deprecated, message: "use UICollectionReusableView instead")
+open class SFCollectionReusableView: UICollectionReusableView {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

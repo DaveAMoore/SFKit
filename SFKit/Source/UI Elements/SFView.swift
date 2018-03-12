@@ -12,6 +12,7 @@ import UIKit
     
     // MARK: - Properties
     
+    @available(*, deprecated, message: "use 'adjustsColorForAppearanceStyle' instead")
     @IBInspectable open var shouldEnforceAppearance: Bool = false
     
     /// Corner radius of the view.
@@ -21,31 +22,5 @@ import UIKit
         } set {
             layer.cornerRadius = newValue
         }
-    }
-    
-    // MARK: - Lifecycle
-    
-    open override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        // Perform any additional setup here.
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    open override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
-        // Perform any additional setup here.
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
-        
-        guard shouldEnforceAppearance else { return }
-        
-        backgroundColor = SFColor.white
     }
 }

@@ -11,11 +11,31 @@
 #import <objc/runtime.h>
 
 @implementation UIViewController (SFAppearanceEnvironment)
+@dynamic adjustsColorForAppearanceStyle;
+
+// MARK: - Properties
+
+- (BOOL)adjustsColorForAppearanceStyle {
+    NSNumber *associatedValue = objc_getAssociatedObject(self, @selector(adjustsColorForAppearanceStyle));
+    if (!associatedValue) {
+        return true;
+    }
+    return [associatedValue boolValue];
+}
+
+- (void)setAdjustsColorForAppearanceStyle:(BOOL)adjustsColorForAppearanceStyle {
+    NSNumber *associatedValue = [NSNumber numberWithBool:adjustsColorForAppearanceStyle];
+    objc_setAssociatedObject(self, @selector(adjustsColorForAppearanceStyle),
+                             associatedValue, OBJC_ASSOCIATION_RETAIN);
+}
+
+// MARK: - Swizzling
 
 + (void)load {
     // Perform the method swizzling.
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        [self _extendsAppearanceStyleDidChange];
         [self _extendsViewDidLoad];
     });
 }
@@ -24,6 +44,25 @@
 - (void)_viewDidLoad {
     [self registerForAppearanceUpdates];
     [self _viewDidLoad];
+}
+
+/// Swizzled '-appearanceStyleDidChange:' method.
+- (void)_appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle {
+    if ([self adjustsColorForAppearanceStyle])
+        [self adjustColorForAppearanceStyle];
+    [self _appearanceStyleDidChange:previousAppearanceStyle];
+}
+
+- (void)adjustColorForAppearanceStyle {
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if (self.appearance.style == SFAppearanceStyleLight) {
+        return UIStatusBarStyleDefault;
+    } else {
+        return UIStatusBarStyleLightContent;
+    }
 }
 
 /// Preforms method swizzling between '-viewDidLoad' and '-_viewDidLoad'.
@@ -51,16 +90,27 @@
     }
 }
 
-- (void)appearanceStyleDidChange:(SFAppearanceStyle)newAppearanceStyle {
-    [super appearanceStyleDidChange:newAppearanceStyle];
-    [self setNeedsStatusBarAppearanceUpdate];
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    if ([[SFAppearance globalAppearance] style] == SFAppearanceStyleLight) {
-        return UIStatusBarStyleDefault;
++ (void)_extendsAppearanceStyleDidChange {
+    // Retrieve the '-prepareForInterfaceBuilder' selector and method implementation.
+    SEL appearanceStyleDidChangeSelector = @selector(appearanceStyleDidChange:);
+    Method appearanceStyleDidChangeMethod = class_getInstanceMethod(self, appearanceStyleDidChangeSelector);
+    IMP appearanceStyleDidChangeImplementation = method_getImplementation(appearanceStyleDidChangeMethod);
+    
+    // Retrieve the '-_prepareForInterfaceBuilder' selector and method implementation.
+    SEL _appearanceStyleDidChangeSelector = @selector(_appearanceStyleDidChange:);
+    Method _appearanceStyleDidChangeMethod = class_getInstanceMethod(self, _appearanceStyleDidChangeSelector);
+    IMP _appearanceStyleDidChangeImplementation = method_getImplementation(_appearanceStyleDidChangeMethod);
+    
+    // Attempt to add '-prepareForInterfaceBuilder' with the new implementation.
+    BOOL methodWasAdded = class_addMethod(self, appearanceStyleDidChangeSelector, _appearanceStyleDidChangeImplementation,
+                                          method_getTypeEncoding(_appearanceStyleDidChangeMethod));
+    
+    if (methodWasAdded) {
+        // Update the selector points to the original '-appearanceStyleDidChange' method.
+        class_replaceMethod(self, _appearanceStyleDidChangeSelector, appearanceStyleDidChangeImplementation,
+                            method_getTypeEncoding(appearanceStyleDidChangeMethod));
     } else {
-        return UIStatusBarStyleLightContent;
+        method_exchangeImplementations(appearanceStyleDidChangeMethod, _appearanceStyleDidChangeMethod);
     }
 }
 

@@ -16,29 +16,13 @@ open class SFVisualEffectView: UIVisualEffectView {
     
     // MARK: - Lifecycle
     
-    open override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        // Perform any additional setup here.
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
-    open override func willMove(toSuperview newSuperview: UIView?) {
-        super.willMove(toSuperview: newSuperview)
-        // Perform any additional setup here.
-        
-        // Register for any updates with regards to appearance.
-        registerForAppearanceUpdates()
-    }
-    
     // MARK: - Update Methods
     
-    open override func appearanceStyleDidChange(_ newAppearanceStyle: SFAppearanceStyle) {
-        super.appearanceStyleDidChange(newAppearanceStyle)
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
         
         // Get a boolean value for the isLight property.
-        let isLightAppearance = newAppearanceStyle == .light
+        let isLightAppearance = appearance.style == .light
         
         // Select the appropriate effect style.
         let effectStyle: UIBlurEffectStyle = isLightAppearance ? (isExtraLight ? .extraLight : .light) : .dark

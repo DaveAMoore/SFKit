@@ -1,5 +1,5 @@
 //
-//  SFImageView.swift
+//  SFCollectionViewCell.swift
 //  SFKit
 //
 //  Created by David Moore on 7/01/17.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-open class SFImageView: UIImageView {
+@available(*, deprecated, message: "use UICollectionViewCell instead")
+open class SFCollectionViewCell: UICollectionViewCell {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

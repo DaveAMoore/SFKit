@@ -1,14 +1,15 @@
 //
-//  SFCollectionReusableView.swift
+//  SFTableViewCell.swift
 //  SFKit
 //
-//  Created by David Moore on 8/5/17.
+//  Created by David Moore on 7/01/17.
 //  Copyright © 2017 Moore Development. All rights reserved.
 //
 
 import UIKit
 
-open class SFCollectionReusableView: UICollectionReusableView {
+@available(*, deprecated, message: "use UITableViewCell instead")
+open class SFTableViewCell: UITableViewCell {
     
     open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()

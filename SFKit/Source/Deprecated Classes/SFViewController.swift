@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated, message: "use UIViewController instead")
 open class SFViewController: UIViewController {
     
     open override func viewDidLoad() {

@@ -42,18 +42,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) SFAppearanceStyle style;
 
-
+/**
+ Ubiquitous key value store is used to synchronize appearance across multiple devices, and to persist state on a single device.
+ */
 @property (nonatomic, retain) NSUbiquitousKeyValueStore *_Nullable keyValueStore;
 
 /**
  Boolean value detailing if the appearance style is light.
  */
-@property (readonly,getter=isLightAppearanceStyle) BOOL isLightAppearanceStyle DEPRECATED_ATTRIBUTE;
+@property (readonly, getter=isLightAppearanceStyle) BOOL isLightAppearanceStyle DEPRECATED_ATTRIBUTE;
 
 /**
   Determines the most probable status bar style for the current appearance style.
  */
-@property (readonly,getter=preferredStatusBarStyle) UIStatusBarStyle preferredStatusBarStyle DEPRECATED_ATTRIBUTE;
+@property (readonly, getter=preferredStatusBarStyle) UIStatusBarStyle preferredStatusBarStyle DEPRECATED_ATTRIBUTE;
 
 #pragma mark - Initialization
 
@@ -62,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param appearanceStyle The appearance style for the new `SFAppearance` object.
  */
-- (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle DEPRECATED_MSG_ATTRIBUTE("Use initWithStyle: instead");
+- (instancetype)initWithAppearanceStyle:(SFAppearanceStyle)appearanceStyle DEPRECATED_MSG_ATTRIBUTE("use 'initWithStyle:' instead");
 
 /**
  Creates a new `SFAppearance` object with a given appearance style.
