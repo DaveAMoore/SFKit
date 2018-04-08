@@ -38,7 +38,7 @@
     // MARK: - Initialization
     
     /// The default color metrics object for content. Initialized with `SFAppearance.global`.
-    @objc class var `default`: UIColorMetrics {
+    @objc public class var `default`: UIColorMetrics {
         return UIColorMetrics(forAppearance: .global)
     }
     
