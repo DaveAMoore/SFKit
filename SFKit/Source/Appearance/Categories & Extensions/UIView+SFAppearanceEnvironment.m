@@ -19,7 +19,7 @@
 - (BOOL)adjustsColorForAppearanceStyle {
     NSNumber *associatedValue = objc_getAssociatedObject(self, @selector(adjustsColorForAppearanceStyle));
     if (!associatedValue) {
-        return true;
+        return YES;
     }
     return [associatedValue boolValue];
 }
@@ -63,13 +63,11 @@
     if (!self.backgroundColor)
         return;
     
-    UIColorMetrics *previousMetrics = [[UIColorMetrics alloc] initForAppearanceStyle:previousAppearanceStyle];
-    //[self setBackgroundColor:[previousMetrics colorForRelativeHue:UIColorMetricsHueWhite]];
-    UIColorMetricsHue previousHue = [previousMetrics relativeHueForColor:self.backgroundColor];
+    UIColorMetrics *previousColorMetrics = [[UIColorMetrics alloc] initForAppearanceStyle:previousAppearanceStyle];
+    UIColorMetrics *currentColorMetrics = [[UIColorMetrics alloc] initForAppearance:self.appearance];
     
-    UIColorMetrics *currentMetrics = [[UIColorMetrics alloc] initForAppearance:self.appearance];
-    UIColor *adjustedColor = [currentMetrics colorForRelativeHue:previousHue];
-    [self setBackgroundColor:adjustedColor];
+    [self setBackgroundColor:[currentColorMetrics colorForColor:self.backgroundColor
+                                                     relativeTo:previousColorMetrics]];
 }
 
 /// Performs method swizzling between '-prepareForInterfaceBuilder' and '-_prepareForInterfaceBuilder'.

@@ -110,6 +110,9 @@ open class SFOnboardingController: UIViewController {
         // Ensure that the view controller hasn't already been pushed.
         assert(!viewControllers.contains(viewController), "expected 'viewController' to not already be presented")
         
+        // Update the controller's size so it appears to match the previous controller.
+        viewController.view.frame.size = view.frame.size
+        
         // Copy the reference for later usage.
         let topViewController = self.topViewController
         
@@ -143,8 +146,8 @@ open class SFOnboardingController: UIViewController {
         let pushAnimator = SFOnboardingPushAnimator(isDismissing: false)
         
         // Transition between the controller's.
-        pushAnimator.animateTransition(from: _visibleViewController, to: viewController, withContainerView: view,
-                                       completionHandler: completionHandler)
+        pushAnimator.animateTransition(from: _visibleViewController, to: viewController,
+                                       withContainerView: view, completionHandler: completionHandler)
     }
     
     /// Pops view controllers until the specified view controller is at the top of the navigation stack.

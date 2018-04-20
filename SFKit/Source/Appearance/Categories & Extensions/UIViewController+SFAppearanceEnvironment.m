@@ -18,7 +18,7 @@
 - (BOOL)adjustsColorForAppearanceStyle {
     NSNumber *associatedValue = objc_getAssociatedObject(self, @selector(adjustsColorForAppearanceStyle));
     if (!associatedValue) {
-        return true;
+        return YES;
     }
     return [associatedValue boolValue];
 }
@@ -42,7 +42,9 @@
 
 /// Swizzled '-viewDidLoad' method.
 - (void)_viewDidLoad {
-    [self registerForAppearanceUpdates];
+    if ([self shouldRegisterForAppearanceUpdates]) {
+        [self registerForAppearanceUpdates];
+    }
     [self _viewDidLoad];
 }
 

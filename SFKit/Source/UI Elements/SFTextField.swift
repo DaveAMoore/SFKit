@@ -49,14 +49,9 @@ open class SFTextField: UITextField, UITextFieldDelegate {
             font = mediumFont
         }
         
-        if adjustsColorForAppearanceStyle {
-            if let textColor = textColor {
-                let previousColorMetrics = UIColorMetrics(forAppearanceStyle: previousAppearanceStyle)
-                self.textColor = colorMetrics.color(forRelativeHue: previousColorMetrics.relativeHue(forColor: textColor))
-            } else {
-                textColor = colorMetrics.color(forRelativeHue: .black)
-            }
-        }
+        // Update background color.
+        backgroundColor = colorMetrics.color(forRelativeHue: .lightGray)
+        textColor = colorMetrics.color(forRelativeHue: .black)
     }
     
     // MARK: - Delegate

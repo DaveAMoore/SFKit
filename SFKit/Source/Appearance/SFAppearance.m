@@ -150,7 +150,7 @@ NSString *const SFAppearanceStyleRawValueKey = @"SFAppearanceStyleRawValue";
 
 - (void)addAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {
     [appearanceEnvironments addObject:appearanceEnvironment];
-    [appearanceEnvironment appearanceStyleDidChange:self.style];
+    [appearanceEnvironment appearanceStyleDidChange:SFAppearanceStyleLight];
 }
 
 - (void)removeAppearanceEnvironment:(id <SFAppearanceEnvironment>)appearanceEnvironment {

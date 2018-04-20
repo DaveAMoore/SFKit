@@ -28,19 +28,20 @@
     objc_setAssociatedObject(self, @selector(appearance), appearance, OBJC_ASSOCIATION_RETAIN);
 }
 
+- (BOOL)shouldRegisterForAppearanceUpdates {
+    return YES;
+}
+
 #pragma mark - Default Implementation
 
 - (void)appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle {}
 
 - (void)registerForAppearanceUpdates {
-    if (![self appearance]) {
-        // Create a default appearance.
-        SFAppearance *defaultAppearance = [SFAppearance globalAppearance];
-        [defaultAppearance addAppearanceEnvironment:self];
-        [self setAppearance:defaultAppearance];
-    } else {
-        [[self appearance] addAppearanceEnvironment:self];
-    }
+    if (![self shouldRegisterForAppearanceUpdates])
+        return;
+    
+    // Add ourselves as an appearance environment.
+    [[self appearance] addAppearanceEnvironment:self];
 }
 
 - (void)unregisterForAppearanceUpdates {

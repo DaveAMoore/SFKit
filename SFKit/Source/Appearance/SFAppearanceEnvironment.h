@@ -36,6 +36,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)appearanceStyleDidChange:(SFAppearanceStyle)previousAppearanceStyle;
 
+/**
+ Boolean value indicating if the receiver should continue registering for appearance updates.
+ */
+- (BOOL)shouldRegisterForAppearanceUpdates;
+
 @end
 
 NS_ASSUME_NONNULL_END

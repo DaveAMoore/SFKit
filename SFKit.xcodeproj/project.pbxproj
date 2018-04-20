@@ -80,6 +80,7 @@
 		6324D401201FCE9200D762DA /* SFOnboardingTextFieldCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324D3FF201FCE9200D762DA /* SFOnboardingTextFieldCardCell.xib */; };
 		6324D403201FD01B00D762DA /* SFOnboardingStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6324D402201FD01B00D762DA /* SFOnboardingStageViewController.swift */; };
 		6324D405201FD5D100D762DA /* SFOnboardingStageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6324D404201FD5D100D762DA /* SFOnboardingStageViewController.xib */; };
+		632DFA592082723A0039E66F /* UIColorMetricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DFA582082723A0039E66F /* UIColorMetricsTests.swift */; };
 		6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6331B2CC1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */; };
 		6331B2CF1F3619B7005C73F3 /* SFAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6331B2CD1F3619B7005C73F3 /* SFAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,7 +109,7 @@
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
-		63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */; };
+		63F6EFA02002CDF500B7D3E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */; };
 		63F90A871F3128530037E5CD /* SFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E351F0988D20064A0CA /* SFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +189,7 @@
 		6324D3FF201FCE9200D762DA /* SFOnboardingTextFieldCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOnboardingTextFieldCardCell.xib; sourceTree = "<group>"; };
 		6324D402201FD01B00D762DA /* SFOnboardingStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingStageViewController.swift; sourceTree = "<group>"; };
 		6324D404201FD5D100D762DA /* SFOnboardingStageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOnboardingStageViewController.xib; sourceTree = "<group>"; };
+		632DFA582082723A0039E66F /* UIColorMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorMetricsTests.swift; sourceTree = "<group>"; };
 		6331B2C91F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SFAppearanceEnvironment.h"; sourceTree = "<group>"; };
 		6331B2CA1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SFAppearanceEnvironment.m"; sourceTree = "<group>"; };
 		6331B2CD1F3619B7005C73F3 /* SFAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppearance.h; sourceTree = "<group>"; };
@@ -230,7 +232,7 @@
 		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
-		63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,7 +365,7 @@
 			children = (
 				631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */,
 				631DC2AA2054CF5500351241 /* SFReuseable.swift */,
-				63F6EF9F2002CDF500B7D3E8 /* UIKitExtensions.swift */,
+				63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
@@ -510,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				6385A2311F06EB36002B9244 /* SFKitTests.swift */,
+				632DFA582082723A0039E66F /* UIColorMetricsTests.swift */,
 				6385A2331F06EB36002B9244 /* Info.plist */,
 			);
 			path = SFKitTests;
@@ -756,7 +759,7 @@
 				6313E32C200087D50065EE25 /* SFChartTypes.m in Sources */,
 				63167CCA1F3670E700054924 /* SFCollectionViewController.swift in Sources */,
 				6313E2FE200086810065EE25 /* SFTableViewCell.swift in Sources */,
-				63F6EFA02002CDF500B7D3E8 /* UIKitExtensions.swift in Sources */,
+				63F6EFA02002CDF500B7D3E8 /* Utilities.swift in Sources */,
 				6313E325200087D50065EE25 /* SFPieChartTitleTextView.m in Sources */,
 				6324D400201FCE9200D762DA /* SFOnboardingTextFieldCardCell.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
@@ -792,6 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */,
+				632DFA592082723A0039E66F /* UIColorMetricsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +950,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -977,6 +982,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = all;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
