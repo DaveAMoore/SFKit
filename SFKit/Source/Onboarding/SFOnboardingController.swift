@@ -272,6 +272,49 @@ open class SFOnboardingController: UIViewController {
         }
     }
     
+    /// Presents a new stage after the current stage, if there is one after it.
+    ///
+    /// - Parameter isAnimated: Boolean value indicating if the push will be animated.
+    open func pushNextStage(animated isAnimated: Bool) {
+        // Retrieve the current top view controller.
+        let currentStageController = topViewController as? SFOnboardingStageViewController
+        
+        // Determine the index of the given stage.
+        guard let currentStage = currentStageController?.stage,
+            let index = stages.index(of: currentStage) else { return }
+        
+        // Calculate the next index.
+        let newIndex = stages.index(after: index)
+        
+        // Ensure the index is within bounds.
+        if newIndex < stages.endIndex {
+            // Retrieve the stage and create a content controller for it.
+            let stage = stages[newIndex]
+            let content = viewController(for: stage)
+            
+            // Push to the content view controller.
+            pushViewController(content, animated: isAnimated)
+        }
+    }
+    
+    /// Pushes the provided stage onto the onboarding stack.
+    ///
+    /// - Parameters:
+    ///   - stage: Stage that will be presented.
+    ///   - isAnimated: Boolean value indicating if the push will be animated.
+    open func push(_ stage: SFOnboardingStage, animated isAnimated: Bool) {
+        // Ensure the stage has been added, and if not then add it.
+        if !stages.contains(stage) {
+            stages.append(stage)
+        }
+        
+        // Retrieve the content controller.
+        let content = viewController(for: stage)
+        
+        // Push to the content view controller.
+        pushViewController(content, animated: isAnimated)
+    }
+    
     // MARK: - Helper Methods
     
     /// Pushes the root view controller onto the onboarding stack.
