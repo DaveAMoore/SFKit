@@ -12,24 +12,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController nibName="" id="JPC-Yj-QEG" customClass="SFOnboardingStageViewController" customModule="SFKit" customModuleProvider="target">
+        <viewController nibName="" modalPresentationStyle="formSheet" id="JPC-Yj-QEG" customClass="SFOnboardingStageViewController" customModule="SFKit" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="VhS-23-C8T">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-jM-z7i">
-                        <rect key="frame" x="0.0" y="86.000000000000028" width="375" height="510.66666666666674"/>
+                        <rect key="frame" x="0.0" y="94.666666666666686" width="375" height="502.00000000000006"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections/>
                     </tableView>
                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txA-7P-c98" customClass="SFVisualEffectView" customModule="SFKit">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="86.333333333333329"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yWd-Bm-pOh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.333333333333329"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPt-ap-Tbh" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="293.33333333333331" y="44" width="61.666666666666686" height="34.333333333333343"/>
+                                    <rect key="frame" x="293.33333333333331" y="52" width="61.666666666666686" height="34.666666666666657"/>
                                     <state key="normal" title="Next"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
@@ -38,7 +38,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-or-Oda" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="19.999999999999996" y="44" width="40.666666666666657" height="34.333333333333343"/>
+                                    <rect key="frame" x="19.999999999999996" y="52" width="40.666666666666657" height="34.333333333333343"/>
                                     <state key="normal" title="←"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
@@ -48,8 +48,8 @@
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="xPt-ap-Tbh" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" id="8Gx-0A-uOe"/>
-                                <constraint firstItem="d9g-or-Oda" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" id="XG9-pC-x16"/>
+                                <constraint firstItem="xPt-ap-Tbh" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" constant="8" id="8Gx-0A-uOe"/>
+                                <constraint firstItem="d9g-or-Oda" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" constant="8" id="XG9-pC-x16"/>
                                 <constraint firstAttribute="trailing" secondItem="xPt-ap-Tbh" secondAttribute="trailing" constant="20" id="aXa-p7-f8l"/>
                                 <constraint firstItem="0mz-3R-t5T" firstAttribute="bottom" secondItem="d9g-or-Oda" secondAttribute="bottom" constant="8" id="fvJ-M0-qBx"/>
                                 <constraint firstItem="xPt-ap-Tbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d9g-or-Oda" secondAttribute="trailing" constant="20" id="u3n-46-z0l"/>
