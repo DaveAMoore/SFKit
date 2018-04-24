@@ -22,47 +22,40 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections/>
                     </tableView>
-                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txA-7P-c98" customClass="SFVisualEffectView" customModule="SFKit">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
-                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yWd-Bm-pOh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPt-ap-Tbh" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="293.33333333333331" y="52" width="61.666666666666686" height="34.666666666666657"/>
-                                    <state key="normal" title="Next"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
-                                            <integer key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-or-Oda" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
-                                    <rect key="frame" x="19.999999999999996" y="52" width="40.666666666666657" height="34.333333333333343"/>
-                                    <state key="normal" title="←"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
-                                            <integer key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="xPt-ap-Tbh" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" constant="8" id="8Gx-0A-uOe"/>
-                                <constraint firstItem="d9g-or-Oda" firstAttribute="top" secondItem="0mz-3R-t5T" secondAttribute="top" constant="8" id="XG9-pC-x16"/>
-                                <constraint firstAttribute="trailing" secondItem="xPt-ap-Tbh" secondAttribute="trailing" constant="20" id="aXa-p7-f8l"/>
-                                <constraint firstItem="0mz-3R-t5T" firstAttribute="bottom" secondItem="d9g-or-Oda" secondAttribute="bottom" constant="8" id="fvJ-M0-qBx"/>
-                                <constraint firstItem="xPt-ap-Tbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d9g-or-Oda" secondAttribute="trailing" constant="20" id="u3n-46-z0l"/>
-                                <constraint firstItem="d9g-or-Oda" firstAttribute="leading" secondItem="0mz-3R-t5T" secondAttribute="leading" constant="20" id="x9e-LV-NU8"/>
-                                <constraint firstAttribute="bottom" secondItem="xPt-ap-Tbh" secondAttribute="bottom" constant="8" id="ygc-j3-igx"/>
-                            </constraints>
-                            <viewLayoutGuide key="safeArea" id="0mz-3R-t5T"/>
-                        </view>
-                        <blurEffect style="light"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isExtraLight" value="NO"/>
-                        </userDefinedRuntimeAttributes>
-                    </visualEffectView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-KD-Jsa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE8-mY-DPW" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
+                                <rect key="frame" x="293.33333333333331" y="52" width="61.666666666666686" height="34.666666666666657"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkC-lj-ilM" customClass="SFButton" customModule="SFKit" customModuleProvider="target">
+                                <rect key="frame" x="19.999999999999996" y="52" width="40.666666666666657" height="34.333333333333343"/>
+                                <state key="normal" title="←"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonKindRawValue">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xE8-mY-DPW" firstAttribute="top" secondItem="YkC-lj-ilM" secondAttribute="top" id="BFW-i5-9OW"/>
+                            <constraint firstItem="IeJ-U2-Jrg" firstAttribute="trailing" secondItem="xE8-mY-DPW" secondAttribute="trailing" constant="20" id="EhC-em-Y7T"/>
+                            <constraint firstItem="IeJ-U2-Jrg" firstAttribute="bottom" secondItem="xE8-mY-DPW" secondAttribute="bottom" constant="8" id="HXp-3N-0P3"/>
+                            <constraint firstItem="IeJ-U2-Jrg" firstAttribute="bottom" secondItem="YkC-lj-ilM" secondAttribute="bottom" constant="8" id="Nmz-3Q-3Wq"/>
+                            <constraint firstItem="xE8-mY-DPW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YkC-lj-ilM" secondAttribute="trailing" constant="20" id="SAU-wd-yXz"/>
+                            <constraint firstItem="YkC-lj-ilM" firstAttribute="leading" secondItem="IeJ-U2-Jrg" secondAttribute="leading" constant="20" id="Tm2-0j-Zx6"/>
+                            <constraint firstItem="xE8-mY-DPW" firstAttribute="top" secondItem="IeJ-U2-Jrg" secondAttribute="top" constant="8" id="udP-VM-Nsf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IeJ-U2-Jrg"/>
+                    </view>
                     <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RDh-w0-mao">
                         <rect key="frame" x="0.0" y="596.66666666666663" width="375" height="215.33333333333337"/>
                         <subviews>
@@ -109,30 +102,30 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="txA-7P-c98" secondAttribute="trailing" id="00K-7Z-ai5"/>
                     <constraint firstItem="MLO-jM-z7i" firstAttribute="leading" secondItem="taH-pw-Vr0" secondAttribute="leading" id="2X6-Wd-23F"/>
-                    <constraint firstItem="txA-7P-c98" firstAttribute="leading" secondItem="VhS-23-C8T" secondAttribute="leading" id="3sK-LS-Ep5"/>
-                    <constraint firstItem="txA-7P-c98" firstAttribute="top" secondItem="VhS-23-C8T" secondAttribute="top" id="86P-jc-yp9"/>
+                    <constraint firstItem="JZw-KD-Jsa" firstAttribute="top" secondItem="VhS-23-C8T" secondAttribute="top" id="6Zz-Tt-5s8"/>
+                    <constraint firstItem="JZw-KD-Jsa" firstAttribute="trailing" secondItem="taH-pw-Vr0" secondAttribute="trailing" id="7cs-Ss-CUN"/>
                     <constraint firstAttribute="bottom" secondItem="RDh-w0-mao" secondAttribute="bottom" id="9An-kZ-xPr"/>
                     <constraint firstItem="RDh-w0-mao" firstAttribute="top" secondItem="MLO-jM-z7i" secondAttribute="bottom" id="BTX-sR-urS"/>
+                    <constraint firstItem="MLO-jM-z7i" firstAttribute="top" secondItem="JZw-KD-Jsa" secondAttribute="bottom" id="Kmg-Ek-Zl0"/>
                     <constraint firstItem="MLO-jM-z7i" firstAttribute="trailing" secondItem="taH-pw-Vr0" secondAttribute="trailing" id="Pnj-DJ-av1"/>
                     <constraint firstItem="RDh-w0-mao" firstAttribute="leading" secondItem="taH-pw-Vr0" secondAttribute="leading" id="S7q-nj-PvV"/>
                     <constraint firstItem="RDh-w0-mao" firstAttribute="trailing" secondItem="taH-pw-Vr0" secondAttribute="trailing" id="fww-PE-5wg"/>
-                    <constraint firstItem="MLO-jM-z7i" firstAttribute="top" secondItem="txA-7P-c98" secondAttribute="bottom" id="lo0-JG-HED"/>
+                    <constraint firstItem="JZw-KD-Jsa" firstAttribute="leading" secondItem="taH-pw-Vr0" secondAttribute="leading" id="nxS-iQ-QK2"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="taH-pw-Vr0"/>
             </view>
             <connections>
                 <outlet property="accessoryLabel" destination="yKh-eI-17l" id="NIy-4e-evc"/>
                 <outlet property="bottomContainer" destination="RDh-w0-mao" id="p8C-Cv-RPp"/>
-                <outlet property="leadingButton" destination="d9g-or-Oda" id="UYJ-Wn-SeH"/>
+                <outlet property="leadingButton" destination="YkC-lj-ilM" id="mvt-cu-sUi"/>
                 <outlet property="primaryButton" destination="Vek-mk-sB4" id="Xhk-YL-lHx"/>
                 <outlet property="secondaryButton" destination="LED-kH-h43" id="YK2-xA-fQU"/>
                 <outlet property="tableView" destination="MLO-jM-z7i" id="NWp-hD-4um"/>
-                <outlet property="topContainer" destination="txA-7P-c98" id="f8y-gP-Voy"/>
-                <outlet property="trailingButton" destination="xPt-ap-Tbh" id="HdU-xf-UD9"/>
+                <outlet property="topContainer" destination="JZw-KD-Jsa" id="dWd-KA-7Z1"/>
+                <outlet property="trailingButton" destination="xE8-mY-DPW" id="yRB-vs-uiM"/>
             </connections>
-            <point key="canvasLocation" x="727" y="329"/>
+            <point key="canvasLocation" x="726.5" y="329"/>
         </viewController>
     </objects>
 </document>
