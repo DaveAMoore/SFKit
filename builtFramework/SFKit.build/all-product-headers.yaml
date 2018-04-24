@@ -1,0 +1,154 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/David/Development/SFKit/builtFramework/Release-iphoneos/SFKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SFAppearance.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFAppearanceAdjusting.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFAppearanceEnvironment.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFAppearanceStyle.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFBarGraphChartView.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFChartTypes.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFDefines.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFDiscreteGraphChartView.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFGraphChartView.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFKit-Swift.h",
+          'external-contents': "/Users/David/Development/SFKit/builtFramework/Release-iphoneos/SFKit.framework/Headers/SFKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFKit.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/SFKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFLineGraphChartView.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFPieChartView.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIResponder+SFAppearanceEnvironment.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+SFAppearanceEnvironment.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIViewController+SFAppearanceEnvironment.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/David/Development/SFKit/builtFramework/Release-iphoneos/SFKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/David/Development/SFKit/builtFramework/SFKit.build/Release-iphoneos/SFKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/David/Development/SFKit/builtFramework/Release-iphoneos/SFKit.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SFAccessibility.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFAccessibility.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFAccessibilityFunctions.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFAccessibilityFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFErrors.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFHelpers_Internal.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFHelpers_Internal.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFHelpers_Private.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFHelpers_Private.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFLineGraphAccessibilityElement.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFLineGraphAccessibilityElement.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFModelCheck.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Supporting Files/SFModelCheck.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFSkin.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/SFSkin.h"
+        },
+        {
+          'type': 'file',
+          'name': "SFTypes.h",
+          'external-contents': "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFTypes.h"
+        }
+      ]
+    }
+  ]
+}

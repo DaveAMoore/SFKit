@@ -1,0 +1,195 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFOnboardingLabel"
+provides-nominal:
+- "5SFKit17SFOnboardingLabelC"
+provides-member:
+- ["5SFKit17SFOnboardingLabelC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "SFOnboardingElement"
+- "SFOnboardingLabel"
+- "String"
+- "UILabel"
+depends-member:
+- !private ["So15CALayerDelegateP", "adjustsFontForContentSizeCategory"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "adjustsFontForContentSizeCategory"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "localizedTitle"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "text"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "adjustsFontForContentSizeCategory"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "localizedTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "adjustsFontForContentSizeCategory"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "localizedTitle"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "adjustsFontForContentSizeCategory"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "localizedTitle"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "text"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "adjustsFontForContentSizeCategory"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "localizedTitle"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "text"]
+- !private ["So8NSCodingP", "adjustsFontForContentSizeCategory"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "adjustsFontForContentSizeCategory"]
+- !private ["So8NSObjectC", "localizedTitle"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "text"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "adjustsFontForContentSizeCategory"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "localizedTitle"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So21SFAppearanceAdjustingP", "adjustsFontForContentSizeCategory"]
+- !private ["So21SFAppearanceAdjustingP", "text"]
+- !private ["So23SFAppearanceEnvironmentP", "adjustsFontForContentSizeCategory"]
+- !private ["So23SFAppearanceEnvironmentP", "text"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "adjustsFontForContentSizeCategory"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "localizedTitle"]
+- !private ["5SFKit14SFIdentifiableP", "prepare"]
+- !private ["5SFKit14SFIdentifiableP", "text"]
+- ["5SFKit19SFOnboardingElementC", "String"]
+- ["5SFKit19SFOnboardingElementC", "UILabel"]
+- ["5SFKit19SFOnboardingElementC", ""]
+- ["5SFKit19SFOnboardingElementC", "init"]
+- !private ["5SFKit19SFOnboardingElementC", "localizedTitle"]
+- ["5SFKit19SFOnboardingElementC", "prepare"]
+- ["5SFKit17SFOnboardingLabelC", "String"]
+- ["5SFKit17SFOnboardingLabelC", "UILabel"]
+- ["5SFKit17SFOnboardingLabelC", "deinit"]
+- ["5SFKit17SFOnboardingLabelC", "init"]
+- !private ["5SFKit17SFOnboardingLabelC", "localizedTitle"]
+- ["5SFKit17SFOnboardingLabelC", "prepare"]
+- !private ["So29UIAccessibilityIdentificationP", "adjustsFontForContentSizeCategory"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "adjustsFontForContentSizeCategory"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "adjustsFontForContentSizeCategory"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "adjustsFontForContentSizeCategory"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "adjustsFontForContentSizeCategory"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "adjustsFontForContentSizeCategory"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "adjustsFontForContentSizeCategory"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So11UIFocusItemP", "adjustsFontForContentSizeCategory"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So7UILabelC", "adjustsFontForContentSizeCategory"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "adjustsFontForContentSizeCategory"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So11UIResponderC", "adjustsFontForContentSizeCategory"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "adjustsFontForContentSizeCategory"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So18UITraitEnvironmentP", "adjustsFontForContentSizeCategory"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So6UIViewC", "adjustsFontForContentSizeCategory"]
+- !private ["So6UIViewC", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "adjustsFontForContentSizeCategory"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "adjustsFontForContentSizeCategory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So21SFAppearanceAdjustingP"
+- !private "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit19SFOnboardingElementC"
+- "5SFKit17SFOnboardingLabelC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "3a6bfcf30913cc00a958710d8361b872"

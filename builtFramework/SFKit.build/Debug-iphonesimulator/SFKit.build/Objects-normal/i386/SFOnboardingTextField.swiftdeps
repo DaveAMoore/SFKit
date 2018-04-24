@@ -1,0 +1,497 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFOnboardingTextField"
+provides-nominal:
+- "5SFKit21SFOnboardingTextFieldC"
+provides-member:
+- ["5SFKit21SFOnboardingTextFieldC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "SFOnboardingControl"
+- "SFOnboardingStageViewController"
+- "SFOnboardingTextField"
+- "String"
+- !private "StringLiteralType"
+- "UIControl"
+- "UIKeyboardType"
+- "UIReturnKeyType"
+- "UITextContentType"
+- !private "UITextField"
+- !private "assert"
+depends-member:
+- !private ["5SFKit19SFOnboardingControlC6ActionO", "inherited"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So15CALayerDelegateP", "enablesReturnKeyAutomatically"]
+- !private ["So15CALayerDelegateP", "isSecureTextEntry"]
+- !private ["So15CALayerDelegateP", "keyboardType"]
+- !private ["So15CALayerDelegateP", "placeholder"]
+- !private ["So15CALayerDelegateP", "returnKeyType"]
+- !private ["So15CALayerDelegateP", "textContentType"]
+- ["s7CVarArgP", "Action"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "assert"]
+- !private ["s7CVarArgP", "enablesReturnKeyAutomatically"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isSecureTextEntry"]
+- !private ["s7CVarArgP", "keyboardType"]
+- !private ["s7CVarArgP", "localizedTitle"]
+- !private ["s7CVarArgP", "placeholder"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "returnKeyType"]
+- !private ["s7CVarArgP", "textContentType"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Action"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "assert"]
+- !private ["s28CustomDebugStringConvertibleP", "enablesReturnKeyAutomatically"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isSecureTextEntry"]
+- !private ["s28CustomDebugStringConvertibleP", "keyboardType"]
+- !private ["s28CustomDebugStringConvertibleP", "localizedTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "placeholder"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "returnKeyType"]
+- !private ["s28CustomDebugStringConvertibleP", "textContentType"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Action"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "assert"]
+- !private ["s23CustomStringConvertibleP", "enablesReturnKeyAutomatically"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isSecureTextEntry"]
+- !private ["s23CustomStringConvertibleP", "keyboardType"]
+- !private ["s23CustomStringConvertibleP", "localizedTitle"]
+- !private ["s23CustomStringConvertibleP", "placeholder"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "returnKeyType"]
+- !private ["s23CustomStringConvertibleP", "textContentType"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- ["s9EquatableP", "Action"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "assert"]
+- ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "enablesReturnKeyAutomatically"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isSecureTextEntry"]
+- !private ["s9EquatableP", "keyboardType"]
+- !private ["s9EquatableP", "localizedTitle"]
+- !private ["s9EquatableP", "placeholder"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "returnKeyType"]
+- !private ["s9EquatableP", "textContentType"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "Action"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "assert"]
+- ["s8HashableP", "default"]
+- !private ["s8HashableP", "enablesReturnKeyAutomatically"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isSecureTextEntry"]
+- !private ["s8HashableP", "keyboardType"]
+- !private ["s8HashableP", "localizedTitle"]
+- !private ["s8HashableP", "placeholder"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "returnKeyType"]
+- !private ["s8HashableP", "textContentType"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "enablesReturnKeyAutomatically"]
+- !private ["So8NSCodingP", "isSecureTextEntry"]
+- !private ["So8NSCodingP", "keyboardType"]
+- !private ["So8NSCodingP", "placeholder"]
+- !private ["So8NSCodingP", "returnKeyType"]
+- !private ["So8NSCodingP", "textContentType"]
+- ["So8NSObjectC", "Action"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "SFOnboardingControl"]
+- ["So8NSObjectC", "SFOnboardingStageViewController"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIControl"]
+- ["So8NSObjectC", "UIKeyboardType"]
+- ["So8NSObjectC", "UIReturnKeyType"]
+- ["So8NSObjectC", "UITextContentType"]
+- !private ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "assert"]
+- !private ["So8NSObjectC", "enablesReturnKeyAutomatically"]
+- ["So8NSObjectC", "isSecureTextEntry"]
+- ["So8NSObjectC", "keyboardType"]
+- !private ["So8NSObjectC", "localizedTitle"]
+- !private ["So8NSObjectC", "placeholder"]
+- ["So8NSObjectC", "prepare"]
+- ["So8NSObjectC", "returnKeyType"]
+- ["So8NSObjectC", "textContentType"]
+- ["So16NSObjectProtocolP", "Action"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "assert"]
+- !private ["So16NSObjectProtocolP", "enablesReturnKeyAutomatically"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isSecureTextEntry"]
+- !private ["So16NSObjectProtocolP", "keyboardType"]
+- !private ["So16NSObjectProtocolP", "localizedTitle"]
+- !private ["So16NSObjectProtocolP", "placeholder"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "returnKeyType"]
+- !private ["So16NSObjectProtocolP", "textContentType"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "default"]
+- !private ["So21SFAppearanceAdjustingP", "enablesReturnKeyAutomatically"]
+- !private ["So21SFAppearanceAdjustingP", "isSecureTextEntry"]
+- !private ["So21SFAppearanceAdjustingP", "keyboardType"]
+- !private ["So21SFAppearanceAdjustingP", "placeholder"]
+- !private ["So21SFAppearanceAdjustingP", "returnKeyType"]
+- !private ["So21SFAppearanceAdjustingP", "textContentType"]
+- !private ["So23SFAppearanceEnvironmentP", "enablesReturnKeyAutomatically"]
+- !private ["So23SFAppearanceEnvironmentP", "isSecureTextEntry"]
+- !private ["So23SFAppearanceEnvironmentP", "keyboardType"]
+- !private ["So23SFAppearanceEnvironmentP", "placeholder"]
+- !private ["So23SFAppearanceEnvironmentP", "returnKeyType"]
+- !private ["So23SFAppearanceEnvironmentP", "textContentType"]
+- ["5SFKit14SFIdentifiableP", "Action"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "assert"]
+- !private ["5SFKit14SFIdentifiableP", "enablesReturnKeyAutomatically"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "isSecureTextEntry"]
+- !private ["5SFKit14SFIdentifiableP", "keyboardType"]
+- !private ["5SFKit14SFIdentifiableP", "localizedTitle"]
+- !private ["5SFKit14SFIdentifiableP", "placeholder"]
+- !private ["5SFKit14SFIdentifiableP", "prepare"]
+- !private ["5SFKit14SFIdentifiableP", "returnKeyType"]
+- !private ["5SFKit14SFIdentifiableP", "textContentType"]
+- ["5SFKit19SFOnboardingControlC", "Action"]
+- ["5SFKit19SFOnboardingControlC", "Bool"]
+- ["5SFKit19SFOnboardingControlC", "SFOnboardingControl"]
+- ["5SFKit19SFOnboardingControlC", "SFOnboardingStageViewController"]
+- ["5SFKit19SFOnboardingControlC", "String"]
+- ["5SFKit19SFOnboardingControlC", "UIControl"]
+- ["5SFKit19SFOnboardingControlC", "UIKeyboardType"]
+- ["5SFKit19SFOnboardingControlC", "UIReturnKeyType"]
+- ["5SFKit19SFOnboardingControlC", "UITextContentType"]
+- !private ["5SFKit19SFOnboardingControlC", "UITextField"]
+- ["5SFKit19SFOnboardingControlC", ""]
+- !private ["5SFKit19SFOnboardingControlC", "assert"]
+- ["5SFKit19SFOnboardingControlC", "init"]
+- ["5SFKit19SFOnboardingControlC", "isSecureTextEntry"]
+- ["5SFKit19SFOnboardingControlC", "keyboardType"]
+- !private ["5SFKit19SFOnboardingControlC", "localizedTitle"]
+- ["5SFKit19SFOnboardingControlC", "prepare"]
+- ["5SFKit19SFOnboardingControlC", "returnKeyType"]
+- ["5SFKit19SFOnboardingControlC", "textContentType"]
+- ["5SFKit19SFOnboardingElementC", "Action"]
+- ["5SFKit19SFOnboardingElementC", "Bool"]
+- ["5SFKit19SFOnboardingElementC", "SFOnboardingControl"]
+- ["5SFKit19SFOnboardingElementC", "SFOnboardingStageViewController"]
+- ["5SFKit19SFOnboardingElementC", "String"]
+- ["5SFKit19SFOnboardingElementC", "UIControl"]
+- ["5SFKit19SFOnboardingElementC", "UIKeyboardType"]
+- ["5SFKit19SFOnboardingElementC", "UIReturnKeyType"]
+- ["5SFKit19SFOnboardingElementC", "UITextContentType"]
+- !private ["5SFKit19SFOnboardingElementC", "UITextField"]
+- !private ["5SFKit19SFOnboardingElementC", "assert"]
+- ["5SFKit19SFOnboardingElementC", "isSecureTextEntry"]
+- ["5SFKit19SFOnboardingElementC", "keyboardType"]
+- !private ["5SFKit19SFOnboardingElementC", "localizedTitle"]
+- ["5SFKit19SFOnboardingElementC", "prepare"]
+- ["5SFKit19SFOnboardingElementC", "returnKeyType"]
+- ["5SFKit19SFOnboardingElementC", "textContentType"]
+- ["5SFKit21SFOnboardingTextFieldC", "Action"]
+- ["5SFKit21SFOnboardingTextFieldC", "Bool"]
+- ["5SFKit21SFOnboardingTextFieldC", "SFOnboardingControl"]
+- ["5SFKit21SFOnboardingTextFieldC", "SFOnboardingStageViewController"]
+- ["5SFKit21SFOnboardingTextFieldC", "String"]
+- ["5SFKit21SFOnboardingTextFieldC", "UIControl"]
+- ["5SFKit21SFOnboardingTextFieldC", "UIKeyboardType"]
+- ["5SFKit21SFOnboardingTextFieldC", "UIReturnKeyType"]
+- ["5SFKit21SFOnboardingTextFieldC", "UITextContentType"]
+- !private ["5SFKit21SFOnboardingTextFieldC", "UITextField"]
+- !private ["5SFKit21SFOnboardingTextFieldC", "assert"]
+- ["5SFKit21SFOnboardingTextFieldC", "deinit"]
+- ["5SFKit21SFOnboardingTextFieldC", "init"]
+- ["5SFKit21SFOnboardingTextFieldC", "isSecureTextEntry"]
+- ["5SFKit21SFOnboardingTextFieldC", "keyboardType"]
+- !private ["5SFKit21SFOnboardingTextFieldC", "localizedTitle"]
+- ["5SFKit21SFOnboardingTextFieldC", "prepare"]
+- ["5SFKit21SFOnboardingTextFieldC", "returnKeyType"]
+- ["5SFKit21SFOnboardingTextFieldC", "textContentType"]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "enablesReturnKeyAutomatically"]
+- !private ["So29UIAccessibilityIdentificationP", "isSecureTextEntry"]
+- !private ["So29UIAccessibilityIdentificationP", "keyboardType"]
+- !private ["So29UIAccessibilityIdentificationP", "placeholder"]
+- !private ["So29UIAccessibilityIdentificationP", "returnKeyType"]
+- !private ["So29UIAccessibilityIdentificationP", "textContentType"]
+- !private ["So12UIAppearanceP", "enablesReturnKeyAutomatically"]
+- !private ["So12UIAppearanceP", "isSecureTextEntry"]
+- !private ["So12UIAppearanceP", "keyboardType"]
+- !private ["So12UIAppearanceP", "placeholder"]
+- !private ["So12UIAppearanceP", "returnKeyType"]
+- !private ["So12UIAppearanceP", "textContentType"]
+- !private ["So21UIAppearanceContainerP", "enablesReturnKeyAutomatically"]
+- !private ["So21UIAppearanceContainerP", "isSecureTextEntry"]
+- !private ["So21UIAppearanceContainerP", "keyboardType"]
+- !private ["So21UIAppearanceContainerP", "placeholder"]
+- !private ["So21UIAppearanceContainerP", "returnKeyType"]
+- !private ["So21UIAppearanceContainerP", "textContentType"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "enablesReturnKeyAutomatically"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "isSecureTextEntry"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "keyboardType"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "placeholder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "returnKeyType"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textContentType"]
+- !private ["So9UIControlC", "enablesReturnKeyAutomatically"]
+- !private ["So9UIControlC", "isSecureTextEntry"]
+- !private ["So9UIControlC", "keyboardType"]
+- !private ["So9UIControlC", "placeholder"]
+- !private ["So9UIControlC", "returnKeyType"]
+- !private ["So9UIControlC", "textContentType"]
+- !private ["So17UICoordinateSpaceP", "enablesReturnKeyAutomatically"]
+- !private ["So17UICoordinateSpaceP", "isSecureTextEntry"]
+- !private ["So17UICoordinateSpaceP", "keyboardType"]
+- !private ["So17UICoordinateSpaceP", "placeholder"]
+- !private ["So17UICoordinateSpaceP", "returnKeyType"]
+- !private ["So17UICoordinateSpaceP", "textContentType"]
+- !private ["So13UIDynamicItemP", "enablesReturnKeyAutomatically"]
+- !private ["So13UIDynamicItemP", "isSecureTextEntry"]
+- !private ["So13UIDynamicItemP", "keyboardType"]
+- !private ["So13UIDynamicItemP", "placeholder"]
+- !private ["So13UIDynamicItemP", "returnKeyType"]
+- !private ["So13UIDynamicItemP", "textContentType"]
+- !private ["So18UIFocusEnvironmentP", "enablesReturnKeyAutomatically"]
+- !private ["So18UIFocusEnvironmentP", "isSecureTextEntry"]
+- !private ["So18UIFocusEnvironmentP", "keyboardType"]
+- !private ["So18UIFocusEnvironmentP", "placeholder"]
+- !private ["So18UIFocusEnvironmentP", "returnKeyType"]
+- !private ["So18UIFocusEnvironmentP", "textContentType"]
+- !private ["So11UIFocusItemP", "enablesReturnKeyAutomatically"]
+- !private ["So11UIFocusItemP", "isSecureTextEntry"]
+- !private ["So11UIFocusItemP", "keyboardType"]
+- !private ["So11UIFocusItemP", "placeholder"]
+- !private ["So11UIFocusItemP", "returnKeyType"]
+- !private ["So11UIFocusItemP", "textContentType"]
+- !private ["So10UIKeyInputP", "enablesReturnKeyAutomatically"]
+- !private ["So10UIKeyInputP", "isSecureTextEntry"]
+- !private ["So10UIKeyInputP", "keyboardType"]
+- !private ["So10UIKeyInputP", "placeholder"]
+- !private ["So10UIKeyInputP", "returnKeyType"]
+- !private ["So10UIKeyInputP", "textContentType"]
+- ["SC14UIKeyboardTypeO", "default"]
+- !private ["So30UIPasteConfigurationSupportingP", "enablesReturnKeyAutomatically"]
+- !private ["So30UIPasteConfigurationSupportingP", "isSecureTextEntry"]
+- !private ["So30UIPasteConfigurationSupportingP", "keyboardType"]
+- !private ["So30UIPasteConfigurationSupportingP", "placeholder"]
+- !private ["So30UIPasteConfigurationSupportingP", "returnKeyType"]
+- !private ["So30UIPasteConfigurationSupportingP", "textContentType"]
+- !private ["So11UIResponderC", "enablesReturnKeyAutomatically"]
+- !private ["So11UIResponderC", "isSecureTextEntry"]
+- !private ["So11UIResponderC", "keyboardType"]
+- !private ["So11UIResponderC", "placeholder"]
+- !private ["So11UIResponderC", "returnKeyType"]
+- !private ["So11UIResponderC", "textContentType"]
+- !private ["So30UIResponderStandardEditActionsP", "enablesReturnKeyAutomatically"]
+- !private ["So30UIResponderStandardEditActionsP", "isSecureTextEntry"]
+- !private ["So30UIResponderStandardEditActionsP", "keyboardType"]
+- !private ["So30UIResponderStandardEditActionsP", "placeholder"]
+- !private ["So30UIResponderStandardEditActionsP", "returnKeyType"]
+- !private ["So30UIResponderStandardEditActionsP", "textContentType"]
+- ["SC15UIReturnKeyTypeO", "default"]
+- !private ["So15UITextDraggableP", "enablesReturnKeyAutomatically"]
+- !private ["So15UITextDraggableP", "isSecureTextEntry"]
+- !private ["So15UITextDraggableP", "keyboardType"]
+- !private ["So15UITextDraggableP", "placeholder"]
+- !private ["So15UITextDraggableP", "returnKeyType"]
+- !private ["So15UITextDraggableP", "textContentType"]
+- !private ["So15UITextDroppableP", "enablesReturnKeyAutomatically"]
+- !private ["So15UITextDroppableP", "isSecureTextEntry"]
+- !private ["So15UITextDroppableP", "keyboardType"]
+- !private ["So15UITextDroppableP", "placeholder"]
+- !private ["So15UITextDroppableP", "returnKeyType"]
+- !private ["So15UITextDroppableP", "textContentType"]
+- !private ["So11UITextFieldC", "enablesReturnKeyAutomatically"]
+- !private ["So11UITextFieldC", "isSecureTextEntry"]
+- !private ["So11UITextFieldC", "keyboardType"]
+- !private ["So11UITextFieldC", "placeholder"]
+- !private ["So11UITextFieldC", "returnKeyType"]
+- !private ["So11UITextFieldC", "textContentType"]
+- !private ["So11UITextInputP", "enablesReturnKeyAutomatically"]
+- !private ["So11UITextInputP", "isSecureTextEntry"]
+- !private ["So11UITextInputP", "keyboardType"]
+- !private ["So11UITextInputP", "placeholder"]
+- !private ["So11UITextInputP", "returnKeyType"]
+- !private ["So11UITextInputP", "textContentType"]
+- !private ["So17UITextInputTraitsP", "enablesReturnKeyAutomatically"]
+- !private ["So17UITextInputTraitsP", "isSecureTextEntry"]
+- !private ["So17UITextInputTraitsP", "keyboardType"]
+- !private ["So17UITextInputTraitsP", "placeholder"]
+- !private ["So17UITextInputTraitsP", "returnKeyType"]
+- !private ["So17UITextInputTraitsP", "textContentType"]
+- !private ["So34UITextPasteConfigurationSupportingP", "enablesReturnKeyAutomatically"]
+- !private ["So34UITextPasteConfigurationSupportingP", "isSecureTextEntry"]
+- !private ["So34UITextPasteConfigurationSupportingP", "keyboardType"]
+- !private ["So34UITextPasteConfigurationSupportingP", "placeholder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "returnKeyType"]
+- !private ["So34UITextPasteConfigurationSupportingP", "textContentType"]
+- !private ["So18UITraitEnvironmentP", "enablesReturnKeyAutomatically"]
+- !private ["So18UITraitEnvironmentP", "isSecureTextEntry"]
+- !private ["So18UITraitEnvironmentP", "keyboardType"]
+- !private ["So18UITraitEnvironmentP", "placeholder"]
+- !private ["So18UITraitEnvironmentP", "returnKeyType"]
+- !private ["So18UITraitEnvironmentP", "textContentType"]
+- !private ["So6UIViewC", "enablesReturnKeyAutomatically"]
+- !private ["So6UIViewC", "isSecureTextEntry"]
+- !private ["So6UIViewC", "keyboardType"]
+- !private ["So6UIViewC", "placeholder"]
+- !private ["So6UIViewC", "returnKeyType"]
+- !private ["So6UIViewC", "textContentType"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "enablesReturnKeyAutomatically"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isSecureTextEntry"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "keyboardType"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "placeholder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "returnKeyType"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textContentType"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Action"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "assert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enablesReturnKeyAutomatically"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isSecureTextEntry"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "keyboardType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "localizedTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "returnKeyType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textContentType"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "5SFKit19SFOnboardingControlC6ActionO"
+- !private "s23BidirectionalCollectionP"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "So21SFAppearanceAdjustingP"
+- !private "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit19SFOnboardingControlC"
+- "5SFKit19SFOnboardingElementC"
+- "5SFKit21SFOnboardingTextFieldC"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "SC14UIKeyboardTypeO"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- "SC15UIReturnKeyTypeO"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "bb0711e87acc5e0a51b522a4bf893a97"

@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/David/Development/SFKit/builtFramework/Debug-iphonesimulator/SFKit.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap',
+    }]
+  }]
+}

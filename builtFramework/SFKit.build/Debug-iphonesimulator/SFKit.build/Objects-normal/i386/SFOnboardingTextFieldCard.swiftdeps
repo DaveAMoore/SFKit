@@ -1,0 +1,260 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFOnboardingTextFieldCard"
+provides-nominal:
+- "5SFKit25SFOnboardingTextFieldCardC"
+provides-member:
+- ["5SFKit25SFOnboardingTextFieldCardC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "SFOnboardingCard"
+- "SFOnboardingLabel"
+- "SFOnboardingStageViewController"
+- "SFOnboardingTextField"
+- "SFOnboardingTextFieldCard"
+- !private "SFOnboardingTextFieldCardCell"
+- !private "StringLiteralType"
+- "UITableViewCell"
+depends-member:
+- !private ["So15CALayerDelegateP", "textField"]
+- !private ["So15CALayerDelegateP", "titleLabel"]
+- !private ["s7CVarArgP", "SFOnboardingTextFieldCardCell"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "selectionStyle"]
+- !private ["s7CVarArgP", "textField"]
+- !private ["s7CVarArgP", "titleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "SFOnboardingTextFieldCardCell"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "selectionStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "textField"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "SFOnboardingTextFieldCardCell"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "selectionStyle"]
+- !private ["s23CustomStringConvertibleP", "textField"]
+- !private ["s23CustomStringConvertibleP", "titleLabel"]
+- !private ["s9EquatableP", "SFOnboardingTextFieldCardCell"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "selectionStyle"]
+- !private ["s9EquatableP", "textField"]
+- !private ["s9EquatableP", "titleLabel"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "SFOnboardingTextFieldCardCell"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "none"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "selectionStyle"]
+- !private ["s8HashableP", "textField"]
+- !private ["s8HashableP", "titleLabel"]
+- !private ["So8NSCodingP", "textField"]
+- !private ["So8NSCodingP", "titleLabel"]
+- ["So8NSObjectC", "SFOnboardingLabel"]
+- ["So8NSObjectC", "SFOnboardingStageViewController"]
+- ["So8NSObjectC", "SFOnboardingTextField"]
+- !private ["So8NSObjectC", "SFOnboardingTextFieldCardCell"]
+- ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "cellType"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "selectionStyle"]
+- ["So8NSObjectC", "textField"]
+- ["So8NSObjectC", "titleLabel"]
+- !private ["So16NSObjectProtocolP", "SFOnboardingTextFieldCardCell"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "selectionStyle"]
+- !private ["So16NSObjectProtocolP", "textField"]
+- !private ["So16NSObjectProtocolP", "titleLabel"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["So21SFAppearanceAdjustingP", "textField"]
+- !private ["So21SFAppearanceAdjustingP", "titleLabel"]
+- !private ["So23SFAppearanceEnvironmentP", "textField"]
+- !private ["So23SFAppearanceEnvironmentP", "titleLabel"]
+- !private ["5SFKit14SFIdentifiableP", "SFOnboardingTextFieldCardCell"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "prepare"]
+- !private ["5SFKit14SFIdentifiableP", "selectionStyle"]
+- !private ["5SFKit14SFIdentifiableP", "textField"]
+- !private ["5SFKit14SFIdentifiableP", "titleLabel"]
+- ["5SFKit16SFOnboardingCardC", "SFOnboardingLabel"]
+- ["5SFKit16SFOnboardingCardC", "SFOnboardingStageViewController"]
+- ["5SFKit16SFOnboardingCardC", "SFOnboardingTextField"]
+- !private ["5SFKit16SFOnboardingCardC", "SFOnboardingTextFieldCardCell"]
+- ["5SFKit16SFOnboardingCardC", "UITableViewCell"]
+- ["5SFKit16SFOnboardingCardC", ""]
+- ["5SFKit16SFOnboardingCardC", "cellType"]
+- ["5SFKit16SFOnboardingCardC", "init"]
+- ["5SFKit16SFOnboardingCardC", "prepare"]
+- !private ["5SFKit16SFOnboardingCardC", "selectionStyle"]
+- ["5SFKit16SFOnboardingCardC", "textField"]
+- ["5SFKit16SFOnboardingCardC", "titleLabel"]
+- !private ["5SFKit19SFOnboardingControlC", "prepare"]
+- !private ["5SFKit19SFOnboardingElementC", "prepare"]
+- !private ["5SFKit17SFOnboardingLabelC", "prepare"]
+- !private ["5SFKit21SFOnboardingTextFieldC", "prepare"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "SFOnboardingLabel"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "SFOnboardingStageViewController"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "SFOnboardingTextField"]
+- !private ["5SFKit25SFOnboardingTextFieldCardC", "SFOnboardingTextFieldCardCell"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "UITableViewCell"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "cellType"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "deinit"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "init"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "prepare"]
+- !private ["5SFKit25SFOnboardingTextFieldCardC", "selectionStyle"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "textField"]
+- ["5SFKit25SFOnboardingTextFieldCardC", "titleLabel"]
+- !private ["5SFKit29SFOnboardingTextFieldCardCellC", "textField"]
+- !private ["5SFKit29SFOnboardingTextFieldCardCellC", "titleLabel"]
+- !private ["5SFKit11SFReuseableP", "textField"]
+- !private ["5SFKit11SFReuseableP", "titleLabel"]
+- !private ["s12StaticStringV", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "textField"]
+- !private ["So29UIAccessibilityIdentificationP", "titleLabel"]
+- !private ["So12UIAppearanceP", "textField"]
+- !private ["So12UIAppearanceP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "textField"]
+- !private ["So21UIAppearanceContainerP", "titleLabel"]
+- !private ["So17UICoordinateSpaceP", "textField"]
+- !private ["So17UICoordinateSpaceP", "titleLabel"]
+- !private ["So13UIDynamicItemP", "textField"]
+- !private ["So13UIDynamicItemP", "titleLabel"]
+- !private ["So18UIFocusEnvironmentP", "textField"]
+- !private ["So18UIFocusEnvironmentP", "titleLabel"]
+- !private ["So11UIFocusItemP", "textField"]
+- !private ["So11UIFocusItemP", "titleLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "textField"]
+- !private ["So27UIGestureRecognizerDelegateP", "titleLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "textField"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
+- !private ["So11UIResponderC", "textField"]
+- !private ["So11UIResponderC", "titleLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "textField"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
+- !private ["So15UITableViewCellC", "textField"]
+- !private ["So15UITableViewCellC", "titleLabel"]
+- !private ["SC29UITableViewCellSelectionStyleO", "none"]
+- !private ["So18UITraitEnvironmentP", "textField"]
+- !private ["So18UITraitEnvironmentP", "titleLabel"]
+- !private ["So6UIViewC", "textField"]
+- !private ["So6UIViewC", "titleLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textField"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SFOnboardingTextFieldCardCell"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectionStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s16RawRepresentableP"
+- !private "So21SFAppearanceAdjustingP"
+- !private "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit16SFOnboardingCardC"
+- !private "5SFKit19SFOnboardingControlC"
+- !private "5SFKit19SFOnboardingElementC"
+- !private "5SFKit17SFOnboardingLabelC"
+- !private "5SFKit21SFOnboardingTextFieldC"
+- "5SFKit25SFOnboardingTextFieldCardC"
+- !private "5SFKit29SFOnboardingTextFieldCardCellC"
+- !private "5SFKit11SFReuseableP"
+- !private "s12StaticStringV"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So27UIGestureRecognizerDelegateP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So15UITableViewCellC"
+- !private "SC29UITableViewCellSelectionStyleO"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "395dda016b8d0f7121aee0c8114b602e"

@@ -1,0 +1,598 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFOnboardingTitleCard"
+provides-nominal:
+- "5SFKit21SFOnboardingTitleCardC"
+provides-member:
+- ["5SFKit21SFOnboardingTitleCardC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "SFOnboardingCard"
+- "SFOnboardingLabel"
+- "SFOnboardingStageViewController"
+- "SFOnboardingTitleCard"
+- !private "SFOnboardingTitleCardCell"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- !private "UIEdgeInsets"
+- !private "UIFont"
+- !private "UIFontMetrics"
+- "UIImage"
+- "UITableViewCell"
+depends-member:
+- !private ["s19BinaryFloatingPointP", "greatestFiniteMagnitude"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "detailLabel"]
+- !private ["So15CALayerDelegateP", "embeddedImageView"]
+- !private ["So15CALayerDelegateP", "font"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "isHidden"]
+- !private ["So15CALayerDelegateP", "separatorInset"]
+- !private ["So15CALayerDelegateP", "titleLabel"]
+- !private ["12CoreGraphics7CGFloatV", "greatestFiniteMagnitude"]
+- !private ["s7CVarArgP", "SFOnboardingTitleCardCell"]
+- !private ["s7CVarArgP", "UIEdgeInsets"]
+- !private ["s7CVarArgP", "UIFont"]
+- !private ["s7CVarArgP", "UIFontMetrics"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "detailLabel"]
+- !private ["s7CVarArgP", "embeddedImageView"]
+- !private ["s7CVarArgP", "font"]
+- !private ["s7CVarArgP", "greatestFiniteMagnitude"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isHidden"]
+- !private ["s7CVarArgP", "isLargeTitle"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "scaledFont"]
+- !private ["s7CVarArgP", "selectionStyle"]
+- !private ["s7CVarArgP", "separatorInset"]
+- !private ["s7CVarArgP", "separatorIsHidden"]
+- !private ["s7CVarArgP", "systemFont"]
+- !private ["s7CVarArgP", "titleLabel"]
+- !private ["s10ComparableP", "bold"]
+- !private ["s10ComparableP", "greatestFiniteMagnitude"]
+- !private ["s10ComparableP", "regular"]
+- !private ["s28CustomDebugStringConvertibleP", "SFOnboardingTitleCardCell"]
+- !private ["s28CustomDebugStringConvertibleP", "UIEdgeInsets"]
+- !private ["s28CustomDebugStringConvertibleP", "UIFont"]
+- !private ["s28CustomDebugStringConvertibleP", "UIFontMetrics"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "detailLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "embeddedImageView"]
+- !private ["s28CustomDebugStringConvertibleP", "font"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "isLargeTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "scaledFont"]
+- !private ["s28CustomDebugStringConvertibleP", "selectionStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "separatorInset"]
+- !private ["s28CustomDebugStringConvertibleP", "separatorIsHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "systemFont"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "greatestFiniteMagnitude"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "SFOnboardingTitleCardCell"]
+- !private ["s23CustomStringConvertibleP", "UIEdgeInsets"]
+- !private ["s23CustomStringConvertibleP", "UIFont"]
+- !private ["s23CustomStringConvertibleP", "UIFontMetrics"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "detailLabel"]
+- !private ["s23CustomStringConvertibleP", "embeddedImageView"]
+- !private ["s23CustomStringConvertibleP", "font"]
+- !private ["s23CustomStringConvertibleP", "greatestFiniteMagnitude"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isHidden"]
+- !private ["s23CustomStringConvertibleP", "isLargeTitle"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "scaledFont"]
+- !private ["s23CustomStringConvertibleP", "selectionStyle"]
+- !private ["s23CustomStringConvertibleP", "separatorInset"]
+- !private ["s23CustomStringConvertibleP", "separatorIsHidden"]
+- !private ["s23CustomStringConvertibleP", "systemFont"]
+- !private ["s23CustomStringConvertibleP", "titleLabel"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "greatestFiniteMagnitude"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "greatestFiniteMagnitude"]
+- !private ["s9EquatableP", "SFOnboardingTitleCardCell"]
+- !private ["s9EquatableP", "UIEdgeInsets"]
+- !private ["s9EquatableP", "UIFont"]
+- !private ["s9EquatableP", "UIFontMetrics"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "body"]
+- !private ["s9EquatableP", "bold"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "detailLabel"]
+- !private ["s9EquatableP", "embeddedImageView"]
+- !private ["s9EquatableP", "font"]
+- !private ["s9EquatableP", "greatestFiniteMagnitude"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isHidden"]
+- !private ["s9EquatableP", "isLargeTitle"]
+- !private ["s9EquatableP", "largeTitle"]
+- !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "regular"]
+- !private ["s9EquatableP", "scaledFont"]
+- !private ["s9EquatableP", "selectionStyle"]
+- !private ["s9EquatableP", "separatorInset"]
+- !private ["s9EquatableP", "separatorIsHidden"]
+- !private ["s9EquatableP", "systemFont"]
+- !private ["s9EquatableP", "titleLabel"]
+- !private ["s9EquatableP", "zero"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "greatestFiniteMagnitude"]
+- !private ["s27ExpressibleByIntegerLiteralP", "greatestFiniteMagnitude"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s13FloatingPointP", "greatestFiniteMagnitude"]
+- !private ["s8HashableP", "SFOnboardingTitleCardCell"]
+- !private ["s8HashableP", "UIEdgeInsets"]
+- !private ["s8HashableP", "UIFont"]
+- !private ["s8HashableP", "UIFontMetrics"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "body"]
+- !private ["s8HashableP", "bold"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "detailLabel"]
+- !private ["s8HashableP", "embeddedImageView"]
+- !private ["s8HashableP", "font"]
+- !private ["s8HashableP", "greatestFiniteMagnitude"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isHidden"]
+- !private ["s8HashableP", "isLargeTitle"]
+- !private ["s8HashableP", "largeTitle"]
+- !private ["s8HashableP", "none"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "regular"]
+- !private ["s8HashableP", "scaledFont"]
+- !private ["s8HashableP", "selectionStyle"]
+- !private ["s8HashableP", "separatorInset"]
+- !private ["s8HashableP", "separatorIsHidden"]
+- !private ["s8HashableP", "systemFont"]
+- !private ["s8HashableP", "titleLabel"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["So8NSCodingP", "detailLabel"]
+- !private ["So8NSCodingP", "embeddedImageView"]
+- !private ["So8NSCodingP", "font"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "isHidden"]
+- !private ["So8NSCodingP", "separatorInset"]
+- !private ["So8NSCodingP", "titleLabel"]
+- !private ["So9NSCopyingP", "systemFont"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "SFOnboardingLabel"]
+- ["So8NSObjectC", "SFOnboardingStageViewController"]
+- !private ["So8NSObjectC", "SFOnboardingTitleCardCell"]
+- !private ["So8NSObjectC", "UIEdgeInsets"]
+- !private ["So8NSObjectC", "UIFont"]
+- !private ["So8NSObjectC", "UIFontMetrics"]
+- ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "cellType"]
+- !private ["So8NSObjectC", "default"]
+- ["So8NSObjectC", "detailLabel"]
+- !private ["So8NSObjectC", "embeddedImageView"]
+- !private ["So8NSObjectC", "font"]
+- ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isHidden"]
+- ["So8NSObjectC", "isLargeTitle"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "scaledFont"]
+- !private ["So8NSObjectC", "selectionStyle"]
+- !private ["So8NSObjectC", "separatorInset"]
+- ["So8NSObjectC", "separatorIsHidden"]
+- !private ["So8NSObjectC", "systemFont"]
+- ["So8NSObjectC", "titleLabel"]
+- !private ["So16NSObjectProtocolP", "SFOnboardingTitleCardCell"]
+- !private ["So16NSObjectProtocolP", "UIEdgeInsets"]
+- !private ["So16NSObjectProtocolP", "UIFont"]
+- !private ["So16NSObjectProtocolP", "UIFontMetrics"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "detailLabel"]
+- !private ["So16NSObjectProtocolP", "embeddedImageView"]
+- !private ["So16NSObjectProtocolP", "font"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isHidden"]
+- !private ["So16NSObjectProtocolP", "isLargeTitle"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "scaledFont"]
+- !private ["So16NSObjectProtocolP", "selectionStyle"]
+- !private ["So16NSObjectProtocolP", "separatorInset"]
+- !private ["So16NSObjectProtocolP", "separatorIsHidden"]
+- !private ["So16NSObjectProtocolP", "systemFont"]
+- !private ["So16NSObjectProtocolP", "titleLabel"]
+- !private ["s7NumericP", "greatestFiniteMagnitude"]
+- !private ["s16RawRepresentableP", "body"]
+- !private ["s16RawRepresentableP", "bold"]
+- !private ["s16RawRepresentableP", "largeTitle"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["s16RawRepresentableP", "regular"]
+- !private ["So21SFAppearanceAdjustingP", "detailLabel"]
+- !private ["So21SFAppearanceAdjustingP", "embeddedImageView"]
+- !private ["So21SFAppearanceAdjustingP", "font"]
+- !private ["So21SFAppearanceAdjustingP", "image"]
+- !private ["So21SFAppearanceAdjustingP", "isHidden"]
+- !private ["So21SFAppearanceAdjustingP", "separatorInset"]
+- !private ["So21SFAppearanceAdjustingP", "titleLabel"]
+- !private ["So23SFAppearanceEnvironmentP", "detailLabel"]
+- !private ["So23SFAppearanceEnvironmentP", "embeddedImageView"]
+- !private ["So23SFAppearanceEnvironmentP", "font"]
+- !private ["So23SFAppearanceEnvironmentP", "image"]
+- !private ["So23SFAppearanceEnvironmentP", "isHidden"]
+- !private ["So23SFAppearanceEnvironmentP", "separatorInset"]
+- !private ["So23SFAppearanceEnvironmentP", "titleLabel"]
+- !private ["5SFKit14SFIdentifiableP", "SFOnboardingTitleCardCell"]
+- !private ["5SFKit14SFIdentifiableP", "UIEdgeInsets"]
+- !private ["5SFKit14SFIdentifiableP", "UIFont"]
+- !private ["5SFKit14SFIdentifiableP", "UIFontMetrics"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "default"]
+- !private ["5SFKit14SFIdentifiableP", "detailLabel"]
+- !private ["5SFKit14SFIdentifiableP", "embeddedImageView"]
+- !private ["5SFKit14SFIdentifiableP", "font"]
+- !private ["5SFKit14SFIdentifiableP", "image"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "isHidden"]
+- !private ["5SFKit14SFIdentifiableP", "isLargeTitle"]
+- !private ["5SFKit14SFIdentifiableP", "prepare"]
+- !private ["5SFKit14SFIdentifiableP", "scaledFont"]
+- !private ["5SFKit14SFIdentifiableP", "selectionStyle"]
+- !private ["5SFKit14SFIdentifiableP", "separatorInset"]
+- !private ["5SFKit14SFIdentifiableP", "separatorIsHidden"]
+- !private ["5SFKit14SFIdentifiableP", "systemFont"]
+- !private ["5SFKit14SFIdentifiableP", "titleLabel"]
+- ["5SFKit16SFOnboardingCardC", "Bool"]
+- ["5SFKit16SFOnboardingCardC", "SFOnboardingLabel"]
+- ["5SFKit16SFOnboardingCardC", "SFOnboardingStageViewController"]
+- !private ["5SFKit16SFOnboardingCardC", "SFOnboardingTitleCardCell"]
+- !private ["5SFKit16SFOnboardingCardC", "UIEdgeInsets"]
+- !private ["5SFKit16SFOnboardingCardC", "UIFont"]
+- !private ["5SFKit16SFOnboardingCardC", "UIFontMetrics"]
+- ["5SFKit16SFOnboardingCardC", "UIImage"]
+- ["5SFKit16SFOnboardingCardC", "UITableViewCell"]
+- ["5SFKit16SFOnboardingCardC", ""]
+- ["5SFKit16SFOnboardingCardC", "cellType"]
+- ["5SFKit16SFOnboardingCardC", "detailLabel"]
+- ["5SFKit16SFOnboardingCardC", "image"]
+- ["5SFKit16SFOnboardingCardC", "init"]
+- ["5SFKit16SFOnboardingCardC", "isLargeTitle"]
+- ["5SFKit16SFOnboardingCardC", "prepare"]
+- !private ["5SFKit16SFOnboardingCardC", "selectionStyle"]
+- ["5SFKit16SFOnboardingCardC", "separatorIsHidden"]
+- ["5SFKit16SFOnboardingCardC", "titleLabel"]
+- !private ["5SFKit19SFOnboardingElementC", "prepare"]
+- !private ["5SFKit17SFOnboardingLabelC", "deinit"]
+- !private ["5SFKit17SFOnboardingLabelC", "prepare"]
+- ["5SFKit21SFOnboardingTitleCardC", "Bool"]
+- ["5SFKit21SFOnboardingTitleCardC", "SFOnboardingLabel"]
+- ["5SFKit21SFOnboardingTitleCardC", "SFOnboardingStageViewController"]
+- !private ["5SFKit21SFOnboardingTitleCardC", "SFOnboardingTitleCardCell"]
+- !private ["5SFKit21SFOnboardingTitleCardC", "UIEdgeInsets"]
+- !private ["5SFKit21SFOnboardingTitleCardC", "UIFont"]
+- !private ["5SFKit21SFOnboardingTitleCardC", "UIFontMetrics"]
+- ["5SFKit21SFOnboardingTitleCardC", "UIImage"]
+- ["5SFKit21SFOnboardingTitleCardC", "UITableViewCell"]
+- ["5SFKit21SFOnboardingTitleCardC", "cellType"]
+- ["5SFKit21SFOnboardingTitleCardC", "deinit"]
+- ["5SFKit21SFOnboardingTitleCardC", "detailLabel"]
+- ["5SFKit21SFOnboardingTitleCardC", "image"]
+- ["5SFKit21SFOnboardingTitleCardC", "init"]
+- ["5SFKit21SFOnboardingTitleCardC", "isLargeTitle"]
+- ["5SFKit21SFOnboardingTitleCardC", "prepare"]
+- !private ["5SFKit21SFOnboardingTitleCardC", "selectionStyle"]
+- ["5SFKit21SFOnboardingTitleCardC", "separatorIsHidden"]
+- ["5SFKit21SFOnboardingTitleCardC", "titleLabel"]
+- !private ["5SFKit25SFOnboardingTitleCardCellC", "detailLabel"]
+- !private ["5SFKit25SFOnboardingTitleCardCellC", "embeddedImageView"]
+- !private ["5SFKit25SFOnboardingTitleCardCellC", "separatorInset"]
+- !private ["5SFKit25SFOnboardingTitleCardCellC", "titleLabel"]
+- !private ["5SFKit11SFReuseableP", "detailLabel"]
+- !private ["5SFKit11SFReuseableP", "embeddedImageView"]
+- !private ["5SFKit11SFReuseableP", "separatorInset"]
+- !private ["5SFKit11SFReuseableP", "titleLabel"]
+- !private ["s13SignedNumericP", "greatestFiniteMagnitude"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "greatestFiniteMagnitude"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "detailLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "embeddedImageView"]
+- !private ["So29UIAccessibilityIdentificationP", "font"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "isHidden"]
+- !private ["So29UIAccessibilityIdentificationP", "separatorInset"]
+- !private ["So29UIAccessibilityIdentificationP", "titleLabel"]
+- !private ["So12UIAppearanceP", "detailLabel"]
+- !private ["So12UIAppearanceP", "embeddedImageView"]
+- !private ["So12UIAppearanceP", "font"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "isHidden"]
+- !private ["So12UIAppearanceP", "separatorInset"]
+- !private ["So12UIAppearanceP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "detailLabel"]
+- !private ["So21UIAppearanceContainerP", "embeddedImageView"]
+- !private ["So21UIAppearanceContainerP", "font"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "isHidden"]
+- !private ["So21UIAppearanceContainerP", "separatorInset"]
+- !private ["So21UIAppearanceContainerP", "titleLabel"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "font"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "detailLabel"]
+- !private ["So17UICoordinateSpaceP", "embeddedImageView"]
+- !private ["So17UICoordinateSpaceP", "font"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "isHidden"]
+- !private ["So17UICoordinateSpaceP", "separatorInset"]
+- !private ["So17UICoordinateSpaceP", "titleLabel"]
+- !private ["So13UIDynamicItemP", "detailLabel"]
+- !private ["So13UIDynamicItemP", "embeddedImageView"]
+- !private ["So13UIDynamicItemP", "font"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "isHidden"]
+- !private ["So13UIDynamicItemP", "separatorInset"]
+- !private ["So13UIDynamicItemP", "titleLabel"]
+- !private ["SC12UIEdgeInsetsV", "init"]
+- !private ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So18UIFocusEnvironmentP", "detailLabel"]
+- !private ["So18UIFocusEnvironmentP", "embeddedImageView"]
+- !private ["So18UIFocusEnvironmentP", "font"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "isHidden"]
+- !private ["So18UIFocusEnvironmentP", "separatorInset"]
+- !private ["So18UIFocusEnvironmentP", "titleLabel"]
+- !private ["So11UIFocusItemP", "detailLabel"]
+- !private ["So11UIFocusItemP", "embeddedImageView"]
+- !private ["So11UIFocusItemP", "font"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "isHidden"]
+- !private ["So11UIFocusItemP", "separatorInset"]
+- !private ["So11UIFocusItemP", "titleLabel"]
+- !private ["So6UIFontC", "systemFont"]
+- !private ["So13UIFontMetricsC", "default"]
+- !private ["So13UIFontMetricsC", "init"]
+- !private ["So13UIFontMetricsC", "scaledFont"]
+- !private ["SC15UIFontTextStyleV", "body"]
+- !private ["SC15UIFontTextStyleV", "largeTitle"]
+- !private ["So27UIGestureRecognizerDelegateP", "detailLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "embeddedImageView"]
+- !private ["So27UIGestureRecognizerDelegateP", "separatorInset"]
+- !private ["So27UIGestureRecognizerDelegateP", "titleLabel"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So11UIImageViewC", "isHidden"]
+- !private ["So7UILabelC", "font"]
+- !private ["So7UILabelC", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "detailLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "embeddedImageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "font"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "separatorInset"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
+- !private ["So11UIResponderC", "detailLabel"]
+- !private ["So11UIResponderC", "embeddedImageView"]
+- !private ["So11UIResponderC", "font"]
+- !private ["So11UIResponderC", "image"]
+- !private ["So11UIResponderC", "isHidden"]
+- !private ["So11UIResponderC", "separatorInset"]
+- !private ["So11UIResponderC", "titleLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "detailLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "embeddedImageView"]
+- !private ["So30UIResponderStandardEditActionsP", "font"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "isHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "separatorInset"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
+- !private ["So15UITableViewCellC", "detailLabel"]
+- !private ["So15UITableViewCellC", "embeddedImageView"]
+- !private ["So15UITableViewCellC", "separatorInset"]
+- !private ["So15UITableViewCellC", "titleLabel"]
+- !private ["SC29UITableViewCellSelectionStyleO", "none"]
+- !private ["So18UITraitEnvironmentP", "detailLabel"]
+- !private ["So18UITraitEnvironmentP", "embeddedImageView"]
+- !private ["So18UITraitEnvironmentP", "font"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "isHidden"]
+- !private ["So18UITraitEnvironmentP", "separatorInset"]
+- !private ["So18UITraitEnvironmentP", "titleLabel"]
+- !private ["So6UIViewC", "detailLabel"]
+- !private ["So6UIViewC", "embeddedImageView"]
+- !private ["So6UIViewC", "font"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "isHidden"]
+- !private ["So6UIViewC", "separatorInset"]
+- !private ["So6UIViewC", "titleLabel"]
+- !private ["So6UIFontC6WeightV", "bold"]
+- !private ["So6UIFontC6WeightV", "regular"]
+- !private ["s15_CVarArgAlignedP", "greatestFiniteMagnitude"]
+- !private ["s22_CVarArgPassedAsDoubleP", "greatestFiniteMagnitude"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "detailLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "embeddedImageView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "font"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHidden"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "separatorInset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SFOnboardingTitleCardCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIEdgeInsets"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFontMetrics"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "detailLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "embeddedImageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isLargeTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scaledFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectionStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "separatorIsHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "body"]
+- !private ["s21_ObjectiveCBridgeableP", "bold"]
+- !private ["s21_ObjectiveCBridgeableP", "greatestFiniteMagnitude"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
+- !private ["s21_ObjectiveCBridgeableP", "regular"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s20_SwiftNewtypeWrapperP", "body"]
+- !private ["s20_SwiftNewtypeWrapperP", "bold"]
+- !private ["s20_SwiftNewtypeWrapperP", "largeTitle"]
+- !private ["s20_SwiftNewtypeWrapperP", "regular"]
+- !private ["5UIKit01_A23NumericRawRepresentableP", "bold"]
+- !private ["5UIKit01_A23NumericRawRepresentableP", "regular"]
+depends-nominal:
+- !private "s19BinaryFloatingPointP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "12CoreGraphics7CGFloatV"
+- "s7CVarArgP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s7NumericP"
+- !private "s16RawRepresentableP"
+- !private "So21SFAppearanceAdjustingP"
+- !private "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit16SFOnboardingCardC"
+- !private "5SFKit19SFOnboardingElementC"
+- !private "5SFKit17SFOnboardingLabelC"
+- "5SFKit21SFOnboardingTitleCardC"
+- !private "5SFKit25SFOnboardingTitleCardCellC"
+- !private "5SFKit11SFReuseableP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "SC12UIEdgeInsetsV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So6UIFontC"
+- !private "So13UIFontMetricsC"
+- !private "SC15UIFontTextStyleV"
+- !private "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So15UITableViewCellC"
+- !private "SC29UITableViewCellSelectionStyleO"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "So6UIFontC6WeightV"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "5UIKit01_A23NumericRawRepresentableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "4ee2ca93de46e63959b647799f92eabc"

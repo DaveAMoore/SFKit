@@ -1,0 +1,248 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFCollectionView"
+provides-nominal:
+- "5SFKit16SFCollectionViewC"
+provides-member:
+- ["5SFKit16SFCollectionViewC", ""]
+provides-dynamic-lookup:
+- "prepareForInterfaceBuilder"
+- "willMove"
+depends-top-level:
+- "SFCollectionView"
+- "UICollectionView"
+- "UIView"
+depends-member:
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "prepareForInterfaceBuilder"]
+- !private ["So15CALayerDelegateP", "registerForAppearanceUpdates"]
+- !private ["So15CALayerDelegateP", "willMove"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "prepareForInterfaceBuilder"]
+- !private ["s7CVarArgP", "registerForAppearanceUpdates"]
+- !private ["s7CVarArgP", "willMove"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "prepareForInterfaceBuilder"]
+- !private ["s28CustomDebugStringConvertibleP", "registerForAppearanceUpdates"]
+- !private ["s28CustomDebugStringConvertibleP", "willMove"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prepareForInterfaceBuilder"]
+- !private ["s23CustomStringConvertibleP", "registerForAppearanceUpdates"]
+- !private ["s23CustomStringConvertibleP", "willMove"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "prepareForInterfaceBuilder"]
+- !private ["s9EquatableP", "registerForAppearanceUpdates"]
+- !private ["s9EquatableP", "willMove"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "prepareForInterfaceBuilder"]
+- !private ["s8HashableP", "registerForAppearanceUpdates"]
+- !private ["s8HashableP", "willMove"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "prepareForInterfaceBuilder"]
+- !private ["So8NSCodingP", "registerForAppearanceUpdates"]
+- !private ["So8NSCodingP", "willMove"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "prepareForInterfaceBuilder"]
+- !private ["So8NSObjectC", "registerForAppearanceUpdates"]
+- ["So8NSObjectC", "willMove"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "prepareForInterfaceBuilder"]
+- !private ["So16NSObjectProtocolP", "registerForAppearanceUpdates"]
+- !private ["So16NSObjectProtocolP", "willMove"]
+- ["So21SFAppearanceAdjustingP", ""]
+- !private ["So21SFAppearanceAdjustingP", "init"]
+- !private ["So21SFAppearanceAdjustingP", "prepareForInterfaceBuilder"]
+- !private ["So21SFAppearanceAdjustingP", "registerForAppearanceUpdates"]
+- !private ["So21SFAppearanceAdjustingP", "willMove"]
+- ["So23SFAppearanceEnvironmentP", ""]
+- !private ["So23SFAppearanceEnvironmentP", "init"]
+- !private ["So23SFAppearanceEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So23SFAppearanceEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So23SFAppearanceEnvironmentP", "willMove"]
+- ["5SFKit16SFCollectionViewC", "UIView"]
+- ["5SFKit16SFCollectionViewC", "deinit"]
+- ["5SFKit16SFCollectionViewC", "init"]
+- ["5SFKit16SFCollectionViewC", "prepareForInterfaceBuilder"]
+- !private ["5SFKit16SFCollectionViewC", "registerForAppearanceUpdates"]
+- ["5SFKit16SFCollectionViewC", "willMove"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "prepareForInterfaceBuilder"]
+- !private ["5SFKit14SFIdentifiableP", "registerForAppearanceUpdates"]
+- !private ["5SFKit14SFIdentifiableP", "willMove"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "prepareForInterfaceBuilder"]
+- !private ["So29UIAccessibilityIdentificationP", "registerForAppearanceUpdates"]
+- !private ["So29UIAccessibilityIdentificationP", "willMove"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "prepareForInterfaceBuilder"]
+- !private ["So12UIAppearanceP", "registerForAppearanceUpdates"]
+- !private ["So12UIAppearanceP", "willMove"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "prepareForInterfaceBuilder"]
+- !private ["So21UIAppearanceContainerP", "registerForAppearanceUpdates"]
+- !private ["So21UIAppearanceContainerP", "willMove"]
+- ["So16UICollectionViewC", "UIView"]
+- ["So16UICollectionViewC", ""]
+- ["So16UICollectionViewC", "init"]
+- ["So16UICollectionViewC", "prepareForInterfaceBuilder"]
+- !private ["So16UICollectionViewC", "registerForAppearanceUpdates"]
+- ["So16UICollectionViewC", "willMove"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "prepareForInterfaceBuilder"]
+- !private ["So17UICoordinateSpaceP", "registerForAppearanceUpdates"]
+- !private ["So17UICoordinateSpaceP", "willMove"]
+- ["So23UIDataSourceTranslatingP", ""]
+- !private ["So23UIDataSourceTranslatingP", "init"]
+- !private ["So23UIDataSourceTranslatingP", "prepareForInterfaceBuilder"]
+- !private ["So23UIDataSourceTranslatingP", "registerForAppearanceUpdates"]
+- !private ["So23UIDataSourceTranslatingP", "willMove"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "prepareForInterfaceBuilder"]
+- !private ["So13UIDynamicItemP", "registerForAppearanceUpdates"]
+- !private ["So13UIDynamicItemP", "willMove"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So18UIFocusEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So18UIFocusEnvironmentP", "willMove"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "prepareForInterfaceBuilder"]
+- !private ["So11UIFocusItemP", "registerForAppearanceUpdates"]
+- !private ["So11UIFocusItemP", "willMove"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "prepareForInterfaceBuilder"]
+- !private ["So30UIPasteConfigurationSupportingP", "registerForAppearanceUpdates"]
+- !private ["So30UIPasteConfigurationSupportingP", "willMove"]
+- ["So11UIResponderC", "UIView"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "prepareForInterfaceBuilder"]
+- !private ["So11UIResponderC", "registerForAppearanceUpdates"]
+- ["So11UIResponderC", "willMove"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "prepareForInterfaceBuilder"]
+- !private ["So30UIResponderStandardEditActionsP", "registerForAppearanceUpdates"]
+- !private ["So30UIResponderStandardEditActionsP", "willMove"]
+- ["So12UIScrollViewC", "UIView"]
+- ["So12UIScrollViewC", "init"]
+- ["So12UIScrollViewC", "prepareForInterfaceBuilder"]
+- !private ["So12UIScrollViewC", "registerForAppearanceUpdates"]
+- ["So12UIScrollViewC", "willMove"]
+- ["So35UISpringLoadedInteractionSupportingP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "prepareForInterfaceBuilder"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "registerForAppearanceUpdates"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "willMove"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So18UITraitEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So18UITraitEnvironmentP", "willMove"]
+- ["So6UIViewC", "UIView"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "prepareForInterfaceBuilder"]
+- !private ["So6UIViewC", "registerForAppearanceUpdates"]
+- ["So6UIViewC", "willMove"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepareForInterfaceBuilder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "registerForAppearanceUpdates"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "willMove"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepareForInterfaceBuilder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "registerForAppearanceUpdates"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willMove"]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So21SFAppearanceAdjustingP"
+- "So23SFAppearanceEnvironmentP"
+- "5SFKit16SFCollectionViewC"
+- "5SFKit14SFIdentifiableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So16UICollectionViewC"
+- "So17UICoordinateSpaceP"
+- "So23UIDataSourceTranslatingP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So12UIScrollViewC"
+- "So35UISpringLoadedInteractionSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d6def09de1db0f0ad054da1f469581c6"

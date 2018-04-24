@@ -1,0 +1,10 @@
+framework module SFKit {
+  umbrella header "SFKit.h"
+
+  export *
+  module * { export * }
+}
+
+module SFKit.__Swift {
+    exclude header "SFKit-Swift.h"
+}

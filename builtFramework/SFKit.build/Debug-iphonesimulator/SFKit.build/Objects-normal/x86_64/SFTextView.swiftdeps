@@ -1,0 +1,437 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFTextView"
+provides-nominal:
+- "5SFKit10SFTextViewC"
+provides-member:
+- ["5SFKit10SFTextViewC", ""]
+provides-dynamic-lookup:
+- "bottomTextContainerInset"
+- "cornerRadius"
+- "leftTextContainerInset"
+- "prepareForInterfaceBuilder"
+- "rightTextContainerInset"
+- "shouldEnforceAppearance"
+- "topTextContainerInset"
+- "willMove"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "SFTextView"
+- "UITextView"
+- "UIView"
+depends-member:
+- !private ["So7CALayerC", "cornerRadius"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
+- !private ["So15CALayerDelegateP", "prepareForInterfaceBuilder"]
+- !private ["So15CALayerDelegateP", "registerForAppearanceUpdates"]
+- !private ["So15CALayerDelegateP", "textContainerInset"]
+- !private ["So15CALayerDelegateP", "willMove"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
+- !private ["s7CVarArgP", "prepareForInterfaceBuilder"]
+- !private ["s7CVarArgP", "registerForAppearanceUpdates"]
+- !private ["s7CVarArgP", "textContainerInset"]
+- !private ["s7CVarArgP", "willMove"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- !private ["s28CustomDebugStringConvertibleP", "prepareForInterfaceBuilder"]
+- !private ["s28CustomDebugStringConvertibleP", "registerForAppearanceUpdates"]
+- !private ["s28CustomDebugStringConvertibleP", "textContainerInset"]
+- !private ["s28CustomDebugStringConvertibleP", "willMove"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- !private ["s23CustomStringConvertibleP", "prepareForInterfaceBuilder"]
+- !private ["s23CustomStringConvertibleP", "registerForAppearanceUpdates"]
+- !private ["s23CustomStringConvertibleP", "textContainerInset"]
+- !private ["s23CustomStringConvertibleP", "willMove"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "bottom"]
+- !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "layer"]
+- !private ["s9EquatableP", "left"]
+- !private ["s9EquatableP", "prepareForInterfaceBuilder"]
+- !private ["s9EquatableP", "registerForAppearanceUpdates"]
+- !private ["s9EquatableP", "right"]
+- !private ["s9EquatableP", "textContainerInset"]
+- !private ["s9EquatableP", "top"]
+- !private ["s9EquatableP", "willMove"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "layer"]
+- !private ["s8HashableP", "prepareForInterfaceBuilder"]
+- !private ["s8HashableP", "registerForAppearanceUpdates"]
+- !private ["s8HashableP", "textContainerInset"]
+- !private ["s8HashableP", "willMove"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "prepareForInterfaceBuilder"]
+- !private ["So8NSCodingP", "registerForAppearanceUpdates"]
+- !private ["So8NSCodingP", "textContainerInset"]
+- !private ["So8NSCodingP", "willMove"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "bottomTextContainerInset"]
+- ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "leftTextContainerInset"]
+- ["So8NSObjectC", "prepareForInterfaceBuilder"]
+- !private ["So8NSObjectC", "registerForAppearanceUpdates"]
+- ["So8NSObjectC", "rightTextContainerInset"]
+- ["So8NSObjectC", "shouldEnforceAppearance"]
+- !private ["So8NSObjectC", "textContainerInset"]
+- ["So8NSObjectC", "topTextContainerInset"]
+- ["So8NSObjectC", "willMove"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- !private ["So16NSObjectProtocolP", "prepareForInterfaceBuilder"]
+- !private ["So16NSObjectProtocolP", "registerForAppearanceUpdates"]
+- !private ["So16NSObjectProtocolP", "textContainerInset"]
+- !private ["So16NSObjectProtocolP", "willMove"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- ["So21SFAppearanceAdjustingP", ""]
+- !private ["So21SFAppearanceAdjustingP", "init"]
+- !private ["So21SFAppearanceAdjustingP", "layer"]
+- !private ["So21SFAppearanceAdjustingP", "prepareForInterfaceBuilder"]
+- !private ["So21SFAppearanceAdjustingP", "registerForAppearanceUpdates"]
+- !private ["So21SFAppearanceAdjustingP", "textContainerInset"]
+- !private ["So21SFAppearanceAdjustingP", "willMove"]
+- ["So23SFAppearanceEnvironmentP", ""]
+- !private ["So23SFAppearanceEnvironmentP", "init"]
+- !private ["So23SFAppearanceEnvironmentP", "layer"]
+- !private ["So23SFAppearanceEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So23SFAppearanceEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So23SFAppearanceEnvironmentP", "textContainerInset"]
+- !private ["So23SFAppearanceEnvironmentP", "willMove"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "cornerRadius"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "layer"]
+- !private ["5SFKit14SFIdentifiableP", "prepareForInterfaceBuilder"]
+- !private ["5SFKit14SFIdentifiableP", "registerForAppearanceUpdates"]
+- !private ["5SFKit14SFIdentifiableP", "textContainerInset"]
+- !private ["5SFKit14SFIdentifiableP", "willMove"]
+- ["5SFKit10SFTextViewC", "Bool"]
+- ["5SFKit10SFTextViewC", "CGFloat"]
+- ["5SFKit10SFTextViewC", "UIView"]
+- ["5SFKit10SFTextViewC", "bottomTextContainerInset"]
+- ["5SFKit10SFTextViewC", "cornerRadius"]
+- ["5SFKit10SFTextViewC", "deinit"]
+- ["5SFKit10SFTextViewC", "init"]
+- !private ["5SFKit10SFTextViewC", "layer"]
+- ["5SFKit10SFTextViewC", "leftTextContainerInset"]
+- ["5SFKit10SFTextViewC", "prepareForInterfaceBuilder"]
+- !private ["5SFKit10SFTextViewC", "registerForAppearanceUpdates"]
+- ["5SFKit10SFTextViewC", "rightTextContainerInset"]
+- ["5SFKit10SFTextViewC", "shouldEnforceAppearance"]
+- !private ["5SFKit10SFTextViewC", "textContainerInset"]
+- ["5SFKit10SFTextViewC", "topTextContainerInset"]
+- ["5SFKit10SFTextViewC", "willMove"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "prepareForInterfaceBuilder"]
+- !private ["So29UIAccessibilityIdentificationP", "registerForAppearanceUpdates"]
+- !private ["So29UIAccessibilityIdentificationP", "textContainerInset"]
+- !private ["So29UIAccessibilityIdentificationP", "willMove"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
+- !private ["So12UIAppearanceP", "prepareForInterfaceBuilder"]
+- !private ["So12UIAppearanceP", "registerForAppearanceUpdates"]
+- !private ["So12UIAppearanceP", "textContainerInset"]
+- !private ["So12UIAppearanceP", "willMove"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "prepareForInterfaceBuilder"]
+- !private ["So21UIAppearanceContainerP", "registerForAppearanceUpdates"]
+- !private ["So21UIAppearanceContainerP", "textContainerInset"]
+- !private ["So21UIAppearanceContainerP", "willMove"]
+- ["So30UIContentSizeCategoryAdjustingP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "init"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "layer"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "prepareForInterfaceBuilder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "registerForAppearanceUpdates"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textContainerInset"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "willMove"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- !private ["So17UICoordinateSpaceP", "prepareForInterfaceBuilder"]
+- !private ["So17UICoordinateSpaceP", "registerForAppearanceUpdates"]
+- !private ["So17UICoordinateSpaceP", "textContainerInset"]
+- !private ["So17UICoordinateSpaceP", "willMove"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
+- !private ["So13UIDynamicItemP", "prepareForInterfaceBuilder"]
+- !private ["So13UIDynamicItemP", "registerForAppearanceUpdates"]
+- !private ["So13UIDynamicItemP", "textContainerInset"]
+- !private ["So13UIDynamicItemP", "willMove"]
+- !private ["SC12UIEdgeInsetsV", "bottom"]
+- !private ["SC12UIEdgeInsetsV", "left"]
+- !private ["SC12UIEdgeInsetsV", "right"]
+- !private ["SC12UIEdgeInsetsV", "top"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So18UIFocusEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So18UIFocusEnvironmentP", "textContainerInset"]
+- !private ["So18UIFocusEnvironmentP", "willMove"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
+- !private ["So11UIFocusItemP", "prepareForInterfaceBuilder"]
+- !private ["So11UIFocusItemP", "registerForAppearanceUpdates"]
+- !private ["So11UIFocusItemP", "textContainerInset"]
+- !private ["So11UIFocusItemP", "willMove"]
+- ["So10UIKeyInputP", ""]
+- !private ["So10UIKeyInputP", "init"]
+- !private ["So10UIKeyInputP", "layer"]
+- !private ["So10UIKeyInputP", "prepareForInterfaceBuilder"]
+- !private ["So10UIKeyInputP", "registerForAppearanceUpdates"]
+- !private ["So10UIKeyInputP", "textContainerInset"]
+- !private ["So10UIKeyInputP", "willMove"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "prepareForInterfaceBuilder"]
+- !private ["So30UIPasteConfigurationSupportingP", "registerForAppearanceUpdates"]
+- !private ["So30UIPasteConfigurationSupportingP", "textContainerInset"]
+- !private ["So30UIPasteConfigurationSupportingP", "willMove"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "UIView"]
+- ["So11UIResponderC", "bottomTextContainerInset"]
+- ["So11UIResponderC", "cornerRadius"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "leftTextContainerInset"]
+- ["So11UIResponderC", "prepareForInterfaceBuilder"]
+- !private ["So11UIResponderC", "registerForAppearanceUpdates"]
+- ["So11UIResponderC", "rightTextContainerInset"]
+- ["So11UIResponderC", "shouldEnforceAppearance"]
+- !private ["So11UIResponderC", "textContainerInset"]
+- ["So11UIResponderC", "topTextContainerInset"]
+- ["So11UIResponderC", "willMove"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "prepareForInterfaceBuilder"]
+- !private ["So30UIResponderStandardEditActionsP", "registerForAppearanceUpdates"]
+- !private ["So30UIResponderStandardEditActionsP", "textContainerInset"]
+- !private ["So30UIResponderStandardEditActionsP", "willMove"]
+- ["So12UIScrollViewC", "Bool"]
+- ["So12UIScrollViewC", "CGFloat"]
+- ["So12UIScrollViewC", "UIView"]
+- ["So12UIScrollViewC", "bottomTextContainerInset"]
+- ["So12UIScrollViewC", "cornerRadius"]
+- ["So12UIScrollViewC", "init"]
+- !private ["So12UIScrollViewC", "layer"]
+- ["So12UIScrollViewC", "leftTextContainerInset"]
+- ["So12UIScrollViewC", "prepareForInterfaceBuilder"]
+- !private ["So12UIScrollViewC", "registerForAppearanceUpdates"]
+- ["So12UIScrollViewC", "rightTextContainerInset"]
+- ["So12UIScrollViewC", "shouldEnforceAppearance"]
+- !private ["So12UIScrollViewC", "textContainerInset"]
+- ["So12UIScrollViewC", "topTextContainerInset"]
+- ["So12UIScrollViewC", "willMove"]
+- ["So15UITextDraggableP", ""]
+- !private ["So15UITextDraggableP", "init"]
+- !private ["So15UITextDraggableP", "layer"]
+- !private ["So15UITextDraggableP", "prepareForInterfaceBuilder"]
+- !private ["So15UITextDraggableP", "registerForAppearanceUpdates"]
+- !private ["So15UITextDraggableP", "textContainerInset"]
+- !private ["So15UITextDraggableP", "willMove"]
+- ["So15UITextDroppableP", ""]
+- !private ["So15UITextDroppableP", "init"]
+- !private ["So15UITextDroppableP", "layer"]
+- !private ["So15UITextDroppableP", "prepareForInterfaceBuilder"]
+- !private ["So15UITextDroppableP", "registerForAppearanceUpdates"]
+- !private ["So15UITextDroppableP", "textContainerInset"]
+- !private ["So15UITextDroppableP", "willMove"]
+- ["So11UITextInputP", ""]
+- !private ["So11UITextInputP", "init"]
+- !private ["So11UITextInputP", "layer"]
+- !private ["So11UITextInputP", "prepareForInterfaceBuilder"]
+- !private ["So11UITextInputP", "registerForAppearanceUpdates"]
+- !private ["So11UITextInputP", "textContainerInset"]
+- !private ["So11UITextInputP", "willMove"]
+- ["So17UITextInputTraitsP", ""]
+- !private ["So17UITextInputTraitsP", "init"]
+- !private ["So17UITextInputTraitsP", "layer"]
+- !private ["So17UITextInputTraitsP", "prepareForInterfaceBuilder"]
+- !private ["So17UITextInputTraitsP", "registerForAppearanceUpdates"]
+- !private ["So17UITextInputTraitsP", "textContainerInset"]
+- !private ["So17UITextInputTraitsP", "willMove"]
+- ["So34UITextPasteConfigurationSupportingP", ""]
+- !private ["So34UITextPasteConfigurationSupportingP", "init"]
+- !private ["So34UITextPasteConfigurationSupportingP", "layer"]
+- !private ["So34UITextPasteConfigurationSupportingP", "prepareForInterfaceBuilder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "registerForAppearanceUpdates"]
+- !private ["So34UITextPasteConfigurationSupportingP", "textContainerInset"]
+- !private ["So34UITextPasteConfigurationSupportingP", "willMove"]
+- ["So10UITextViewC", "Bool"]
+- ["So10UITextViewC", "CGFloat"]
+- ["So10UITextViewC", "UIView"]
+- ["So10UITextViewC", ""]
+- ["So10UITextViewC", "bottomTextContainerInset"]
+- ["So10UITextViewC", "cornerRadius"]
+- ["So10UITextViewC", "init"]
+- !private ["So10UITextViewC", "layer"]
+- ["So10UITextViewC", "leftTextContainerInset"]
+- ["So10UITextViewC", "prepareForInterfaceBuilder"]
+- !private ["So10UITextViewC", "registerForAppearanceUpdates"]
+- ["So10UITextViewC", "rightTextContainerInset"]
+- ["So10UITextViewC", "shouldEnforceAppearance"]
+- !private ["So10UITextViewC", "textContainerInset"]
+- ["So10UITextViewC", "topTextContainerInset"]
+- ["So10UITextViewC", "willMove"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "prepareForInterfaceBuilder"]
+- !private ["So18UITraitEnvironmentP", "registerForAppearanceUpdates"]
+- !private ["So18UITraitEnvironmentP", "textContainerInset"]
+- !private ["So18UITraitEnvironmentP", "willMove"]
+- ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "CGFloat"]
+- ["So6UIViewC", "UIView"]
+- ["So6UIViewC", "bottomTextContainerInset"]
+- ["So6UIViewC", "cornerRadius"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "leftTextContainerInset"]
+- ["So6UIViewC", "prepareForInterfaceBuilder"]
+- !private ["So6UIViewC", "registerForAppearanceUpdates"]
+- ["So6UIViewC", "rightTextContainerInset"]
+- ["So6UIViewC", "shouldEnforceAppearance"]
+- !private ["So6UIViewC", "textContainerInset"]
+- ["So6UIViewC", "topTextContainerInset"]
+- ["So6UIViewC", "willMove"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "prepareForInterfaceBuilder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "registerForAppearanceUpdates"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textContainerInset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "willMove"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepareForInterfaceBuilder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "registerForAppearanceUpdates"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textContainerInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willMove"]
+- !private ["s21_ObjectiveCBridgeableP", "bottom"]
+- !private ["s21_ObjectiveCBridgeableP", "left"]
+- !private ["s21_ObjectiveCBridgeableP", "right"]
+- !private ["s21_ObjectiveCBridgeableP", "top"]
+depends-nominal:
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- "So21SFAppearanceAdjustingP"
+- "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit10SFTextViewC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- !private "SC12UIEdgeInsetsV"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So12UIScrollViewC"
+- "So15UITextDraggableP"
+- "So15UITextDroppableP"
+- "So11UITextInputP"
+- "So17UITextInputTraitsP"
+- "So34UITextPasteConfigurationSupportingP"
+- "So10UITextViewC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "55ec56f9419494109725d44bc71dcc94"

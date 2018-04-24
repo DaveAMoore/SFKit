@@ -1,0 +1,415 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SFOnboardingTextFieldCardCell"
+provides-nominal:
+- "5SFKit29SFOnboardingTextFieldCardCellC"
+provides-member:
+- ["5SFKit29SFOnboardingTextFieldCardCellC", ""]
+provides-dynamic-lookup:
+- "appearanceStyleDidChange"
+- "textField"
+- "titleLabel"
+depends-top-level:
+- "AssignmentPrecedence"
+- "SFAppearanceStyle"
+- "SFOnboardingTextFieldCardCell"
+- !private "UIColorMetrics"
+- "UILabel"
+- "UITableViewCell"
+- "UITextField"
+depends-member:
+- !private ["So15CALayerDelegateP", "UIColorMetrics"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "appearanceStyleDidChange"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "textColor"]
+- !private ["So15CALayerDelegateP", "textField"]
+- !private ["So15CALayerDelegateP", "titleLabel"]
+- !private ["s7CVarArgP", "UIColorMetrics"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "appearance"]
+- !private ["s7CVarArgP", "appearanceStyleDidChange"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "color"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "textColor"]
+- !private ["s7CVarArgP", "textField"]
+- !private ["s7CVarArgP", "titleLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColorMetrics"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- !private ["s28CustomDebugStringConvertibleP", "appearanceStyleDidChange"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "color"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- !private ["s28CustomDebugStringConvertibleP", "textField"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- !private ["s23CustomStringConvertibleP", "UIColorMetrics"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- !private ["s23CustomStringConvertibleP", "appearanceStyleDidChange"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "color"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- !private ["s23CustomStringConvertibleP", "textField"]
+- !private ["s23CustomStringConvertibleP", "titleLabel"]
+- !private ["s9EquatableP", "UIColorMetrics"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "appearance"]
+- !private ["s9EquatableP", "appearanceStyleDidChange"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "color"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "textColor"]
+- !private ["s9EquatableP", "textField"]
+- !private ["s9EquatableP", "titleLabel"]
+- !private ["s9EquatableP", "white"]
+- !private ["s8HashableP", "UIColorMetrics"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "appearance"]
+- !private ["s8HashableP", "appearanceStyleDidChange"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "color"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "textColor"]
+- !private ["s8HashableP", "textField"]
+- !private ["s8HashableP", "titleLabel"]
+- !private ["s8HashableP", "white"]
+- !private ["So8NSCodingP", "UIColorMetrics"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "appearanceStyleDidChange"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "textColor"]
+- !private ["So8NSCodingP", "textField"]
+- !private ["So8NSCodingP", "titleLabel"]
+- ["So8NSObjectC", "SFAppearanceStyle"]
+- !private ["So8NSObjectC", "UIColorMetrics"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "appearance"]
+- ["So8NSObjectC", "appearanceStyleDidChange"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "color"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "textColor"]
+- ["So8NSObjectC", "textField"]
+- ["So8NSObjectC", "titleLabel"]
+- !private ["So16NSObjectProtocolP", "UIColorMetrics"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "appearance"]
+- !private ["So16NSObjectProtocolP", "appearanceStyleDidChange"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "color"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "textColor"]
+- !private ["So16NSObjectProtocolP", "textField"]
+- !private ["So16NSObjectProtocolP", "titleLabel"]
+- !private ["s16RawRepresentableP", "black"]
+- !private ["s16RawRepresentableP", "white"]
+- !private ["So21SFAppearanceAdjustingP", "UIColorMetrics"]
+- ["So21SFAppearanceAdjustingP", ""]
+- !private ["So21SFAppearanceAdjustingP", "appearance"]
+- !private ["So21SFAppearanceAdjustingP", "appearanceStyleDidChange"]
+- !private ["So21SFAppearanceAdjustingP", "backgroundColor"]
+- !private ["So21SFAppearanceAdjustingP", "init"]
+- !private ["So21SFAppearanceAdjustingP", "textColor"]
+- !private ["So21SFAppearanceAdjustingP", "textField"]
+- !private ["So21SFAppearanceAdjustingP", "titleLabel"]
+- !private ["So23SFAppearanceEnvironmentP", "UIColorMetrics"]
+- ["So23SFAppearanceEnvironmentP", ""]
+- !private ["So23SFAppearanceEnvironmentP", "appearance"]
+- !private ["So23SFAppearanceEnvironmentP", "appearanceStyleDidChange"]
+- !private ["So23SFAppearanceEnvironmentP", "backgroundColor"]
+- !private ["So23SFAppearanceEnvironmentP", "init"]
+- !private ["So23SFAppearanceEnvironmentP", "textColor"]
+- !private ["So23SFAppearanceEnvironmentP", "textField"]
+- !private ["So23SFAppearanceEnvironmentP", "titleLabel"]
+- !private ["5SFKit14SFIdentifiableP", "UIColorMetrics"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "appearance"]
+- !private ["5SFKit14SFIdentifiableP", "appearanceStyleDidChange"]
+- !private ["5SFKit14SFIdentifiableP", "backgroundColor"]
+- !private ["5SFKit14SFIdentifiableP", "color"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "textColor"]
+- !private ["5SFKit14SFIdentifiableP", "textField"]
+- !private ["5SFKit14SFIdentifiableP", "titleLabel"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "SFAppearanceStyle"]
+- !private ["5SFKit29SFOnboardingTextFieldCardCellC", "UIColorMetrics"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "UILabel"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "UITextField"]
+- !private ["5SFKit29SFOnboardingTextFieldCardCellC", "appearance"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "appearanceStyleDidChange"]
+- !private ["5SFKit29SFOnboardingTextFieldCardCellC", "backgroundColor"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "deinit"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "init"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "textField"]
+- ["5SFKit29SFOnboardingTextFieldCardCellC", "titleLabel"]
+- !private ["5SFKit11SFReuseableP", "UIColorMetrics"]
+- ["5SFKit11SFReuseableP", ""]
+- !private ["5SFKit11SFReuseableP", "appearance"]
+- !private ["5SFKit11SFReuseableP", "appearanceStyleDidChange"]
+- !private ["5SFKit11SFReuseableP", "backgroundColor"]
+- !private ["5SFKit11SFReuseableP", "init"]
+- !private ["5SFKit11SFReuseableP", "textField"]
+- !private ["5SFKit11SFReuseableP", "titleLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "UIColorMetrics"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "appearanceStyleDidChange"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "textColor"]
+- !private ["So29UIAccessibilityIdentificationP", "textField"]
+- !private ["So29UIAccessibilityIdentificationP", "titleLabel"]
+- !private ["So12UIAppearanceP", "UIColorMetrics"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "appearanceStyleDidChange"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "textColor"]
+- !private ["So12UIAppearanceP", "textField"]
+- !private ["So12UIAppearanceP", "titleLabel"]
+- !private ["So21UIAppearanceContainerP", "UIColorMetrics"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "appearanceStyleDidChange"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "textColor"]
+- !private ["So21UIAppearanceContainerP", "textField"]
+- !private ["So21UIAppearanceContainerP", "titleLabel"]
+- !private ["5SFKit14UIColorMetricsC", "color"]
+- !private ["5SFKit14UIColorMetricsC", "init"]
+- !private ["5SFKit17UIColorMetricsHueO", "black"]
+- !private ["5SFKit17UIColorMetricsHueO", "white"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So9UIControlC", "textColor"]
+- !private ["So17UICoordinateSpaceP", "UIColorMetrics"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "appearanceStyleDidChange"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "textColor"]
+- !private ["So17UICoordinateSpaceP", "textField"]
+- !private ["So17UICoordinateSpaceP", "titleLabel"]
+- !private ["So13UIDynamicItemP", "UIColorMetrics"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "appearanceStyleDidChange"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "textColor"]
+- !private ["So13UIDynamicItemP", "textField"]
+- !private ["So13UIDynamicItemP", "titleLabel"]
+- !private ["So18UIFocusEnvironmentP", "UIColorMetrics"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "appearanceStyleDidChange"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "textColor"]
+- !private ["So18UIFocusEnvironmentP", "textField"]
+- !private ["So18UIFocusEnvironmentP", "titleLabel"]
+- !private ["So11UIFocusItemP", "UIColorMetrics"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "appearanceStyleDidChange"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "textColor"]
+- !private ["So11UIFocusItemP", "textField"]
+- !private ["So11UIFocusItemP", "titleLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIColorMetrics"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "appearance"]
+- !private ["So27UIGestureRecognizerDelegateP", "appearanceStyleDidChange"]
+- !private ["So27UIGestureRecognizerDelegateP", "backgroundColor"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "textField"]
+- !private ["So27UIGestureRecognizerDelegateP", "titleLabel"]
+- !private ["So10UIKeyInputP", "textColor"]
+- !private ["So7UILabelC", "textColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColorMetrics"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- !private ["So30UIPasteConfigurationSupportingP", "appearanceStyleDidChange"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "textColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "textField"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
+- ["So11UIResponderC", "SFAppearanceStyle"]
+- !private ["So11UIResponderC", "UIColorMetrics"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "appearance"]
+- ["So11UIResponderC", "appearanceStyleDidChange"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "textColor"]
+- ["So11UIResponderC", "textField"]
+- ["So11UIResponderC", "titleLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColorMetrics"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- !private ["So30UIResponderStandardEditActionsP", "appearanceStyleDidChange"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- !private ["So30UIResponderStandardEditActionsP", "textField"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
+- ["So15UITableViewCellC", "SFAppearanceStyle"]
+- !private ["So15UITableViewCellC", "UIColorMetrics"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "UITextField"]
+- ["So15UITableViewCellC", ""]
+- !private ["So15UITableViewCellC", "appearance"]
+- ["So15UITableViewCellC", "appearanceStyleDidChange"]
+- !private ["So15UITableViewCellC", "backgroundColor"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "textField"]
+- ["So15UITableViewCellC", "titleLabel"]
+- !private ["So15UITextDraggableP", "textColor"]
+- !private ["So15UITextDroppableP", "textColor"]
+- !private ["So11UITextFieldC", "textColor"]
+- !private ["So11UITextInputP", "textColor"]
+- !private ["So17UITextInputTraitsP", "textColor"]
+- !private ["So34UITextPasteConfigurationSupportingP", "textColor"]
+- !private ["So18UITraitEnvironmentP", "UIColorMetrics"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "appearanceStyleDidChange"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "textColor"]
+- !private ["So18UITraitEnvironmentP", "textField"]
+- !private ["So18UITraitEnvironmentP", "titleLabel"]
+- ["So6UIViewC", "SFAppearanceStyle"]
+- !private ["So6UIViewC", "UIColorMetrics"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UITextField"]
+- !private ["So6UIViewC", "appearance"]
+- ["So6UIViewC", "appearanceStyleDidChange"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "textColor"]
+- ["So6UIViewC", "textField"]
+- ["So6UIViewC", "titleLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColorMetrics"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearanceStyleDidChange"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textField"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColorMetrics"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearanceStyleDidChange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "color"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "s16RawRepresentableP"
+- "So21SFAppearanceAdjustingP"
+- "So23SFAppearanceEnvironmentP"
+- "5SFKit14SFIdentifiableP"
+- "5SFKit29SFOnboardingTextFieldCardCellC"
+- "5SFKit11SFReuseableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "5SFKit14UIColorMetricsC"
+- !private "5SFKit17UIColorMetricsHueO"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So10UIKeyInputP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "51e99a2159faee771e7a633f9bd25bb0"

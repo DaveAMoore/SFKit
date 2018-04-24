@@ -107,6 +107,7 @@
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63D40AA220211FF300DD1AF9 /* SFOnboardingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
+		63E0B991208ED4A000B400CE /* strip-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 63E0B98F208ED4A000B400CE /* strip-frameworks.sh */; };
 		63E3B9E51F23ECB700531BC5 /* SFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E341F0988D20064A0CA /* SFView.swift */; };
 		63E3B9E61F23ED4200531BC5 /* SFTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E1D1F0988D20064A0CA /* SFTabBar.swift */; };
 		63F6EFA02002CDF500B7D3E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */; };
@@ -232,6 +233,8 @@
 		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
+		63E0B98E208ED4A000B400CE /* SdkPackage.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SdkPackage.sh; sourceTree = "<group>"; };
+		63E0B98F208ED4A000B400CE /* strip-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "strip-frameworks.sh"; sourceTree = "<group>"; };
 		63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -566,11 +569,21 @@
 			path = Stage;
 			sourceTree = "<group>";
 		};
+		63E0B98D208ED49000B400CE /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				63E0B98E208ED4A000B400CE /* SdkPackage.sh */,
+				63E0B98F208ED4A000B400CE /* strip-frameworks.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		63F459691FE404FF008B62C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				6305B2A11FE408F20001CCDB /* SFModelCheck.h */,
 				6305B2A21FE408F20001CCDB /* SFModelCheck.m */,
+				63E0B98D208ED49000B400CE /* Scripts */,
 				6305B2A51FE40C770001CCDB /* Project Module */,
 				6385A2271F06EB36002B9244 /* Info.plist */,
 			);
@@ -702,6 +715,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E0B991208ED4A000B400CE /* strip-frameworks.sh in Resources */,
 				6324D3FA201FC66200D762DA /* SFOnboardingTitleCardCell.xib in Resources */,
 				6324D401201FCE9200D762DA /* SFOnboardingTextFieldCardCell.xib in Resources */,
 				6324D405201FD5D100D762DA /* SFOnboardingStageViewController.xib in Resources */,

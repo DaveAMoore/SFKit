@@ -1,0 +1,570 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "+"
+- "-"
+- "SFColor"
+- "+"
+- "-"
+provides-nominal:
+- "5SFKit7SFColorC"
+provides-member:
+- ["5SFKit7SFColorC", ""]
+provides-dynamic-lookup:
+- "black"
+- "blue"
+- "darkGray"
+- "gray"
+- "green"
+- "lightGray"
+- "orange"
+- "purple"
+- "red"
+- "white"
+- "yellow"
+depends-top-level:
+- !private "!="
+- !private "-"
+- !private "=="
+- "AdditionPrecedence"
+- "Bool"
+- !private "CGColor"
+- "CGFloat"
+- !private "SFAppearance"
+- "SFColor"
+- "TernaryPrecedence"
+- "UIColor"
+- !private "_ColorLiteralType"
+- !private "abs"
+- !private "max"
+depends-member:
+- !private ["Sa", "filter"]
+- !private ["Sa", "map"]
+- !private ["Sa", "max"]
+- !private ["Sa", "min"]
+- !private ["Sa", "reversed"]
+- !private ["s23BidirectionalCollectionP", "filter"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "max"]
+- !private ["s23BidirectionalCollectionP", "min"]
+- !private ["s23BidirectionalCollectionP", "reversed"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So7CGColorC", "alpha"]
+- !private ["So7CGColorC", "colorSpace"]
+- !private ["So7CGColorC", "components"]
+- !private ["So7CGColorC", "init"]
+- !private ["s7CVarArgP", "CGColor"]
+- !private ["s7CVarArgP", "SFAppearance"]
+- !private ["s7CVarArgP", "SFColor"]
+- !private ["s7CVarArgP", "UIColor"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "abs"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isLightAppearance"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "min"]
+- !private ["s7CVarArgP", "reversed"]
+- !private ["s7CVarArgP", "style"]
+- !private ["s7CVarArgP", "trueBlack"]
+- !private ["s7CVarArgP", "trueWhite"]
+- !private ["s7CVarArgP", "withAlphaComponent"]
+- !private ["s10CollectionP", "filter"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "max"]
+- !private ["s10CollectionP", "min"]
+- !private ["s10CollectionP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "CGColor"]
+- !private ["s28CustomDebugStringConvertibleP", "SFAppearance"]
+- !private ["s28CustomDebugStringConvertibleP", "SFColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "abs"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isLightAppearance"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "max"]
+- !private ["s28CustomDebugStringConvertibleP", "min"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "style"]
+- !private ["s28CustomDebugStringConvertibleP", "trueBlack"]
+- !private ["s28CustomDebugStringConvertibleP", "trueWhite"]
+- !private ["s28CustomDebugStringConvertibleP", "withAlphaComponent"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "max"]
+- !private ["s17CustomReflectableP", "min"]
+- !private ["s17CustomReflectableP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "CGColor"]
+- !private ["s23CustomStringConvertibleP", "SFAppearance"]
+- !private ["s23CustomStringConvertibleP", "SFColor"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "abs"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isLightAppearance"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "min"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "style"]
+- !private ["s23CustomStringConvertibleP", "trueBlack"]
+- !private ["s23CustomStringConvertibleP", "trueWhite"]
+- !private ["s23CustomStringConvertibleP", "withAlphaComponent"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "filter"]
+- !private ["s9DecodableP", "map"]
+- !private ["s9DecodableP", "max"]
+- !private ["s9DecodableP", "min"]
+- !private ["s9DecodableP", "reversed"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "filter"]
+- !private ["s9EncodableP", "map"]
+- !private ["s9EncodableP", "max"]
+- !private ["s9EncodableP", "min"]
+- !private ["s9EncodableP", "reversed"]
+- !private ["s9EquatableP", "CGColor"]
+- !private ["s9EquatableP", "SFAppearance"]
+- !private ["s9EquatableP", "SFColor"]
+- !private ["s9EquatableP", "UIColor"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "abs"]
+- !private ["s9EquatableP", "alpha"]
+- !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "colorSpace"]
+- !private ["s9EquatableP", "components"]
+- !private ["s9EquatableP", "filter"]
+- !private ["s9EquatableP", "global"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isLightAppearance"]
+- !private ["s9EquatableP", "light"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "max"]
+- !private ["s9EquatableP", "min"]
+- !private ["s9EquatableP", "reversed"]
+- !private ["s9EquatableP", "style"]
+- !private ["s9EquatableP", "trueBlack"]
+- !private ["s9EquatableP", "trueWhite"]
+- !private ["s9EquatableP", "withAlphaComponent"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "max"]
+- !private ["s25ExpressibleByArrayLiteralP", "min"]
+- !private ["s25ExpressibleByArrayLiteralP", "reversed"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "CGColor"]
+- !private ["s8HashableP", "SFAppearance"]
+- !private ["s8HashableP", "SFColor"]
+- !private ["s8HashableP", "UIColor"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "abs"]
+- !private ["s8HashableP", "alpha"]
+- !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "colorSpace"]
+- !private ["s8HashableP", "components"]
+- !private ["s8HashableP", "global"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isLightAppearance"]
+- !private ["s8HashableP", "light"]
+- !private ["s8HashableP", "max"]
+- !private ["s8HashableP", "style"]
+- !private ["s8HashableP", "trueBlack"]
+- !private ["s8HashableP", "trueWhite"]
+- !private ["s8HashableP", "withAlphaComponent"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s17MutableCollectionP", "filter"]
+- !private ["s17MutableCollectionP", "map"]
+- !private ["s17MutableCollectionP", "max"]
+- !private ["s17MutableCollectionP", "min"]
+- !private ["s17MutableCollectionP", "reversed"]
+- !private ["So8NSCodingP", "CGColor"]
+- !private ["So8NSCodingP", "SFAppearance"]
+- !private ["So8NSCodingP", "SFColor"]
+- !private ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "abs"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isLightAppearance"]
+- !private ["So8NSCodingP", "max"]
+- !private ["So8NSCodingP", "trueBlack"]
+- !private ["So8NSCodingP", "trueWhite"]
+- !private ["So8NSCodingP", "withAlphaComponent"]
+- !private ["So9NSCopyingP", "CGColor"]
+- !private ["So9NSCopyingP", "SFAppearance"]
+- !private ["So9NSCopyingP", "SFColor"]
+- !private ["So9NSCopyingP", "UIColor"]
+- ["So9NSCopyingP", ""]
+- !private ["So9NSCopyingP", "abs"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isLightAppearance"]
+- !private ["So9NSCopyingP", "max"]
+- !private ["So9NSCopyingP", "trueBlack"]
+- !private ["So9NSCopyingP", "trueWhite"]
+- !private ["So9NSCopyingP", "withAlphaComponent"]
+- !private ["So21NSItemProviderReadingP", "CGColor"]
+- !private ["So21NSItemProviderReadingP", "SFAppearance"]
+- !private ["So21NSItemProviderReadingP", "SFColor"]
+- !private ["So21NSItemProviderReadingP", "UIColor"]
+- ["So21NSItemProviderReadingP", ""]
+- !private ["So21NSItemProviderReadingP", "abs"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "isLightAppearance"]
+- !private ["So21NSItemProviderReadingP", "max"]
+- !private ["So21NSItemProviderReadingP", "trueBlack"]
+- !private ["So21NSItemProviderReadingP", "trueWhite"]
+- !private ["So21NSItemProviderReadingP", "withAlphaComponent"]
+- !private ["So21NSItemProviderWritingP", "CGColor"]
+- !private ["So21NSItemProviderWritingP", "SFAppearance"]
+- !private ["So21NSItemProviderWritingP", "SFColor"]
+- !private ["So21NSItemProviderWritingP", "UIColor"]
+- ["So21NSItemProviderWritingP", ""]
+- !private ["So21NSItemProviderWritingP", "abs"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "isLightAppearance"]
+- !private ["So21NSItemProviderWritingP", "max"]
+- !private ["So21NSItemProviderWritingP", "trueBlack"]
+- !private ["So21NSItemProviderWritingP", "trueWhite"]
+- !private ["So21NSItemProviderWritingP", "withAlphaComponent"]
+- ["So8NSObjectC", "+"]
+- ["So8NSObjectC", "-"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CGColor"]
+- ["So8NSObjectC", "CGFloat"]
+- !private ["So8NSObjectC", "SFAppearance"]
+- ["So8NSObjectC", "SFColor"]
+- ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "abs"]
+- ["So8NSObjectC", "black"]
+- ["So8NSObjectC", "blue"]
+- !private ["So8NSObjectC", "cgColor"]
+- ["So8NSObjectC", "contrastive"]
+- ["So8NSObjectC", "correct"]
+- ["So8NSObjectC", "darkGray"]
+- ["So8NSObjectC", "extraDarkGray"]
+- ["So8NSObjectC", "extraLightGray"]
+- !private ["So8NSObjectC", "global"]
+- ["So8NSObjectC", "gray"]
+- ["So8NSObjectC", "green"]
+- ["So8NSObjectC", "interactive"]
+- ["So8NSObjectC", "isLightAppearance"]
+- ["So8NSObjectC", "lightGray"]
+- !private ["So8NSObjectC", "max"]
+- ["So8NSObjectC", "orange"]
+- ["So8NSObjectC", "pink"]
+- ["So8NSObjectC", "primary"]
+- ["So8NSObjectC", "purple"]
+- ["So8NSObjectC", "quaternary"]
+- ["So8NSObjectC", "red"]
+- ["So8NSObjectC", "secondary"]
+- !private ["So8NSObjectC", "style"]
+- ["So8NSObjectC", "tealBlue"]
+- ["So8NSObjectC", "tertiary"]
+- ["So8NSObjectC", "trueBlack"]
+- ["So8NSObjectC", "trueWhite"]
+- ["So8NSObjectC", "white"]
+- !private ["So8NSObjectC", "withAlphaComponent"]
+- ["So8NSObjectC", "yellow"]
+- !private ["So16NSObjectProtocolP", "CGColor"]
+- !private ["So16NSObjectProtocolP", "SFAppearance"]
+- !private ["So16NSObjectProtocolP", "SFColor"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "abs"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "global"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isLightAppearance"]
+- !private ["So16NSObjectProtocolP", "max"]
+- !private ["So16NSObjectProtocolP", "style"]
+- !private ["So16NSObjectProtocolP", "trueBlack"]
+- !private ["So16NSObjectProtocolP", "trueWhite"]
+- !private ["So16NSObjectProtocolP", "withAlphaComponent"]
+- !private ["So14NSSecureCodingP", "CGColor"]
+- !private ["So14NSSecureCodingP", "SFAppearance"]
+- !private ["So14NSSecureCodingP", "SFColor"]
+- !private ["So14NSSecureCodingP", "UIColor"]
+- ["So14NSSecureCodingP", ""]
+- !private ["So14NSSecureCodingP", "abs"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isLightAppearance"]
+- !private ["So14NSSecureCodingP", "max"]
+- !private ["So14NSSecureCodingP", "trueBlack"]
+- !private ["So14NSSecureCodingP", "trueWhite"]
+- !private ["So14NSSecureCodingP", "withAlphaComponent"]
+- !private ["s22RandomAccessCollectionP", "filter"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "max"]
+- !private ["s22RandomAccessCollectionP", "min"]
+- !private ["s22RandomAccessCollectionP", "reversed"]
+- !private ["s26RangeReplaceableCollectionP", "filter"]
+- !private ["s26RangeReplaceableCollectionP", "map"]
+- !private ["s26RangeReplaceableCollectionP", "max"]
+- !private ["s26RangeReplaceableCollectionP", "min"]
+- !private ["s26RangeReplaceableCollectionP", "reversed"]
+- !private ["s16RawRepresentableP", "light"]
+- !private ["s18ReversedCollectionV", "filter"]
+- !private ["s18ReversedCollectionV", "map"]
+- !private ["s18ReversedCollectionV", "min"]
+- !private ["So12SFAppearanceC", "global"]
+- !private ["So12SFAppearanceC", "style"]
+- !private ["SC17SFAppearanceStyleO", "light"]
+- ["5SFKit7SFColorC", "+"]
+- ["5SFKit7SFColorC", "-"]
+- ["5SFKit7SFColorC", "Bool"]
+- !private ["5SFKit7SFColorC", "CGColor"]
+- ["5SFKit7SFColorC", "CGFloat"]
+- !private ["5SFKit7SFColorC", "SFAppearance"]
+- ["5SFKit7SFColorC", "SFColor"]
+- ["5SFKit7SFColorC", "UIColor"]
+- !private ["5SFKit7SFColorC", "abs"]
+- ["5SFKit7SFColorC", "black"]
+- ["5SFKit7SFColorC", "blue"]
+- !private ["5SFKit7SFColorC", "cgColor"]
+- ["5SFKit7SFColorC", "contrastive"]
+- ["5SFKit7SFColorC", "correct"]
+- ["5SFKit7SFColorC", "darkGray"]
+- ["5SFKit7SFColorC", "deinit"]
+- ["5SFKit7SFColorC", "extraDarkGray"]
+- ["5SFKit7SFColorC", "extraLightGray"]
+- ["5SFKit7SFColorC", "gray"]
+- ["5SFKit7SFColorC", "green"]
+- ["5SFKit7SFColorC", "init"]
+- ["5SFKit7SFColorC", "interactive"]
+- !private ["5SFKit7SFColorC", "isLightAppearance"]
+- ["5SFKit7SFColorC", "lightGray"]
+- !private ["5SFKit7SFColorC", "max"]
+- ["5SFKit7SFColorC", "orange"]
+- ["5SFKit7SFColorC", "pink"]
+- ["5SFKit7SFColorC", "primary"]
+- ["5SFKit7SFColorC", "purple"]
+- ["5SFKit7SFColorC", "quaternary"]
+- ["5SFKit7SFColorC", "red"]
+- ["5SFKit7SFColorC", "secondary"]
+- ["5SFKit7SFColorC", "tealBlue"]
+- ["5SFKit7SFColorC", "tertiary"]
+- ["5SFKit7SFColorC", "trueBlack"]
+- ["5SFKit7SFColorC", "trueWhite"]
+- ["5SFKit7SFColorC", "white"]
+- ["5SFKit7SFColorC", "yellow"]
+- !private ["5SFKit14SFIdentifiableP", "CGColor"]
+- !private ["5SFKit14SFIdentifiableP", "SFAppearance"]
+- !private ["5SFKit14SFIdentifiableP", "SFColor"]
+- !private ["5SFKit14SFIdentifiableP", "UIColor"]
+- ["5SFKit14SFIdentifiableP", ""]
+- !private ["5SFKit14SFIdentifiableP", "abs"]
+- !private ["5SFKit14SFIdentifiableP", "cgColor"]
+- !private ["5SFKit14SFIdentifiableP", "global"]
+- !private ["5SFKit14SFIdentifiableP", "init"]
+- !private ["5SFKit14SFIdentifiableP", "isLightAppearance"]
+- !private ["5SFKit14SFIdentifiableP", "max"]
+- !private ["5SFKit14SFIdentifiableP", "style"]
+- !private ["5SFKit14SFIdentifiableP", "trueBlack"]
+- !private ["5SFKit14SFIdentifiableP", "trueWhite"]
+- !private ["5SFKit14SFIdentifiableP", "withAlphaComponent"]
+- !private ["s8SequenceP", "filter"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "max"]
+- !private ["s8SequenceP", "min"]
+- !private ["s8SequenceP", "reversed"]
+- ["So7UIColorC", "+"]
+- ["So7UIColorC", "-"]
+- ["So7UIColorC", "Bool"]
+- !private ["So7UIColorC", "CGColor"]
+- ["So7UIColorC", "CGFloat"]
+- !private ["So7UIColorC", "SFAppearance"]
+- ["So7UIColorC", "SFColor"]
+- ["So7UIColorC", "UIColor"]
+- ["So7UIColorC", ""]
+- !private ["So7UIColorC", "abs"]
+- ["So7UIColorC", "black"]
+- ["So7UIColorC", "blue"]
+- !private ["So7UIColorC", "cgColor"]
+- ["So7UIColorC", "contrastive"]
+- ["So7UIColorC", "correct"]
+- ["So7UIColorC", "darkGray"]
+- ["So7UIColorC", "extraDarkGray"]
+- ["So7UIColorC", "extraLightGray"]
+- ["So7UIColorC", "gray"]
+- ["So7UIColorC", "green"]
+- ["So7UIColorC", "init"]
+- ["So7UIColorC", "interactive"]
+- ["So7UIColorC", "isLightAppearance"]
+- ["So7UIColorC", "lightGray"]
+- !private ["So7UIColorC", "max"]
+- ["So7UIColorC", "orange"]
+- ["So7UIColorC", "pink"]
+- ["So7UIColorC", "primary"]
+- ["So7UIColorC", "purple"]
+- ["So7UIColorC", "quaternary"]
+- ["So7UIColorC", "red"]
+- ["So7UIColorC", "secondary"]
+- ["So7UIColorC", "tealBlue"]
+- ["So7UIColorC", "tertiary"]
+- ["So7UIColorC", "trueBlack"]
+- ["So7UIColorC", "trueWhite"]
+- ["So7UIColorC", "white"]
+- !private ["So7UIColorC", "withAlphaComponent"]
+- ["So7UIColorC", "yellow"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "max"]
+- !private ["s14_ArrayProtocolP", "min"]
+- !private ["s14_ArrayProtocolP", "reversed"]
+- !private ["14CoreFoundation9_CFObjectP", "alpha"]
+- !private ["14CoreFoundation9_CFObjectP", "colorSpace"]
+- !private ["14CoreFoundation9_CFObjectP", "components"]
+- !private ["14CoreFoundation9_CFObjectP", "init"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "alpha"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "colorSpace"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "components"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "init"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "max"]
+- !private ["s24_DestructorSafeContainerP", "min"]
+- !private ["s24_DestructorSafeContainerP", "reversed"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s26_ExpressibleByColorLiteralP", "CGColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "SFAppearance"]
+- !private ["s26_ExpressibleByColorLiteralP", "SFColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "UIColor"]
+- ["s26_ExpressibleByColorLiteralP", ""]
+- !private ["s26_ExpressibleByColorLiteralP", "abs"]
+- !private ["s26_ExpressibleByColorLiteralP", "alpha"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "colorSpace"]
+- !private ["s26_ExpressibleByColorLiteralP", "components"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "isLightAppearance"]
+- !private ["s26_ExpressibleByColorLiteralP", "max"]
+- !private ["s26_ExpressibleByColorLiteralP", "trueBlack"]
+- !private ["s26_ExpressibleByColorLiteralP", "trueWhite"]
+- !private ["s26_ExpressibleByColorLiteralP", "withAlphaComponent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SFAppearance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SFColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "abs"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isLightAppearance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "max"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "style"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trueBlack"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trueWhite"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "withAlphaComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- !private ["s21_ObjectiveCBridgeableP", "min"]
+- !private ["s21_ObjectiveCBridgeableP", "reversed"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So7CGColorC"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s18ReversedCollectionV"
+- !private "So12SFAppearanceC"
+- !private "SC17SFAppearanceStyleO"
+- "5SFKit7SFColorC"
+- "5SFKit14SFIdentifiableP"
+- !private "s8SequenceP"
+- "So7UIColorC"
+- !private "s14_ArrayProtocolP"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "12CoreGraphics22_CGColorInitTrampolineP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearance.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceStyle.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceAdjusting.h"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/../SFModelCheck.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Miscellaneous/Definitions/SFDefines.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFChartTypes.h"
+- "/Users/David/Development/SFKit/SFKit/SFKit.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIResponder+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIViewController+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/Categories & Extensions/UIView+SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Appearance/SFAppearanceEnvironment.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Pie/SFPieChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFLineGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFDiscreteGraphChartView.h"
+- "/Users/David/Development/SFKit/SFKit/Source/Charts/Graphs/SFBarGraphChartView.h"
+- "/Users/David/Development/SFKit/builtFramework/SFKit.build/Debug-iphonesimulator/SFKit.build/unextended-module.modulemap"
+- "/Users/David/Development/SFKit/SFKit/Supporting Files/Project Module/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "bd164aa6860c882c751f8aa92e732723"
