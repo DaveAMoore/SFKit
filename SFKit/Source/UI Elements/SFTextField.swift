@@ -54,6 +54,18 @@ open class SFTextField: UITextField, UITextFieldDelegate {
         textColor = colorMetrics.color(forRelativeHue: .black)
     }
     
+    // MARK: - Appearance Adjustment
+    
+    open override var placeholder: String? {
+        didSet {
+            guard let placeholder = placeholder else { return }
+            
+            // Create an attributed placeholder and set it.
+            let attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .extraLightGray)])
+            self.attributedPlaceholder = attributedPlaceholder
+        }
+    }
+    
     // MARK: - Delegate
     
     open override func textRect(forBounds bounds: CGRect) -> CGRect {
