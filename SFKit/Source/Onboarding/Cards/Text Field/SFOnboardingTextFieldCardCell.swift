@@ -22,5 +22,8 @@ final public class SFOnboardingTextFieldCardCell: UITableViewCell {
         backgroundColor = colorMetrics.color(forRelativeHue: .white)
         titleLabel.textColor = colorMetrics.color(forRelativeHue: .black)
         textField.textColor = colorMetrics.color(forRelativeHue: .black)
+        if let placeholder = textField.placeholder {
+            textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .lightGray)])
+        }
     }
 }
