@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import ObjectiveC.runtime
+
 fileprivate extension Selector {
     static let dismissOnboardingController  = #selector(SFOnboardingControl.dismissOnboardingController(_:))
     static let startActivityIndicator       = #selector(SFOnboardingControl.startActivityIndicator(_:))
@@ -14,7 +16,6 @@ fileprivate extension Selector {
     static let disableUserInteraction       = #selector(SFOnboardingControl.disableUserInteraction(_:))
     static let pushNextStage                = #selector(SFOnboardingControl.pushNextStage(_:))
     static let popStage                     = #selector(SFOnboardingControl.popStage(_:))
-    static let void                         = #selector(SFOnboardingControl.void(_:))
 }
 
 open class SFOnboardingControl: SFOnboardingElement<UIControl> {
@@ -50,7 +51,12 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         /// Pops the current stage controller from the top of the onboarding stack.
         case popStage(UIControlEvents)
         
+        /// Custom action that executes a particular CommunicationClosure for specific control events.
+        /// The closure will be executed directly as a result of the control events occuring, and immediately when no control events are specified.
+        case closure(UIControlEvents, CommunicationClosure)
+        
         /// Void method will be called.
+        @available(*, deprecated, message: "use '.closure' instead")
         case void(UIControlEvents)
         
         /// Custom defined action.
@@ -70,6 +76,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         /// Specifies an action that should be called and provides a closure to call after execution.
         /// The communication closure may be used for any purpose. Actions should be returned on the main queue, failure to do so will result in undefined behaviour.
+        @available(*, deprecated)
         indirect case callback(Action, CommunicationClosure)
     }
     
@@ -94,6 +101,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
     open var actions: [Action]
     
     /// Maps a method selector to a specific closure designated for communication.
+    @available(*, deprecated)
     private lazy var callbackTable: [Selector: CommunicationClosure] = [:]
     
     // MARK: - Initialization
@@ -167,18 +175,34 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
             return MetaAction(target: self, action: .pushNextStage, controlEvents: controlEvents)
         case let .popStage(controlEvents):
             return MetaAction(target: self, action: .popStage, controlEvents: controlEvents)
-        case let .void(controlEvents):
-            return MetaAction(target: self, action: .void, controlEvents: controlEvents)
         case let .custom(target, method, controlEvents):
             return MetaAction(target: target, action: method, controlEvents: controlEvents)
-        case let .callback(action, closure):
-            // Retrieve the meta-action for the action.
-            let meta = metaAction(for: action)
+        case let .closure(controlEvents, closure):
+            // Create an Objective-C block that wraps the closure call.
+            let closureBlock: @convention(block) (AnyObject?, AnyObject?) -> (Void) = { [weak self] (_self: AnyObject?, sender: AnyObject?) in
+                guard let strongSelf = self else { return }
+                
+                // Execute the callback, passing in the closure for additional calling.
+                closure(strongSelf.controller, sender) { actions in
+                    for action in actions {
+                        strongSelf.callAction(action, sender: sender)
+                    }
+                }
+            }
             
-            // Add the closure to the table.
-            callbackTable[meta.action] = closure
+            // Create the implementation using the closureBlock.
+            let implementation = imp_implementationWithBlock(unsafeBitCast(closureBlock, to: AnyObject.self))
             
-            return meta
+            // Make a random selector.
+            let name = Selector(UUID().uuidString)
+            
+            // Attempt to add the method to the class.
+            let didAddMethod = class_addMethod(object_getClass(self), name, implementation, "v@:@")
+            
+            // Assert that the method was added.
+            assert(didAddMethod, "class_addMethod did not add method implementation for unique selector")
+            
+            return MetaAction(target: self, action: name, controlEvents: controlEvents)
         default:
             fatalError("expected action to be handled independently")
         }
@@ -229,6 +253,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
     /// - Parameters:
     ///   - method: Selector for a method that will be called.
     ///   - sender: The object that is associated with executing the callback.
+    @available(*, deprecated)
     private func executeCallback(forMethod method: Selector, sender: Any?) {
         // Retrieve the callback using the given method selector.
         let callback = callbackTable[method]
@@ -245,41 +270,35 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
     @objc internal func dismissOnboardingController(_ sender: Any?) {
         // Dismiss the onboarding controller itself.
         controller?.onboardingController?.dismiss(animated: true)
-        
-        // Execute the callback.
-        executeCallback(forMethod: .dismissOnboardingController, sender: sender)
     }
     
     /// Starts an activity indicator in the view.
-    @objc internal func startActivityIndicator(_ sender: UIView) {
+    @objc internal func startActivityIndicator(_ sender: Any?) {
         guard let controller = controller else { return }
         
         // Selectively assign the sender.
-        let sender = controller.trailingButton!
+        let trailingButton = controller.trailingButton!
         
         // Configure an activity indicator (i.e., spinner).
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityIndicator.color = UIColorMetrics(forAppearance: sender.appearance).color(forRelativeHue: .darkGray)
+        activityIndicator.color = UIColorMetrics(forAppearance: trailingButton.appearance).color(forRelativeHue: .darkGray)
         activityIndicator.alpha = 0.0
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         
         // Add the indicator to the view & activate constraints for it to match the sender's position.
         controller.view.addSubview(activityIndicator)
-        controller.view.addConstraints([activityIndicator.centerXAnchor.constraint(equalTo: sender.centerXAnchor),
-                                        activityIndicator.centerYAnchor.constraint(equalTo: sender.centerYAnchor)])
+        controller.view.addConstraints([activityIndicator.centerXAnchor.constraint(equalTo: trailingButton.centerXAnchor),
+                                        activityIndicator.centerYAnchor.constraint(equalTo: trailingButton.centerYAnchor)])
         
         // Start spinning.
         activityIndicator.startAnimating()
         
         // Hide the sender & display the indicator.
         UIView.animate(withDuration: 0.25) {
-            sender.alpha = 0.0
-            sender.isHidden = true
+            trailingButton.alpha = 0.0
+            trailingButton.isHidden = true
             activityIndicator.alpha = 1.0
         }
-        
-        // Execute the callback.
-        executeCallback(forMethod: .startActivityIndicator, sender: activityIndicator)
     }
     
     /// Stops an activity indicator within the view.
@@ -303,9 +322,6 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         }) { finished in
             activityIndicator.removeFromSuperview()
         }
-        
-        // Execute the callback.
-        executeCallback(forMethod: .stopActivityIndicator, sender: sender)
     }
     
     /// Enables user interaction for the controller's view.
@@ -315,9 +331,6 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         // Disable user interaction.
         controller.view.isUserInteractionEnabled = true
-        
-        // Execute the callback.
-        executeCallback(forMethod: .enableUserInteraction, sender: sender)
     }
     
     /// Disables user interaction for the controller's view.
@@ -327,9 +340,6 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         // Disable user interaction.
         controller.view.isUserInteractionEnabled = false
-        
-        // Execute the callback.
-        executeCallback(forMethod: .disableUserInteraction, sender: sender)
     }
     
     /// Pushes the next stage controller onto the onboarding stack.
@@ -339,9 +349,6 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         // Present the suceeding stage.
         controller.onboardingController?.presentStage(after: controller.stage, animated: true)
-        
-        // Execute the callback.
-        executeCallback(forMethod: .pushNextStage, sender: sender)
     }
     
     /// Pops the curent stage controller from the top of the onboarding stack.
@@ -351,14 +358,5 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         
         // Pop the current view controller from the onboarding stack.
         controller.onboardingController?.popViewController(animated: true)
-        
-        // Execute the callback.
-        executeCallback(forMethod: .popStage, sender: sender)
-    }
-    
-    /// Void method.
-    @objc internal func void(_ sender: Any?) {
-        // Execute the callback.
-        executeCallback(forMethod: .void, sender: sender)
     }
 }
