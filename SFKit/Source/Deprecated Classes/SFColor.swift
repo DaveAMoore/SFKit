@@ -155,7 +155,7 @@ open class SFColor: UIColor {
     
     // MARK: - Methods
     
-    open static func +(lhs: SFColor, rhs: CGFloat) -> SFColor {
+    public static func +(lhs: SFColor, rhs: CGFloat) -> SFColor {
         // Get the color space of this color, the components which make up the color space, and the minimum value of those components.
         if let colorSpace = lhs.cgColor.colorSpace,
             let components = lhs.cgColor.components,
@@ -178,7 +178,7 @@ open class SFColor: UIColor {
         }
     }
     
-    open static func -(lhs: SFColor, rhs: CGFloat) -> SFColor {
+    public static func -(lhs: SFColor, rhs: CGFloat) -> SFColor {
         // Get the color space of this color, the components which make up the color space, and the minimum value of those components.
         if let colorSpace = lhs.cgColor.colorSpace,
             let components = lhs.cgColor.components,

@@ -188,9 +188,9 @@
     private var darkBlue: UIColor {
         switch appearanceStyle {
         case .light:
-            return #colorLiteral(red: 0, green: 0.368126277, blue: 1, alpha: 1)
+            return #colorLiteral(red: 0, green: 0.285352166, blue: 0.6790317876, alpha: 1)
         case .dark:
-            return #colorLiteral(red: 0.1302832244, green: 0.8865586814, blue: 1, alpha: 1)
+            return #colorLiteral(red: 0, green: 0.3201134801, blue: 0.7617507577, alpha: 1)
         }
     }
     
