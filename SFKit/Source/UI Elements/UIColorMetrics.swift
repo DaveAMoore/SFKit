@@ -100,6 +100,7 @@
     /// - Parameter color: Color that will be matched to a color metrics hue.
     /// - Returns: Color metrics hue that is associated with the provided color, relative to the appearance style with which the receiver was initialized.
     open func relativeHue(forColor color: UIColor) -> UIColorMetricsHue? {
+        
         let colors: [UIColor: UIColorMetricsHue] = [red: .red, orange: .orange, yellow: .yellow,
                                                     green: .green, tealBlue: .tealBlue, blue: .blue,
                                                     darkBlue: .darkBlue, purple: .purple, pink: .pink,
@@ -188,9 +189,9 @@
     private var darkBlue: UIColor {
         switch appearanceStyle {
         case .light:
-            return #colorLiteral(red: 0, green: 0.285352166, blue: 0.6790317876, alpha: 1)
+            return #colorLiteral(red: 0.01693210378, green: 0.378747046, blue: 0.787571609, alpha: 1)
         case .dark:
-            return #colorLiteral(red: 0, green: 0.3201134801, blue: 0.7617507577, alpha: 1)
+            return #colorLiteral(red: 0.02031199378, green: 0.4543503714, blue: 0.9447821623, alpha: 1)
         }
     }
     
