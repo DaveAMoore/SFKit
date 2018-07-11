@@ -18,7 +18,7 @@ internal class SFOnboardingPushAnimator: NSObject, UIViewControllerAnimatedTrans
     
     /// Initializes a new push animator.
     ///
-    /// - Parameter shouldPop: Boolean value indicating if the animation should be reflective of a pop.
+    /// - Parameter isDismissing: Boolean value indicating if the animation should be reflective of a pop.
     init(isDismissing: Bool = false) {
         self.isDismissing = isDismissing
     }
@@ -113,7 +113,7 @@ internal class SFOnboardingPushAnimator: NSObject, UIViewControllerAnimatedTrans
         
         // Configure a CoreAnimation shadow animation.
         let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
-        shadowAnimation.fillMode = kCAFillModeForwards
+        shadowAnimation.fillMode = CAMediaTimingFillMode.forwards
         shadowAnimation.fromValue = shadowFromValue
         shadowAnimation.toValue = shadowToValue
         shadowAnimation.duration = duration / 1.3

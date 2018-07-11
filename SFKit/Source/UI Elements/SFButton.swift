@@ -221,15 +221,18 @@ extension SFColor {
             tintColor = colorMetrics.color(forRelativeHue: .white)
         } else {
             backgroundColor = colorMetrics.color(forRelativeHue: .blue)
+            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
             layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
             layer.borderWidth = restingBorderWidth
-            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
             tintColor = colorMetrics.color(forRelativeHue: .white)
+            self.alpha = 1.0
         }
     }
     
     /// Update the appearance for `isHighlighted`.
     private func updateIsHighlighted() {
+        guard !isSelected else { return }
+        
         // Adjust as needed.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if self.isHighlighted {

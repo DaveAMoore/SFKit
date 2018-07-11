@@ -684,7 +684,7 @@
 				TargetAttributes = {
 					6385A2221F06EB36002B9244 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					6385A22B1F06EB36002B9244 = {
@@ -968,7 +968,8 @@
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -999,7 +1000,8 @@
 				STRIP_STYLE = all;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -50,7 +50,7 @@ open class SFTextField: UITextField, UITextFieldDelegate {
         }
         
         // Update background color.
-        backgroundColor = colorMetrics.color(forRelativeHue: .lightGray)
+        backgroundColor = colorMetrics.color(forRelativeHue: .extraLightGray)
         textColor = colorMetrics.color(forRelativeHue: .black)
     }
     

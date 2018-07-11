@@ -31,33 +31,33 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         case inherited
         
         /// Dismisses the entire onboarding controller.
-        case dismissOnboardingController(UIControlEvents)
+        case dismissOnboardingController(UIControl.Event)
         
         /// Presents an activity indicator and starts it.
-        case startActivityIndicator(UIControlEvents)
+        case startActivityIndicator(UIControl.Event)
         
         /// Stops an activity indicator and then removes it from the view hierarchy.
-        case stopActivityIndicator(UIControlEvents)
+        case stopActivityIndicator(UIControl.Event)
         
         /// Enables user interaction of the controller's view.
-        case enableUserInteraction(UIControlEvents)
+        case enableUserInteraction(UIControl.Event)
         
         /// Disables user interaction of the controller's view.
-        case disableUserInteraction(UIControlEvents)
+        case disableUserInteraction(UIControl.Event)
         
         /// Pushes the next stage controller onto the onboarding stack.
-        case pushNextStage(UIControlEvents)
+        case pushNextStage(UIControl.Event)
         
         /// Pops the current stage controller from the top of the onboarding stack.
-        case popStage(UIControlEvents)
+        case popStage(UIControl.Event)
         
         /// Custom action that executes a particular CommunicationClosure for specific control events.
         /// The closure will be executed directly as a result of the control events occuring, and immediately when no control events are specified.
-        case closure(UIControlEvents, CommunicationClosure)
+        case closure(UIControl.Event, CommunicationClosure)
         
         /// Void method will be called.
         @available(*, deprecated, message: "use '.closure' instead")
-        case void(UIControlEvents)
+        case void(UIControl.Event)
         
         /// Custom defined action.
         ///
@@ -72,7 +72,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         /// `controlEvents`
         ///
         /// A bitmask specifying the control-specific events for which the action method is called. Always specify at least one constant. For a list of possible constants, see UIControlEvents.
-        case custom(target: Any?, method: Selector, controlEvents: UIControlEvents)
+        case custom(target: Any?, method: Selector, controlEvents: UIControl.Event)
         
         /// Specifies an action that should be called and provides a closure to call after execution.
         /// The communication closure may be used for any purpose. Actions should be returned on the main queue, failure to do so will result in undefined behaviour.
@@ -89,7 +89,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         var action: Selector
         
         /// Control events for which the action will be triggered.
-        var controlEvents: UIControlEvents
+        var controlEvents: UIControl.Event
     }
     
     // MARK: - Properties
@@ -280,7 +280,7 @@ open class SFOnboardingControl: SFOnboardingElement<UIControl> {
         let trailingButton = controller.trailingButton!
         
         // Configure an activity indicator (i.e., spinner).
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.color = UIColorMetrics(forAppearance: trailingButton.appearance).color(forRelativeHue: .darkGray)
         activityIndicator.alpha = 0.0
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false

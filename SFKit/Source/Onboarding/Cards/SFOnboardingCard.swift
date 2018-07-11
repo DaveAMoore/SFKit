@@ -25,7 +25,7 @@ open class SFOnboardingCard: NSObject {
     }
     
     /// Selection style of the associated cell.
-    open var selectionStyle: UITableViewCellSelectionStyle = .default
+    open var selectionStyle: UITableViewCell.SelectionStyle = .default
     
     /// Prepares a card for presentation within a table view.
     ///

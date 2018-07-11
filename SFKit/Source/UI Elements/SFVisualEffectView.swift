@@ -25,7 +25,7 @@ open class SFVisualEffectView: UIVisualEffectView {
         let isLightAppearance = appearance.style == .light
         
         // Select the appropriate effect style.
-        let effectStyle: UIBlurEffectStyle = isLightAppearance ? (isExtraLight ? .extraLight : .light) : .dark
+        let effectStyle: UIBlurEffect.Style = isLightAppearance ? (isExtraLight ? .extraLight : .light) : .dark
         
         // Make a blur effect for the newly determined style.
         let blurEffect = UIBlurEffect(style: effectStyle)

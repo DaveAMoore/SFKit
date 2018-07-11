@@ -125,16 +125,16 @@ open class SFOnboardingStageViewController: UIViewController, UITableViewDataSou
     
     open func stageDidUpdate() {
         // Configure the controls & the label.
-        stage.primaryControl?.prepare(primaryButton,
+        stage!.primaryControl?.prepare(primaryButton,
                                       withDefaultAction: .custom(target: self, method: .primaryButtonAction,
                                                                  controlEvents: .touchUpInside), for: self)
-        stage.secondaryControl?.prepare(secondaryButton,
+        stage!.secondaryControl?.prepare(secondaryButton,
                                         withDefaultAction: .custom(target: self, method: .secondaryButtonAction,
                                                                    controlEvents: .touchUpInside), for: self)
-        stage.leadingControl?.prepare(leadingButton,
+        stage!.leadingControl?.prepare(leadingButton,
                                       withDefaultAction: .custom(target: self, method: .leadingButtonAction,
                                                                  controlEvents: .touchUpInside), for: self)
-        stage.trailingControl?.prepare(trailingButton,
+        stage!.trailingControl?.prepare(trailingButton,
                                        withDefaultAction: .custom(target: self, method: .trailingButtonAction,
                                                                   controlEvents: .touchUpInside), for: self)
         stage.accessoryLabel?.prepare(accessoryLabel)

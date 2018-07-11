@@ -22,12 +22,12 @@ open class SFOnboardingController: UIViewController {
     
     /// The view controller at the root of the onboarding stack.
     open var rootViewController: UIViewController? {
-        return childViewControllers.first
+        return children.first
     }
     
     /// The view controller at the top of the onboarding stack.
     open var topViewController: UIViewController? {
-        return childViewControllers.last
+        return children.last
     }
     
     /// The view controller associated with the currently visible view in the onboarding stack. The currently visible view can belong either to the view controller at the top of the onboarding stack or to a view controller that was presented modally on top of the onboarding controller itself.
@@ -37,11 +37,11 @@ open class SFOnboardingController: UIViewController {
     
     /// The view controllers currently on the onboarding stack.
     open var viewControllers: [UIViewController] {
-        return childViewControllers
+        return children
     }
     
     /// Child view controller that is responsible for the status bar.
-    open override var childViewControllerForStatusBarStyle: UIViewController? {
+    open override var childForStatusBarStyle: UIViewController? {
         return topViewController
     }
     
@@ -130,11 +130,11 @@ open class SFOnboardingController: UIViewController {
             self.addConstraints(to: viewController)
             
             // Notify the content controller that it has been moved to a new parent view controller.
-            viewController.didMove(toParentViewController: self)
+            viewController.didMove(toParent: self)
         }
         
         // Add the view controller to the hierarchy.
-        addChildViewController(viewController)
+        addChild(viewController)
         
         // Perform the animation only if it has been requested.
         guard isAnimated, let _visibleViewController = topViewController else {
@@ -174,7 +174,7 @@ open class SFOnboardingController: UIViewController {
         let lastViewController = viewControllersToPop.removeLast()
         
         // Notify the child that it will be removed.
-        lastViewController.willMove(toParentViewController: nil)
+        lastViewController.willMove(toParent: nil)
         
         // Declare a closure that will handle the completion.
         let completionHandler: ((Bool) -> Void) = { finished in
@@ -182,12 +182,12 @@ open class SFOnboardingController: UIViewController {
             lastViewController.view.removeFromSuperview()
             
             // Remove the child.
-            lastViewController.removeFromParentViewController()
+            lastViewController.removeFromParent()
             
             // Enumerate through each view controller that must be popped.
             for viewControllerToPop in viewControllersToPop {
-                viewControllerToPop.willMove(toParentViewController: nil)
-                viewControllerToPop.removeFromParentViewController()
+                viewControllerToPop.willMove(toParent: nil)
+                viewControllerToPop.removeFromParent()
             }
             
             // Add the destination view.
