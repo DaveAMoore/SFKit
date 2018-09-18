@@ -17,6 +17,10 @@
 #pragma mark - Properties
 
 - (SFAppearance *)appearance {
+    return [self __appearance];
+}
+
+- (SFAppearance *)__appearance {
     SFAppearance *associatedAppearance = (SFAppearance *)objc_getAssociatedObject(self, @selector(appearance));
     if (!associatedAppearance) {
         return [SFAppearance globalAppearance];
@@ -41,13 +45,13 @@
         return;
     
     // Add ourselves as an appearance environment.
-    [[self appearance] addAppearanceEnvironment:self];
+    [[self __appearance] addAppearanceEnvironment:self];
 }
 
 - (void)unregisterForAppearanceUpdates {
     if ([self appearance]) {
         // Remove ourselves from the appearance's environment hash table.
-        [[self appearance] removeAppearanceEnvironment:self];
+        [[self __appearance] removeAppearanceEnvironment:self];
     }
 }
 
