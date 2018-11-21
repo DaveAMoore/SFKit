@@ -9,7 +9,7 @@
 // MARK: - Color Selection
 
 /// Enumeration containing range of colors.
-@objc public enum UIColorMetricsHue: Int {
+@objc public enum UIColorMetricsHue: Int, CaseIterable {
     case red
     case orange
     case yellow
