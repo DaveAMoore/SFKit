@@ -21,6 +21,21 @@ extension UITableView {
     }
 }
 
+extension UICollectionView {
+    
+    open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+        return dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! T
+    }
+    
+    open func dequeueReusableCell<T>(ofType type: T.Type, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+        return dequeueReusableCell(ofType: type, withIdentifier: type.typeName, for: indexPath)
+    }
+    
+    open func cell<T>(ofType type: T.Type, forItemAt indexPath: IndexPath) -> T? where T: UICollectionViewCell {
+        return cellForItem(at: indexPath) as? T
+    }
+}
+
 extension UIStoryboard {
     
     /// Instantiates and returns the view controller with the specified identifier.
