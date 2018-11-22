@@ -40,7 +40,11 @@ open class SFOnboardingTextFieldCard: SFOnboardingCard {
         super.prepare(card, forController: controller)
         
         let card = card as! SFOnboardingTextFieldCardCell
-        titleLabel?.prepare(card.titleLabel)
+        if let titleLabel = titleLabel {
+            titleLabel.prepare(card.titleLabel)
+        } else {
+            card.titleLabel.text = nil
+        }
         textField.prepare(card.textField, withDefaultAction: nil, for: controller)
     }
 }
