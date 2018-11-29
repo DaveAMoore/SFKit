@@ -17,6 +17,15 @@ open class SFNavigationController: UINavigationController {
         registerForAppearanceUpdates()
     }
     
+    open override func appearanceStyleDidChange(_ previousAppearanceStyle: SFAppearanceStyle) {
+        super.appearanceStyleDidChange(previousAppearanceStyle)
+        
+        // Change the bar style for the new appearance style.
+        let colorMetrics = UIColorMetrics(forAppearance: appearance)
+        navigationBar.barStyle = appearance.style == .light ? .default : .black
+        navigationBar.tintColor = colorMetrics.color(forRelativeHue: .blue)
+    }
+    
     // MARK: - Initialization
     
     public override init(rootViewController: UIViewController) {
