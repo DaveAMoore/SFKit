@@ -23,12 +23,22 @@ extension UITableView {
 
 extension UICollectionView {
     
-    open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+    open func dequeueReusableCell<T>(_ type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
         return dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! T
     }
     
+    open func dequeueReusableCell<T>(_ type: T.Type, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+        return dequeueReusableCell(type, withIdentifier: type.typeName, for: indexPath)
+    }
+    
+    @available(*, deprecated, renamed: "dequeueReusableCell(_:withIdentifier:for:)")
+    open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
+        return dequeueReusableCell(type, withIdentifier: reuseIdentifier, for: indexPath)
+    }
+    
+    @available(*, deprecated, renamed: "dequeueReusableCell(_:for:)")
     open func dequeueReusableCell<T>(ofType type: T.Type, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
-        return dequeueReusableCell(ofType: type, withIdentifier: type.typeName, for: indexPath)
+        return dequeueReusableCell(type, withIdentifier: type.typeName, for: indexPath)
     }
     
     open func cell<T>(ofType type: T.Type, forItemAt indexPath: IndexPath) -> T? where T: UICollectionViewCell {
@@ -38,10 +48,13 @@ extension UICollectionView {
 
 extension UIStoryboard {
     
-    /// Instantiates and returns the view controller with the specified identifier.
-    ///
-    /// - Parameters:
-    ///   - type: A 
+    public static let main = UIStoryboard(name: "Main", bundle: Bundle.main)
+    
+    open func instantiateViewController<T>(_ type: T.Type) -> T where T: UIViewController {
+        return instantiateViewController(withIdentifier: type.typeName) as! T
+    }
+    
+    @available(*, deprecated, renamed: "instantiateViewController(_:)")
     open func instantiateViewController<T>(ofType type: T.Type) -> T where T: UIViewController {
         let viewController = instantiateViewController(withIdentifier: type.typeName)
         return viewController as! T

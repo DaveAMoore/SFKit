@@ -10,7 +10,7 @@
 ///
 /// - Parameter type: Type for which a name will be generated for.
 /// - Returns: `String` value of the type's given name.
-fileprivate func name<T>(of type: T) -> String {
+public func name<T>(of type: T) -> String {
     return String(describing: type)
 }
 
