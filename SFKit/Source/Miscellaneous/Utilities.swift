@@ -31,6 +31,10 @@ extension UICollectionView {
         return dequeueReusableCell(type, withIdentifier: type.typeName, for: indexPath)
     }
     
+    open func cell<T>(_ type: T.Type, forItemAt indexPath: IndexPath) -> T? where T: UICollectionViewCell {
+        return cellForItem(at: indexPath) as? T
+    }
+    
     @available(*, deprecated, renamed: "dequeueReusableCell(_:withIdentifier:for:)")
     open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
         return dequeueReusableCell(type, withIdentifier: reuseIdentifier, for: indexPath)
@@ -41,6 +45,7 @@ extension UICollectionView {
         return dequeueReusableCell(type, withIdentifier: type.typeName, for: indexPath)
     }
     
+    @available(*, deprecated, renamed: "cell(_:forItemAt:)")
     open func cell<T>(ofType type: T.Type, forItemAt indexPath: IndexPath) -> T? where T: UICollectionViewCell {
         return cellForItem(at: indexPath) as? T
     }
