@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 /// A discrete unit for an `SFOnboardingStage`. A particular stage will have cards associated with it, as this structure represents the content component.
 open class SFOnboardingCard: NSObject {
     

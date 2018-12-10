@@ -227,6 +227,7 @@
 		6385A23E1F06EB4D002B9244 /* SFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFButton.swift; sourceTree = "<group>"; };
 		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
+		63AC4EB321BE2446006AD37E /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
 		63E0B98E208ED4A000B400CE /* SdkPackage.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SdkPackage.sh; sourceTree = "<group>"; };
 		63E0B98F208ED4A000B400CE /* strip-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "strip-frameworks.sh"; sourceTree = "<group>"; };
@@ -568,6 +569,7 @@
 		63F459691FE404FF008B62C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63AC4EB321BE2446006AD37E /* module.modulemap */,
 				63E0B98D208ED49000B400CE /* Scripts */,
 				6385A2271F06EB36002B9244 /* Info.plist */,
 			);
@@ -943,6 +945,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "SFKit/Supporting Files/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -976,6 +979,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "SFKit/Supporting Files/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

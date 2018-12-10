@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import Foundation
+
 /// Produces a `String` value for a given type.
 ///
 /// - Parameter type: Type for which a name will be generated for.

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 open class SFOnboardingTextField: SFOnboardingControl {
     
     /// Boolean value indicating if the text field will be for secure text entry.

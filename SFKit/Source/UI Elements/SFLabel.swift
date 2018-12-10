@@ -6,6 +6,8 @@
 //  Copyright © 2017 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 open class SFLabel: UILabel {
     
     open override var font: UIFont! {

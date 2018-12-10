@@ -6,6 +6,7 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
 import ObjectiveC.runtime
 
 fileprivate extension Selector {

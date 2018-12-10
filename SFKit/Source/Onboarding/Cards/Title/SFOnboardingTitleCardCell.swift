@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 final public class SFOnboardingTitleCardCell: UITableViewCell {
     
     /// Label that will present the title.

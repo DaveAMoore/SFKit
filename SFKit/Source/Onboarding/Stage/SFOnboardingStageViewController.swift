@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 internal extension Selector {
     
     static let primaryButtonAction = #selector(SFOnboardingStageViewController.primaryButtonAction(_:))

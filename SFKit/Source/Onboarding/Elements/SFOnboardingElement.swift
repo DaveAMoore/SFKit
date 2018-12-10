@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import Foundation
+
 open class SFOnboardingElement<T: NSObject>: NSObject {
     
     /// Universally unique identifier corresponding to this control only.

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 /// View controller transition animation that is associated with a stack push transition.
 ///
 /// **Transition Duration Values**:

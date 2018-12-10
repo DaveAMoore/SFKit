@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 /// Straight line that is either horizontal or vertical, with horizontal being the most common. If an angled line is desired, use `SFPolygon` directly.
 @IBDesignable
 open class SFLine: SFPolygon {

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 /// Modal view controller that has been designed to provide a concrete and consistent onboarding experience. The design is referenced from an internal resource, thus limiting complete customization to a certain degree.
 ///
 /// # Onboarding

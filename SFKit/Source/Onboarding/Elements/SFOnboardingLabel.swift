@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 open class SFOnboardingLabel: SFOnboardingElement<UILabel> {
     
     // MARK: - Properties

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 extension UITableView {
     
     open func dequeueReusableCell<T>(ofType type: T.Type, withIdentifier reuseIdentifier: String, for indexPath: IndexPath) -> T where T: UITableViewCell {

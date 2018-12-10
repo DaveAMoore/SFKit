@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 internal class SFOnboardingTransitionController: NSObject, UIViewControllerTransitioningDelegate {
     
     /// Transition animator responsible for presenting the destination view controller.

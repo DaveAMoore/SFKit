@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 open class SFPolygon: SFView {
     
     // MARK: - Line Dash

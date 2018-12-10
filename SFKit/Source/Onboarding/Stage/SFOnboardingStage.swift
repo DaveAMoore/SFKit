@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import Foundation
+
 /// Single step within onboarding controller.
 public struct SFOnboardingStage: Equatable {
     

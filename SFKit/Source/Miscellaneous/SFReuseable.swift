@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 /// `SFReuseable` provides an automatic `reuseIdentifier` which may be used to enqueue and dequeue cells and/or reuseable views. The functionality is primarily useful for table views and collection views, but may be applied to other cases as well.
 @available(*, deprecated, message: "use SFIdentifiable instead")
 public protocol SFReuseable: class, SFIdentifiable {

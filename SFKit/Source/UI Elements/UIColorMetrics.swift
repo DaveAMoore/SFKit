@@ -6,6 +6,8 @@
 //  Copyright © 2018 Moore Development. All rights reserved.
 //
 
+import UIKit
+
 // MARK: - Color Selection
 
 /// Enumeration containing range of colors.
