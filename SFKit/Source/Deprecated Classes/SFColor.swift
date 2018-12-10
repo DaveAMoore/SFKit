@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SFModelCheck
 
 /// Add floating point brightness value to the color.
 infix operator +: AdditionPrecedence

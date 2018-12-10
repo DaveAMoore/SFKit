@@ -1,4 +1,0 @@
-module SFModelCheck {
-    header "../SFModelCheck.h"
-    export *
-}

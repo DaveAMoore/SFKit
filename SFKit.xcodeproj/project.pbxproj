@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 6305B2A11FE408F20001CCDB /* SFModelCheck.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305B2A21FE408F20001CCDB /* SFModelCheck.m */; };
 		630C5C3E20325E0E003B6887 /* SFOnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C5C3D20325E0E003B6887 /* SFOnboardingTextField.swift */; };
 		6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD91F0988D20064A0CA /* SFLabel.swift */; };
 		6313E2FB200086810065EE25 /* SFTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E201F0988D20064A0CA /* SFTableView.swift */; };
@@ -125,9 +123,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6305B2A11FE408F20001CCDB /* SFModelCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFModelCheck.h; sourceTree = "<group>"; };
-		6305B2A21FE408F20001CCDB /* SFModelCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFModelCheck.m; sourceTree = "<group>"; };
-		6305B2A61FE40C8E0001CCDB /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		630C5C3D20325E0E003B6887 /* SFOnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTextField.swift; sourceTree = "<group>"; };
 		6313E301200087D00065EE25 /* SFXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFXAxisView.m; sourceTree = "<group>"; };
 		6313E302200087D00065EE25 /* SFChartTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFChartTypes.h; sourceTree = "<group>"; };
@@ -257,14 +252,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6305B2A51FE40C770001CCDB /* Project Module */ = {
-			isa = PBXGroup;
-			children = (
-				6305B2A61FE40C8E0001CCDB /* module.modulemap */,
-			);
-			path = "Project Module";
-			sourceTree = "<group>";
-		};
 		6313E300200087660065EE25 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,10 +568,7 @@
 		63F459691FE404FF008B62C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6305B2A11FE408F20001CCDB /* SFModelCheck.h */,
-				6305B2A21FE408F20001CCDB /* SFModelCheck.m */,
 				63E0B98D208ED49000B400CE /* Scripts */,
-				6305B2A51FE40C770001CCDB /* Project Module */,
 				6385A2271F06EB36002B9244 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -610,7 +594,6 @@
 				6331B2CB1F361189005C73F3 /* UIResponder+SFAppearanceEnvironment.h in Headers */,
 				6313E324200087D50065EE25 /* SFPieChartLegendCell.h in Headers */,
 				6313E322200087D50065EE25 /* SFPieChartLegendView.h in Headers */,
-				6305B2A31FE408F20001CCDB /* SFModelCheck.h in Headers */,
 				6313E341200089840065EE25 /* SFSkin.h in Headers */,
 				6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */,
 				634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */,
@@ -779,7 +762,6 @@
 				6324D400201FCE9200D762DA /* SFOnboardingTextFieldCardCell.swift in Sources */,
 				63167CC81F3670E700054924 /* SFCollectionView.swift in Sources */,
 				6313E31D200087D50065EE25 /* SFXAxisView.m in Sources */,
-				6305B2A41FE408F20001CCDB /* SFModelCheck.m in Sources */,
 				6313E34E20008A100065EE25 /* SFTypes.m in Sources */,
 				636D65B71F37699B00F3BF35 /* UIViewController+SFAppearanceEnvironment.m in Sources */,
 				6324D3F4201FC2B000D762DA /* SFOnboardingPushAnimator.swift in Sources */,
@@ -966,7 +948,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -999,7 +981,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SFKit/Supporting\\ Files/Project\\ Module";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
