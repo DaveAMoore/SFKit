@@ -9,7 +9,7 @@
 import Foundation
 
 /// Single step within onboarding controller.
-public struct SFOnboardingStage: Equatable {
+public class SFOnboardingStage: NSObject {
     
     // MARK: - Properties
     
@@ -42,6 +42,12 @@ public struct SFOnboardingStage: Equatable {
     
     // MARK: - Initialization
     
+    public override init() {
+        cards = []
+        super.init()
+    }
+    
+    @available(*, deprecated)
     public init(cards: [SFOnboardingCard],
                 primaryControl: SFOnboardingControl? = nil,
                 secondaryControl: SFOnboardingControl? = nil,
@@ -56,24 +62,5 @@ public struct SFOnboardingStage: Equatable {
         self.trailingControl = trailingControl
         self.accessoryLabel = accessoryLabel
         self.cellSelected = cellSelected
-    }
-    
-    // MARK: - Equatable
-    
-    /// Returns a Boolean value indicating whether two values are equal.
-    ///
-    /// Equality is the inverse of inequality. For any values `a` and `b`,
-    /// `a == b` implies that `a != b` is `false`.
-    ///
-    /// - Parameters:
-    ///   - lhs: A value to compare.
-    ///   - rhs: Another value to compare.
-    public static func == (lhs: SFOnboardingStage, rhs: SFOnboardingStage) -> Bool {
-        return lhs.cards == rhs.cards &&
-            lhs.primaryControl == rhs.primaryControl &&
-            lhs.secondaryControl == rhs.secondaryControl &&
-            lhs.leadingControl == rhs.leadingControl &&
-            lhs.trailingControl == rhs.trailingControl &&
-            lhs.accessoryLabel == rhs.accessoryLabel
     }
 }

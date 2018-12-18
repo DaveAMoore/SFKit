@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SFAppearanceAdjusting <NSObject, SFAppearanceEnvironment>
 
 /**
- Boolean value indicating if the receiver should adjust its color for the current appearance style.
+ Boolean value indicating if the receiver should adjust its color for the current appearance style. Default value is YES.
  */
 @property (readwrite) BOOL adjustsColorForAppearanceStyle;
 

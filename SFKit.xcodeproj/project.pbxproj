@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630BB42521C84E4100D4ECCF /* SFMethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 630BB42321C84E4100D4ECCF /* SFMethodSwizzler.h */; };
+		630BB42621C84E4100D4ECCF /* SFMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630BB42421C84E4100D4ECCF /* SFMethodSwizzler.m */; };
 		630C5C3E20325E0E003B6887 /* SFOnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C5C3D20325E0E003B6887 /* SFOnboardingTextField.swift */; };
 		6313E2FA20007AC00065EE25 /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD91F0988D20064A0CA /* SFLabel.swift */; };
 		6313E2FB200086810065EE25 /* SFTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E201F0988D20064A0CA /* SFTableView.swift */; };
@@ -102,6 +104,8 @@
 		6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385A23E1F06EB4D002B9244 /* SFButton.swift */; };
 		638B1BDE2050C684009CA8D7 /* SFPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B1BDD2050C684009CA8D7 /* SFPolygon.swift */; };
 		63B04BC11F6748120030CFFE /* SFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DD51F0988D20064A0CA /* SFImageView.swift */; };
+		63B71E6B21C62094001B6418 /* SFKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 63B71E6A21C62094001B6418 /* SFKit.podspec */; };
+		63B83D3F21C8523700FB0FFE /* SFMethodSwizzlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B83D3E21C8523700FB0FFE /* SFMethodSwizzlerTests.m */; };
 		63C901A51F27E5F30022D03C /* SFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686DE41F0988D20064A0CA /* SFNavigationBar.swift */; };
 		63D40AA220211FF300DD1AF9 /* SFOnboardingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */; };
 		63DE763E1F30F71600C7E5AE /* SFVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63686E381F0988D20064A0CA /* SFVisualEffectView.swift */; };
@@ -123,6 +127,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630BB42321C84E4100D4ECCF /* SFMethodSwizzler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMethodSwizzler.h; sourceTree = "<group>"; };
+		630BB42421C84E4100D4ECCF /* SFMethodSwizzler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMethodSwizzler.m; sourceTree = "<group>"; };
 		630C5C3D20325E0E003B6887 /* SFOnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingTextField.swift; sourceTree = "<group>"; };
 		6313E301200087D00065EE25 /* SFXAxisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFXAxisView.m; sourceTree = "<group>"; };
 		6313E302200087D00065EE25 /* SFChartTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFChartTypes.h; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 		638B1BDD2050C684009CA8D7 /* SFPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPolygon.swift; sourceTree = "<group>"; };
 		63A13DC41F1A7D5500FE5760 /* SFTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTextView.swift; sourceTree = "<group>"; };
 		63AC4EB321BE2446006AD37E /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		63B71E6A21C62094001B6418 /* SFKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		63B83D3E21C8523700FB0FFE /* SFMethodSwizzlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMethodSwizzlerTests.m; sourceTree = "<group>"; };
 		63D40AA120211FF300DD1AF9 /* SFOnboardingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOnboardingControl.swift; sourceTree = "<group>"; };
 		63E0B98E208ED4A000B400CE /* SdkPackage.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = SdkPackage.sh; sourceTree = "<group>"; };
 		63E0B98F208ED4A000B400CE /* strip-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "strip-frameworks.sh"; sourceTree = "<group>"; };
@@ -357,11 +365,13 @@
 				631DC2AC2054CF6F00351241 /* SFIdentifiable.swift */,
 				631DC2AA2054CF5500351241 /* SFReuseable.swift */,
 				63F6EF9F2002CDF500B7D3E8 /* Utilities.swift */,
+				630BB42321C84E4100D4ECCF /* SFMethodSwizzler.h */,
+				630BB42421C84E4100D4ECCF /* SFMethodSwizzler.m */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
-		63167CC71F3670C800054924 /* Deprecated Classes */ = {
+		63167CC71F3670C800054924 /* Deprecations */ = {
 			isa = PBXGroup;
 			children = (
 				6385A23D1F06EB4D002B9244 /* SFColor.swift */,
@@ -375,17 +385,10 @@
 				63686E231F0988D20064A0CA /* SFTableViewHeaderFooterView.swift */,
 				63686E351F0988D20064A0CA /* SFViewController.swift */,
 				63686DD51F0988D20064A0CA /* SFImageView.swift */,
-			);
-			path = "Deprecated Classes";
-			sourceTree = "<group>";
-		};
-		631DC2B22054DA4C00351241 /* Polygons */ = {
-			isa = PBXGroup;
-			children = (
 				638B1BDD2050C684009CA8D7 /* SFPolygon.swift */,
 				633EB3A5205046620045A6E0 /* SFLine.swift */,
 			);
-			path = Polygons;
+			path = Deprecations;
 			sourceTree = "<group>";
 		};
 		6324D3F1201EC8A400D762DA /* Cards */ = {
@@ -465,7 +468,6 @@
 				63686E2B1F0988D20064A0CA /* SFTextField.swift */,
 				63686E341F0988D20064A0CA /* SFView.swift */,
 				63686E1D1F0988D20064A0CA /* SFTabBar.swift */,
-				631DC2B22054DA4C00351241 /* Polygons */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -474,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				636CF9C01F098C2E00C724C4 /* README.md */,
+				63B71E6A21C62094001B6418 /* SFKit.podspec */,
 				6385A2251F06EB36002B9244 /* SFKit */,
 				6385A2301F06EB36002B9244 /* SFKitTests */,
 				6385A2241F06EB36002B9244 /* Products */,
@@ -504,6 +507,7 @@
 			children = (
 				6385A2311F06EB36002B9244 /* SFKitTests.swift */,
 				632DFA582082723A0039E66F /* UIColorMetricsTests.swift */,
+				63B83D3E21C8523700FB0FFE /* SFMethodSwizzlerTests.m */,
 				6385A2331F06EB36002B9244 /* Info.plist */,
 			);
 			path = SFKitTests;
@@ -517,7 +521,7 @@
 				6313E300200087660065EE25 /* Charts */,
 				637D6B061FB7F0B100397317 /* UI Elements */,
 				6313E36320019D9C0065EE25 /* Miscellaneous */,
-				63167CC71F3670C800054924 /* Deprecated Classes */,
+				63167CC71F3670C800054924 /* Deprecations */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -598,6 +602,7 @@
 				6313E322200087D50065EE25 /* SFPieChartLegendView.h in Headers */,
 				6313E341200089840065EE25 /* SFSkin.h in Headers */,
 				6313E32B200087D50065EE25 /* SFYAxisView.h in Headers */,
+				630BB42521C84E4100D4ECCF /* SFMethodSwizzler.h in Headers */,
 				634557622054EA7500186815 /* SFAppearanceAdjusting.h in Headers */,
 				631DC2B02054D4CF00351241 /* UIView+SFAppearanceEnvironment.h in Headers */,
 				6313E349200089EF0065EE25 /* SFHelpers_Internal.h in Headers */,
@@ -702,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E0B991208ED4A000B400CE /* strip-frameworks.sh in Resources */,
+				63B71E6B21C62094001B6418 /* SFKit.podspec in Resources */,
 				6324D3FA201FC66200D762DA /* SFOnboardingTitleCardCell.xib in Resources */,
 				6324D401201FCE9200D762DA /* SFOnboardingTextFieldCardCell.xib in Resources */,
 				6324D405201FD5D100D762DA /* SFOnboardingStageViewController.xib in Resources */,
@@ -744,6 +750,7 @@
 				6385A2401F06EB4D002B9244 /* SFButton.swift in Sources */,
 				6313E31F200087D50065EE25 /* SFPieChartPieView.m in Sources */,
 				6313E342200089840065EE25 /* SFSkin.m in Sources */,
+				630BB42621C84E4100D4ECCF /* SFMethodSwizzler.m in Sources */,
 				6313E321200087D50065EE25 /* SFLineGraphChartView.m in Sources */,
 				636D65B91F376C2300F3BF35 /* SFAppearance+Refinements.swift in Sources */,
 				6313E35220008BF50065EE25 /* SFErrors.m in Sources */,
@@ -793,6 +800,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B83D3F21C8523700FB0FFE /* SFMethodSwizzlerTests.m in Sources */,
 				6385A2321F06EB36002B9244 /* SFKitTests.swift in Sources */,
 				632DFA592082723A0039E66F /* UIColorMetricsTests.swift in Sources */,
 			);
@@ -997,12 +1005,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
 				INFOPLIST_FILE = SFKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.mooredev.SFKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1012,6 +1022,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 4SPJ9K7CHQ;
 				INFOPLIST_FILE = SFKitTests/Info.plist;

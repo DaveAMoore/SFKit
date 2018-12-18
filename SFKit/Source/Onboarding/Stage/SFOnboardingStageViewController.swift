@@ -119,9 +119,7 @@ open class SFOnboardingStageViewController: UIViewController, UITableViewDataSou
         
         // Enumerate the stage's cards.
         for card in stage.cards {
-            // Register the appropriate cell's nib.
-            let intermediate: UINib? = nil
-            tableView.register(intermediate, forCellReuseIdentifier: card.reuseIdentifier)
+            card.unregister(from: tableView)
         }
     }
     
@@ -152,10 +150,7 @@ open class SFOnboardingStageViewController: UIViewController, UITableViewDataSou
         
         // Enumerate the stage's cards.
         for card in stage.cards {
-            // Register the appropriate cell's nib.
-            tableView.register(UINib(nibName: card.nibName,
-                                     bundle: Bundle(for: type(of: card))),
-                               forCellReuseIdentifier: card.reuseIdentifier)
+            card.register(with: tableView)
         }
     }
     

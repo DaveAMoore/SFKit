@@ -20,7 +20,7 @@ open class SFOnboardingTextFieldCard: SFOnboardingCard {
     /// Displays the title that is presented alongside the text field.
     open var titleLabel: SFOnboardingLabel?
     
-    ///
+    /// Text field that is associated with the cell.
     open var textField: SFOnboardingTextField
     
     /// MARK: - Initialization
@@ -38,7 +38,7 @@ open class SFOnboardingTextFieldCard: SFOnboardingCard {
     /// Prepares a card for presentation within a table view.
     ///
     /// - Parameter card: Card that must be configured for display.
-    open override func prepare(_ card: UITableViewCell, forController controller: SFOnboardingStageViewController?) {
+    open override func prepare(_ card: UITableViewCell, for controller: SFOnboardingStageViewController?) {
         super.prepare(card, forController: controller)
         
         let card = card as! SFOnboardingTextFieldCardCell
