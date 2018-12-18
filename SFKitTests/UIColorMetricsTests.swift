@@ -15,10 +15,6 @@ class UIColorMetricsTests: XCTestCase {
     
     let appearanceStyles: [SFAppearanceStyle] = [.light, .dark]
     
-    let relativeHues: [UIColorMetricsHue] = [.red, .orange, .yellow, .green, .tealBlue, .blue, .darkBlue,
-                                             .purple, .pink, .white, .extraLightGray, .lightGray, .gray,
-                                             .darkGray, .extraDarkGray, .black]
-    
     // MARK: - Lifecycle
     
     override func setUp() {
@@ -36,31 +32,14 @@ class UIColorMetricsTests: XCTestCase {
     func testRelativeHueForColor() {
         for appearanceStyle in appearanceStyles {
             let colorMetrics = UIColorMetrics(forAppearanceStyle: appearanceStyle)
-            for relativeHue in relativeHues {
-                let color = colorMetrics.color(forRelativeHue: relativeHue)
-                let hue = colorMetrics.relativeHue(forColor: color)
+            for hue in UIColorMetrics.Hue.allCases {
+                guard hue != .none else { continue }
                 
-                XCTAssertNotNil(hue)
-                XCTAssertEqual(relativeHue, hue)
-            }
-        }
-    }
-    
-    func testColorForColorRelativeToMetrics() {
-        for appearanceStyle in appearanceStyles {
-            let primaryColorMetrics = UIColorMetrics(forAppearanceStyle: appearanceStyle)
-            let oppositeColorMetrics = appearanceStyle == .light ? UIColorMetrics(forAppearanceStyle: .dark) : UIColorMetrics(forAppearanceStyle: .light)
-            for relativeHue in relativeHues {
-                let color = primaryColorMetrics.color(forRelativeHue: relativeHue)
-                let oppositeColor = oppositeColorMetrics.color(forColor: color,
-                                                               relativeTo: primaryColorMetrics)
+                let color = colorMetrics.relativeColor(for: hue)
+                let relativeHue = colorMetrics.relativeHue(for: color)
                 
-                let hue = primaryColorMetrics.relativeHue(forColor: color)
-                let oppositeHue = oppositeColorMetrics.relativeHue(forColor: oppositeColor)
-                
-                XCTAssertNotNil(hue)
-                XCTAssertNotNil(oppositeHue)
-                XCTAssertEqual(hue, oppositeHue)
+                XCTAssertNotEqual(relativeHue, .none)
+                XCTAssertEqual(hue, relativeHue)
             }
         }
     }
