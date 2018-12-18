@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(*, deprecated)
 open class SFPolygon: SFView {
     
     // MARK: - Line Dash

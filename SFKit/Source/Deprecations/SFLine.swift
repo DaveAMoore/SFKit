@@ -10,6 +10,7 @@ import UIKit
 
 /// Straight line that is either horizontal or vertical, with horizontal being the most common. If an angled line is desired, use `SFPolygon` directly.
 @IBDesignable
+@available(*, deprecated)
 open class SFLine: SFPolygon {
     
     open override var points: [CGPoint] {
