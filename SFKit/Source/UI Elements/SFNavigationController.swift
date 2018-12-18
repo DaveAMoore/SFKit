@@ -23,7 +23,7 @@ open class SFNavigationController: UINavigationController {
         // Change the bar style for the new appearance style.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
         navigationBar.barStyle = appearance.style == .light ? .default : .black
-        navigationBar.tintColor = colorMetrics.color(forRelativeHue: .blue)
+        navigationBar.tintColor = colorMetrics.relativeColor(for: .blue)
     }
     
     // MARK: - Initialization

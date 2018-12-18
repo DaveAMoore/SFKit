@@ -111,7 +111,7 @@ open class SFPolygon: SFView {
         self.points = points
         super.init(frame: .zero)
         self.backgroundColor = .clear
-        self.strokeColor = UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .lightGray)
+        self.strokeColor = UIColorMetrics(forAppearance: appearance).relativeColor(for: .lightGray)
     }
     
     public required init?(coder aDecoder: NSCoder) {

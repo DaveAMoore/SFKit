@@ -50,8 +50,8 @@ open class SFTextField: UITextField, UITextFieldDelegate {
         }
         
         // Update background color.
-        backgroundColor = colorMetrics.color(forRelativeHue: .extraLightGray)
-        textColor = colorMetrics.color(forRelativeHue: .black)
+        backgroundColor = colorMetrics.relativeColor(for: .extraLightGray)
+        textColor = colorMetrics.relativeColor(for: .black)
     }
     
     // MARK: - Appearance Adjustment
@@ -61,7 +61,7 @@ open class SFTextField: UITextField, UITextFieldDelegate {
             guard let placeholder = placeholder else { return }
             
             // Create an attributed placeholder and set it.
-            let attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .extraLightGray)])
+            let attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).relativeColor(for: .extraLightGray)])
             self.attributedPlaceholder = attributedPlaceholder
         }
     }

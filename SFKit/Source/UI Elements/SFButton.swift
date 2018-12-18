@@ -133,13 +133,13 @@ extension SFColor {
         
         // Configure the appearance.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
-        backgroundColor = colorMetrics.color(forRelativeHue: .blue)
-        setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
+        backgroundColor = colorMetrics.relativeColor(for: .blue)
+        setTitleColor(colorMetrics.relativeColor(for: .white), for: .normal)
         titleLabel?.adjustsFontForContentSizeCategory = true
-        tintColor = colorMetrics.color(forRelativeHue: .white)
+        tintColor = colorMetrics.relativeColor(for: .white)
         
         // Set the border color and width.
-        layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
+        layer.borderColor = colorMetrics.relativeColor(for: .darkBlue).cgColor
         layer.borderWidth = restingBorderWidth
         layer.allowsEdgeAntialiasing = true
         
@@ -202,13 +202,13 @@ extension SFColor {
         // Adjust the background color as needed.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if isEnabled {
-            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
+            backgroundColor = colorMetrics.relativeColor(for: .blue)
             layer.borderWidth = restingBorderWidth
-            tintColor = colorMetrics.color(forRelativeHue: .white)
+            tintColor = colorMetrics.relativeColor(for: .white)
         } else {
-            backgroundColor = colorMetrics.color(forRelativeHue: .lightGray)
+            backgroundColor = colorMetrics.relativeColor(for: .lightGray)
             layer.borderWidth = 0.0
-            tintColor = colorMetrics.color(forRelativeHue: .gray)
+            tintColor = colorMetrics.relativeColor(for: .gray)
         }
     }
     
@@ -217,14 +217,14 @@ extension SFColor {
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
         if isSelected {
             layer.borderWidth = 0.0
-            backgroundColor = colorMetrics.color(forRelativeHue: .blue).withAlphaComponent(0.5)
-            tintColor = colorMetrics.color(forRelativeHue: .white)
+            backgroundColor = colorMetrics.relativeColor(for: .blue).withAlphaComponent(0.5)
+            tintColor = colorMetrics.relativeColor(for: .white)
         } else {
-            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
-            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
-            layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
+            backgroundColor = colorMetrics.relativeColor(for: .blue)
+            setTitleColor(colorMetrics.relativeColor(for: .white), for: .normal)
+            layer.borderColor = colorMetrics.relativeColor(for: .darkBlue).cgColor
             layer.borderWidth = restingBorderWidth
-            tintColor = colorMetrics.color(forRelativeHue: .white)
+            tintColor = colorMetrics.relativeColor(for: .white)
             self.alpha = 1.0
         }
     }
@@ -249,11 +249,11 @@ extension SFColor {
                 self.alpha = 1.0
             }
             
-            backgroundColor = colorMetrics.color(forRelativeHue: .blue)
-            setTitleColor(colorMetrics.color(forRelativeHue: .white), for: .normal)
-            layer.borderColor = colorMetrics.color(forRelativeHue: .darkBlue).cgColor
+            backgroundColor = colorMetrics.relativeColor(for: .blue)
+            setTitleColor(colorMetrics.relativeColor(for: .white), for: .normal)
+            layer.borderColor = colorMetrics.relativeColor(for: .darkBlue).cgColor
             layer.borderWidth = restingBorderWidth
-            tintColor = colorMetrics.color(forRelativeHue: .white)
+            tintColor = colorMetrics.relativeColor(for: .white)
         }
         
     }

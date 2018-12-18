@@ -33,6 +33,6 @@ open class SFTabBar: UITabBar {
         
         // Update the bar style for the appearance style.
         barStyle = appearance.style == .light ? .default : .black
-        tintColor = UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .blue)
+        tintColor = UIColorMetrics(forAppearance: appearance).relativeColor(for: .blue)
     }
 }

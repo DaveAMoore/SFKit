@@ -33,6 +33,6 @@ open class SFNavigationBar: UINavigationBar {
         
         // Change the bar style for the new appearance style.
         barStyle = appearance.style == .light ? .default : .black
-        tintColor = UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .blue)
+        tintColor = UIColorMetrics(forAppearance: appearance).relativeColor(for: .blue)
     }
 }
