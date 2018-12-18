@@ -71,7 +71,7 @@
     UIColorMetrics *currentColorMetrics = [[UIColorMetrics alloc] initForAppearance:self.appearance];
     
     UIColorMetricsHue relativeHue = [previousColorMetrics relativeHueForColor:self.backgroundColor];
-    [self setBackgroundColor:[currentColorMetrics colorForRelativeHue:relativeHue]];
+    [self setBackgroundColor:[currentColorMetrics relativeColorForHue:relativeHue]];
 }
 
 @end
