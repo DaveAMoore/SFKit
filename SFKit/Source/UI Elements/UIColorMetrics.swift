@@ -8,29 +8,31 @@
 
 import UIKit
 
-// MARK: - Color Selection
-
-/// Enumeration containing range of colors.
-@objc public enum UIColorMetricsHue: Int, CaseIterable {
-    case red
-    case orange
-    case yellow
-    case green
-    case tealBlue
-    case blue
-    case darkBlue
-    case purple
-    case pink
-    case white
-    case extraLightGray
-    case lightGray
-    case gray
-    case darkGray
-    case extraDarkGray
-    case black
-}
-
 @objc open class UIColorMetrics: NSObject {
+    
+    // MARK: - Color Types
+    
+    /// Enumeration containing range of colors.
+    @objc (UIColorMetricsHue)
+    public enum Hue: Int, CaseIterable {
+        case red
+        case orange
+        case yellow
+        case green
+        case tealBlue
+        case blue
+        case darkBlue
+        case purple
+        case pink
+        case white
+        case extraLightGray
+        case lightGray
+        case gray
+        case darkGray
+        case extraDarkGray
+        case black
+        case none
+    }
     
     // MARK: - Properties
     
@@ -60,7 +62,8 @@ import UIKit
     ///
     /// - Parameter hue: Color that is relative to the **light** appearance style.
     /// - Returns: Color that has been adapted for the initially specified appearance style.
-    @objc open func color(forRelativeHue hue: UIColorMetricsHue) -> UIColor {
+    @objc(relativeColorForHue:)
+    open func relativeColor(for hue: Hue) -> UIColor {
         switch hue {
         case .red:
             return red
@@ -94,6 +97,8 @@ import UIKit
             return extraDarkGray
         case .black:
             return black
+        case .none:
+            return .clear
         }
     }
     
@@ -101,41 +106,25 @@ import UIKit
     ///
     /// - Parameter color: Color that will be matched to a color metrics hue.
     /// - Returns: Color metrics hue that is associated with the provided color, relative to the appearance style with which the receiver was initialized.
-    open func relativeHue(forColor color: UIColor) -> UIColorMetricsHue? {
+    @objc(relativeHueForColor:)
+    open func relativeHue(for color: UIColor) -> Hue {
+        typealias Result = (hue: Hue, confidence: Float)
         
-        let colors: [UIColor: UIColorMetricsHue] = [red: .red, orange: .orange, yellow: .yellow,
-                                                    green: .green, tealBlue: .tealBlue, blue: .blue,
-                                                    darkBlue: .darkBlue, purple: .purple, pink: .pink,
-                                                    white: .white, extraLightGray: .extraLightGray,
-                                                    lightGray: .lightGray, gray: .gray, darkGray: .darkGray,
-                                                    extraDarkGray: .extraDarkGray, black: .black]
-        
-        return colors.reduce((hue: colors[color], confidence: 1)) { result, pair -> (hue: UIColorMetricsHue?, confidence: Float) in
-            let (key, value) = pair
-            switch key.cgColor.compare(to: color.cgColor) {
+        // Reduce the cases to produce a result.
+        let result = Hue.allCases.reduce((.none, 0.8)) { result, hue -> Result in
+            guard result.confidence < 1.0 else { return result }
+            
+            switch relativeColor(for: hue).cgColor.compare(to: color.cgColor) {
             case .equal:
-                return (value, Float.infinity)
+                return (hue, 1.0)
             case .approximatelyEqual(let confidence):
-                return confidence >= result.confidence ? (value, confidence) : result
+                return confidence > result.confidence ? (hue, confidence) : result
             case .notEqual:
                 return result
             }
-        }.hue
-    }
-    
-    /// Returns a color adapted for the appearance style the receiver was initialized for.
-    ///
-    /// - Parameters:
-    ///     - color: Color that is relative to a particular `UIColorMetrics` instance.
-    ///     - colorMetrics: `UIColorMetrics` instance for which `color` is relative to. This will be used to convert the color between appearance styles.
-    ///
-    /// - Returns: Color that has been adapted for the appearance style.
-    @objc open func color(forColor color: UIColor, relativeTo colorMetrics: UIColorMetrics) -> UIColor {
-        // Determine the color's hue, but if it cannot be found then simply return the provided color.
-        guard let hue = colorMetrics.relativeHue(forColor: color) else { return color }
+        }
         
-        // Return the color adapted to the receiver.
-        return self.color(forRelativeHue: hue)
+        return result.hue
     }
     
     // MARK: - Colors
@@ -175,7 +164,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.27843137255, green: 0.90588235294, blue: 1, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .blue)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .blue)
         }
     }
     
@@ -184,7 +173,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.019607843137, green: 0.49803921569, blue: 1, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .tealBlue)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .tealBlue)
         }
     }
     
@@ -228,7 +217,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.9035493731, green: 0.9035493731, blue: 0.9035493731, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .extraDarkGray)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .extraDarkGray)
         }
     }
     
@@ -238,7 +227,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.7952535152, green: 0.7952535152, blue: 0.7952535152, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .darkGray)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .darkGray)
         }
     }
     
@@ -256,7 +245,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.45389539, green: 0.45389539, blue: 0.45389539, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .lightGray)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .lightGray)
         }
     }
     
@@ -265,7 +254,7 @@ import UIKit
         case .light:
             return #colorLiteral(red: 0.3179988265, green: 0.3179988265, blue: 0.3179988265, alpha: 1)
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .extraLightGray)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .extraLightGray)
         }
     }
     
@@ -275,7 +264,51 @@ import UIKit
         case .light:
             return .black
         case .dark:
-            return UIColorMetrics(forAppearanceStyle: .light).color(forRelativeHue: .white)
+            return UIColorMetrics(forAppearanceStyle: .light).relativeColor(for: .white)
         }
+    }
+}
+
+// MARK: - Deprecations
+
+/// Enumeration containing range of colors.
+@available(*, deprecated, renamed: "UIColorMetrics.Hue")
+public typealias UIColorMetricsHue = UIColorMetrics.Hue
+
+extension UIColorMetrics {
+    
+    /// Returns the relative hue for the provided color.
+    ///
+    /// - Parameter color: Color that will be matched to a color metrics hue.
+    /// - Returns: Color metrics hue that is associated with the provided color, relative to the appearance style with which the receiver was initialized.
+    @available(*, deprecated, renamed: "relativeHue(for:)")
+    open func relativeHue(forColor color: UIColor) -> UIColorMetricsHue? {
+        return relativeHue(for:color)
+    }
+    
+    /// Returns a color adapted for the appearance style the receiver was initialized for.
+    ///
+    /// - Parameter hue: Color that is relative to the **light** appearance style.
+    /// - Returns: Color that has been adapted for the initially specified appearance style.
+    @available(*, deprecated, renamed: "relativeColor(for:)")
+    @objc(colorForRelativeHue:)
+    open func color(forRelativeHue hue: Hue) -> UIColor {
+        return relativeColor(for: hue)
+    }
+    
+    /// Returns a color adapted for the appearance style the receiver was initialized for.
+    ///
+    /// - Parameters:
+    ///     - color: Color that is relative to a particular `UIColorMetrics` instance.
+    ///     - colorMetrics: `UIColorMetrics` instance for which `color` is relative to. This will be used to convert the color between appearance styles.
+    ///
+    /// - Returns: Color that has been adapted for the appearance style.
+    @available(*, deprecated, message: "This method is no longer supported.")
+    @objc open func color(forColor color: UIColor, relativeTo colorMetrics: UIColorMetrics) -> UIColor {
+        // Determine the color's hue, but if it cannot be found then simply return the provided color.
+        guard let hue = colorMetrics.relativeHue(forColor: color) else { return color }
+        
+        // Return the color adapted to the receiver.
+        return self.color(forRelativeHue: hue)
     }
 }
