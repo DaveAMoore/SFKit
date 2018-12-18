@@ -24,9 +24,9 @@ final public class SFOnboardingTitleCardCell: UITableViewCell {
         
         // Configure the view coloring.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
-        backgroundColor = colorMetrics.color(forRelativeHue: .white)
-        titleLabel.textColor = colorMetrics.color(forRelativeHue: .black)
-        detailLabel.textColor = colorMetrics.color(forRelativeHue: .black)
-        embeddedImageView.tintColor = colorMetrics.color(forRelativeHue: .blue)
+        backgroundColor = colorMetrics.relativeColor(for: .white)
+        titleLabel.textColor = colorMetrics.relativeColor(for: .black)
+        detailLabel.textColor = colorMetrics.relativeColor(for: .black)
+        embeddedImageView.tintColor = colorMetrics.relativeColor(for: .blue)
     }
 }

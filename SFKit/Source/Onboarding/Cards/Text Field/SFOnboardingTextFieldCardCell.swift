@@ -21,11 +21,11 @@ final public class SFOnboardingTextFieldCardCell: UITableViewCell {
         
         // Configure the view coloring.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
-        backgroundColor = colorMetrics.color(forRelativeHue: .white)
-        titleLabel.textColor = colorMetrics.color(forRelativeHue: .black)
-        textField.textColor = colorMetrics.color(forRelativeHue: .black)
+        backgroundColor = colorMetrics.relativeColor(for: .white)
+        titleLabel.textColor = colorMetrics.relativeColor(for: .black)
+        textField.textColor = colorMetrics.relativeColor(for: .black)
         if let placeholder = textField.placeholder {
-            textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).color(forRelativeHue: .lightGray)])
+            textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColorMetrics(forAppearance: appearance).relativeColor(for: .lightGray)])
         }
     }
 }

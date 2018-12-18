@@ -101,9 +101,9 @@ open class SFOnboardingStageViewController: UIViewController, UITableViewDataSou
         
         // Configure the appearance.
         let colorMetrics = UIColorMetrics(forAppearance: appearance)
-        view.backgroundColor = colorMetrics.color(forRelativeHue: .white)
-        secondaryButton.setTitleColor(colorMetrics.color(forRelativeHue: .blue), for: .normal)
-        bottomContainer.backgroundColor = colorMetrics.color(forRelativeHue: .white)
+        view.backgroundColor = colorMetrics.relativeColor(for: .white)
+        secondaryButton.setTitleColor(colorMetrics.relativeColor(for: .blue), for: .normal)
+        bottomContainer.backgroundColor = colorMetrics.relativeColor(for: .white)
     }
     
     open override func didReceiveMemoryWarning() {
